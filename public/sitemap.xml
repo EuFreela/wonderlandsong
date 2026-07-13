@@ -1,98 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://wonderlandsong.com/</loc>
+    <loc>https://YOUR-DEPLOY-HOST/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://wonderlandsong.com/projects/a-grande-multidao</loc>
+    <loc>https://YOUR-DEPLOY-HOST/projects/a-grande-multidao</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wonderlandsong.com/projects/a-grande-multidao/albums/a-verdade-ainda-chama</loc>
+    <loc>https://YOUR-DEPLOY-HOST/projects/a-grande-multidao/albums/a-verdade-ainda-chama</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wonderlandsong.com/projects/bunny-land-music</loc>
+    <loc>https://YOUR-DEPLOY-HOST/projects/bunny-land-music</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wonderlandsong.com/projects/bunny-land-music/albums/chapter-1-caution-audio-gateway</loc>
+    <loc>https://YOUR-DEPLOY-HOST/projects/bunny-land-music/albums/chapter-1-caution-audio-gateway</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wonderlandsong.com/projects/bunny-land-music/albums/chapter-2-in-the-forest</loc>
+    <loc>https://YOUR-DEPLOY-HOST/projects/bunny-land-music/albums/chapter-2-in-the-forest</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wonderlandsong.com/projects/bunny-land-music/albums/chapter-3-in-time-with-your-heart</loc>
+    <loc>https://YOUR-DEPLOY-HOST/projects/bunny-land-music/albums/chapter-3-in-time-with-your-heart</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wonderlandsong.com/projects/bunny-land-music/albums/chapter-4-listen-to-daddy</loc>
+    <loc>https://YOUR-DEPLOY-HOST/projects/bunny-land-music/albums/chapter-4-listen-to-daddy</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wonderlandsong.com/projects/helena-son</loc>
+    <loc>https://YOUR-DEPLOY-HOST/projects/helena-son</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wonderlandsong.com/projects/helena-son/albums/plastic-grace</loc>
+    <loc>https://YOUR-DEPLOY-HOST/projects/helena-son/albums/plastic-grace</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wonderlandsong.com/projects/helena-son/albums/new-day</loc>
+    <loc>https://YOUR-DEPLOY-HOST/projects/helena-son/albums/new-day</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wonderlandsong.com/projects/helena-son/albums/the-computer</loc>
+    <loc>https://YOUR-DEPLOY-HOST/projects/helena-son/albums/the-computer</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wonderlandsong.com/projects/helena-son/albums/unplugged</loc>
+    <loc>https://YOUR-DEPLOY-HOST/projects/helena-son/albums/unplugged</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wonderlandsong.com/projects/lameck-southern-birds-band</loc>
+    <loc>https://YOUR-DEPLOY-HOST/projects/lameck-southern-birds-band</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wonderlandsong.com/projects/lameck-southern-birds-band/albums/check-in-after-midnight-in-passalacqua</loc>
+    <loc>https://YOUR-DEPLOY-HOST/projects/lameck-southern-birds-band/albums/check-in-after-midnight-in-passalacqua</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wonderlandsong.com/projects/lameck-southern-birds-band/albums/instinct-in-minor-key</loc>
+    <loc>https://YOUR-DEPLOY-HOST/projects/lameck-southern-birds-band/albums/instinct-in-minor-key</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wonderlandsong.com/projects/rosa-negra-halfeti</loc>
+    <loc>https://YOUR-DEPLOY-HOST/projects/rosa-negra-halfeti</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wonderlandsong.com/projects/uss-shenandoah</loc>
+    <loc>https://YOUR-DEPLOY-HOST/projects/uss-shenandoah</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wonderlandsong.com/projects/uss-shenandoah/albums/1937</loc>
+    <loc>https://YOUR-DEPLOY-HOST/projects/uss-shenandoah/albums/1937</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 </urlset>
+

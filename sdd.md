@@ -1,786 +1,583 @@
 # SDD — Wonderland Song Parallax Portfolio
 
-## 1. Identificação do projeto
+**Metodologia:** SDD — **Spec-Driven Development** (desenvolvimento orientado por especificação)  
+**Status da spec:** viva (atualizado em 2026-07-13)  
+**Repositório:** `wonderlandsong2`  
+**Fase atual:** front-end rico com dados locais tipados (sem backend)  
+**Publicação:** em deploy (sem domínio `.com` próprio; URL pública via hospedagem / `VITE_SITE_URL`)
 
-**Nome:** Wonderland Song
-**Tipo:** Site musical, artístico e portfólio narrativo
-**Referência estrutural:** POFO Portfolio Parallax
-**Tecnologias principais:** React, TypeScript, Vite, Tailwind CSS, Node.js e Motion
-**Idioma inicial:** Português
-**Possibilidade futura:** Português e inglês
+Este arquivo é a **especificação viva** do produto no fluxo Spec-Driven Development. Ele descreve a visão, o que já foi implementado e o que permanece em backlog. O código deve seguir a spec; mudanças de escopo atualizam a spec junto.
 
 ---
 
-# 2. Visão do produto
+## 1. Identificação do projeto
+
+| Campo | Valor |
+| --- | --- |
+| **Nome** | Wonderland Song |
+| **Tipo** | Site musical, artístico e portfólio narrativo |
+| **Referência estrutural** | POFO Portfolio Parallax (ideia de layout, não cópia) |
+| **Stack principal** | React 18, TypeScript, Vite 5, Tailwind CSS 3, Framer Motion, React Router 6 |
+| **Idioma** | Português (pt-BR) |
+| **Possibilidade futura** | Português e inglês |
+| **URL pública (SEO)** | URL do **deploy** (definir com `VITE_SITE_URL` no build). Não há domínio `.com` próprio documentado. |
+
+---
+
+## 2. Visão do produto
 
 Criar um site artístico para a Wonderland Song baseado no conceito visual de um portfólio parallax em tela cheia.
 
-A página deverá apresentar os projetos musicais como grandes cenas verticais. Cada projeto ocupará aproximadamente uma tela inteira e será composto por:
+A home apresenta os projetos musicais como grandes cenas verticais. Cada projeto ocupa grande parte da viewport e inclui:
 
-* imagem de fundo em grande escala;
-* conteúdo textual sobreposto;
-* identificação do projeto;
-* título;
-* categoria;
-* pequeno texto introdutório;
-* botão para abrir o projeto;
-* movimento de profundidade durante a rolagem;
+* imagem (ou vídeo) de fundo em grande escala;
+* conteúdo textual sobreposto (categoria, título, mensagem opcional);
+* botões de ação (abrir projeto, Spotify, YouTube);
+* movimento de profundidade durante a rolagem (efeito “janela” com mídia fixa);
 * transição suave para o próximo painel.
 
-O site não deverá copiar literalmente o POFO.
-
-Deverá reproduzir sua lógica geral de apresentação:
+O site **não copia** o POFO. Reproduz apenas a lógica geral:
 
 * menu discreto;
 * projetos em painéis verticais;
 * grandes imagens;
 * tipografia sobreposta;
-* composição alternada;
 * navegação por rolagem;
 * efeito parallax;
-* abertura de páginas individuais;
+* páginas individuais de projeto e de álbum;
 * rodapé minimalista.
 
-A identidade visual, o conteúdo, os textos, os logotipos e as imagens deverão pertencer à Wonderland Song.
+A identidade visual, o conteúdo, os textos e as imagens pertencem à Wonderland Song.
 
 ---
 
-# 3. Regra sobre os arquivos do POFO
+## 3. Regra sobre os arquivos do POFO
 
 Os arquivos visuais e o código-fonte do template POFO somente poderão ser utilizados quando o proprietário do projeto possuir uma licença válida do produto.
 
-## 3.1 Quando houver licença
+### 3.1 Quando houver licença
 
-Se os arquivos licenciados forem colocados no repositório, o Codex poderá:
+Se os arquivos licenciados forem colocados no repositório, é permitido:
 
 * analisar a estrutura;
 * reutilizar imagens permitidas pela licença;
-* converter o layout para React;
-* converter estilos para Tailwind CSS;
+* converter o layout para React / Tailwind;
 * substituir jQuery e Bootstrap;
-* preservar apenas os elementos autorizados;
 * documentar quais arquivos vieram do pacote licenciado.
 
-## 3.2 Quando não houver licença
+### 3.2 Quando não houver licença (estado atual)
 
-O Codex deverá:
-
-* não baixar imagens diretamente da demonstração;
-* não copiar o código HTML, CSS ou JavaScript da página;
+* não baixar imagens da demonstração pública;
+* não copiar HTML, CSS ou JavaScript da demo;
 * não fazer hotlink das imagens;
-* utilizar placeholders;
-* utilizar imagens próprias da Wonderland Song;
+* usar imagens próprias da Wonderland Song;
 * reproduzir apenas a ideia geral do layout;
-* criar implementação original.
+* manter implementação original.
 
-## 3.3 Pasta para arquivos licenciados
-
-Caso exista licença:
+### 3.3 Pasta para arquivos licenciados
 
 ```text
 reference/
 └── pofo-licensed/
 ```
 
-Essa pasta não deverá ser publicada automaticamente no site.
-
-Ela servirá apenas como referência de desenvolvimento.
+Essa pasta não deve ser publicada no site. Serve apenas como referência de desenvolvimento. **No repositório atual ela não existe.**
 
 ---
 
-# 4. Objetivo principal
+## 4. Objetivo principal
 
 Apresentar a Wonderland Song como um universo musical composto por vários projetos artísticos.
 
-A home deverá funcionar como uma galeria vertical e cinematográfica.
+A home funciona como uma galeria vertical e cinematográfica. Cada rolagem revela um projeto diferente.
 
-Cada rolagem revelará um projeto diferente.
-
-O visitante deverá perceber:
-
-* profundidade;
-* movimento;
-* continuidade;
-* elegância;
-* mistério;
-* identidade musical;
-* transição entre universos.
+O visitante deve perceber: profundidade, movimento, continuidade, elegância, mistério, identidade musical e transição entre universos.
 
 ---
 
-# 5. Objetivos específicos
+## 5. Objetivos específicos
 
-* Criar uma home parallax;
-* Exibir projetos em tela cheia;
-* Exibir artistas e compositores;
-* Exibir álbuns e singles;
-* Exibir videoclipes;
-* Integrar Spotify e YouTube;
-* Criar páginas individuais;
-* Criar menu responsivo;
-* Criar experiência mobile adaptada;
-* Garantir carregamento eficiente;
-* Manter boa acessibilidade;
-* Preparar o site para conteúdo dinâmico;
-* Preparar futura integração com uma API Node.js.
+| Objetivo | Status |
+| --- | --- |
+| Home parallax em painéis de tela cheia | **Feito** |
+| Exibir projetos / selos artísticos | **Feito** (7 painéis) |
+| Páginas individuais de projeto (história + discografia) | **Feito** |
+| Páginas de álbum (faixas, letras, clips, easter eggs) | **Feito** |
+| Integração Spotify e YouTube | **Feito** (links + ícones + galeria de clips) |
+| Menu responsivo + menu mobile overlay | **Feito** |
+| Parallax adaptado a mobile | **Feito** |
+| Reduced motion | **Feito** (vídeo desligado; parallax mobile desligado) |
+| SEO (title, OG, Twitter, canonical, JSON-LD, sitemap, robots) | **Feito** |
+| Lazy loading de rotas + code splitting | **Feito** |
+| Página “em construção” para rotas inexistentes | **Feito** |
+| Botão scroll-to-top | **Feito** |
+| Letras e explicações em modal por faixa | **Feito** (BLM, AGM, HS, USS em grande parte) |
+| Página dedicada de artistas (`/artists`) | **Pendente** |
+| Página de lançamentos agregada (`/releases`) | **Pendente** |
+| Página de vídeos agregada (`/videos`) | **Pendente** |
+| Hero intro separado da sequência de projetos | **Não feito** (1º painel = selo Wonderland Song) |
+| Seção de artistas na home | **Não feito** (dados placeholder ainda existem em `content.ts`) |
+| API Node.js / CMS | **Futuro** |
+| i18n (PT/EN) | **Futuro** |
+| Playwright e2e | **Não configurado** (apenas Vitest) |
 
 ---
 
-# 6. Stack tecnológica
+## 6. Stack tecnológica
 
-## 6.1 Front-end
+### 6.1 Front-end (implementado)
 
-Utilizar:
+| Tecnologia | Uso |
+| --- | --- |
+| React 18 | UI |
+| TypeScript | Tipagem estrita (sem `any`) |
+| Vite 5 | Build e dev server |
+| Tailwind CSS 3 | Estilos utilitários |
+| Framer Motion | Menu mobile, `useReducedMotion` |
+| React Router 6 | Rotas SPA |
+| Lucide React | Ícones (menu, play, etc.) |
+| React Helmet Async | SEO / head tags |
+| Zod | Dependência presente; validação de API ainda não é o foco |
+| Vitest + Testing Library + jsdom | Testes unitários/integração de rotas |
 
-* React;
-* TypeScript;
-* Vite;
-* Tailwind CSS;
-* Motion for React;
-* React Router;
-* Lucide React;
-* React Helmet Async;
-* Zod;
-* Vitest;
-* React Testing Library;
-* Playwright.
+**Scripts npm:** `dev`, `build`, `lint`, `typecheck`, `test`.
 
-## 6.2 Rolagem e animação
+### 6.2 Parallax e animação (decisão de implementação)
 
-Utilizar:
+Implementação **híbrida**, otimizada para performance:
 
-* Motion `useScroll`;
-* Motion `useTransform`;
-* Motion `useSpring`;
-* Motion `useReducedMotion`;
-* Intersection Observer quando necessário;
-* CSS `position: sticky`;
-* CSS transforms;
-* Lenis opcional para suavização.
+* **Desktop:** CSS `position: fixed` + `clip` na mídia do painel (sem JS no scroll).
+* **Mobile (≤900px):** loop `requestAnimationFrame` compartilhado (`useMobileParallax`) com `translate3d` em inteiros para simular o mesmo efeito de “janela”.
+* **Reduced motion:** não usa vídeo de fundo; desliga o parallax mobile.
+* Animações do menu: Framer Motion (`AnimatePresence`).
+* Não usa jQuery, Bootstrap, scroll hijacking nem timers para posição de scroll.
 
-Não utilizar jQuery.
+Hooks relacionados:
 
-Não utilizar Bootstrap.
+* `src/hooks/useMobileParallax.ts` — parallax mobile compartilhado;
+* `src/hooks/useParallaxFixedMedia.ts` — utilitário de mídia fixa (API disponível);
+* `src/hooks/useActivePanelTone.ts` — contraste do header conforme o painel ativo;
+* `src/utils/luminance.ts` — detecção de tom claro/escuro da imagem.
 
-Não manipular a posição de rolagem com timers.
+### 6.3 Back-end (futuro)
 
-## 6.3 Back-end
+Planejado, **não implementado**:
 
-Utilizar posteriormente:
-
-* Node.js;
-* TypeScript;
+* Node.js + TypeScript;
 * Fastify;
-* Prisma;
-* PostgreSQL;
+* Prisma + PostgreSQL;
 * Zod;
 * Pino.
 
-Na primeira etapa, os dados poderão vir de arquivos TypeScript locais.
+Na fase atual, **todos os dados vêm de arquivos TypeScript locais** em `src/data/`.
 
 ---
 
-# 7. Estrutura esperada
+## 7. Estrutura real do repositório
 
 ```text
-wonderland-song/
+wonderlandsong2/
 ├── public/
 │   ├── images/
-│   │   ├── brand/
-│   │   ├── projects/
-│   │   ├── artists/
-│   │   ├── releases/
-│   │   └── backgrounds/
+│   │   ├── albums/          # capas WebP dos álbuns
+│   │   ├── *.webp / *.png   # artes dos painéis da home
+│   │   └── bunnyatwork.png  # fallback “em construção”
 │   ├── videos/
-│   └── favicon/
+│   │   └── wonderland2.mp4  # hero/selo (painel 1)
+│   ├── robots.txt
+│   └── sitemap.xml
 │
 ├── src/
-│   ├── app/
-│   ├── assets/
 │   ├── components/
 │   │   ├── layout/
-│   │   ├── navigation/
+│   │   │   ├── Header.tsx
+│   │   │   ├── ScrollToTop.tsx
+│   │   │   └── ScrollToTopOnNavigate.tsx
 │   │   ├── parallax/
+│   │   │   └── ParallaxProjectPanel.tsx
 │   │   ├── project/
+│   │   │   ├── AlbumClipsGallery.tsx
+│   │   │   ├── EasterEggsModal.tsx
+│   │   │   └── TrackLyricsModal.tsx
+│   │   ├── seo/
+│   │   │   └── Seo.tsx
 │   │   └── ui/
+│   │       ├── SpotifyIcon.tsx
+│   │       └── YouTubeIcon.tsx
+│   ├── config/
+│   │   └── site.ts            # SITE_URL, nome, description, absoluteUrl()
 │   ├── data/
-│   ├── features/
+│   │   ├── content.ts         # projetos, detalhes, álbuns, artists/releases placeholder
+│   │   ├── site-routes.ts     # paths públicos (sitemap/SEO)
+│   │   ├── agm-lyrics.ts
+│   │   ├── blm-chapter1-lyrics.ts … blm-chapter4-lyrics.ts
+│   │   ├── helena-son-lyrics.ts
+│   │   └── uss-1937-lyrics.ts
 │   ├── hooks/
-│   ├── layouts/
+│   │   ├── useActivePanelTone.ts
+│   │   ├── useMobileParallax.ts
+│   │   └── useParallaxFixedMedia.ts
 │   ├── pages/
-│   ├── routes/
-│   ├── sections/
+│   │   ├── HomePage.tsx
+│   │   ├── ProjectDetailPage.tsx   # layout compartilhado + rota
+│   │   ├── BunnyAlbumPage.tsx      # página de álbum genérica
+│   │   ├── BunnyLandMusicPage.tsx  # @deprecated (compat)
+│   │   └── ComingSoonPage.tsx
 │   ├── styles/
+│   │   └── index.css               # tokens + CSS do parallax
 │   ├── types/
+│   │   └── index.ts
 │   ├── utils/
+│   │   └── luminance.ts
+│   ├── test/
+│   │   └── setup.ts
 │   ├── App.tsx
+│   ├── App.test.tsx
 │   └── main.tsx
 │
-├── docs/
-│   ├── storyboard/
-│   ├── architecture/
-│   ├── assets/
-│   └── decisions/
-│
-├── .env.example
+├── dist/                    # build de produção
 ├── package.json
-├── README.md
-├── SDD.md
-└── vite.config.ts
+├── vite.config.ts           # manualChunks (react, framer-motion, helmet)
+├── vitest.config.ts
+├── tailwind.config.js
+├── eslint.config.js
+├── sdd.md                   # este documento
+└── README.md
 ```
 
 ---
 
-# 8. Arquitetura da home
-
-A home deverá possuir os seguintes blocos:
+## 8. Arquitetura da home (como está)
 
 ```text
-Header
-Hero de introdução
-Projeto 1
-Projeto 2
-Projeto 3
-Projeto 4
-Artistas
-Vídeos
-Próximos lançamentos
-Sobre
-Rodapé
+Header (fixo, contraste dinâmico, menu desktop + mobile)
+Painel 1 — Wonderland Song (selo + vídeo + YouTube)
+Painel 2 — Bunny Land Music
+Painel 3 — Rosa Negra de Halfeti
+Painel 4 — A Grande Multidão
+Painel 5 — Helena Son
+Painel 6 — USS Shenandoah
+Painel 7 — Lameck & Southern Birds Band
+Footer minimalista (“Wonderland Song” + tagline)
+ScrollToTop
 ```
 
-Os projetos principais deverão ser exibidos como painéis parallax.
+**Observação de produto:** a home **não** tem seções separadas de Hero, Artistas, Vídeos, Sobre e Contato como no storyboard original. O primeiro painel cumpre o papel de apresentação do selo; as demais seções permanecem em backlog ou como páginas internas.
 
 ---
 
-# 9. Header
+## 9. Header
 
-## 9.1 Aparência
+### 9.1 Implementado
 
-O header deverá ser:
+* fixo e transparente sobre os painéis;
+* contraste dinâmico (`light` / `dark`) via `useActivePanelTone` + `headerTone` opcional no projeto;
+* navegação desktop por âncoras dos painéis: Selo, BLM, RNH, AGM, HS, USSS, LSBB;
+* menu mobile em tela cheia (portal + fundo sólido legível);
+* fechamento com `Escape`, clique no backdrop e botão fechar;
+* `body` scroll lock com menu aberto;
+* animação de entrada/saída com Framer Motion.
 
-* transparente;
-* fixo;
-* discreto;
-* sobreposto às imagens;
-* responsivo;
-* legível em fundos claros e escuros.
+### 9.2 Ainda não na home (backlog de navegação global)
 
-## 9.2 Conteúdo
-
-Exibir:
-
-* logotipo Wonderland Song;
-* Home;
-* Projetos;
-* Artistas;
-* Lançamentos;
-* Vídeos;
-* Sobre;
-* Contato;
-* botão do menu mobile;
-* links sociais opcionais.
-
-## 9.3 Comportamento
-
-No topo:
-
-* transparente;
-* logotipo claro;
-* menu claro.
-
-Após rolagem:
-
-* aplicar fundo translúcido;
-* aplicar blur leve;
-* reduzir a altura;
-* preservar contraste.
-
-No mobile:
-
-* usar menu overlay em tela cheia;
-* manter navegação por teclado;
-* permitir fechamento com `Escape`.
+Itens do SDD original ainda não existem como seções/rotas de menu: Artistas, Lançamentos, Vídeos, Sobre, Contato (o footer tem `id="contact"` mas sem formulário).
 
 ---
 
-# 10. Hero inicial
+## 10. Painéis parallax
 
-## 10.1 Objetivo
-
-Apresentar a marca antes dos projetos.
-
-## 10.2 Conteúdo
-
-```text
-WONDERLAND SONG
-
-Music, stories and imagined worlds.
-
-Explore the projects
-```
-
-## 10.3 Visual
-
-Utilizar:
-
-* imagem ou composição original da Wonderland Song;
-* fundo em tela cheia;
-* sobreposição escura;
-* logotipo central;
-* texto minimalista;
-* indicador de rolagem;
-* movimento parallax sutil.
-
-## 10.4 Animação
-
-Durante a primeira rolagem:
-
-* o fundo se moverá lentamente;
-* o texto subirá;
-* a opacidade do texto diminuirá;
-* a primeira seção de projeto surgirá;
-* o header assumirá seu estado compacto.
-
----
-
-# 11. Painel de projeto parallax
-
-Criar um componente reutilizável:
+### 10.1 Componente
 
 ```text
 ParallaxProjectPanel
 ```
 
-Cada painel deverá ocupar no mínimo:
+Arquivo: `src/components/parallax/ParallaxProjectPanel.tsx`
 
-```text
-100vh
-```
-
-Em telas grandes, poderá usar:
-
-```text
-110vh a 130vh
-```
-
-## 11.1 Conteúdo
-
-Cada projeto deverá possuir:
-
-* número;
-* categoria;
-* título;
-* subtítulo;
-* imagem principal;
-* imagem mobile;
-* posição do conteúdo;
-* cor do texto;
-* sobreposição;
-* descrição curta;
-* botão;
-* link interno;
-* crédito opcional.
-
-## 11.2 Composição
-
-Cada painel deverá conter:
-
-```text
-camada de fundo
-camada de imagem
-camada de sobreposição
-camada de conteúdo
-camada decorativa opcional
-```
-
-## 11.3 Movimento
-
-O fundo e o conteúdo deverão mover-se em velocidades diferentes.
-
-Exemplo:
-
-```text
-Imagem de fundo: deslocamento vertical de -8% a 8%
-Conteúdo: deslocamento vertical de 40px a -40px
-Elemento decorativo: deslocamento de 15% a -15%
-Escala da imagem: 1.05 a 1.12
-Opacidade do conteúdo: 0 → 1 → 1 → 0
-```
-
-## 11.4 Entrada e saída
-
-Entrada:
-
-* imagem aparece parcialmente;
-* conteúdo entra de baixo;
-* categoria aparece primeiro;
-* título aparece em seguida;
-* botão aparece por último.
-
-Centro:
-
-* composição totalmente visível;
-* movimento mínimo;
-* interação disponível.
-
-Saída:
-
-* imagem continua deslocando;
-* texto desaparece;
-* próximo painel sobrepõe parcialmente;
-* não realizar corte abrupto.
-
----
-
-# 12. Alternância dos painéis
-
-Os conteúdos deverão alternar sua posição para criar ritmo visual.
-
-Exemplo:
-
-```text
-Projeto 1: conteúdo à esquerda
-Projeto 2: conteúdo à direita
-Projeto 3: conteúdo central
-Projeto 4: conteúdo à esquerda
-Projeto 5: conteúdo à direita
-```
-
-Em mobile:
-
-* conteúdo sempre alinhado de forma legível;
-* evitar posicionamentos extremos;
-* aplicar gradiente atrás do texto.
-
----
-
-# 13. Projetos iniciais
-
-## 13.1 Bunny Land Music
-
-Categoria:
-
-```text
-Electronic Music · Visual Storytelling
-```
-
-Título:
-
-```text
-Bunny Land Music
-```
-
-Descrição:
-
-```text
-Uma viagem entre música eletrônica, personagens, universos fantásticos e narrativas audiovisuais.
-```
-
-Direção visual:
-
-* floresta;
-* estrada;
-* máscara de coelho;
-* luzes coloridas;
-* atmosfera surreal;
-* elementos de fantasia;
-* fundo escuro.
-
----
-
-## 13.2 Caution! Audio Gateway
-
-Categoria:
-
-```text
-Dark EDM · Audiovisual Project
-```
-
-Título:
-
-```text
-CAUTION! AUDIO GATEWAY
-```
-
-Descrição:
-
-```text
-Um portal sonoro construído com energia, ficção científica, suspense e música eletrônica.
-```
-
-Direção visual:
-
-* portal;
-* corredor;
-* luzes de alerta;
-* fumaça;
-* sinais digitais;
-* ambiente futurista;
-* tons escuros.
-
----
-
-## 13.3 Rosa Negra de Halfeti
-
-Categoria:
-
-```text
-MPB · Jazz · Poetry
-```
-
-Título:
-
-```text
-Rosa Negra de Halfeti
-```
-
-Descrição:
-
-```text
-Poesia transformada em música por meio de atmosferas brasileiras, jazz contemporâneo e narrativas intimistas.
-```
-
-Direção visual:
-
-* rosa negra;
-* piano;
-* neblina;
-* reflexos;
-* elegância;
-* composição cinematográfica;
-* tons escuros e dourados.
-
----
-
-## 13.4 Wonderland Song TV
-
-Categoria:
-
-```text
-Music Videos · Original Productions
-```
-
-Título:
-
-```text
-The Wonderland Song TV
-```
-
-Descrição:
-
-```text
-Videoclipes, lançamentos e projetos audiovisuais reunidos em um único canal.
-```
-
-Direção visual:
-
-* estúdio;
-* telas;
-* cinema;
-* iluminação de palco;
-* elementos fantásticos;
-* cenário próprio da marca.
-
----
-
-## 13.5 Compositores
-
-Categoria:
-
-```text
-Artists · Composers · Musicians
-```
-
-Título:
-
-```text
-The People Behind the Music
-```
-
-Exibir:
-
-* Lameck S. Fernandes;
-* Adriano Lima;
-* Rodrigo Alves.
-
-Direção visual:
-
-* retratos originais;
-* fundo escuro;
-* iluminação lateral;
-* composição editorial;
-* nomes em tipografia grande.
-
----
-
-# 14. Dados dos projetos
-
-Criar inicialmente:
+### 10.2 Modelo de dados do painel (`Project`)
 
 ```ts
 export type Project = {
   id: string;
-  slug: string;
-  order: number;
-  title: string;
-  subtitle?: string;
   category: string;
-  description: string;
-  desktopImage: string;
-  mobileImage: string;
-  imageAlt: string;
-  overlay: "light" | "medium" | "dark";
-  contentPosition: "left" | "center" | "right";
-  textTheme: "light" | "dark";
-  accentColor?: string;
+  title: string;
+  image: string;
+  video?: string;
+  filterColor?: string;
+  filterOpacity?: number;
+  headerTone?: 'light' | 'dark';
   href: string;
-  isPublished: boolean;
+  buttonLabel?: string;
+  message?: string;
+  spotifyUrl?: string;
+  spotifyLabel?: string;
+  youtubeUrl?: string;
+  youtubeLabel?: string;
 };
 ```
 
-Os dados iniciais deverão ficar em:
+Fonte: `src/data/content.ts` → `export const projects`.
 
-```text
-src/data/projects.ts
-```
+### 10.3 Comportamento visual
 
-Posteriormente serão movidos para a API.
+* painel com `min-height` ~70–72vh (CSS em `index.css`);
+* mídia full-bleed com `object-fit: cover`;
+* gradiente sutil sobre a imagem para legibilidade;
+* filtro de cor opcional (`filterColor` / `filterOpacity`);
+* categoria + título em “labels” brancos;
+* mensagem opcional sob o título;
+* ações: link interno “Abrir projeto”, botões circulares Spotify / YouTube;
+* vídeo de fundo só no painel do selo (e só se não houver reduced motion).
 
----
+### 10.4 CSS principal
 
-# 15. Componente ParallaxProjectPanel
+Classes em `src/styles/index.css`:
 
-API esperada:
-
-```ts
-type ParallaxProjectPanelProps = {
-  project: Project;
-  index: number;
-};
-```
-
-O componente deverá:
-
-* receber os dados do projeto;
-* observar o progresso da seção;
-* mover a imagem;
-* mover o conteúdo;
-* aplicar escala;
-* aplicar opacidade;
-* respeitar reduced motion;
-* utilizar imagem mobile;
-* apresentar link acessível;
-* não conhecer regras de negócio externas.
+* `.parallax-panel`
+* `.parallax-media` / `__clip` / `__layer` / `__asset`
 
 ---
 
-# 16. Páginas individuais
+## 11. Projetos da home (estado atual)
 
-Cada projeto deverá possuir uma página própria.
+| # | Título | Categoria | Rota principal | Links externos |
+| --- | --- | --- | --- | --- |
+| 1 | Wonderland Song | Record Label | `/projects/wonderland-song` (ainda sem detalhe → Coming Soon) | YouTube canal |
+| 2 | Bunny Land Music | Dark EDM + Pop | `/projects/bunny-land-music` | Spotify + YouTube |
+| 3 | Rosa Negra de Halfeti | MPB · Experimental · Atmosférico | `/projects/rosa-negra-halfeti` | YouTube |
+| 4 | A Grande Multidão | Gospel + TJ | `/projects/a-grande-multidao` | Spotify |
+| 5 | Helena Son | Grunge | `/projects/helena-son` | Spotify |
+| 6 | USS Shenandoah | Hard Rock 1960 | `/projects/uss-shenandoah` | Spotify |
+| 7 | Lameck & Southern Birds Band | Blues | `/projects/lameck-southern-birds-band` | Spotify |
 
-Rotas:
+### 11.1 Evolução em relação ao SDD original
 
-```text
-/projects
-/projects/:slug
-```
-
-A página individual deverá conter:
-
-* hero;
-* imagem principal;
-* nome;
-* categoria;
-* descrição;
-* conceito;
-* artistas;
-* lançamentos relacionados;
-* vídeos;
-* galeria;
-* créditos;
-* links externos;
-* navegação para projeto anterior e próximo.
-
-O visual poderá ser mais simples que o da home, mas deverá preservar a identidade.
+* **Caution! Audio Gateway** deixou de ser painel isolado na home e passou a ser **Chapter 1** de Bunny Land Music.
+* **Wonderland Song TV** não é painel separado; o canal YouTube está ligado ao painel do selo.
+* **Compositores / artistas** não formam painel na home; conteúdo de artistas reais está nas histórias dos projetos (Lameck, Adriano, Rodrigo, etc.).
+* Entraram projetos novos: **A Grande Multidão**, **Helena Son**, **USS Shenandoah**, **LSBB**.
 
 ---
 
-# 17. Página de artistas
+## 12. Rotas
 
-Rotas:
+### 12.1 Implementadas
 
 ```text
+/                                              Home parallax
+/projects/:projectSlug                         Detalhe do projeto
+/projects/:projectSlug/albums/:albumSlug       Detalhe do álbum
+*                                              ComingSoonPage (bunny at work)
+```
+
+Code splitting: `React.lazy` + `Suspense` em `App.tsx` para Home, ProjectDetail, BunnyAlbum e ComingSoon.
+
+### 12.2 Navegação e fallbacks
+
+* projeto desconhecido na rota de detalhe → `ComingSoonPage`;
+* álbum desconhecido → redirect para a página do projeto;
+* `ScrollToTopOnNavigate` reseta scroll em mudança de rota.
+
+### 12.3 Planejadas (não implementadas)
+
+```text
+/projects                 índice de projetos
 /artists
 /artists/:slug
-```
-
-Exibir:
-
-* retrato;
-* nome;
-* função;
-* biografia;
-* instrumentos;
-* projetos;
-* lançamentos;
-* vídeos;
-* redes sociais.
-
----
-
-# 18. Página de lançamentos
-
-Rotas:
-
-```text
 /releases
 /releases/:slug
-```
-
-Exibir:
-
-* capa;
-* título;
-* artista;
-* tipo;
-* data;
-* descrição;
-* lista de faixas;
-* créditos;
-* Spotify;
-* YouTube;
-* projeto relacionado.
-
----
-
-# 19. Página de vídeos
-
-Rota:
-
-```text
 /videos
 ```
 
-Exibir:
+---
 
-* vídeo em destaque;
-* galeria;
-* filtros;
-* thumbnails;
-* modal de reprodução;
-* links do YouTube.
+## 13. Página de projeto (`ProjectDetailPage`)
 
-Não carregar o iframe do YouTube até ocorrer interação.
+Layout compartilhado (`ProjectDetailView`) para todos os projetos com detalhe cadastrado:
+
+* header sticky com link à home e âncoras (álbuns / história / ouvir);
+* hero com imagem, categoria, título, tagline;
+* links Spotify / YouTube do projeto;
+* galeria de álbuns (“Álbuns lançados”) com cards e CTA “Ver álbum”;
+* bloco de história (lead, pull quote, seções, closing, fonte opcional);
+* footer do projeto;
+* SEO + JSON-LD `MusicGroup`.
+
+### 13.1 Modelo `ProjectDetail`
+
+```ts
+export type ProjectDetail = {
+  slug: string;
+  title: string;
+  category: string;
+  image: string;
+  tagline: string;
+  historyTitle: string;
+  historyLead: string;
+  pullQuote?: string;
+  historySections: ProjectHistorySection[];
+  historyClosing?: string;
+  historySourceUrl?: string;
+  historySourceLabel?: string;
+  spotifyUrl?: string;
+  spotifyLabel?: string;
+  youtubeUrl?: string;
+  youtubeLabel?: string;
+  footerNote?: string;
+  albumsEmptyMessage?: string;
+};
+```
+
+### 13.2 Projetos com detalhe cadastrado
+
+| Slug | Discografia |
+| --- | --- |
+| `bunny-land-music` | 4 chapters (Caution, In The Forest, In Time With Your Heart, Listen To Daddy) |
+| `rosa-negra-halfeti` | sem álbuns no site (mensagem vazia / história + YouTube) |
+| `a-grande-multidao` | 1 álbum: A Verdade Ainda Chama |
+| `helena-son` | 4 álbuns Genesis: Plastic Grace, New Day, The Computer, Unplugged |
+| `uss-shenandoah` | 1 álbum: 1937 |
+| `lameck-southern-birds-band` | 2 álbuns: Passalacqua, Instinct in Minor Key |
+
+Registro: `projectDetailsBySlug` e `projectAlbumsBySlug` em `content.ts`.
+
+Helpers:
+
+* `getProjectDetailBySlug`
+* `getProjectAlbums`
+* `getProjectAlbum`
+* `getBunnyAlbumBySlug` (deprecated)
 
 ---
 
-# 20. Identidade visual
+## 14. Página de álbum (`BunnyAlbumPage`)
 
-## 20.1 Cores
+Rota: `/projects/:projectSlug/albums/:albumSlug`
+
+Conteúdo típico:
+
+* breadcrumb / voltar ao projeto;
+* capa, capítulo, ano, tipo, resumo e descrição;
+* links: Spotify, Bandcamp, YouTube, Genius (quando existirem);
+* botão **Easter Eggs** (modal) quando `easterEgg` está definido;
+* lista de faixas com abertura de **modal de letras** (`TrackLyricsModal`);
+* faixas extras (`extraTracks`) quando existirem;
+* galeria de **clips musicais** (`AlbumClipsGallery`) — iframe YouTube só após interação;
+* navegação álbum anterior / próximo;
+* SEO + JSON-LD `MusicAlbum`.
+
+### 14.1 Modelo `ProjectAlbum`
+
+```ts
+export type ProjectAlbum = {
+  slug: string;
+  title: string;
+  chapter?: string;
+  year: string;
+  type: 'Album' | 'EP' | 'Single' | 'Demo';
+  cover: string;
+  summary: string;
+  description: string[];
+  warning?: string;
+  duration?: string;
+  trackCount?: number;
+  spotifyUrl?: string;
+  bandcampUrl?: string;
+  youtubeUrl?: string;
+  lyricsUrl?: string;
+  lyricsLabel?: string;
+  easterEgg?: { title: string; subtitle?: string; intro: string; note?: string };
+  tracks: BunnyAlbumTrack[];
+  extraTracks?: BunnyAlbumTrack[];
+  extraTracksLabel?: string;
+  clips: BunnyAlbumClip[];
+};
+```
+
+### 14.2 Letras
+
+Arquivos dedicados em `src/data/*-lyrics.ts` com faixas, letras e `lyricsExplanation` (seções, versículos, mensagens).
+
+Modais:
+
+* `TrackLyricsModal` — letra + explicação;
+* `EasterEggsModal` — mapa de revelações (ex.: Chapter 3 BLM com dedicatórias por faixa).
+
+---
+
+## 15. SEO
+
+### 15.1 Implementado
+
+* componente `Seo` (`react-helmet-async`): title, description, robots, canonical, Open Graph, Twitter Cards, JSON-LD;
+* `src/config/site.ts`: `SITE_URL` (via `VITE_SITE_URL`), `SITE_NAME`, `SITE_DEFAULT_DESCRIPTION`, `absoluteUrl()`;
+* `public/robots.txt` e `public/sitemap.xml` (URLs absolutas devem refletir a **URL real do deploy**, não um domínio `.com` inventado);
+* `getPublicSitePaths()` em `site-routes.ts` para manter a lista de paths alinhada ao conteúdo;
+* `noIndex` na página Coming Soon;
+* tipos JSON-LD em uso: `Organization`, `WebSite`, `MusicGroup`, `MusicAlbum`.
+
+### 15.2 Backlog SEO
+
+* alinhar fallback de `SITE_URL`, `sitemap.xml`, `robots.txt` e `index.html` à URL estável do deploy (ou gerar no build);
+* JSON-LD `Person`, `MusicRecording`, `VideoObject` de forma mais completa;
+* geração automática do sitemap no build a partir de `getPublicSitePaths()` (hoje o XML é estático em `public/`);
+* domínio próprio, quando for adquirido.
+
+---
+
+## 16. Performance
+
+### 16.1 Já aplicado
+
+* code splitting por rota (`React.lazy`);
+* `manualChunks` no Vite: `react-vendor`, `framer-motion`, `react-helmet`;
+* imagens WebP nas capas e painéis (quando disponível);
+* vídeo de fundo só no painel 1, muted/loop/playsInline, desligado com reduced motion;
+* YouTube embed sob demanda na galeria de clips;
+* parallax desktop sem listener de scroll;
+* parallax mobile com rAF compartilhado e transform em inteiros;
+* `decoding="async"` nas imagens dos painéis.
+
+### 16.2 Metas (mantidas)
+
+```text
+Lighthouse Performance desktop: > 90
+Lighthouse Performance mobile:  > 80
+Accessibility:                  > 90
+SEO:                            > 90
+CLS:                            < 0.1
+```
+
+### 16.3 Regras
+
+* preferir animar `transform` e `opacity`;
+* não bloquear a home esperando todas as imagens;
+* não guardar posição de scroll em estado React.
+
+---
+
+## 17. Acessibilidade
+
+Implementado em grande parte:
+
+* HTML semântico em seções e headings;
+* foco visível em botões/links (`focus-visible:outline`);
+* menu mobile com `role="dialog"`, `aria-modal`, Escape;
+* modais de letras / easter eggs / player de clip com dialog + Escape + lock de scroll;
+* alt em imagens de conteúdo (mídia decorativa de parallax com `alt=""` + `aria-label` no painel);
+* `prefers-reduced-motion` respeitado;
+* targets de toque ≥ ~44px em CTAs principais.
+
+Melhorias futuras: focus trap completo em todos os modais, hierarquia de `h1` auditada por página, testes a11y automatizados.
+
+---
+
+## 18. Identidade visual
+
+### 18.1 Cores de referência
 
 ```css
---color-background: #05030a;
+--color-background: #05030a;   /* páginas internas */
 --color-surface: #0e0915;
 --color-text: #f7f5fa;
 --color-muted: #aaa3b4;
@@ -790,529 +587,218 @@ Não carregar o iframe do YouTube até ocorrer interação.
 --color-accent-gold: #d6b36a;
 ```
 
-## 20.2 Tipografia
+Home usa fundo claro (`#ffffff` / texto `#171717`) nos painéis; páginas de projeto/álbum usam o tema escuro `#05030a`.
 
-Utilizar:
+### 18.2 Tipografia (estado atual)
 
-* títulos: Cormorant Garamond, Cinzel ou equivalente;
-* textos: Inter, Manrope ou equivalente;
-* categorias: letras maiúsculas e espaçamento ampliado.
+* stack do sistema / Arial-Helvetica no CSS base (fonte editorial dedicada — Cormorant/Cinzel/Inter — ainda **não** foi amarrada via `@font-face` ou Google Fonts no build).
 
-## 20.3 Regras
+### 18.3 Regras
 
-* utilizar bastante espaço negativo;
+* espaço negativo generoso;
 * não sobrecarregar as imagens;
-* títulos grandes;
-* categorias pequenas;
-* botões discretos;
-* manter contraste;
-* não usar visual corporativo genérico;
-* preservar a atmosfera artística.
+* categorias em caixa alta com tracking amplo;
+* botões discretos (ou brand colors Spotify/YouTube);
+* atmosfera artística, não visual corporativo genérico.
 
 ---
 
-# 21. Animações
+## 19. Imagens e mídia
 
-## 21.1 Animações obrigatórias
-
-* parallax vertical;
-* escala suave da imagem;
-* entrada do título;
-* entrada da categoria;
-* entrada da descrição;
-* transição entre painéis;
-* header reagindo ao scroll;
-* indicador de rolagem;
-* hover dos botões;
-* transição de rotas.
-
-## 21.2 Restrições
-
-Não utilizar:
-
-* animação excessiva em todos os elementos;
-* rotação exagerada;
-* scroll hijacking;
-* alteração artificial da velocidade da barra;
-* timers;
-* animação de propriedades caras;
-* WebGL na primeira versão;
-* autoplay de vídeos com som.
-
----
-
-# 22. Mobile
-
-No mobile:
-
-* utilizar imagens próprias para orientação vertical;
-* reduzir intensidade do parallax;
-* reduzir escala;
-* manter textos dentro da área segura;
-* usar gradiente atrás do conteúdo;
-* evitar textos muito grandes;
-* desativar movimentos complexos;
-* preservar todos os links;
-* garantir toque confortável.
-
-Cada projeto deverá possuir:
+### 19.1 Organização atual
 
 ```text
-desktopImage
-mobileImage
+public/images/           painéis da home + bunnyatwork
+public/images/albums/    capas dos álbuns (WebP)
+public/videos/           wonderland2.mp4
 ```
 
-Não utilizar apenas `background-position` para adaptar imagens importantes.
+### 19.2 Regras
+
+* preferir WebP/AVIF; PNG para transparência quando necessário;
+* sem hotlink de demos de terceiros;
+* assets locais ou storage autorizado;
+* comprimir antes da publicação;
+* ponto focal preservado com `object-fit: cover`.
+
+### 19.3 Placeholder legado
+
+`artists` e `releases` em `content.ts` ainda apontam para SVGs placeholder (`/images/artists/*`, `/images/releases/*`) **não usados na UI atual**. Podem ser substituídos quando as páginas `/artists` e `/releases` forem construídas.
 
 ---
 
-# 23. Reduced motion
+## 20. Página Coming Soon
 
-Quando o usuário preferir menos movimento:
+`ComingSoonPage`:
 
-* remover o deslocamento parallax;
-* remover zoom contínuo;
-* manter fades curtos;
-* mostrar conteúdo completo;
-* manter transições simples;
-* evitar elementos flutuantes.
+* imagem `bunnyatwork.png`;
+* mensagem “Estamos trabalhando nesta página”;
+* link “Voltar ao site”;
+* `noIndex` no SEO.
 
-O site deverá continuar visualmente completo.
+Usada para:
 
----
-
-# 24. Imagens
-
-## 24.1 Formatos
-
-Preferir:
-
-* AVIF;
-* WebP;
-* PNG apenas para transparência;
-* JPEG apenas quando necessário.
-
-## 24.2 Tamanhos sugeridos
-
-Desktop:
-
-```text
-2400 × 1600
-1920 × 1280
-```
-
-Mobile:
-
-```text
-900 × 1400
-1080 × 1600
-```
-
-## 24.3 Regras
-
-* não usar hotlink;
-* armazenar os arquivos localmente ou em storage autorizado;
-* informar autoria;
-* possuir autorização de uso;
-* escrever texto alternativo;
-* criar versões responsivas;
-* preservar o ponto focal;
-* comprimir antes da publicação.
+* rotas `*` desconhecidas;
+* projetos sem detalhe (ex.: `/projects/wonderland-song` se ainda não houver entry em `projectDetailsBySlug`).
 
 ---
 
-# 25. Loading
+## 21. Testes
 
-Carregar primeiro:
+Arquivo principal: `src/App.test.tsx` (Vitest + Testing Library + MemoryRouter + HelmetProvider).
 
-* logotipo;
-* imagem do hero;
-* imagem do primeiro projeto;
-* fontes essenciais.
+Cobre, entre outros:
 
-Carregar depois:
+* shell da home parallax (títulos dos projetos);
+* fallback bunny-at-work;
+* páginas BLM, RNH, AGM;
+* galeria e página de álbum (Chapter 3, Easter Eggs, clips Chapter 1);
+* redirect de álbum inexistente.
 
-* projetos seguintes;
-* artistas;
-* vídeos;
-* imagens internas.
-
-Utilizar:
-
-* lazy loading;
-* `srcSet`;
-* `sizes`;
-* preload seletivo;
-* skeleton quando necessário.
-
-Não bloquear o site esperando todas as imagens.
+Comando: `npm run test`.
 
 ---
 
-# 26. Performance
+## 22. Critérios de aceitação — Fase 1 (home + base)
 
-Metas:
+A base da fase 1 está **atendida**:
 
-```text
-Lighthouse Performance desktop: acima de 90
-Lighthouse Performance mobile: acima de 80
-Accessibility: acima de 90
-SEO: acima de 90
-CLS: abaixo de 0.1
-```
-
-Regras:
-
-* animar somente transform e opacity;
-* evitar múltiplos filtros de blur;
-* não usar imagens gigantes sem redimensionamento;
-* dividir o código por rota;
-* carregar vídeos após interação;
-* evitar re-render durante scroll;
-* usar Motion Values;
-* não armazenar posição do scroll em estado React.
+* [x] home com múltiplos painéis parallax em tela cheia;
+* [x] mídia fixa com efeito de profundidade (desktop CSS / mobile rAF);
+* [x] identidade Wonderland Song (sem marca POFO);
+* [x] menu desktop e mobile;
+* [x] rotas internas de projeto e álbum;
+* [x] reduced motion;
+* [x] lint / typecheck / test / build scripts;
+* [x] imagens otimizadas (WebP) nos assets principais.
 
 ---
 
-# 27. Acessibilidade
+## 23. O que já foi feito (changelog consolidado)
 
-Implementar:
+Ordem aproximada do histórico git (`main`):
 
-* HTML semântico;
-* apenas um `h1`;
-* hierarquia correta de títulos;
-* foco visível;
-* navegação por teclado;
-* contraste;
-* alt em imagens;
-* links descritivos;
-* menu acessível;
-* modal com focus trap;
-* suporte a reduced motion;
-* conteúdo disponível sem JavaScript sempre que possível.
-
----
-
-# 28. SEO
-
-Implementar:
-
-* title;
-* meta description;
-* canonical;
-* Open Graph;
-* Twitter Cards;
-* sitemap;
-* robots.txt;
-* JSON-LD;
-* MusicGroup;
-* Person;
-* MusicAlbum;
-* MusicRecording;
-* VideoObject;
-* Organization.
+1. **Scaffold inicial** — Vite + React + TS + Tailwind + home parallax + header + menu mobile.
+2. **Scroll to top** e ajustes de menu mobile com fundo legível.
+3. **Links Spotify e YouTube** nos painéis e nas páginas.
+4. **Página de manutenção / Coming Soon** (bunny at work).
+5. **Novos projetos** na home e páginas de detalhe (AGM, HS, USSS, LSBB, etc.).
+6. **Parallax mobile** e correções desktop/mobile.
+7. **Conteúdo rico de Bunny Land Music** (história, 4 chapters, clips, easter eggs).
+8. **Letras em modal** + arquivos de lyrics (BLM chapters, AGM, Helena Son, USS 1937).
+9. **Discografias** de Helena Son, USS Shenandoah, LSBB, AGM.
+10. **SEO** (Helmet, config de site, sitemap, robots, JSON-LD).
+11. **Performance** (lazy routes, manualChunks, WebP, limpeza de arquivos pesados).
+12. **Capas e artes** atualizadas (incl. álbum USS 1937).
 
 ---
 
-# 29. Conteúdo dinâmico futuro
+## 24. Backlog priorizado
 
-Na segunda etapa, criar API Node.js para gerenciar:
+### 24.1 Conteúdo e produto
 
-* projetos;
-* artistas;
-* lançamentos;
-* músicas;
-* vídeos;
-* imagens;
-* configurações do site.
+1. Página de detalhe do selo `/projects/wonderland-song` (hoje cai em Coming Soon).
+2. Completar discografia / letras onde ainda faltam (ex.: RNH álbuns; algumas faixas só com título).
+3. Substituir placeholders de `artists` / `releases` por dados reais e expor UI.
+4. Página agregada de vídeos (com lazy embed, reutilizando padrões de `AlbumClipsGallery`).
+5. Hero editorial ou seção “Sobre / Contato” se ainda forem desejados na home.
 
-Na primeira etapa, utilizar dados locais tipados.
+### 24.2 Técnico
 
----
+1. Alinhar SEO absoluto à URL real do deploy (`VITE_SITE_URL`, sitemap, robots, fallback em `site.ts`).
+2. Gerar `sitemap.xml` no build a partir de `getPublicSitePaths()`.
+3. Fontes editoriais (Cormorant/Cinzel + Inter/Manrope) se a direção de arte exigir.
+4. `srcSet` / imagens responsivas por breakpoint (hoje uma URL por painel).
+5. Playwright e2e smoke (home → projeto → álbum → letra).
+6. API Node.js + migração gradual de `content.ts` (fase 2).
+7. i18n PT/EN.
+8. Domínio próprio, quando houver.
 
-# 30. Componentes obrigatórios
+### 24.3 Não fazer nesta fase
 
-Criar:
-
-```text
-AppHeader
-FullscreenMenu
-HeroParallax
-ParallaxProjectPanel
-ProjectContent
-ScrollIndicator
-SocialLinks
-ResponsivePicture
-AnimatedText
-ProjectNavigation
-VideoThumbnail
-VideoModal
-AppFooter
-ReducedMotionFallback
-```
+* banco de dados / painel admin;
+* copiar POFO;
+* WebGL;
+* autoplay de vídeo com som;
+* scroll hijacking.
 
 ---
 
-# 31. Storyboard da home
+## 25. Conteúdo dinâmico futuro (fase 2)
 
-## Etapa 1 — Hero
+API Node.js para gerenciar:
 
-```text
-0% a 15% da página
-```
+* projetos, artistas, lançamentos, músicas, vídeos, imagens, configurações do site.
 
-* logotipo central;
-* fundo com movimento lento;
-* indicador de rolagem;
-* título desaparece gradualmente.
-
-## Etapa 2 — Bunny Land Music
-
-```text
-15% a 30%
-```
-
-* imagem ocupa a tela;
-* conteúdo à esquerda;
-* imagem se move para cima lentamente;
-* elementos de primeiro plano atravessam a composição.
-
-## Etapa 3 — Caution! Audio Gateway
-
-```text
-30% a 45%
-```
-
-* entrada por sobreposição;
-* conteúdo à direita;
-* efeito de profundidade;
-* luzes e portal.
-
-## Etapa 4 — Rosa Negra de Halfeti
-
-```text
-45% a 60%
-```
-
-* fundo elegante;
-* conteúdo central ou à esquerda;
-* rosa ou piano como ponto focal;
-* transição lenta.
-
-## Etapa 5 — Wonderland Song TV
-
-```text
-60% a 75%
-```
-
-* ambiente audiovisual;
-* conteúdo à direita;
-* elementos de vídeo;
-* botão para acessar canal.
-
-## Etapa 6 — Artistas
-
-```text
-75% a 88%
-```
-
-* composição com retratos;
-* apresentação dos nomes;
-* acesso aos perfis.
-
-## Etapa 7 — Encerramento
-
-```text
-88% a 100%
-```
-
-* sobre a Wonderland Song;
-* redes;
-* projetos;
-* contato;
-* frase final.
-
-Texto:
-
-```text
-Every ending opens another gateway.
-```
+Até lá: **dados locais tipados** em `src/data/content.ts` e `*-lyrics.ts`.
 
 ---
 
-# 32. Critérios de aceitação
+## 26. Instruções para agentes de código (Spec-Driven Development)
 
-A primeira versão será aceita quando:
-
-* a home possuir hero e pelo menos quatro painéis parallax;
-* cada painel ocupar a tela inteira;
-* imagem e texto se moverem em velocidades diferentes;
-* o layout lembrar um portfólio editorial parallax;
-* não houver cópia do conteúdo ou da marca POFO;
-* o site possuir identidade Wonderland Song;
-* o menu funcionar;
-* as rotas internas funcionarem;
-* mobile possuir imagens adaptadas;
-* reduced motion funcionar;
-* lint passar;
-* typecheck passar;
-* testes passarem;
-* build passar;
-* não houver erros no console;
-* as imagens estiverem otimizadas.
+1. Ler este `sdd.md` (spec) e o estado do repositório antes de alterar arquivos.
+2. Executar a spec **fase a fase** — uma fase por vez; não pular etapas.
+3. Ao concluir a fase: validar (lint/typecheck/test/build quando couber), resumir o entregue e **parar**.
+4. **Só avançar** para a próxima fase quando o autor revisar e pedir explicitamente para prosseguir.
+5. Não copiar código, textos ou imagens da demo pública do POFO.
+6. Não usar Bootstrap nem jQuery.
+7. Não usar `any`.
+8. Preferir componentes reutilizáveis e dados tipados.
+9. Respeitar reduced motion e acessibilidade básica dos modais.
+10. Ao adicionar projeto/álbum: atualizar `content.ts`, letras se houver, capa em `public/images/albums/`, sitemap/robots se a URL do deploy for estável, e testes relevantes.
+11. Não avançar para backend sem pedido explícito.
+12. Não inventar domínio `.com` próprio — SEO absoluto usa `VITE_SITE_URL` / URL do deploy.
+13. Manter esta spec alinhada à realidade do código quando decisões de produto mudarem.
 
 ---
 
-# 33. Primeira fase de desenvolvimento
-
-Implementar somente:
-
-* React;
-* TypeScript;
-* Vite;
-* Tailwind CSS;
-* Motion;
-* React Router;
-* configuração de fontes;
-* tokens visuais;
-* header;
-* menu mobile;
-* hero;
-* componente ParallaxProjectPanel;
-* quatro projetos;
-* footer;
-* dados locais;
-* mobile;
-* reduced motion;
-* testes básicos;
-* README.
-
-Não implementar banco de dados nesta fase.
-
-Não implementar painel administrativo nesta fase.
-
----
-
-# 34. Instruções para o Codex
-
-1. Leia integralmente o `SDD.md`.
-2. Analise o repositório antes de alterar arquivos.
-3. Não copie código da demonstração pública do POFO.
-4. Não baixe imagens diretamente da demonstração.
-5. Caso exista `reference/pofo-licensed`, confirme que são arquivos fornecidos pelo proprietário.
-6. Use o POFO apenas como referência estrutural.
-7. Desenvolva uma implementação original em React.
-8. Não utilize Bootstrap.
-9. Não utilize jQuery.
-10. Utilize Tailwind CSS.
-11. Utilize Motion para o scroll.
-12. Não utilize `any`.
-13. Não concentre toda a página em um único componente.
-14. Crie componentes reutilizáveis.
-15. Crie versão mobile.
-16. Implemente reduced motion.
-17. Execute lint, typecheck, testes e build.
-18. Corrija todos os erros.
-19. Não avance para backend.
-20. Documente os assets que ainda serão necessários.
-
----
-
-# 35. Prompt de execução para o Codex
+## 27. Prompt de execução (atualizado)
 
 ```text
-Leia integralmente o arquivo SDD.md e use-o como fonte principal dos requisitos.
+Leia integralmente o arquivo sdd.md (Spec-Driven Development) e use-o como fonte principal dos requisitos.
 
-A referência visual do projeto é um portfólio parallax composto por grandes painéis de imagem em tela cheia, conteúdo editorial sobreposto e movimento de profundidade durante a rolagem.
+Execute a spec fase a fase — uma fase por vez. Não avance sozinho.
+Ao terminar a fase, pare e aguarde o autor revisar e pedir para prosseguir.
+
+O site Wonderland Song já possui home parallax com 7 painéis, páginas de projeto,
+páginas de álbum (letras, easter eggs, clips), SEO e fallback Coming Soon.
+Está em deploy; não há domínio .com próprio — use VITE_SITE_URL / URL do ambiente.
 
 Não copie o código, os textos, a marca ou as imagens da demonstração pública do POFO.
 
-Se existir a pasta reference/pofo-licensed, analise esses arquivos apenas como material licenciado fornecido pelo proprietário. Caso ela não exista, utilize placeholders locais e imagens originais do projeto.
-
-Primeiro:
-
+Antes de implementar a fase atual:
 1. analise o estado atual do repositório;
-2. liste os arquivos existentes;
-3. apresente a estrutura que será criada;
-4. liste os arquivos que serão criados ou modificados.
+2. confirme o que já existe em src/data/content.ts e nas rotas de App.tsx;
+3. declare qual fase vai executar e o delta necessário;
+4. implemente somente essa fase.
 
-Depois implemente somente a primeira fase:
+Não use Bootstrap, jQuery ou any.
+Não implemente backend ou painel admin sem solicitação explícita.
 
-- React;
-- TypeScript;
-- Vite;
-- Tailwind CSS;
-- Motion for React;
-- React Router;
-- tokens visuais;
-- header transparente;
-- menu mobile em tela cheia;
-- hero parallax;
-- ParallaxProjectPanel reutilizável;
-- quatro painéis para Bunny Land Music, Caution! Audio Gateway, Rosa Negra de Halfeti e Wonderland Song TV;
-- seção de artistas;
-- rodapé;
-- dados locais tipados;
-- imagens temporárias locais;
-- comportamento responsivo;
-- prefers-reduced-motion;
-- testes básicos;
-- README.
-
-Cada painel deve:
-
-- ocupar pelo menos 100vh;
-- possuir imagem responsiva;
-- possuir overlay;
-- possuir categoria;
-- possuir título;
-- possuir descrição;
-- possuir botão;
-- mover imagem e conteúdo em velocidades diferentes;
-- possuir entrada e saída animadas;
-- manter conteúdo acessível sem animações.
-
-Não use Bootstrap.
-Não use jQuery.
-Não use any.
-Não use listeners manuais de scroll quando Motion puder resolver.
-Não coloque o progresso do scroll em estado React.
-Não implemente backend.
-Não implemente painel administrativo.
-Não avance para outra fase.
-
-Ao finalizar:
-
-- execute npm run lint;
-- execute npm run typecheck;
-- execute npm run test;
-- execute npm run build;
-- corrija todos os erros;
-- apresente os arquivos criados;
-- informe os comandos para executar;
-- liste as imagens definitivas ainda necessárias.
+Ao finalizar a fase:
+- npm run lint
+- npm run typecheck
+- npm run test
+- npm run build
+- atualize sdd.md se a arquitetura ou o escopo mudarem
+- resuma o que foi feito e aguarde o OK do autor para a próxima fase
 ```
 
 ---
 
-# 36. Comandos esperados
+## 28. Mapa rápido de arquivos críticos
 
-```bash
-npm install
-npm run dev
-```
-
-Validação:
-
-```bash
-npm run lint
-npm run typecheck
-npm run test
-npm run build
-```
-
----
-
-# 37. Definição de pronto
-
-O site estará pronto quando apresentar os projetos da Wonderland Song como uma sequência elegante de grandes imagens parallax, mantendo a inspiração editorial da referência, mas com implementação, identidade, conteúdo e composição visual próprios.
+| Necessidade | Arquivo |
+| --- | --- |
+| Painéis da home | `src/data/content.ts` → `projects` |
+| Detalhe / história | `src/data/content.ts` → `*Detail` + `projectDetailsBySlug` |
+| Discografia | `src/data/content.ts` → `*Albums` + `projectAlbumsBySlug` |
+| Letras | `src/data/*-lyrics.ts` |
+| Tipos | `src/types/index.ts` |
+| Rotas | `src/App.tsx` |
+| Parallax CSS | `src/styles/index.css` |
+| Parallax mobile | `src/hooks/useMobileParallax.ts` |
+| SEO head | `src/components/seo/Seo.tsx` + `src/config/site.ts` (`VITE_SITE_URL`) |
+| Sitemap | `public/sitemap.xml` + `src/data/site-routes.ts` (URLs = deploy) |
+| Testes de smoke | `src/App.test.tsx` |
+| Spec (SDD) | `sdd.md` — Spec-Driven Development |

@@ -1,6 +1,8 @@
-# https://wonderlandsong.com
+# Public site URL is the deploy host (no owned .com domain yet).
+# Set Sitemap to the real deploy origin, e.g. https://your-app.vercel.app/sitemap.xml
+# Also set VITE_SITE_URL at build time for canonical/OG tags.
 User-agent: *
 Allow: /
 
-# Prefer the generated sitemap (update domain via VITE_SITE_URL when deploying).
-Sitemap: https://wonderlandsong.com/sitemap.xml
+# Update this line to match the live deploy URL before relying on crawlers.
+# Sitemap: https://YOUR-DEPLOY-HOST/sitemap.xml

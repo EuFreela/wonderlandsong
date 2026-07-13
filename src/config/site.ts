@@ -1,9 +1,10 @@
 /**
  * Public site origin for absolute SEO URLs (canonical, Open Graph, sitemap).
- * Override at build/deploy with VITE_SITE_URL (e.g. https://seudominio.com).
+ * Set at build/deploy with VITE_SITE_URL to the real hosting URL
+ * (e.g. https://your-app.vercel.app). There is no owned .com domain yet.
  */
 export const SITE_URL = (
-  import.meta.env.VITE_SITE_URL?.trim() || 'https://wonderlandsong.com'
+  import.meta.env.VITE_SITE_URL?.trim() || 'https://localhost'
 ).replace(/\/$/, '');
 
 export const SITE_NAME = 'Wonderland Song';
