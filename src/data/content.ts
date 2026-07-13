@@ -39,7 +39,7 @@ export const projects: Project[] = [
     id: 'project-2',
     category: 'Dark EDM + Pop',
     title: 'Bunny Land Music',
-    image: '/images/caution2.png',
+    image: '/images/caution2.webp',
     // video: '/videos/caution.mp4',
     // Color tint over the media — change hex + opacity as needed
     // filterColor: '#9cbfff',
@@ -56,7 +56,7 @@ export const projects: Project[] = [
     id: 'project-3',
     category: 'MPB · Experimental · Atmosférico',
     title: 'Rosa Negra de Halfeti',
-    image: '/images/rnh3.png',
+    image: '/images/rnh3.webp',
     href: '/projects/rosa-negra-halfeti',
     buttonLabel: 'Abrir projeto',
     youtubeUrl: 'https://www.youtube.com/watch?v=0-nnIYlwXC0',
@@ -66,7 +66,7 @@ export const projects: Project[] = [
     id: 'project-4',
     category: 'Gospel + TJ',
     title: 'A Grande Multidão',
-    image: '/images/agm2.png',
+    image: '/images/agm2.webp',
     href: '/projects/a-grande-multidao',
     buttonLabel: 'Abrir projeto',
     spotifyUrl: 'https://open.spotify.com/intl-pt/artist/0nUtKTD6CkcADpjPYYCzHu',
@@ -76,7 +76,7 @@ export const projects: Project[] = [
     id: 'project-5',
     category: 'Grunge',
     title: 'Helena Son',
-    image: '/images/hs2.png',
+    image: '/images/hs2.webp',
     href: '/projects/helena-son',
     buttonLabel: 'Abrir projeto',
     spotifyUrl: 'https://open.spotify.com/intl-pt/artist/3w2iPAIrdoXXzJ38C59np8',
@@ -86,7 +86,7 @@ export const projects: Project[] = [
     id: 'project-6',
     category: 'Hard Rock 1960',
     title: 'USS Shenandoah',
-    image: '/images/usss.png',
+    image: '/images/usss.webp',
     href: '/projects/uss-shenandoah',
     buttonLabel: 'Abrir projeto',
     spotifyUrl: 'https://open.spotify.com/intl-pt/artist/008vDYJA7fvRWxchF8QN1F',
@@ -96,7 +96,7 @@ export const projects: Project[] = [
     id: 'project-7',
     category: 'Blues',
     title: 'Lameck & Southern Birds Band',
-    image: '/images/lsbb.png',
+    image: '/images/lsbb.webp',
     href: '/projects/lameck-southern-birds-band',
     buttonLabel: 'Abrir projeto',
     spotifyUrl: 'https://open.spotify.com/intl-pt/artist/6jZsG3waoXclu0mC2tv4eX',
@@ -114,7 +114,7 @@ export const bunnyLandMusic: ProjectDetail = {
   slug: 'bunny-land-music',
   title: 'Bunny Land Music',
   category: 'Dark EDM + Pop',
-  image: '/images/caution2.png',
+  image: '/images/caution2.webp',
   tagline:
     'BunnyMan · Tommy o DJ coelho — uma jornada sonora por emoções, identidade e o universo Wonderland Song.',
   historyTitle: 'Como nasceu o Bunny Land Music',
@@ -201,7 +201,7 @@ export const rosaNegraHalfeti: ProjectDetail = {
   slug: 'rosa-negra-halfeti',
   title: 'Rosa Negra de Halfeti',
   category: 'MPB · Experimental · Atmosférico',
-  image: '/images/rnh3.png',
+  image: '/images/rnh3.webp',
   tagline:
     'Simplesmente eu: literalmente, aos pedaços — em frases e achados. Letras autorais, MPB densa e a beleza rara que nasce da dor.',
   historyTitle: 'Sobre a Rosa Negra de Halfeti',
@@ -269,7 +269,7 @@ export const aGrandeMultidao: ProjectDetail = {
   slug: 'a-grande-multidao',
   title: 'A Grande Multidão',
   category: 'Gospel + TJ',
-  image: '/images/agm2.png',
+  image: '/images/agm2.webp',
   tagline:
     'Projeto musical cristão: estudos bíblicos, reflexões de fé e rock com propósito.',
   historyTitle: 'Sobre A Grande Multidão',
@@ -309,7 +309,7 @@ export const helenaSon: ProjectDetail = {
   slug: 'helena-son',
   title: "Helena's Son",
   category: 'Grunge',
-  image: '/images/hs2.png',
+  image: '/images/hs2.webp',
   tagline:
     'Grunge conceitual dos anos 90 revisitado: fé, desilusão e a falha da conexão humana na era digital.',
   historyTitle: "Sobre Helena's Son",
@@ -360,7 +360,7 @@ export const ussShenandoah: ProjectDetail = {
   slug: 'uss-shenandoah',
   title: 'USS Shenandoah',
   category: 'Hard Rock 1960',
-  image: '/images/usss.png',
+  image: '/images/usss.webp',
   tagline:
     'Projeto musical de hard rock com a linguagem dos anos 60 — peso, groove e gravação orgânica.',
   historyTitle: 'Sobre USS Shenandoah',
@@ -398,7 +398,7 @@ export const ussShenandoahAlbums: ProjectAlbum[] = [
     title: '1937',
     year: '2026',
     type: 'Album',
-    cover: '/images/albums/uss-1937.jpg',
+    cover: '/images/albums/uss-1937.webp',
     summary:
       'Álbum conceitual de hard rock com forte influência do som dos anos 60 — guitarras, riffs, órgão vintage e gravação orgânica.',
     description: [
@@ -424,7 +424,7 @@ export const lameckSouthernBirdsBand: ProjectDetail = {
   slug: 'lameck-southern-birds-band',
   title: 'Lameck & Southern Birds Band',
   category: 'Blues',
-  image: '/images/lsbb.png',
+  image: '/images/lsbb.webp',
   tagline:
     'Blues de estrada e palco: do projeto inacabado IEAS (2018) à banda orgânica para turnês e instrumentais com feeling.',
   historyTitle: 'Sobre Lameck & Southern Birds Band',
@@ -472,7 +472,7 @@ export const lameckSouthernBirdsBandAlbums: ProjectAlbum[] = [
     title: 'Check-In After Midnight In Passalacqua',
     year: '2026',
     type: 'Album',
-    cover: '/images/albums/lsbb-passalacqua.jpg',
+    cover: '/images/albums/lsbb-passalacqua.webp',
     summary:
       'Instrumental de safra setentista, inspirado em Passalacqua (Lago de Como): classe, estudo e identidade própria — com Jimmy Page no horizonte.',
     description: [
@@ -505,7 +505,7 @@ export const lameckSouthernBirdsBandAlbums: ProjectAlbum[] = [
     title: 'Instinct in Minor Key',
     year: '2026',
     type: 'Album',
-    cover: '/images/albums/lsbb-instinct.jpg',
+    cover: '/images/albums/lsbb-instinct.webp',
     summary:
       'Segundo capítulo no Spotify: blues e rock instrumental em tom menor — instinto, noite e estrada.',
     description: [
@@ -541,7 +541,7 @@ export const helenaSonAlbums: ProjectAlbum[] = [
     chapter: 'Genesis · 1',
     year: '2025',
     type: 'Album',
-    cover: '/images/albums/plastic-grace.png',
+    cover: '/images/albums/plastic-grace.webp',
     summary:
       'A revelação da ilusão: graça plástica, fé performática e o grito de libertação contra o silêncio emocional.',
     description: [
@@ -564,7 +564,7 @@ export const helenaSonAlbums: ProjectAlbum[] = [
     chapter: 'Genesis · 2',
     year: '2025',
     type: 'Album',
-    cover: '/images/albums/new-day.png',
+    cover: '/images/albums/new-day.webp',
     summary:
       'O silêncio após a queda: niilismo, luto existencial e a busca por sentido entre as ruínas da fé.',
     description: [
@@ -589,7 +589,7 @@ export const helenaSonAlbums: ProjectAlbum[] = [
     chapter: 'Genesis · 3',
     year: '2025',
     type: 'Album',
-    cover: '/images/albums/the-computer.png',
+    cover: '/images/albums/the-computer.webp',
     summary:
       'O homem e a máquina: conexões falsas, carne e código, e o brilho digital que não salva ninguém.',
     description: [
@@ -611,7 +611,7 @@ export const helenaSonAlbums: ProjectAlbum[] = [
     chapter: 'Genesis · 4',
     year: '2026',
     type: 'Album',
-    cover: '/images/albums/hs-unplugged.jpg',
+    cover: '/images/albums/hs-unplugged.webp',
     summary:
       'An Unforgettable Night (Unplugged): setlist do Spotify com versões acústicas — ao lado de cada faixa, o álbum de origem.',
     description: [
@@ -636,7 +636,7 @@ export const aGrandeMultidaoAlbums: ProjectAlbum[] = [
     title: 'A Verdade Ainda Chama',
     year: '2026',
     type: 'Album',
-    cover: '/images/albums/a-verdade-ainda-chama.jpg',
+    cover: '/images/albums/a-verdade-ainda-chama.webp',
     summary:
       'Álbum conceitual de rock cristão: profecias bíblicas, conflitos humanos e a esperança do Reino de Deus em 12 faixas.',
     description: [
@@ -674,7 +674,7 @@ export const bunnyLandAlbums: ProjectAlbum[] = [
     chapter: 'Chapter 1',
     year: '2026',
     type: 'Album',
-    cover: '/images/albums/chapter-1-caution-audio-gateway.jpg',
+    cover: '/images/albums/chapter-1-caution-audio-gateway.webp',
     summary:
       'Remix em Dark EDM e Dark Pop do projeto demo Reverse Universe — o portal sonoro que abre a jornada de Bunny Land Music.',
     description: [
@@ -714,7 +714,7 @@ export const bunnyLandAlbums: ProjectAlbum[] = [
     chapter: 'Chapter 2',
     year: '2025',
     type: 'Album',
-    cover: '/images/albums/chapter-2-in-the-forest.jpg',
+    cover: '/images/albums/chapter-2-in-the-forest.webp',
     summary:
       'Uma jornada emocional na floresta sonora: superação, identidade, amor, nostalgia e tecnologia em 14 faixas.',
     description: [
@@ -786,7 +786,7 @@ export const bunnyLandAlbums: ProjectAlbum[] = [
     chapter: 'Chapter 3',
     year: '2026',
     type: 'Album',
-    cover: '/images/albums/chapter-3-in-time-with-your-heart.jpg',
+    cover: '/images/albums/chapter-3-in-time-with-your-heart.webp',
     summary:
       'Álbum conceitual sobre o tempo emocional: desencontros, silêncios, desejo contido e amores que existem mais na sensação do que na ação.',
     description: [
@@ -843,7 +843,7 @@ export const bunnyLandAlbums: ProjectAlbum[] = [
     chapter: 'Chapter 4',
     year: '2026',
     type: 'Album',
-    cover: '/images/albums/listen-to-daddy.jpg',
+    cover: '/images/albums/listen-to-daddy.webp',
     summary:
       'Uma voz de orientação e cuidado: escuta, presença e maturidade emocional — o quarto capítulo do Bunny Land Music.',
     description: [
