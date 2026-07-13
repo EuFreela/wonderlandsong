@@ -31,80 +31,53 @@ a {
 }
 
 /*
-  Fixed parallax: each panel is a “window” that crops a viewport-pinned
-  background. As the section scrolls, the image appears to stay still.
+  JS-driven fixed parallax (desktop + mobile).
+
+  Panel = clipping window (overflow: hidden).
+  Media layer = viewport-sized; translateY keeps it pinned while scrolling.
 */
 .parallax-panel {
-  background-attachment: fixed;
-}
-
-.parallax-panel--video {
-  /* Images use background-attachment; video uses the clip+fixed layer below */
-  background-attachment: scroll;
+  position: relative;
+  min-height: 72vh;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
   background-color: #111;
 }
 
-/*
-  Video equivalent of background-attachment: fixed.
-
-  Parent uses the classic clip:rect window. Child video is position:fixed to
-  the viewport and object-cover, so as this section scrolls away the next
-  panel wipes over it — same feel as the image panels.
-*/
 .parallax-media {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   z-index: 0;
-  /* Do not put transform/filter here — they break position:fixed */
+  overflow: hidden;
 }
 
-.parallax-media__clip {
+/* Viewport-tall layer; vertical position controlled in useParallaxFixedMedia */
+.parallax-media__layer {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  /*
-    Required for the fixed-inside-scrolling-window technique.
-    clip-path alone does not give the same fixed containing behavior.
-  */
-  clip: rect(0, auto, auto, 0);
+  height: 100vh;
+  height: 100dvh;
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
-.parallax-media__fixed {
-  position: fixed;
+.parallax-media__asset {
   display: block;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
+  max-width: none;
   object-fit: cover;
   object-position: center center;
   pointer-events: none;
 }
 
-/* Mobile: fixed attachment is unreliable — fill the panel instead */
 @media (max-width: 900px) {
   .parallax-panel {
-    min-height: 520px;
-    background-attachment: scroll;
-    background-position: center center;
-  }
-
-  .parallax-media__clip {
-    clip: auto;
-    overflow: hidden;
-  }
-
-  .parallax-media__fixed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    min-height: 70vh;
+    min-height: 70dvh;
   }
 }
 
@@ -113,21 +86,10 @@ a {
     scroll-behavior: auto;
   }
 
-  .parallax-panel {
-    background-attachment: scroll;
-  }
-
-  .parallax-media__clip {
-    clip: auto;
-    overflow: hidden;
-  }
-
-  .parallax-media__fixed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+  .parallax-media__layer {
     height: 100%;
+    will-change: auto;
+    transform: none !important;
   }
 
   *,

@@ -1,5 +1,7 @@
 import { useReducedMotion } from 'framer-motion';
+import { useRef } from 'react';
 import { Link } from 'react-router-dom';
+import { useParallaxFixedMedia } from '../../hooks/useParallaxFixedMedia';
 import type { Project } from '../../types';
 import SpotifyIcon from '../ui/SpotifyIcon';
 import YouTubeIcon from '../ui/YouTubeIcon';
@@ -9,14 +11,17 @@ type Props = {
 };
 
 /**
- * Fixed-background parallax panel.
+ * Fixed-background parallax panel (desktop + mobile).
  *
- * Image panels: CSS `background-attachment: fixed`.
- * Video panels: fixed media clipped by the section (“window”) so scroll
- * transitions match the image panels.
+ * Uses JS translateY (not position:fixed / background-attachment) so the
+ * media stays pinned to the viewport while the section scrolls as a window —
+ * same transition on mobile Safari/Chrome as on desktop.
  */
 function ParallaxProjectPanel({ project }: Props) {
   const prefersReducedMotion = useReducedMotion();
+  const panelRef = useRef<HTMLElement>(null);
+  const mediaRef = useRef<HTMLDivElement>(null);
+
   const isHashLink = project.href.startsWith('#');
   const label = project.buttonLabel?.trim();
   const showButton = Boolean(label);
@@ -30,6 +35,9 @@ function ParallaxProjectPanel({ project }: Props) {
   const filterOpacity = Math.min(1, Math.max(0, project.filterOpacity ?? 0));
   const hasColorFilter = Boolean(project.filterColor) && filterOpacity > 0;
   const showActions = showButton || showSpotify || showYouTube;
+  const parallaxEnabled = !prefersReducedMotion;
+
+  useParallaxFixedMedia(panelRef, mediaRef, parallaxEnabled);
 
   const buttonClassName =
     'inline-flex min-h-[38px] items-center justify-center gap-2 bg-[#111] px-5 text-[0.65rem] font-bold uppercase tracking-[0.1em] text-white transition duration-200 hover:bg-white hover:text-[#111] focus-visible:bg-white focus-visible:text-[#111] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#111]';
@@ -42,21 +50,16 @@ function ParallaxProjectPanel({ project }: Props) {
 
   return (
     <section
+      ref={panelRef}
       id={project.id}
-      className={`parallax-panel relative flex min-h-[72vh] items-end overflow-hidden bg-cover bg-center bg-no-repeat ${useVideo ? 'parallax-panel--video' : ''}`}
-      style={useVideo ? undefined : { backgroundImage: `url('${project.image}')` }}
+      className="parallax-panel"
       aria-label={project.title}
     >
-      {useVideo ? (
-        /*
-          Clip + position:fixed reproduces background-attachment:fixed for video:
-          the media stays pinned to the viewport while this section acts as a
-          scrolling “window” over it.
-        */
-        <div className="parallax-media" aria-hidden>
-          <div className="parallax-media__clip">
+      <div className="parallax-media" aria-hidden>
+        <div ref={mediaRef} className="parallax-media__layer">
+          {useVideo ? (
             <video
-              className="parallax-media__fixed"
+              className="parallax-media__asset"
               src={project.video}
               poster={project.image}
               autoPlay
@@ -65,9 +68,17 @@ function ParallaxProjectPanel({ project }: Props) {
               playsInline
               preload="metadata"
             />
-          </div>
+          ) : (
+            <img
+              className="parallax-media__asset"
+              src={project.image}
+              alt=""
+              decoding="async"
+              draggable={false}
+            />
+          )}
         </div>
-      ) : null}
+      </div>
 
       {hasColorFilter ? (
         <div
