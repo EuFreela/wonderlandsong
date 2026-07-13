@@ -31,10 +31,8 @@ a {
 }
 
 /*
-  JS-driven fixed parallax (desktop + mobile).
-
-  Panel = clipping window (overflow: hidden).
-  Media layer = viewport-sized; translateY keeps it pinned while scrolling.
+  Desktop: fixed media + clip window (CSS only).
+  Mobile: absolute media + integer translate3d (shared JS loop).
 */
 .parallax-panel {
   position: relative;
@@ -47,21 +45,35 @@ a {
 
 .parallax-media {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   z-index: 0;
   overflow: hidden;
 }
 
-/* Viewport-tall layer; vertical position controlled in useParallaxFixedMedia */
-.parallax-media__layer {
+/* Clipping window */
+.parallax-media__clip {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
-  height: 100dvh;
-  will-change: transform;
+  height: 100%;
+  clip: rect(0, auto, auto, 0);
+}
+
+/* Desktop: pinned to viewport. Mobile: JS moves this layer. */
+.parallax-media__layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  pointer-events: none;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .parallax-media__asset {
@@ -79,6 +91,20 @@ a {
     min-height: 70vh;
     min-height: 70dvh;
   }
+
+  .parallax-media__clip {
+    clip: auto;
+    overflow: hidden;
+  }
+
+  .parallax-media__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height applied in px by useMobileParallax for stability */
+    height: 100vh;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -86,9 +112,17 @@ a {
     scroll-behavior: auto;
   }
 
+  .parallax-media__clip {
+    clip: auto;
+    overflow: hidden;
+  }
+
   .parallax-media__layer {
-    height: 100%;
-    will-change: auto;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
     transform: none !important;
   }
 
