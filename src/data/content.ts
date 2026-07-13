@@ -1,4 +1,5 @@
 import type { Artist, Project, ProjectAlbum, ProjectDetail, Release } from '../types';
+import { aVerdadeAindaChamaTracks } from './agm-lyrics';
 
 /**
  * Homepage parallax panels (POFO-style fixed background sequence).
@@ -249,7 +250,7 @@ export const rosaNegraHalfeti: ProjectDetail = {
 
 /**
  * A Grande Multidão — project-4 detail page (home: project-4).
- * Discografia: álbum “A Verdade Ainda Chama”.
+ * Album-specific copy lives on each album page, not here.
  */
 export const aGrandeMultidao: ProjectDetail = {
   slug: 'a-grande-multidao',
@@ -257,11 +258,10 @@ export const aGrandeMultidao: ProjectDetail = {
   category: 'Gospel + TJ',
   image: '/images/agm2.png',
   tagline:
-    'Rock cristão conceitual: profecia, fé e a esperança do Reino — a verdade continua chamando.',
+    'Projeto musical cristão: estudos bíblicos, reflexões de fé e rock com propósito.',
   historyTitle: 'Sobre A Grande Multidão',
   historyLead:
-    'A Grande Multidão é um projeto musical do universo Wonderland Song dedicado ao rock cristão com narrativa bíblica e mensagem de esperança. Em um mundo cheio de vozes conflitantes, a verdade continua chamando.',
-  pullQuote: 'Em um mundo cheio de vozes conflitantes, a verdade continua chamando.',
+    'A Grande Multidão é um projeto musical do universo Wonderland Song dedicado a transformar estudos bíblicos, reflexões espirituais e convicções de fé em arte.',
   footerNote: 'A Grande Multidão · Gospel + TJ',
   albumsEmptyMessage:
     'Os álbuns e lançamentos de A Grande Multidão serão adicionados em breve.',
@@ -270,15 +270,8 @@ export const aGrandeMultidao: ProjectDetail = {
       id: 'project',
       title: 'O projeto',
       paragraphs: [
-        'A Grande Multidão é um projeto musical cristão que busca transformar estudos bíblicos, reflexões espirituais e convicções de fé em arte. Unindo letras profundas e influências do rock clássico, hard rock, rock alternativo e worship, o projeto transmite mensagens baseadas nas Escrituras de forma sincera, reflexiva e emocionalmente envolvente.',
-        'Inspirado nas Escrituras e na perspectiva das Testemunhas de Jeová, aborda a busca pela verdade em um mundo de narrativas conflitantes, os perigos do engano religioso, a perseguição a quem permanece fiel, o sofrimento da humanidade e a esperança do Reino de Deus. Não busca fama ou reconhecimento: a música é expressão artística e comunicação da fé.',
-      ],
-    },
-    {
-      id: 'discography',
-      title: 'Discografia',
-      paragraphs: [
-        'O álbum A Verdade Ainda Chama (2026) é a obra principal do projeto — 12 faixas, cerca de 57 minutos de rock cristão conceitual. Abra o álbum na galeria para a história completa, tracklist e letras (agrandemultidao.vercel.app).',
+        'Idealizado e composto por Lameck S. Fernandes, Adriano Lima e Rodrigo Alves, o projeto nasce do desejo de transformar estudos bíblicos, reflexões espirituais e convicções de fé em arte. Inspirado nas Escrituras e na perspectiva das Testemunhas de Jeová, não busca fama: usa a música para comunicar a fé com sinceridade, reflexão e envolvimento emocional.',
+        'Unindo letras profundas e influências do rock clássico, hard rock, rock alternativo e worship, A Grande Multidão transmite mensagens baseadas nas Escrituras de forma sincera e emocionalmente envolvente. Aborda a busca pela verdade em um mundo de narrativas conflitantes, os perigos do engano religioso, a perseguição a quem permanece fiel, o sofrimento da humanidade e a esperança do Reino de Deus.',
       ],
     },
     {
@@ -289,8 +282,6 @@ export const aGrandeMultidao: ProjectDetail = {
       ],
     },
   ],
-  historyClosing:
-    'A Grande Multidão: em um mundo cheio de vozes conflitantes, a verdade continua chamando.',
   historySourceUrl: 'https://agrandemultidao.vercel.app/',
   historySourceLabel: 'Site A Grande Multidão',
   spotifyUrl: 'https://open.spotify.com/intl-pt/artist/0nUtKTD6CkcADpjPYYCzHu',
@@ -311,32 +302,18 @@ export const aGrandeMultidaoAlbums: ProjectAlbum[] = [
     summary:
       'Álbum conceitual de rock cristão: profecias bíblicas, conflitos humanos e a esperança do Reino de Deus em 12 faixas.',
     description: [
-      'A Verdade Ainda Chama é o álbum de A Grande Multidão — obra conceitual de rock cristão que transforma profecias bíblicas, conflitos humanos e a esperança do Reino de Deus em uma experiência musical profunda.',
-      'Idealizado e composto por Lameck S. Fernandes, Adriano Lima e Rodrigo Alves, o disco nasce do desejo de transformar estudos bíblicos, reflexões espirituais e convicções de fé em arte. Inspirado nas Escrituras e na perspectiva das Testemunhas de Jeová, não busca fama: usa a música para comunicar a fé com sinceridade, reflexão e envolvimento emocional.',
-      'Cada canção aborda temas bíblicos — profecia, fé, esperança e o propósito de Deus para a humanidade. Em meio às crises do mundo atual, a mensagem aponta para a esperança do Reino. Influências do rock brasileiro melódico e progressivo, rock clássico, hard rock, alternativo e worship se unem a letras intensas e emocionalmente marcantes.',
+      'A Verdade Ainda Chama é um álbum de A Grande Multidão — obra conceitual de rock cristão que transforma profecias bíblicas, conflitos humanos e a esperança do Reino de Deus em uma experiência musical profunda.',
+      'Em um mundo cheio de vozes conflitantes, a verdade continua chamando. Cada canção aborda temas bíblicos — profecia, fé, esperança e o propósito de Deus para a humanidade. Em meio às crises do mundo atual, a mensagem aponta para a esperança do Reino. Influências do rock brasileiro melódico e progressivo, rock clássico, hard rock, alternativo e worship se unem a letras intensas e emocionalmente marcantes.',
       'Ao longo das 12 faixas, o ouvinte percorre a busca pela verdade em um mundo de narrativas conflitantes, os perigos do engano religioso, a perseguição a quem permanece fiel, o sofrimento da humanidade e a esperança das promessas divinas. A mensagem central não é condenação, e sim convite: a misericórdia de Deus continua alcançando pessoas sinceras.',
-      'Mais do que uma coleção de músicas, A Verdade Ainda Chama convida a ouvir além do barulho deste mundo e a redescobrir que o propósito de Deus permanece vivo, firme e imutável. Letras completas e explicações: agrandemultidao.vercel.app.',
+      'Mais do que uma coleção de músicas, A Verdade Ainda Chama convida a ouvir além do barulho deste mundo e a redescobrir que o propósito de Deus permanece vivo, firme e imutável.',
       'Álbum de A Grande Multidão · 2026 · Compositores: Lameck S. Fernandes, Adriano Lima e Rodrigo Alves.',
     ],
     duration: '57 min',
-    trackCount: 12,
+    trackCount: aVerdadeAindaChamaTracks.length,
     spotifyUrl: 'https://open.spotify.com/album/2khPW0DgXHc5NcKg3uPZKl',
     lyricsUrl: 'https://agrandemultidao.vercel.app/',
-    lyricsLabel: 'Letras',
-    tracks: [
-      { title: 'A Verdade Ainda Chama' },
-      { title: 'Deus' },
-      { title: 'Acautelai-vos' },
-      { title: 'Além do Ódio' },
-      { title: 'Quando a Alegria Se Apaga' },
-      { title: 'Debaixo dos Teus Pés' },
-      { title: 'Conflitos e Guerras' },
-      { title: 'Nem Toda Voz' },
-      { title: 'A Besta' },
-      { title: 'Não Podemos Nos Calar' },
-      { title: 'O Tempo do Fim' },
-      { title: 'Quando Os Conflitos Terminarem' },
-    ],
+    lyricsLabel: 'Letras (site)',
+    tracks: aVerdadeAindaChamaTracks,
     clips: [
       {
         id: 'alem-do-odio',

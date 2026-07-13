@@ -184,14 +184,14 @@ export function ProjectDetailView({ project, albums }: ProjectDetailViewProps) {
               <p className="text-lg leading-relaxed text-white/90 sm:text-xl">{historyLead}</p>
 
               {pullQuote ? (
-                <blockquote className="my-10 border-l-2 border-white/25 pl-5">
+                <blockquote className="mt-10 mb-2 border-l-2 border-white/25 pl-5">
                   <p className="text-[clamp(1.15rem,2.4vw,1.45rem)] font-medium leading-snug tracking-tight text-white/95">
                     “{pullQuote}”
                   </p>
                 </blockquote>
               ) : null}
 
-              <div className="flex flex-col gap-12">
+              <div className="mt-10 flex flex-col gap-12">
                 {historySections.map((section, index) => (
                   <section key={section.id} aria-labelledby={`history-${section.id}`}>
                     <div className="mb-4 flex items-baseline gap-3">

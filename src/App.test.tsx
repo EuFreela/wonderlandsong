@@ -85,15 +85,20 @@ describe('App', () => {
     expect(
       screen.getByRole('heading', { name: /Sobre A Grande Multidão/i }),
     ).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /^O projeto$/i })).toBeInTheDocument();
+    expect(
+      screen.getByText(/Idealizado e composto por Lameck S\. Fernandes/i),
+    ).toBeInTheDocument();
+    expect(screen.queryByRole('heading', { name: /Discografia/i })).not.toBeInTheDocument();
+    expect(
+      screen.queryByText(/Em um mundo cheio de vozes conflitantes, a verdade continua chamando/i),
+    ).not.toBeInTheDocument();
     expect(
       screen.getByRole('link', { name: /Ver álbum.*A Verdade Ainda Chama/i }),
     ).toHaveAttribute(
       'href',
       '/projects/a-grande-multidao/albums/a-verdade-ainda-chama',
     );
-    expect(
-      screen.getAllByText(/a verdade continua chamando/i).length,
-    ).toBeGreaterThan(0);
     expect(screen.getByRole('link', { name: /Ouvir no Spotify/i })).toHaveAttribute(
       'href',
       expect.stringContaining('spotify.com'),

@@ -86,10 +86,30 @@ export type Release = {
   image: string;
 };
 
+export type TrackLyricSection = {
+  title: string;
+  content: string;
+};
+
+export type TrackLyricsExplanation = {
+  title?: string;
+  /** Bible verse reference, e.g. "João 14:6". */
+  verse?: string;
+  quote?: string;
+  message?: string;
+  sections?: TrackLyricSection[];
+  /** Optional related scripture list. */
+  verses?: string[];
+};
+
 export type BunnyAlbumTrack = {
   title: string;
   /** Optional dedication / character linked to the track (Chapter 3). */
   dedication?: string;
+  /** Full lyrics text (shown in track modal). */
+  lyrics?: string;
+  /** Explanation / study notes shown with the lyrics. */
+  lyricsExplanation?: TrackLyricsExplanation;
 };
 
 /** Music video / clip linked to an album chapter. */

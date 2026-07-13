@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { Link, Navigate, useParams } from 'react-router-dom';
 import AlbumClipsGallery from '../components/project/AlbumClipsGallery';
 import EasterEggsModal from '../components/project/EasterEggsModal';
+import TrackLyricsModal from '../components/project/TrackLyricsModal';
 import SpotifyIcon from '../components/ui/SpotifyIcon';
 import YouTubeIcon from '../components/ui/YouTubeIcon';
 import {
@@ -10,6 +11,7 @@ import {
   getProjectAlbums,
   getProjectDetailBySlug,
 } from '../data/content';
+import type { BunnyAlbumTrack } from '../types';
 
 /**
  * Detail page for a single project album.
@@ -26,6 +28,10 @@ function BunnyAlbumPage() {
   const albums = getProjectAlbums(projectSlug);
   const album = getProjectAlbum(projectSlug, resolvedAlbumSlug);
   const [easterEggsOpen, setEasterEggsOpen] = useState(false);
+  const [lyricsTrack, setLyricsTrack] = useState<{
+    track: BunnyAlbumTrack;
+    number: number;
+  } | null>(null);
 
   if (!project) {
     return <Navigate to="/" replace />;
@@ -205,22 +211,46 @@ function BunnyAlbumPage() {
               </p>
               {album.tracks.length > 0 ? (
                 <ol className="m-0 list-none divide-y divide-white/10 border-y border-white/10 p-0">
-                  {album.tracks.map((track, index) => (
-                    <li
-                      key={`${album.slug}-t-${index}`}
-                      className="flex items-baseline gap-4 py-3.5"
-                    >
-                      <span className="w-7 shrink-0 text-right text-[0.7rem] font-bold tabular-nums tracking-wider text-white/30">
-                        {String(index + 1).padStart(2, '0')}
-                      </span>
-                      <div className="min-w-0 flex-1">
-                        <p className="m-0 text-[0.95rem] font-medium text-white/90">{track.title}</p>
-                        {!hideTrackDedications && track.dedication ? (
-                          <p className="m-0 mt-0.5 text-sm text-white/40">→ {track.dedication}</p>
-                        ) : null}
-                      </div>
-                    </li>
-                  ))}
+                  {album.tracks.map((track, index) => {
+                    const hasLyricsContent = Boolean(
+                      track.lyrics?.trim() || track.lyricsExplanation,
+                    );
+                    const number = index + 1;
+
+                    return (
+                      <li
+                        key={`${album.slug}-t-${index}`}
+                        className="flex items-baseline gap-4 py-3.5"
+                      >
+                        <span className="w-7 shrink-0 text-right text-[0.7rem] font-bold tabular-nums tracking-wider text-white/30">
+                          {String(number).padStart(2, '0')}
+                        </span>
+                        <div className="min-w-0 flex-1">
+                          {hasLyricsContent ? (
+                            <button
+                              type="button"
+                              onClick={() => setLyricsTrack({ track, number })}
+                              className="group m-0 block w-full text-left text-[0.95rem] font-medium text-white/90 transition hover:text-white"
+                            >
+                              <span className="group-hover:underline">{track.title}</span>
+                              <span className="mt-0.5 block text-[0.65rem] font-bold uppercase tracking-[0.12em] text-white/35 transition group-hover:text-white/60">
+                                Ver letra e explicação →
+                              </span>
+                            </button>
+                          ) : (
+                            <p className="m-0 text-[0.95rem] font-medium text-white/90">
+                              {track.title}
+                            </p>
+                          )}
+                          {!hideTrackDedications && track.dedication ? (
+                            <p className="m-0 mt-0.5 text-sm text-white/40">
+                              → {track.dedication}
+                            </p>
+                          ) : null}
+                        </div>
+                      </li>
+                    );
+                  })}
                 </ol>
               ) : (
                 <p className="text-base leading-relaxed text-white/50">
@@ -292,6 +322,13 @@ function BunnyAlbumPage() {
           tracks={album.tracks}
         />
       ) : null}
+
+      <TrackLyricsModal
+        open={Boolean(lyricsTrack)}
+        onClose={() => setLyricsTrack(null)}
+        track={lyricsTrack?.track ?? null}
+        trackNumber={lyricsTrack?.number}
+      />
     </div>
   );
 }
