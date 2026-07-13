@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #171717;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-width: 320px;
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*
+  Fixed parallax: each panel is a “window” that crops a viewport-pinned
+  background. As the section scrolls, the image appears to stay still.
+*/
+.parallax-panel {
+  background-attachment: fixed;
+}
+
+.parallax-panel--video {
+  /* Images use background-attachment; video uses the clip+fixed layer below */
+  background-attachment: scroll;
+  background-color: #111;
+}
+
+/*
+  Video equivalent of background-attachment: fixed.
+
+  Parent uses the classic clip:rect window. Child video is position:fixed to
+  the viewport and object-cover, so as this section scrolls away the next
+  panel wipes over it — same feel as the image panels.
+*/
+.parallax-media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  /* Do not put transform/filter here — they break position:fixed */
+}
+
+.parallax-media__clip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*
+    Required for the fixed-inside-scrolling-window technique.
+    clip-path alone does not give the same fixed containing behavior.
+  */
+  clip: rect(0, auto, auto, 0);
+}
+
+.parallax-media__fixed {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  pointer-events: none;
+}
+
+/* Mobile: fixed attachment is unreliable — fill the panel instead */
+@media (max-width: 900px) {
+  .parallax-panel {
+    min-height: 520px;
+    background-attachment: scroll;
+    background-position: center center;
+  }
+
+  .parallax-media__clip {
+    clip: auto;
+    overflow: hidden;
+  }
+
+  .parallax-media__fixed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .parallax-panel {
+    background-attachment: scroll;
+  }
+
+  .parallax-media__clip {
+    clip: auto;
+    overflow: hidden;
+  }
+
+  .parallax-media__fixed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
