@@ -2,6 +2,7 @@ import { useReducedMotion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import type { Project } from '../../types';
 import SpotifyIcon from '../ui/SpotifyIcon';
+import YouTubeIcon from '../ui/YouTubeIcon';
 
 type Props = {
   project: Project;
@@ -22,16 +23,22 @@ function ParallaxProjectPanel({ project }: Props) {
   const spotifyUrl = project.spotifyUrl?.trim();
   const showSpotify = Boolean(spotifyUrl);
   const spotifyLabel = project.spotifyLabel?.trim() || 'Spotify';
+  const youtubeUrl = project.youtubeUrl?.trim();
+  const showYouTube = Boolean(youtubeUrl);
+  const youtubeLabel = project.youtubeLabel?.trim() || 'YouTube';
   const useVideo = Boolean(project.video) && !prefersReducedMotion;
   const filterOpacity = Math.min(1, Math.max(0, project.filterOpacity ?? 0));
   const hasColorFilter = Boolean(project.filterColor) && filterOpacity > 0;
-  const showActions = showButton || showSpotify;
+  const showActions = showButton || showSpotify || showYouTube;
 
   const buttonClassName =
     'inline-flex min-h-[38px] items-center justify-center gap-2 bg-[#111] px-5 text-[0.65rem] font-bold uppercase tracking-[0.1em] text-white transition duration-200 hover:bg-white hover:text-[#111] focus-visible:bg-white focus-visible:text-[#111] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#111]';
 
-  const spotifyClassName =
-    'inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#1DB954] text-white shadow-md transition duration-200 hover:scale-105 hover:bg-[#1ed760] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1DB954]';
+  const iconButtonBase =
+    'inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-white shadow-md transition duration-200 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2';
+
+  const spotifyClassName = `${iconButtonBase} bg-[#1DB954] hover:bg-[#1ed760] focus-visible:outline-[#1DB954]`;
+  const youtubeClassName = `${iconButtonBase} bg-[#FF0000] hover:bg-[#ff2a2a] focus-visible:outline-[#FF0000]`;
 
   return (
     <section
@@ -108,6 +115,19 @@ function ParallaxProjectPanel({ project }: Props) {
                 title={spotifyLabel}
               >
                 <SpotifyIcon size={22} />
+              </a>
+            ) : null}
+
+            {showYouTube ? (
+              <a
+                href={youtubeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={youtubeClassName}
+                aria-label={youtubeLabel}
+                title={youtubeLabel}
+              >
+                <YouTubeIcon size={22} />
               </a>
             ) : null}
           </div>

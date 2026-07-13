@@ -29,6 +29,10 @@ export type Project = {
   spotifyUrl?: string;
   /** Label for the Spotify button (default: "Spotify"). */
   spotifyLabel?: string;
+  /** YouTube channel/video/playlist URL — shows a YouTube button when set. */
+  youtubeUrl?: string;
+  /** Label for the YouTube button (default: "YouTube"). */
+  youtubeLabel?: string;
 };
 
 export type Artist = {

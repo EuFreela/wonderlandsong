@@ -17,7 +17,9 @@ export const projects: Project[] = [
     href: '/projects/wonderland-song',
     // buttonLabel: 'Abrir projeto',
     // spotifyUrl: 'https://open.spotify.com/',
-    // spotifyLabel: 'Ouvir no Spotify',
+    // spotifyLabel: 'Spotify',
+    youtubeUrl: 'https://www.youtube.com/@wonderlandsong/videos',
+    youtubeLabel: 'YouTube',
   },
   {
     id: 'project-2',
@@ -32,6 +34,8 @@ export const projects: Project[] = [
     buttonLabel: 'Abrir projeto',
     spotifyUrl: 'https://open.spotify.com/intl-pt/artist/7sf7qPbN4BiUlbOfEwziza',
     spotifyLabel: 'Ouvir no Spotify',
+    youtubeUrl: 'https://www.youtube.com/@bunnylandmusic',
+    youtubeLabel: 'YouTube',
   },
   {
     id: 'project-3',
@@ -50,6 +54,8 @@ export const projects: Project[] = [
     buttonLabel: 'Abrir projeto',
     spotifyUrl: 'https://open.spotify.com/intl-pt/artist/0nUtKTD6CkcADpjPYYCzHu',
     spotifyLabel: 'Ouvir no Spotify',
+    youtubeUrl: 'https://www.youtube.com/watch?v=b9QHotS4408',
+    youtubeLabel: 'YouTube',
   },
   {
     id: 'project-5',
