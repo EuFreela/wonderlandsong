@@ -16,6 +16,8 @@ export const projects: Project[] = [
     // filterOpacity: 0.35,
     href: '/projects/wonderland-song',
     // buttonLabel: 'Abrir projeto',
+    // spotifyUrl: 'https://open.spotify.com/',
+    // spotifyLabel: 'Ouvir no Spotify',
   },
   {
     id: 'project-2',
@@ -28,6 +30,8 @@ export const projects: Project[] = [
     // filterOpacity: 0.35,
     href: '/projects/caution-audio-gateway',
     buttonLabel: 'Abrir projeto',
+    spotifyUrl: 'https://open.spotify.com/intl-pt/artist/7sf7qPbN4BiUlbOfEwziza',
+    spotifyLabel: 'Ouvir no Spotify',
   },
   {
     id: 'project-3',
@@ -44,6 +48,8 @@ export const projects: Project[] = [
     image: '/images/agm2.png',
     href: '/projects/wonderland-song-tv',
     buttonLabel: 'Abrir projeto',
+    spotifyUrl: 'https://open.spotify.com/intl-pt/artist/0nUtKTD6CkcADpjPYYCzHu',
+    spotifyLabel: 'Ouvir no Spotify',
   },
   {
     id: 'project-5',
@@ -52,6 +58,8 @@ export const projects: Project[] = [
     image: '/images/hs2.png',
     href: '#artists',
     buttonLabel: 'Conhecer artistas',
+    spotifyUrl: 'https://open.spotify.com/intl-pt/artist/3w2iPAIrdoXXzJ38C59np8',
+    spotifyLabel: 'Ouvir no Spotify',
   },
   {
     id: 'project-6',
@@ -60,6 +68,8 @@ export const projects: Project[] = [
     image: '/images/usss.png',
     href: '#contact',
     buttonLabel: 'Continuar',
+    spotifyUrl: 'https://open.spotify.com/intl-pt/artist/008vDYJA7fvRWxchF8QN1F',
+    spotifyLabel: 'Ouvir no Spotify',
   },
 ];
 

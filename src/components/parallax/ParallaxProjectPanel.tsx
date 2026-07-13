@@ -1,6 +1,7 @@
 import { useReducedMotion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import type { Project } from '../../types';
+import SpotifyIcon from '../ui/SpotifyIcon';
 
 type Props = {
   project: Project;
@@ -18,12 +19,19 @@ function ParallaxProjectPanel({ project }: Props) {
   const isHashLink = project.href.startsWith('#');
   const label = project.buttonLabel?.trim();
   const showButton = Boolean(label);
+  const spotifyUrl = project.spotifyUrl?.trim();
+  const showSpotify = Boolean(spotifyUrl);
+  const spotifyLabel = project.spotifyLabel?.trim() || 'Spotify';
   const useVideo = Boolean(project.video) && !prefersReducedMotion;
   const filterOpacity = Math.min(1, Math.max(0, project.filterOpacity ?? 0));
   const hasColorFilter = Boolean(project.filterColor) && filterOpacity > 0;
+  const showActions = showButton || showSpotify;
 
   const buttonClassName =
-    'mt-6 inline-flex min-h-[38px] items-center justify-center bg-[#111] px-5 text-[0.65rem] font-bold uppercase tracking-[0.1em] text-white transition duration-200 hover:bg-white hover:text-[#111] focus-visible:bg-white focus-visible:text-[#111] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#111]';
+    'inline-flex min-h-[38px] items-center justify-center gap-2 bg-[#111] px-5 text-[0.65rem] font-bold uppercase tracking-[0.1em] text-white transition duration-200 hover:bg-white hover:text-[#111] focus-visible:bg-white focus-visible:text-[#111] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#111]';
+
+  const spotifyClassName =
+    'inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#1DB954] text-white shadow-md transition duration-200 hover:scale-105 hover:bg-[#1ed760] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1DB954]';
 
   return (
     <section
@@ -76,17 +84,32 @@ function ParallaxProjectPanel({ project }: Props) {
           {project.title}
         </h2>
 
-        {showButton ? (
-          <div>
-            {isHashLink ? (
-              <a href={project.href} className={buttonClassName}>
-                {label}
+        {showActions ? (
+          <div className="mt-6 flex flex-wrap items-center gap-3">
+            {showButton ? (
+              isHashLink ? (
+                <a href={project.href} className={buttonClassName}>
+                  {label}
+                </a>
+              ) : (
+                <Link to={project.href} className={buttonClassName}>
+                  {label}
+                </Link>
+              )
+            ) : null}
+
+            {showSpotify ? (
+              <a
+                href={spotifyUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={spotifyClassName}
+                aria-label={spotifyLabel}
+                title={spotifyLabel}
+              >
+                <SpotifyIcon size={22} />
               </a>
-            ) : (
-              <Link to={project.href} className={buttonClassName}>
-                {label}
-              </Link>
-            )}
+            ) : null}
           </div>
         ) : null}
       </div>

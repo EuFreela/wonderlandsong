@@ -25,6 +25,10 @@ export type Project = {
   headerTone?: 'light' | 'dark';
   href: string;
   buttonLabel?: string;
+  /** Spotify page/playlist/artist URL — shows a Spotify button when set. */
+  spotifyUrl?: string;
+  /** Label for the Spotify button (default: "Spotify"). */
+  spotifyLabel?: string;
 };
 
 export type Artist = {
