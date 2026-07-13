@@ -50,3 +50,56 @@ export type Release = {
   year: string;
   image: string;
 };
+
+export type BunnyAlbumTrack = {
+  title: string;
+  /** Optional dedication / character linked to the track (Chapter 3). */
+  dedication?: string;
+};
+
+/** Music video / clip linked to an album chapter. */
+export type BunnyAlbumClip = {
+  id: string;
+  title: string;
+  /** YouTube video id (e.g. j4Zi3IXLOKM). */
+  youtubeId: string;
+  /** Optional short label under the title. */
+  subtitle?: string;
+  /** When true, opens as youtube.com/shorts/:id (Shorts format). */
+  isShort?: boolean;
+};
+
+export type BunnyAlbum = {
+  slug: string;
+  title: string;
+  /** Short chapter label, e.g. "Chapter 2". */
+  chapter?: string;
+  year: string;
+  type: 'Album' | 'EP' | 'Single' | 'Demo';
+  cover: string;
+  /** One-line summary for gallery cards. */
+  summary: string;
+  /** Full description paragraphs for the album page. */
+  description: string[];
+  /** Optional content warning. */
+  warning?: string;
+  duration?: string;
+  trackCount?: number;
+  spotifyUrl?: string;
+  bandcampUrl?: string;
+  youtubeUrl?: string;
+  /**
+   * Easter Eggs / revelations modal content.
+   * When set, the album page shows an “Easter Eggs” button that opens a modal.
+   */
+  easterEgg?: {
+    title: string;
+    subtitle?: string;
+    intro: string;
+    /** Optional note under the list. */
+    note?: string;
+  };
+  tracks: BunnyAlbumTrack[];
+  /** Music video clips for this chapter/album. */
+  clips: BunnyAlbumClip[];
+};

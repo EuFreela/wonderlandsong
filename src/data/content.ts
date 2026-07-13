@@ -1,4 +1,4 @@
-import type { Artist, Project, Release } from '../types';
+import type { Artist, BunnyAlbum, Project, Release } from '../types';
 
 /**
  * Homepage parallax panels (POFO-style fixed background sequence).
@@ -30,13 +30,14 @@ export const projects: Project[] = [
     // Color tint over the media — change hex + opacity as needed
     // filterColor: '#9cbfff',
     // filterOpacity: 0.35,
-    href: '/projects/caution-audio-gateway',
+    href: '/projects/bunny-land-music',
     buttonLabel: 'Abrir projeto',
     spotifyUrl: 'https://open.spotify.com/intl-pt/artist/7sf7qPbN4BiUlbOfEwziza',
     spotifyLabel: 'Ouvir no Spotify',
     youtubeUrl: 'https://www.youtube.com/@bunnylandmusic',
     youtubeLabel: 'YouTube',
   },
+
   {
     id: 'project-3',
     category: 'MPB + Jazz + Poetry',
@@ -90,6 +91,347 @@ export const projects: Project[] = [
     spotifyLabel: 'Ouvir no Spotify',
   },
 ];
+
+/**
+ * Detail data for the Bunny Land Music project page
+ * (opened from project-2 "Abrir projeto").
+ * History adapted from:
+ * https://agencylk7.wixsite.com/bunny/post/history-of-bunny-land-music
+ */
+export const bunnyLandMusic = {
+  slug: 'bunny-land-music',
+  title: 'Bunny Land Music',
+  category: 'Dark EDM + Pop',
+  image: '/images/caution2.png',
+  tagline:
+    'Remixes, exploração sonora e um coelho que leva a música para outro nível de consciência.',
+  historyLead:
+    'Bunny Land Music nasceu de encontros no Twitch, da curiosidade por EDM e dark wave, e de um MIDI controller que mudou a forma de compor — um projeto de fim de semana que se tornou um universo próprio.',
+  pullQuote: 'Tudo se resume ao Twitch.',
+  historySections: [
+    {
+      id: 'origin',
+      title: 'Origem',
+      paragraphs: [
+        'Conheci no YouTube a Jenn Sakura, na época estudante de música em Berklee (EUA). Ela fazia lives no Twitch com histórias, música e jogos. Com o tempo voltou ao país onde está hoje e parou de transmitir — o canal dela ficou com amigos.',
+        'Ela brincava com o trocadilho “Jenn is a genius”, em referência ao programa “Jenny é um gênio”. Cheguei a fazer uma música de aniversário inspirada no tema de Alita — mas isso fica para outra história.',
+        'Depois que ela sumiu das lives, passei a seguir outros canais. Um deles chamou atenção: Sasha Grey, que conheci jogando Lost Ark. Descobri que ela também é DJ, fui atrás dos mixes e comecei a brincar com a linguagem do som.',
+      ],
+    },
+    {
+      id: 'spark',
+      title: 'A faísca',
+      paragraphs: [
+        'Sasha me inspirou a começar o projeto depois que descobri que ela também era DJ.',
+        'Até então eu não tinha experiência com EDM, dark wave e outros gêneros eletrônicos. Pesquisei, ouvi e me inspirei em nomes como Deadmau5, The Chemical Brothers e outros do circuito.',
+        'Meu pai administrou um grupo de venda de instrumentos na região — e, de surpresa, apareceu um brinquedo que mudou tudo: um controlador MIDI AKAI. Depois de algumas semanas aprendendo a usá-lo, escolhi faixas para remixar. A primeira foi “Month to a Flame”. A partir daí, nasceram outras a cada fim de semana.',
+      ],
+    },
+    {
+      id: 'craft',
+      title: 'Ofício e remixes',
+      paragraphs: [
+        'Na época, eu terminava o curso “A Moeda da Música”, do Paulo Anhaia — o que coincidiu com mais conhecimento sobre covers, remixes e licenciamento. Subi essas versões no YouTube. Pausei por um tempo, conciliando estudo e trabalho.',
+        'Desde então o interesse só cresceu: remixes cada vez mais profissionais, performance com o AKAI e o olhar já em outro brinquedo — um Pioneer. Quero montar um estúdio; as gravações estão em pausa por enquanto. Quando isso se encaixar, a ideia de um canal no Twitch para lives de show fica no radar.',
+        'Nas descrições dos vídeos, deixo o material dos remixes (exceto quando a faixa é original).',
+      ],
+    },
+    {
+      id: 'bunny',
+      title: 'Por que um coelho?',
+      paragraphs: [
+        'Gosto do universo de Alice no País das Maravilhas por vários motivos. O coelho leva Alice para o fundo da toca — um mundo de fantasias. O Bunny Man encaixa nesse conceito: levar a música a outro nível de consciência.',
+      ],
+    },
+    {
+      id: 'styles',
+      title: 'Estilos e exploração',
+      paragraphs: [
+        'O projeto passa por trance, EDM, pop e tons mais europeus, como avant-pop. Também me aproximo do K-pop (acompanhando trabalhos como o de Blackpink, em especial Jisoo) — menos como meta de copiar um gênero e mais como experiência de navegar outros territórios. Sou aquariano: curioso, gosto de explorar e descobrir.',
+        'Não me vejo como profissional da música: é hobby de fim de semana ou quando sobra tempo. A ocupação principal é outra. Sei que misturar estilos pode ser armadilha para a identidade artística — ou caminho para um som mais maduro e rico. De qualquer forma, gosto de explorar.',
+        'Misturar linguagens gera projetos interessantes. Exemplos que me marcam: “Drown”, de Karen O & Danger Mouse (pop orquestrado, ecos de James Bond, trip-hop, post-grunge); “Bleed as One”, de VOSH (dark wave com post-grunge); “The Test”, dos Chemical Brothers (quebrar o molde e abrir tendência); e mixes de melodic dubstep que fogem do estereótipo de 140–160 BPM de game. Quando entendo o conceito de cada estilo, a mistura fica legível — como em “Hearts Connected”, de Cathy Burton, que em trance ganhou vida com Omnia, e em outra versão minha inclinei dark wave com pop, numa atmosfera próxima de Stranger Things.',
+      ],
+    },
+  ],
+  historyClosing: 'É divertido.',
+  historySourceUrl: 'https://agencylk7.wixsite.com/bunny/post/history-of-bunny-land-music',
+  historySourceLabel: 'História completa (arquivo)',
+  spotifyUrl: 'https://open.spotify.com/intl-pt/artist/7sf7qPbN4BiUlbOfEwziza',
+  spotifyLabel: 'Ouvir no Spotify',
+  youtubeUrl: 'https://www.youtube.com/@bunnylandmusic',
+  youtubeLabel: 'YouTube',
+} as const;
+
+/**
+ * Discography for Bunny Land Music gallery + album detail pages.
+ * Sources: Spotify, Bandcamp, and blog posts on agencylk7.wixsite.com/bunny
+ */
+export const bunnyLandAlbums: BunnyAlbum[] = [
+  {
+    slug: 'chapter-1-caution-audio-gateway',
+    title: 'Caution! Audio Gateway',
+    chapter: 'Chapter 1',
+    year: '2026',
+    type: 'Album',
+    cover: '/images/albums/chapter-1-caution-audio-gateway.jpg',
+    summary:
+      'Remix em Dark EDM e Dark Pop do projeto demo Reverse Universe — o portal sonoro que abre a jornada de Bunny Land Music.',
+    description: [
+      'Bunny Land Music – Caution! Audio Gateway é um projeto conceitual musical que mergulha no universo da música eletrônica com uma abordagem imersiva e experimental. O álbum propõe uma narrativa sonora em que uma playlist misteriosa serve como portal para outra dimensão, desafiando os limites da percepção e da realidade.',
+      'Na prática, Caution! Audio Gateway é o remix das músicas do projeto demo Reverse Universe — um trabalho não finalizado cujas faixas originais já estão registradas. Parte desse material foi reimaginada em Dark EDM e Dark Pop; as músicas descritas neste chapter são as novas versões que complementam e relançam o projeto sob o universo Bunny Land Music.',
+      'Há uma narrativa na introdução que dá início a essa jornada por Bunny Land Music. Com influências de festivais como Tomorrowland e gêneros como EDM, trance, techno e glitch pop, cada faixa marca uma etapa da transformação sensorial e emocional provocada pelo som.',
+      'A personagem Liat, ao chegar em casa depois de um dia exaustivo, adormece ao som de Bunny Land Music – Caution! Audio Gateway e mergulha em outra realidade: o mundo de Bunny Land.',
+      'Projeto: Caution! Audio Gateway · Origem: Reverse Universe (demo) · Compositor/DJ: Lameck S. Fernandes · Vulgo: Bunny Land Music.',
+    ],
+    trackCount: 13,
+    bandcampUrl: 'https://wonderlandsong.bandcamp.com/album/chapter-1-reverse-universe',
+    tracks: [
+      { title: 'The Gateway to Bunny Land (Intro)' },
+      { title: 'Bunny Land' },
+      { title: 'Apocalipse In Me' },
+      { title: 'Synthetic Dreams' },
+      { title: 'Minerva' },
+      { title: 'My Pulse' },
+      { title: 'Glitch In Time' },
+      { title: 'Shattered Parallels' },
+      { title: 'Veins of Autumn' },
+      { title: 'Who I Was (Shadows of Who I Might Have Been)' },
+      { title: 'Fragments of Light' },
+      { title: 'Welcome Home' },
+      { title: 'After the Fall' },
+    ],
+    clips: [
+      {
+        id: 'apocalipse-in-me-remix',
+        title: 'Apocalipse In Me (Remix)',
+        subtitle: 'Chapter 1 · Bunny Land Music',
+        youtubeId: 'j4Zi3IXLOKM',
+      },
+      {
+        id: 'apocalipse-in-me',
+        title: 'Apocalipse In Me',
+        subtitle: 'Chapter 1 · Bunny Land Music',
+        youtubeId: 'jda4Dbyd5i0',
+      },
+      {
+        id: 'veins-of-autumn',
+        title: 'Veins of Autumn',
+        subtitle: 'Chapter 1 · Bunny Land Music',
+        youtubeId: 'H9GqGZtcR74',
+      },
+    ],
+  },
+  {
+    slug: 'chapter-2-in-the-forest',
+    title: 'In The Forest',
+    chapter: 'Chapter 2',
+    year: '2025',
+    type: 'Album',
+    cover: '/images/albums/chapter-2-in-the-forest.jpg',
+    summary:
+      'Uma jornada emocional na floresta sonora: superação, identidade, amor, nostalgia e tecnologia em 14 faixas.',
+    description: [
+      'Bunny Land Music – In The Forest é um projeto conceitual que cruza gêneros e atmosferas para explorar superação, amor, identidade, tecnologia e empoderamento. Cada música é um trecho dessa jornada — e, juntas, formam uma experiência imersiva para o ouvinte.',
+      'Bunny Land Music não é só um conjunto de canções: é uma narrativa sonora em que cada faixa tem um papel. O eixo é a exploração emocional e existencial — autodescoberta, luta, paixão, solidão e renascimento. O título In The Forest sugere a busca pelo desconhecido: um espaço onde emoções, sonhos e desafios se entrelaçam.',
+      'O álbum convida a percorrer momentos de descoberta, confronto, desejo, perda e recomeço. Gêneros e influências se misturam num ambiente sonoro diverso; a mensagem central é que todo mundo atravessa mudança — e, no caminho, dá para reencontrar força, identidade e propósito.',
+      'Superação e autoconfiança: não importa quantas vezes se caia, sempre há um jeito de se reerguer. Memórias e nostalgia: algumas lembranças assombram, mas também moldam quem somos. Amor e relacionamentos: desejo e ilusão podem prender — e também ensinar a crescer. Tecnologia e futuro: a identidade pode ser recriada, no mundo físico ou digital.',
+      'In The Forest é mais do que um álbum: é uma experiência que guia por cenários e emoções, com batida, melodia e letra carregadas de sentido. Cada faixa é um capítulo; o conjunto forma um universo denso, onde a evolução pessoal fica no centro da história.',
+      'Projeto: In The Forest · Compositor/DJ: Lameck S. Fernandes · Vulgo: Bunny Land Music.',
+    ],
+    duration: '42 min',
+    trackCount: 14,
+    spotifyUrl: 'https://open.spotify.com/album/2ds30x0CDVRqQtOZVI6fft',
+    youtubeUrl: 'https://www.youtube.com/playlist?list=PLZaxj1t8hrg5Lpm_PXyyMNDuNCpu_vh4c',
+    tracks: [
+      { title: 'Burn It Down' },
+      { title: 'Runaway Lights' },
+      { title: 'Lost In Time' },
+      { title: 'Lost In The Night' },
+      { title: 'Falling Apart' },
+      { title: 'Take The Lead' },
+      { title: 'Slow Weekend' },
+      { title: 'Fading Echoes' },
+      { title: 'No Mercy' },
+      { title: 'In My Zone - Part 1' },
+      { title: 'Lost In The Night - Remix' },
+      { title: 'In My Zone - Part 2' },
+      { title: 'Falling Apart - Remix' },
+      { title: 'Lost Without You' },
+    ],
+    clips: [
+      {
+        id: 'burn-it-down',
+        title: 'Burn It Down',
+        subtitle: 'Chapter 2 · Bunny Land Music',
+        youtubeId: 'C6t6tQo2oPU',
+      },
+      {
+        id: 'runaway-lights',
+        title: 'Runaway Lights',
+        subtitle: 'Chapter 2 · Bunny Land Music',
+        youtubeId: 'bHf1U2Ilh-8',
+      },
+      {
+        id: 'lost-in-time',
+        title: 'Lost In Time',
+        subtitle: 'Chapter 2 · Bunny Land Music',
+        youtubeId: 'CEnr8x4xqbs',
+      },
+      {
+        id: 'lost-in-the-night',
+        title: 'Lost In The Night',
+        subtitle: 'Synthwave Retro Hit · Chapter 2',
+        youtubeId: 'Ff50E_xq8gc',
+      },
+      {
+        id: 'falling-apart',
+        title: 'Falling Apart',
+        subtitle: 'Chapter 2 · Bunny Land Music',
+        youtubeId: 'Vm_uyDy9YSc',
+      },
+      {
+        id: 'take-the-lead',
+        title: 'Take The Lead',
+        subtitle: 'When Confidence Isn’t Optional · Chapter 2',
+        youtubeId: 'k38LDYSDZ4w',
+      },
+      {
+        id: 'no-mercy',
+        title: 'No Mercy',
+        subtitle: 'The Enemy Within · Chapter 2',
+        youtubeId: 'G8DmOS5uFZ4',
+      },
+      {
+        id: 'lost-in-the-night-remix',
+        title: 'Lost In The Night - Remix',
+        subtitle: 'Chapter 2 · Bunny Land Music',
+        youtubeId: 'LX-ZDzQNxjM',
+      },
+    ],
+  },
+  {
+    slug: 'chapter-3-in-time-with-your-heart',
+    title: 'In Time With Your Heart',
+    chapter: 'Chapter 3',
+    year: '2026',
+    type: 'Album',
+    cover: '/images/albums/chapter-3-in-time-with-your-heart.jpg',
+    summary:
+      'Álbum conceitual sobre o tempo emocional: desencontros, silêncios, desejo contido e amores que existem mais na sensação do que na ação.',
+    description: [
+      'In Time With Your Heart é um álbum conceitual que explora o tempo emocional — não o relógio, mas o tempo que cada pessoa vive por dentro. Fala de desencontros, silêncios, limites, desejo contido e amores que existem mais na sensação do que na ação. É um disco sobre sentir antes de estar pronto, amar antes de ser escolhido e aprender, devagar, a respeitar o próprio ritmo do coração.',
+      'Neste capítulo as músicas amadurecem: chegam a revelações mais fortes e a sentimentos autênticos. As faixas não contam uma história linear; montam uma jornada íntima e psicológica — expectativa, apego, autocontrole, perda, consciência e, por fim, maturidade. O amor aparece menos como romance idealizado e mais como experiência real: incompleta, ambígua, às vezes dolorosa, mas sempre honesta.',
+      'O projeto trabalha presença e ausência. Muitos personagens amam em silêncio, observam, esperam, resistem ou permanecem em relações em que não são totalmente escolhidos. O tempo não resolve tudo depressa — apenas revela. Cada faixa é um momento em que o coração entende algo antes da razão conseguir acompanhar. Cada música é também uma relação — ilusão, platônica ou real — e, no mapa emocional do disco (revelations), cada uma se liga a uma presença.',
+      'Sonoramente, o álbum mantém atmosfera introspectiva, noturna e cinematográfica, com dark pop, indie, ambient e R&B alternativo. O foco não está em explosões, e sim em tensão contida, espaços vazios e sentimentos que ecoam. O silêncio entra como parte da música, não como falta dela.',
+      'Há ainda um eixo de autorespeito emocional: do desejo de ser visto e escolhido à compreensão de que nem todo sentimento precisa virar vínculo — e que saber partir também é uma forma de amor, por si. Amar “no tempo do coração” é aceitar quando algo ainda não pode ser vivido, ou quando nunca será.',
+      'In Time With Your Heart não pede respostas imediatas. Convida à escuta atenta, à identificação silenciosa e à reflexão — para quem já sentiu demais, esperou demais ou precisou aprender que algumas histórias não terminam: apenas se transformam em consciência. Em essência, é sentir com verdade, mesmo sem garantia, e saber que o coração tem o próprio relógio — e ignorá-lo sempre cobra um preço.',
+      'Projeto: In Time With Your Heart · Compositor/Produtor: Lameck S. Fernandes · Projeto musical: Bunny Land Music.',
+    ],
+    warning: 'Este capítulo transmite emoções fortes e revelações íntimas. Ouça com moderação.',
+    duration: '1 h 6 min',
+    trackCount: 16,
+    spotifyUrl: 'https://open.spotify.com/intl-pt/album/6aOOALcMvYmoVUQXhOPufv',
+    easterEgg: {
+      title: 'Revelations',
+      subtitle: 'Chapter 3 · In Time With Your Heart',
+      intro:
+        'Cada música expressa uma relação amorosa: ilusão, platônica ou real. Cada música é uma garota.',
+      note: 'Easter egg do álbum — o mapa emocional por trás das faixas.',
+    },
+    tracks: [
+      { title: 'When You Say Nothing, I Bleed', dedication: 'Josi' },
+      { title: 'Velvet Ruin', dedication: 'Scabbia' },
+      { title: 'Games Of Love', dedication: 'Silana' },
+      { title: 'Not Your Game', dedication: 'Kelly' },
+      { title: 'She Knows The Line', dedication: 'Layla' },
+      { title: 'Forbidden Zone', dedication: 'Secret' },
+      { title: 'Rented Dreams', dedication: 'Jéssica' },
+      { title: 'Between The Pause', dedication: 'Natália' },
+      { title: 'Half Of Us', dedication: 'Vanessa' },
+      { title: 'Violence Words', dedication: 'Elaine' },
+      { title: 'The Way I Stay', dedication: 'Ellen (sobre mim)' },
+      { title: 'Only When You Need Me', dedication: 'Resposta a Ellen' },
+      { title: 'Fake Love Glow', dedication: 'Talita' },
+      { title: 'Keys I Never Held', dedication: 'Silana' },
+      { title: 'Nice To Meet You', dedication: 'Viviana' },
+      { title: 'Only When You Need Me (Dakmode)' },
+    ],
+    clips: [
+      {
+        id: 'chapter-3-trailer',
+        title: 'Chapter 3 | Trailer',
+        subtitle: 'In Time With Your Heart',
+        youtubeId: '-6fgoASzoGE',
+      },
+      {
+        id: 'when-you-say-nothing-i-bleed',
+        title: 'When You Say Nothing, I Bleed',
+        subtitle: 'Chapter 3 · Bunny Land Music',
+        youtubeId: '_JCosH8KO4A',
+      },
+      {
+        id: 'velvet-ruin',
+        title: 'Velvet Ruin',
+        subtitle: 'Chapter 3 · Bunny Land Music',
+        youtubeId: 'mOwOT-trV-A',
+      },
+      {
+        id: 'keys-i-never-held',
+        title: 'Keys I Never Held',
+        subtitle: 'Chapter 3 · Bunny Land Music',
+        youtubeId: 'NghLnjWRWnA',
+      },
+    ],
+  },
+  {
+    slug: 'chapter-4-listen-to-daddy',
+    title: 'Listen To Daddy',
+    chapter: 'Chapter 4',
+    year: '2026',
+    type: 'Album',
+    cover: '/images/albums/listen-to-daddy.jpg',
+    summary:
+      'Uma voz de orientação e cuidado: escuta, presença e maturidade emocional — o quarto capítulo do Bunny Land Music.',
+    description: [
+      'Listen To Daddy é um álbum conceitual construído como voz de orientação, proteção e maturidade emocional — quase um pai falando com um filho, ou com alguém mais jovem, em momentos de dúvida, dor e transição. O disco não parte de quem está perdido, e sim de quem já atravessou erro, queda e aprendizado, e agora oferece palavras que não controlam: apenas sustentam.',
+      'O tema central é a escuta. Não só ouvir o outro, mas aprender a ouvir a si mesmo quando tudo parece confuso. As músicas funcionam como conselhos calmos em meio ao caos — escolhas, consequências, orgulho, paciência, força interior, limites e esperança. Não há julgamento nem imposição; há presença. A figura do “Daddy” não é autoritária: é firme, acolhedora e consciente do tempo de cada um.',
+      'As faixas traçam uma jornada da fragilidade à estabilidade. O ouvinte passa por medo, raiva contida, culpa, resistência e exaustão, até a ideia de que crescer não é vencer sempre, e sim permanecer inteiro quando tudo falha. Cair não é o fim; força não está em endurecer, e sim em soltar pesos desnecessários.',
+      'O álbum trabalha responsabilidade emocional. Diferente do amor romântico, o cuidado aqui é estruturante: saber quando não reagir, quando respirar, quando esperar, quando se levantar e quando simplesmente continuar. Muitas letras soam como instruções simples — “continue”, “não quebre”, “deixe ir” — porque, em certos momentos, o essencial precisa ser direto.',
+      'Sonoramente, mantém a identidade cinematográfica e introspectiva do Bunny Land Music, com mais foco em estabilidade e chão emocional. Produções profundas, contidas e sólidas; andamentos médios a lentos; harmonias quentes e sensação de amparo. Silêncio e repetição reforçam a constância — alguém que permanece ao lado, mesmo sem falar muito.',
+      'Há também uma espiritualidade humana — não religiosa — como força interior, consciência e continuidade. O espírito que não cai, o peso que pode ser solto, o pertencer mesmo em silêncio atravessam as faixas e dão unidade ao disco.',
+      'Listen To Daddy não busca impacto imediato. É um álbum para pausa, reconstrução e escuta interna: não empurra o ouvinte para frente — segura a mão enquanto ele aprende a andar no próprio ritmo. Em essência, é crescer sem perder a sensibilidade, aprender com quem já esteve lá, e entender que ouvir uma voz firme e amorosa — externa ou interna — pode ser a diferença entre quebrar e continuar.',
+      'Projeto: Listen To Daddy · Compositor/Produtor: Lameck S. Fernandes · Projeto musical: Bunny Land Music.',
+    ],
+    duration: '46 min',
+    trackCount: 10,
+    spotifyUrl: 'https://open.spotify.com/album/5LmYLnlAgYhi6tTrP2WLYg',
+    tracks: [
+      { title: 'Spirit That Won’t Fall' },
+      { title: 'I’ve Been You' },
+      { title: 'Not Yet' },
+      { title: 'When The Room Goes Quiet' },
+      { title: 'Rooms Without Windows' },
+      { title: 'Let Go Of The Weight' },
+      { title: 'It Doesn’t Mean You Don’t Belong' },
+      { title: 'When You Feel Alone' },
+      { title: 'Where Nothing Dies' },
+      { title: 'Nights You Cry' },
+    ],
+    clips: [
+      {
+        id: 'spirit-that-wont-fall-short',
+        title: 'Spirit That Won’t Fall',
+        subtitle: 'Short · Chapter 4 · Listen To Daddy',
+        youtubeId: 'XK4UWvd-a_A',
+        isShort: true,
+      },
+    ],
+  },
+];
+
+export function getBunnyAlbumBySlug(slug: string): BunnyAlbum | undefined {
+  return bunnyLandAlbums.find((album) => album.slug === slug);
+}
 
 export const artists: Artist[] = [
   {
