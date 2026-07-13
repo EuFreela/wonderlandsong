@@ -11,6 +11,7 @@ import {
   theComputerTracks,
   unpluggedTracks,
 } from './helena-son-lyrics';
+import { uss1937Tracks } from './uss-1937-lyrics';
 
 /**
  * Homepage parallax panels (POFO-style fixed background sequence).
@@ -349,6 +350,70 @@ export const helenaSon: ProjectDetail = {
   spotifyUrl: 'https://open.spotify.com/intl-pt/artist/3w2iPAIrdoXXzJ38C59np8',
   spotifyLabel: 'Ouvir no Spotify',
 };
+
+/**
+ * USS Shenandoah — project-6 detail page (home: project-6).
+ * Álbum 1937 e sua explicação ficam na página do álbum.
+ */
+export const ussShenandoah: ProjectDetail = {
+  slug: 'uss-shenandoah',
+  title: 'USS Shenandoah',
+  category: 'Hard Rock 1960',
+  image: '/images/usss.png',
+  tagline:
+    'Projeto musical de hard rock com a linguagem dos anos 60 — peso, groove e gravação orgânica.',
+  historyTitle: 'Sobre USS Shenandoah',
+  historyLead:
+    'USS Shenandoah é um projeto musical de Lameck S. Fernandes, Adriano Lima e Rodrigo Alves, dedicado ao hard rock com forte influência do som dos anos 60.',
+  pullQuote:
+    'Rock direto, com personalidade — guitarras, riffs e a atmosfera de uma das eras mais marcantes do gênero.',
+  footerNote: 'USS Shenandoah · Hard Rock · Anos 60',
+  albumsEmptyMessage: 'Os álbuns de USS Shenandoah serão adicionados em breve.',
+  historySections: [
+    {
+      id: 'project',
+      title: 'O projeto',
+      paragraphs: [
+        'USS Shenandoah é um projeto musical de Lameck S. Fernandes, Adriano Lima e Rodrigo Alves. A proposta é explorar a sonoridade do hard rock clássico, em especial a do final da década de 1960, com guitarras distorcidas, riffs marcantes, órgão vintage e uma abordagem mais orgânica de gravação.',
+        'O projeto não busca só copiar um estilo antigo: reinterpreta essa estética com a linguagem do hard rock dos anos 60, em busca de uma experiência musical envolvente e atemporal.',
+      ],
+    },
+    {
+      id: 'credits',
+      title: 'Créditos',
+      paragraphs: [
+        'Projeto: USS Shenandoah · Compositores: Lameck S. Fernandes, Adriano Lima e Rodrigo Alves · Gênero: Hard rock · Influência: rock dos anos 60 · Universo Wonderland Song.',
+      ],
+    },
+  ],
+  spotifyUrl: 'https://open.spotify.com/intl-pt/artist/008vDYJA7fvRWxchF8QN1F',
+  spotifyLabel: 'Ouvir no Spotify',
+};
+
+/** Álbuns de USS Shenandoah (project-6). */
+export const ussShenandoahAlbums: ProjectAlbum[] = [
+  {
+    slug: '1937',
+    title: '1937',
+    year: '2026',
+    type: 'Album',
+    cover: '/images/albums/uss-1937.jpg',
+    summary:
+      'Álbum conceitual de hard rock com forte influência do som dos anos 60 — guitarras, riffs, órgão vintage e gravação orgânica.',
+    description: [
+      '1937 é o álbum conceitual de hard rock do projeto USS Shenandoah, com forte influência do som dos anos 60, criado por Lameck S. Fernandes, Rodrigo Alves e Adriano Lima. A proposta é explorar a sonoridade característica daquela época, resgatando elementos clássicos do rock como guitarras distorcidas, riffs marcantes, órgão vintage e uma abordagem mais orgânica de gravação.',
+      'Inspirado na energia e na estética do rock do final da década de 1960, o álbum busca recriar uma atmosfera intensa, envolvente e autêntica, onde os instrumentos têm presença forte e a música se desenvolve de forma natural, valorizando a expressividade e a emoção.',
+      'O resultado é um trabalho que combina peso, groove e sensibilidade musical, trazendo um rock direto, cheio de personalidade e de bom gosto, capaz de transportar o ouvinte para a atmosfera sonora de uma das épocas mais marcantes da história do gênero.',
+      'Mais do que apenas reproduzir um estilo antigo, 1937 procura reinterpretar essa estética clássica, utilizando a linguagem do hard rock dos anos 60 para criar uma experiência musical envolvente e atemporal.',
+      'Projeto: USS Shenandoah · Álbum: 1937 · Lameck S. Fernandes, Adriano Lima e Rodrigo Alves.',
+    ],
+    duration: '58 min',
+    trackCount: uss1937Tracks.length,
+    spotifyUrl: 'https://open.spotify.com/album/0qkcfpR2jWwbN1lExyZAjw',
+    tracks: uss1937Tracks,
+    clips: [],
+  },
+];
 
 /**
  * Álbuns de Helena's Son (project-5) — Genesis.
@@ -697,6 +762,7 @@ export const projectDetailsBySlug: Record<string, ProjectDetail> = {
   [rosaNegraHalfeti.slug]: rosaNegraHalfeti,
   [aGrandeMultidao.slug]: aGrandeMultidao,
   [helenaSon.slug]: helenaSon,
+  [ussShenandoah.slug]: ussShenandoah,
 };
 
 /** Discographies keyed by project slug. */
@@ -705,6 +771,7 @@ export const projectAlbumsBySlug: Record<string, ProjectAlbum[]> = {
   [rosaNegraHalfeti.slug]: [],
   [aGrandeMultidao.slug]: aGrandeMultidaoAlbums,
   [helenaSon.slug]: helenaSonAlbums,
+  [ussShenandoah.slug]: ussShenandoahAlbums,
 };
 
 export function getProjectDetailBySlug(slug: string): ProjectDetail | undefined {
