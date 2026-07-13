@@ -54,6 +54,66 @@ describe('App', () => {
     expect(screen.getByRole('link', { name: /Voltar à home/i })).toHaveAttribute('href', '/');
   });
 
+  it('opens Rosa Negra de Halfeti project page with the shared project layout', () => {
+    renderAt('/projects/rosa-negra-halfeti');
+
+    expect(screen.getByRole('heading', { name: /^Rosa Negra de Halfeti$/i })).toBeInTheDocument();
+    expect(screen.getByText('MPB · Experimental · Atmosférico')).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /Álbuns lançados/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { name: /Sobre a Rosa Negra de Halfeti/i }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getAllByText(/Simplesmente eu: literalmente, aos pedaços/i).length,
+    ).toBeGreaterThan(0);
+    expect(screen.getByRole('heading', { name: /^O projeto$/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole('link', { name: /Site Rosa Negra de Halfeti/i }),
+    ).toHaveAttribute('href', 'https://agencylk7.wixsite.com/halfeti');
+    expect(screen.getByRole('link', { name: /^YouTube$/i })).toHaveAttribute(
+      'href',
+      expect.stringContaining('youtube.com'),
+    );
+    expect(screen.getByRole('link', { name: /Voltar à home/i })).toHaveAttribute('href', '/');
+  });
+
+  it('opens A Grande Multidão project page with shared layout', () => {
+    renderAt('/projects/a-grande-multidao');
+
+    expect(screen.getByRole('heading', { name: /^A Grande Multidão$/i })).toBeInTheDocument();
+    expect(screen.getByText('Gospel + TJ')).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { name: /Sobre A Grande Multidão/i }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole('link', { name: /Ver álbum.*A Verdade Ainda Chama/i }),
+    ).toHaveAttribute(
+      'href',
+      '/projects/a-grande-multidao/albums/a-verdade-ainda-chama',
+    );
+    expect(
+      screen.getAllByText(/a verdade continua chamando/i).length,
+    ).toBeGreaterThan(0);
+    expect(screen.getByRole('link', { name: /Ouvir no Spotify/i })).toHaveAttribute(
+      'href',
+      expect.stringContaining('spotify.com'),
+    );
+    expect(screen.getByRole('link', { name: /Voltar à home/i })).toHaveAttribute('href', '/');
+  });
+
+  it('opens A Verdade Ainda Chama album page under A Grande Multidão', () => {
+    renderAt('/projects/a-grande-multidao/albums/a-verdade-ainda-chama');
+
+    expect(screen.getByRole('heading', { name: /^A Verdade Ainda Chama$/i })).toBeInTheDocument();
+    expect(
+      screen.getAllByText(/álbum de A Grande Multidão/i).length,
+    ).toBeGreaterThan(0);
+    expect(screen.getByRole('link', { name: /← A Grande Multidão/i })).toHaveAttribute(
+      'href',
+      '/projects/a-grande-multidao',
+    );
+  });
+
   it('shows album gallery links on Bunny Land Music page', () => {
     renderAt('/projects/bunny-land-music');
 
@@ -81,7 +141,7 @@ describe('App', () => {
     expect(
       screen.getByText(/Álbum conceitual sobre o tempo emocional/i),
     ).toBeInTheDocument();
-    expect(screen.getByText('Velvet Ruin')).toBeInTheDocument();
+    expect(screen.getAllByText('Velvet Ruin').length).toBeGreaterThan(0);
     expect(screen.queryByText(/→ Scabbia/i)).not.toBeInTheDocument();
     expect(screen.getByRole('link', { name: /Ouvir no Spotify/i })).toHaveAttribute(
       'href',

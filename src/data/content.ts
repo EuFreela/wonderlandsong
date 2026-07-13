@@ -1,4 +1,4 @@
-import type { Artist, BunnyAlbum, Project, Release } from '../types';
+import type { Artist, Project, ProjectAlbum, ProjectDetail, Release } from '../types';
 
 /**
  * Homepage parallax panels (POFO-style fixed background sequence).
@@ -40,12 +40,12 @@ export const projects: Project[] = [
 
   {
     id: 'project-3',
-    category: 'MPB + Jazz + Poetry',
+    category: 'MPB · Experimental · Atmosférico',
     title: 'Rosa Negra de Halfeti',
     image: '/images/rnh3.png',
     href: '/projects/rosa-negra-halfeti',
     buttonLabel: 'Abrir projeto',
-    youtubeUrl: 'https://www.youtube.com/watch?v=_xHNXhUetcQ',
+    youtubeUrl: 'https://www.youtube.com/watch?v=0-nnIYlwXC0',
     youtubeLabel: 'YouTube',
   },
   {
@@ -53,12 +53,10 @@ export const projects: Project[] = [
     category: 'Gospel + TJ',
     title: 'A Grande Multidão',
     image: '/images/agm2.png',
-    href: '/projects/wonderland-song-tv',
+    href: '/projects/a-grande-multidao',
     buttonLabel: 'Abrir projeto',
     spotifyUrl: 'https://open.spotify.com/intl-pt/artist/0nUtKTD6CkcADpjPYYCzHu',
     spotifyLabel: 'Ouvir no Spotify',
-    youtubeUrl: 'https://www.youtube.com/watch?v=b9QHotS4408',
-    youtubeLabel: 'YouTube',
   },
   {
     id: 'project-5',
@@ -98,16 +96,18 @@ export const projects: Project[] = [
  * History adapted from:
  * https://agencylk7.wixsite.com/bunny/post/history-of-bunny-land-music
  */
-export const bunnyLandMusic = {
+export const bunnyLandMusic: ProjectDetail = {
   slug: 'bunny-land-music',
   title: 'Bunny Land Music',
   category: 'Dark EDM + Pop',
   image: '/images/caution2.png',
   tagline:
     'BunnyMan · Tommy o DJ coelho — uma jornada sonora por emoções, identidade e o universo Wonderland Song.',
+  historyTitle: 'Como nasceu o Bunny Land Music',
   historyLead:
     'Bunny Land Music é um projeto conceitual de Lameck: o alter ego BunnyMan — o DJ coelho Tommy — guia uma jornada sonora por emoções e identidade. Nasceu de encontros no Twitch, da curiosidade por EDM e dark wave, e de um MIDI controller que mudou a forma de compor.',
   pullQuote: 'Tudo se resume ao Twitch.',
+  footerNote: 'Bunny Land Music · Dark EDM + Pop',
   historySections: [
     {
       id: 'concept',
@@ -177,13 +177,182 @@ export const bunnyLandMusic = {
   spotifyLabel: 'Ouvir no Spotify',
   youtubeUrl: 'https://www.youtube.com/@bunnylandmusic',
   youtubeLabel: 'YouTube',
-} as const;
+};
+
+/**
+ * Rosa Negra de Halfeti — project-3 detail page.
+ * Sources: author notes + https://agencylk7.wixsite.com/halfeti
+ */
+export const rosaNegraHalfeti: ProjectDetail = {
+  slug: 'rosa-negra-halfeti',
+  title: 'Rosa Negra de Halfeti',
+  category: 'MPB · Experimental · Atmosférico',
+  image: '/images/rnh3.png',
+  tagline:
+    'Simplesmente eu: literalmente, aos pedaços — em frases e achados. Letras autorais, MPB densa e a beleza rara que nasce da dor.',
+  historyTitle: 'Sobre a Rosa Negra de Halfeti',
+  historyLead:
+    'Rosa Negra de Halfeti é um projeto musical autoral em formato de álbum, com letras introspectivas, existenciais e afetivas. Mistura MPB com linguagem densa e poética — amor, perda, identidade, solidão e transformação. O nome evoca a flor rara que nasce escura: a beleza incomum que nasce da dor.',
+  pullQuote: 'Simplesmente eu: literalmente, aos pedaços — em frases e achados.',
+  footerNote: 'Rosa Negra de Halfeti · MPB contemporâneo · Experimental · Atmosférico',
+  albumsEmptyMessage:
+    'Serão 16 faixas de puro lirismo. Algumas demos já estão no YouTube; o álbum completo chega às plataformas em breve.',
+  historySections: [
+    {
+      id: 'concept',
+      title: 'O projeto',
+      paragraphs: [
+        'Rosa Negra de Halfeti é um projeto musical autoral em formato de álbum, com foco em letras introspectivas, existenciais e afetivas. As músicas misturam elementos da MPB com uma linguagem mais densa e poética — amor, perda, identidade, solidão e transformação pessoal. O nome faz referência à flor rara que nasce escura, símbolo da beleza incomum que nasce da dor.',
+        'As composições são todas autorais e exploram sentimentos humanos profundos por meio de metáforas, vocabulário culto e estrutura lírica. O projeto não segue fórmulas comerciais: prioriza expressão pessoal e autenticidade emocional.',
+      ],
+    },
+    {
+      id: 'origin',
+      title: 'De onde vêm as palavras',
+      paragraphs: [
+        'Rosa Negra de Halfeti é o reencontro do compositor com palavras que ele próprio deixou pelo caminho. Fragmentos de sentimentos, rabiscos em guardanapos, anotações em cadernos antigos — cada letra carrega uma situação vivida, um instante sentido com intensidade, reorganizado pela música como travessia emocional.',
+        'Essas canções não foram escritas de uma vez. Foram descobertas. Como quem reencontra a si mesmo em papéis gastos, escritos em fases distintas da vida — onde o único abrigo possível era o verso e a poesia. Daí o tema: “Simplesmente eu: literalmente, aos pedaços — em frases e achados”.',
+        'Há muitos anos Lameck escreve músicas. O rock sempre foi espinha dorsal da essência criativa, sem se limitar a um estilo só: a raiz mais visceral é a Música Popular Brasileira. Escrever foi refúgio — poemas livres, sussurros no papel, tentativas de traduzir o que doía, pulsava e ainda não tinha nome. Esses textos viviam em caixas, bordas de guardanapos e páginas de partituras, até o dia de reunir parte desses pedaços e lhes dar melodia.',
+      ],
+    },
+    {
+      id: 'sound',
+      title: 'Som e linguagem',
+      paragraphs: [
+        'O gênero é MPB contemporânea, atmosférica e experimental — a própria MPB já é mistura. As faixas carregam traços de rock, jazz, pop, blues e outras influências. Apaixonado pelos “anos de ouro” da música, o som busca uma estética de fita analógica: quente, íntima e crua, próxima dos anos 60–70. Ainda assim, o foco principal está nas letras.',
+        'O português tem nuances que encantam — expressões cultas, palavras pouco usadas, raízes arcaicas e lirismo em forma de música. São composições próximas do poema, com estrutura livre e cada verso carregado de intenção e sentimento. Muitas expressões nasceram na adolescência e no começo da vida adulta; hoje viram música com liberdade, prazer e afeto — sem pretensão, com sinceridade.',
+      ],
+    },
+    {
+      id: 'themes',
+      title: 'O que o álbum percorre',
+      paragraphs: [
+        'Cada música é como uma pétala caída — fragmento de algo maior, irrecuperável e ainda assim belo. No conjunto, o disco atravessa relações difíceis e amores desequilibrados; perda de identidade e crise interna; solidão, silêncio e afastamento; autoquestionamento e escolhas que pesam; e, mesmo em meio à dor, a tentativa de reconstrução e a esperança de voltar a si.',
+        'Não é um inventário de faixas, e sim um mapa emocional: o ouvinte entra num diário em pedaços, onde o que importa é a travessia — não o catálogo de títulos.',
+      ],
+    },
+    {
+      id: 'credits',
+      title: 'Créditos',
+      paragraphs: [
+        'Projeto: Rosa Negra de Halfeti · Compositor: Lameck S. Fernandes · Gênero: MPB contemporâneo | Experimental | Atmosférico · Projeto musical no universo Wonderland Song.',
+      ],
+    },
+  ],
+  historyClosing:
+    'Rosas Negras de Halfeti é uma visão da MPB — linguagem culta na expressão mais bela da arte brasileira. Espero que, ao ouvir, você sinta.',
+  historySourceUrl: 'https://agencylk7.wixsite.com/halfeti',
+  historySourceLabel: 'Site Rosa Negra de Halfeti',
+  youtubeUrl: 'https://www.youtube.com/watch?v=0-nnIYlwXC0',
+  youtubeLabel: 'YouTube',
+};
+
+/**
+ * A Grande Multidão — project-4 detail page (home: project-4).
+ * Discografia: álbum “A Verdade Ainda Chama”.
+ */
+export const aGrandeMultidao: ProjectDetail = {
+  slug: 'a-grande-multidao',
+  title: 'A Grande Multidão',
+  category: 'Gospel + TJ',
+  image: '/images/agm2.png',
+  tagline:
+    'Rock cristão conceitual: profecia, fé e a esperança do Reino — a verdade continua chamando.',
+  historyTitle: 'Sobre A Grande Multidão',
+  historyLead:
+    'A Grande Multidão é um projeto musical do universo Wonderland Song dedicado ao rock cristão com narrativa bíblica e mensagem de esperança. Em um mundo cheio de vozes conflitantes, a verdade continua chamando.',
+  pullQuote: 'Em um mundo cheio de vozes conflitantes, a verdade continua chamando.',
+  footerNote: 'A Grande Multidão · Gospel + TJ',
+  albumsEmptyMessage:
+    'Os álbuns e lançamentos de A Grande Multidão serão adicionados em breve.',
+  historySections: [
+    {
+      id: 'project',
+      title: 'O projeto',
+      paragraphs: [
+        'A Grande Multidão é um projeto musical cristão que busca transformar estudos bíblicos, reflexões espirituais e convicções de fé em arte. Unindo letras profundas e influências do rock clássico, hard rock, rock alternativo e worship, o projeto transmite mensagens baseadas nas Escrituras de forma sincera, reflexiva e emocionalmente envolvente.',
+        'Inspirado nas Escrituras e na perspectiva das Testemunhas de Jeová, aborda a busca pela verdade em um mundo de narrativas conflitantes, os perigos do engano religioso, a perseguição a quem permanece fiel, o sofrimento da humanidade e a esperança do Reino de Deus. Não busca fama ou reconhecimento: a música é expressão artística e comunicação da fé.',
+      ],
+    },
+    {
+      id: 'discography',
+      title: 'Discografia',
+      paragraphs: [
+        'O álbum A Verdade Ainda Chama (2026) é a obra principal do projeto — 12 faixas, cerca de 57 minutos de rock cristão conceitual. Abra o álbum na galeria para a história completa, tracklist e letras (agrandemultidao.vercel.app).',
+      ],
+    },
+    {
+      id: 'credits',
+      title: 'Créditos',
+      paragraphs: [
+        'Projeto: A Grande Multidão · Compositores: Lameck S. Fernandes, Adriano Lima e Rodrigo Alves · Universo Wonderland Song.',
+      ],
+    },
+  ],
+  historyClosing:
+    'A Grande Multidão: em um mundo cheio de vozes conflitantes, a verdade continua chamando.',
+  historySourceUrl: 'https://agrandemultidao.vercel.app/',
+  historySourceLabel: 'Site A Grande Multidão',
+  spotifyUrl: 'https://open.spotify.com/intl-pt/artist/0nUtKTD6CkcADpjPYYCzHu',
+  spotifyLabel: 'Ouvir no Spotify',
+};
+
+/**
+ * Álbuns de A Grande Multidão (project-4).
+ * Sources: https://agrandemultidao.vercel.app/ · Spotify album 2khPW0DgXHc5NcKg3uPZKl
+ */
+export const aGrandeMultidaoAlbums: ProjectAlbum[] = [
+  {
+    slug: 'a-verdade-ainda-chama',
+    title: 'A Verdade Ainda Chama',
+    year: '2026',
+    type: 'Album',
+    cover: '/images/albums/a-verdade-ainda-chama.jpg',
+    summary:
+      'Álbum conceitual de rock cristão: profecias bíblicas, conflitos humanos e a esperança do Reino de Deus em 12 faixas.',
+    description: [
+      'A Verdade Ainda Chama é o álbum de A Grande Multidão — obra conceitual de rock cristão que transforma profecias bíblicas, conflitos humanos e a esperança do Reino de Deus em uma experiência musical profunda.',
+      'Idealizado e composto por Lameck S. Fernandes, Adriano Lima e Rodrigo Alves, o disco nasce do desejo de transformar estudos bíblicos, reflexões espirituais e convicções de fé em arte. Inspirado nas Escrituras e na perspectiva das Testemunhas de Jeová, não busca fama: usa a música para comunicar a fé com sinceridade, reflexão e envolvimento emocional.',
+      'Cada canção aborda temas bíblicos — profecia, fé, esperança e o propósito de Deus para a humanidade. Em meio às crises do mundo atual, a mensagem aponta para a esperança do Reino. Influências do rock brasileiro melódico e progressivo, rock clássico, hard rock, alternativo e worship se unem a letras intensas e emocionalmente marcantes.',
+      'Ao longo das 12 faixas, o ouvinte percorre a busca pela verdade em um mundo de narrativas conflitantes, os perigos do engano religioso, a perseguição a quem permanece fiel, o sofrimento da humanidade e a esperança das promessas divinas. A mensagem central não é condenação, e sim convite: a misericórdia de Deus continua alcançando pessoas sinceras.',
+      'Mais do que uma coleção de músicas, A Verdade Ainda Chama convida a ouvir além do barulho deste mundo e a redescobrir que o propósito de Deus permanece vivo, firme e imutável. Letras completas e explicações: agrandemultidao.vercel.app.',
+      'Álbum de A Grande Multidão · 2026 · Compositores: Lameck S. Fernandes, Adriano Lima e Rodrigo Alves.',
+    ],
+    duration: '57 min',
+    trackCount: 12,
+    spotifyUrl: 'https://open.spotify.com/album/2khPW0DgXHc5NcKg3uPZKl',
+    lyricsUrl: 'https://agrandemultidao.vercel.app/',
+    lyricsLabel: 'Letras',
+    tracks: [
+      { title: 'A Verdade Ainda Chama' },
+      { title: 'Deus' },
+      { title: 'Acautelai-vos' },
+      { title: 'Além do Ódio' },
+      { title: 'Quando a Alegria Se Apaga' },
+      { title: 'Debaixo dos Teus Pés' },
+      { title: 'Conflitos e Guerras' },
+      { title: 'Nem Toda Voz' },
+      { title: 'A Besta' },
+      { title: 'Não Podemos Nos Calar' },
+      { title: 'O Tempo do Fim' },
+      { title: 'Quando Os Conflitos Terminarem' },
+    ],
+    clips: [
+      {
+        id: 'alem-do-odio',
+        title: 'Além do Ódio',
+        subtitle: 'A Verdade Ainda Chama · A Grande Multidão',
+        youtubeId: 'b9QHotS4408',
+      },
+    ],
+  },
+];
 
 /**
  * Discography for Bunny Land Music gallery + album detail pages.
  * Sources: Spotify, Bandcamp, and blog posts on agencylk7.wixsite.com/bunny
  */
-export const bunnyLandAlbums: BunnyAlbum[] = [
+export const bunnyLandAlbums: ProjectAlbum[] = [
   {
     slug: 'chapter-1-caution-audio-gateway',
     title: 'Caution! Audio Gateway',
@@ -450,8 +619,38 @@ export const bunnyLandAlbums: BunnyAlbum[] = [
   },
 ];
 
-export function getBunnyAlbumBySlug(slug: string): BunnyAlbum | undefined {
-  return bunnyLandAlbums.find((album) => album.slug === slug);
+/** All project detail pages keyed by URL slug (`/projects/:slug`). */
+export const projectDetailsBySlug: Record<string, ProjectDetail> = {
+  [bunnyLandMusic.slug]: bunnyLandMusic,
+  [rosaNegraHalfeti.slug]: rosaNegraHalfeti,
+  [aGrandeMultidao.slug]: aGrandeMultidao,
+};
+
+/** Discographies keyed by project slug. */
+export const projectAlbumsBySlug: Record<string, ProjectAlbum[]> = {
+  [bunnyLandMusic.slug]: bunnyLandAlbums,
+  [rosaNegraHalfeti.slug]: [],
+  [aGrandeMultidao.slug]: aGrandeMultidaoAlbums,
+};
+
+export function getProjectDetailBySlug(slug: string): ProjectDetail | undefined {
+  return projectDetailsBySlug[slug];
+}
+
+export function getProjectAlbums(projectSlug: string): ProjectAlbum[] {
+  return projectAlbumsBySlug[projectSlug] ?? [];
+}
+
+export function getProjectAlbum(
+  projectSlug: string,
+  albumSlug: string,
+): ProjectAlbum | undefined {
+  return getProjectAlbums(projectSlug).find((album) => album.slug === albumSlug);
+}
+
+/** @deprecated Prefer getProjectAlbum('bunny-land-music', slug). */
+export function getBunnyAlbumBySlug(slug: string): ProjectAlbum | undefined {
+  return getProjectAlbum(bunnyLandMusic.slug, slug);
 }
 
 export const artists: Artist[] = [

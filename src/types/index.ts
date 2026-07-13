@@ -43,6 +43,41 @@ export type Artist = {
   description: string;
 };
 
+/** History chapter on a project detail page. */
+export type ProjectHistorySection = {
+  id: string;
+  title: string;
+  paragraphs: string[];
+};
+
+/**
+ * Shared content model for individual project pages
+ * (Bunny Land Music, Rosa Negra de Halfeti, etc.).
+ */
+export type ProjectDetail = {
+  slug: string;
+  title: string;
+  category: string;
+  image: string;
+  tagline: string;
+  /** H2 above the history lead, e.g. "Como nasceu o …". */
+  historyTitle: string;
+  historyLead: string;
+  pullQuote?: string;
+  historySections: ProjectHistorySection[];
+  historyClosing?: string;
+  historySourceUrl?: string;
+  historySourceLabel?: string;
+  spotifyUrl?: string;
+  spotifyLabel?: string;
+  youtubeUrl?: string;
+  youtubeLabel?: string;
+  /** Footer line under Wonderland Song. */
+  footerNote?: string;
+  /** Shown when the albums gallery is empty. */
+  albumsEmptyMessage?: string;
+};
+
 export type Release = {
   id: string;
   title: string;
@@ -69,7 +104,8 @@ export type BunnyAlbumClip = {
   isShort?: boolean;
 };
 
-export type BunnyAlbum = {
+/** Album / release card + detail for a project discography. */
+export type ProjectAlbum = {
   slug: string;
   title: string;
   /** Short chapter label, e.g. "Chapter 2". */
@@ -107,3 +143,6 @@ export type BunnyAlbum = {
   /** Music video clips for this chapter/album. */
   clips: BunnyAlbumClip[];
 };
+
+/** @deprecated Use ProjectAlbum — kept as alias for existing imports. */
+export type BunnyAlbum = ProjectAlbum;

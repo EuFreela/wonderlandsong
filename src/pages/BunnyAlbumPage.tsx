@@ -5,26 +5,42 @@ import AlbumClipsGallery from '../components/project/AlbumClipsGallery';
 import EasterEggsModal from '../components/project/EasterEggsModal';
 import SpotifyIcon from '../components/ui/SpotifyIcon';
 import YouTubeIcon from '../components/ui/YouTubeIcon';
-import { getBunnyAlbumBySlug, bunnyLandAlbums } from '../data/content';
+import {
+  getProjectAlbum,
+  getProjectAlbums,
+  getProjectDetailBySlug,
+} from '../data/content';
 
 /**
- * Detail page for a single Bunny Land Music album.
- * Route: /projects/bunny-land-music/albums/:slug
+ * Detail page for a single project album.
+ * Route: /projects/:projectSlug/albums/:albumSlug
  */
 function BunnyAlbumPage() {
-  const { slug = '' } = useParams<{ slug: string }>();
-  const album = getBunnyAlbumBySlug(slug);
+  const { projectSlug = '', albumSlug = '' } = useParams<{
+    projectSlug: string;
+    albumSlug: string;
+  }>();
+  const resolvedAlbumSlug = albumSlug;
+
+  const project = getProjectDetailBySlug(projectSlug);
+  const albums = getProjectAlbums(projectSlug);
+  const album = getProjectAlbum(projectSlug, resolvedAlbumSlug);
   const [easterEggsOpen, setEasterEggsOpen] = useState(false);
 
-  if (!album) {
-    return <Navigate to="/projects/bunny-land-music" replace />;
+  if (!project) {
+    return <Navigate to="/" replace />;
   }
 
-  const currentIndex = bunnyLandAlbums.findIndex((item) => item.slug === album.slug);
-  const prevAlbum = currentIndex > 0 ? bunnyLandAlbums[currentIndex - 1] : undefined;
+  if (!album) {
+    return <Navigate to={`/projects/${projectSlug}`} replace />;
+  }
+
+  const projectBase = `/projects/${projectSlug}`;
+  const currentIndex = albums.findIndex((item) => item.slug === album.slug);
+  const prevAlbum = currentIndex > 0 ? albums[currentIndex - 1] : undefined;
   const nextAlbum =
-    currentIndex >= 0 && currentIndex < bunnyLandAlbums.length - 1
-      ? bunnyLandAlbums[currentIndex + 1]
+    currentIndex >= 0 && currentIndex < albums.length - 1
+      ? albums[currentIndex + 1]
       : undefined;
 
   const displayTitle = album.chapter ? `${album.chapter}: ${album.title}` : album.title;
@@ -47,7 +63,7 @@ function BunnyAlbumPage() {
     <div className="min-w-[320px] bg-[#05030a] text-[#f7f5fa]">
       <Helmet>
         <title>
-          {displayTitle} — Bunny Land Music
+          {displayTitle} — {project.title}
         </title>
         <meta name="description" content={album.summary} />
       </Helmet>
@@ -60,10 +76,10 @@ function BunnyAlbumPage() {
           Wonderland Song
         </Link>
         <Link
-          to="/projects/bunny-land-music"
+          to={projectBase}
           className="text-[0.7rem] font-bold uppercase tracking-[0.12em] text-white/70 transition hover:text-white"
         >
-          ← Bunny Land Music
+          ← {project.title}
         </Link>
       </header>
 
@@ -138,7 +154,7 @@ function BunnyAlbumPage() {
                     rel="noopener noreferrer"
                     className={secondaryLinkClassName}
                   >
-                    Reverve Universe Demo
+                    Reverse Universe Demo
                   </a>
                 ) : null}
                 {album.lyricsUrl ? (
@@ -224,7 +240,7 @@ function BunnyAlbumPage() {
           <div className="mx-auto flex max-w-5xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             {prevAlbum ? (
               <Link
-                to={`/projects/bunny-land-music/albums/${prevAlbum.slug}`}
+                to={`${projectBase}/albums/${prevAlbum.slug}`}
                 className="group text-sm text-white/55 transition hover:text-white"
               >
                 <span className="mb-1 block text-[0.65rem] font-bold uppercase tracking-[0.14em] text-white/30">
@@ -240,7 +256,7 @@ function BunnyAlbumPage() {
             )}
             {nextAlbum ? (
               <Link
-                to={`/projects/bunny-land-music/albums/${nextAlbum.slug}`}
+                to={`${projectBase}/albums/${nextAlbum.slug}`}
                 className="group text-left text-sm text-white/55 transition hover:text-white sm:text-right"
               >
                 <span className="mb-1 block text-[0.65rem] font-bold uppercase tracking-[0.14em] text-white/30">
@@ -260,7 +276,7 @@ function BunnyAlbumPage() {
         <div className="mx-auto flex max-w-5xl flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
           <strong className="uppercase tracking-[0.14em] text-white/80">Wonderland Song</strong>
           <Link
-            to="/projects/bunny-land-music#albums"
+            to={`${projectBase}#albums`}
             className="text-sm text-white/45 transition hover:text-white/80"
           >
             Voltar à galeria de álbuns
