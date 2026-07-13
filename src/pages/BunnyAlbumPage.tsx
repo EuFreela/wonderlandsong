@@ -233,6 +233,11 @@ function BunnyAlbumPage() {
                               className="group m-0 block w-full text-left text-[0.95rem] font-medium text-white/90 transition hover:text-white"
                             >
                               <span className="group-hover:underline">{track.title}</span>
+                              {!hideTrackDedications && track.dedication ? (
+                                <span className="ml-2 font-normal text-white/40">
+                                  · {track.dedication}
+                                </span>
+                              ) : null}
                               <span className="mt-0.5 block text-[0.65rem] font-bold uppercase tracking-[0.12em] text-white/35 transition group-hover:text-white/60">
                                 Ver letra e explicação →
                               </span>
@@ -240,13 +245,13 @@ function BunnyAlbumPage() {
                           ) : (
                             <p className="m-0 text-[0.95rem] font-medium text-white/90">
                               {track.title}
+                              {!hideTrackDedications && track.dedication ? (
+                                <span className="ml-2 font-normal text-white/40">
+                                  · {track.dedication}
+                                </span>
+                              ) : null}
                             </p>
                           )}
-                          {!hideTrackDedications && track.dedication ? (
-                            <p className="m-0 mt-0.5 text-sm text-white/40">
-                              → {track.dedication}
-                            </p>
-                          ) : null}
                         </div>
                       </li>
                     );
@@ -257,6 +262,51 @@ function BunnyAlbumPage() {
                   Tracklist em breve — este álbum é apresentado aqui pela narrativa e pelo conceito.
                 </p>
               )}
+
+              {album.extraTracks && album.extraTracks.length > 0 ? (
+                <div className="mt-10">
+                  <p className="mb-3 text-[0.67rem] font-bold uppercase tracking-[0.16em] text-white/45">
+                    {album.extraTracksLabel?.trim() || 'Faixas extras'}
+                  </p>
+                  <ol className="m-0 list-none divide-y divide-white/10 border-y border-white/10 p-0">
+                    {album.extraTracks.map((track, index) => {
+                      const hasLyricsContent = Boolean(
+                        track.lyrics?.trim() || track.lyricsExplanation,
+                      );
+                      const number = album.tracks.length + index + 1;
+
+                      return (
+                        <li
+                          key={`${album.slug}-extra-${index}`}
+                          className="flex items-baseline gap-4 py-3.5"
+                        >
+                          <span className="w-7 shrink-0 text-right text-[0.7rem] font-bold tabular-nums tracking-wider text-white/30">
+                            {String(number).padStart(2, '0')}
+                          </span>
+                          <div className="min-w-0 flex-1">
+                            {hasLyricsContent ? (
+                              <button
+                                type="button"
+                                onClick={() => setLyricsTrack({ track, number })}
+                                className="group m-0 block w-full text-left text-[0.95rem] font-medium text-white/90 transition hover:text-white"
+                              >
+                                <span className="group-hover:underline">{track.title}</span>
+                                <span className="mt-0.5 block text-[0.65rem] font-bold uppercase tracking-[0.12em] text-white/35 transition group-hover:text-white/60">
+                                  Ver letra e explicação →
+                                </span>
+                              </button>
+                            ) : (
+                              <p className="m-0 text-[0.95rem] font-medium text-white/90">
+                                {track.title}
+                              </p>
+                            )}
+                          </div>
+                        </li>
+                      );
+                    })}
+                  </ol>
+                </div>
+              ) : null}
             </div>
           </div>
         </section>

@@ -4,6 +4,13 @@ import { cautionAudioGatewayTracks } from './blm-chapter1-lyrics';
 import { inTheForestTracks } from './blm-chapter2-lyrics';
 import { inTimeWithYourHeartTracks } from './blm-chapter3-lyrics';
 import { listenToDaddyTracks } from './blm-chapter4-lyrics';
+import {
+  newDayExtraTracks,
+  newDayTracks,
+  plasticGraceTracks,
+  theComputerTracks,
+  unpluggedTracks,
+} from './helena-son-lyrics';
 
 /**
  * Homepage parallax panels (POFO-style fixed background sequence).
@@ -293,6 +300,152 @@ export const aGrandeMultidao: ProjectDetail = {
 };
 
 /**
+ * Helena's Son — project-5 detail page (home: project-5).
+ * Source: Genesis PDF (Plastic Grace, New Day, Unplugged, The Computer).
+ */
+export const helenaSon: ProjectDetail = {
+  slug: 'helena-son',
+  title: "Helena's Son",
+  category: 'Grunge',
+  image: '/images/hs2.png',
+  tagline:
+    'Grunge conceitual dos anos 90 revisitado: fé, desilusão e a falha da conexão humana na era digital.',
+  historyTitle: "Sobre Helena's Son",
+  historyLead:
+    "Helena's Son é um projeto grunge que canaliza a introspecção e o peso emocional dos anos 90, reinterpretando-os com a sensibilidade sombria e existencial da era atual. Obra conceitual sobre um ser humano em busca de sentido dentro de uma realidade fragmentada.",
+  pullQuote: 'Cada álbum é uma etapa da jornada — da graça plástica ao vazio da máquina.',
+  footerNote: "Helena's Son · Grunge · Genesis",
+  albumsEmptyMessage: 'Os álbuns de Helena’s Son serão adicionados em breve.',
+  historySections: [
+    {
+      id: 'genesis',
+      title: 'Genesis',
+      paragraphs: [
+        "Helena's Son é um projeto musical grunge que canaliza a introspecção e o peso emocional dos anos 90, reinterpretando-os com a sensibilidade sombria e existencial da era atual. Cada álbum representa uma etapa dessa jornada existencial — da descoberta da falsidade do mundo até o vazio da própria consciência. É uma narrativa sobre fé, desilusão e a falha da conexão humana na era digital.",
+        'Este projeto nasceu da união de três amigos movidos pela mesma paixão: a música. Juntos, decidiram transformar sentimentos, experiências e emoções em expressão artística — compondo álbuns que traduzem percepções humanas em som, palavra e atmosfera. Cada canção é um canal onde o íntimo se torna arte.',
+        "O conceito dos álbuns segue uma linha contínua: cada obra se conecta à próxima. Genesis é o nome para os quatro álbuns sequenciais — Plastic Grace; New Day; The Computer; e Unplugged. A história do projeto já vive nas redes há muitos anos; neste ciclo, Helena's Son volta com novas vozes, novas canções e o mesmo coração grunge.",
+      ],
+    },
+    {
+      id: 'journey',
+      title: 'A jornada em quatro atos',
+      paragraphs: [
+        'Plastic Grace — A revelação da ilusão: clima moderado e introspectivo. O personagem vive saturado de crenças e símbolos e começa a perceber que a “graça” ao redor é plástica — fé vendida e performática. Temas: crítica à fé institucionalizada, vaidade espiritual, busca por pureza num mundo adulterado.',
+        'New Day — O silêncio após a queda: denso, melancólico e confessional. Após a ilusão, o personagem mergulha no vazio e no luto existencial. Não há redenção fácil — só lucidez e a busca por sentido entre ruínas. No Spotify, as faixas oficiais; abaixo, faixas extras do Genesis.',
+        'The Computer — O homem e a máquina: energético, elétrico e claustrofóbico. A tentativa de se reconstruir pela tecnologia revela só uma nova ilusão — conexão que vira isolamento, carne e código, identidade fragmentada.',
+        'Unplugged — fechamento sentimental e nostálgico: setlist no Spotify (An Unforgettable Night) com versões acústicas; ao lado de cada faixa, o álbum de origem. Letras nos álbuns de estúdio.',
+      ],
+    },
+    {
+      id: 'credits',
+      title: 'Créditos',
+      paragraphs: [
+        "Projeto: Helena's Son · Genesis · Compositores: Lameck S. Fernandes, Adriano Lima e Rodrigo Alves · Gênero: Grunge · Universo Wonderland Song.",
+      ],
+    },
+  ],
+  historyClosing:
+    "Genesis reúne os quatro capítulos da jornada. Cada faixa é um pedaço da travessia — e, juntas, formam o coração grunge de Helena's Son.",
+  spotifyUrl: 'https://open.spotify.com/intl-pt/artist/3w2iPAIrdoXXzJ38C59np8',
+  spotifyLabel: 'Ouvir no Spotify',
+};
+
+/**
+ * Álbuns de Helena's Son (project-5) — Genesis.
+ */
+export const helenaSonAlbums: ProjectAlbum[] = [
+  {
+    slug: 'plastic-grace',
+    title: 'Plastic Grace',
+    chapter: 'Genesis · 1',
+    year: '2025',
+    type: 'Album',
+    cover: '/images/albums/plastic-grace.png',
+    summary:
+      'A revelação da ilusão: graça plástica, fé performática e o grito de libertação contra o silêncio emocional.',
+    description: [
+      'Plastic Grace expõe a falsidade da perfeição, a espiritualidade moldada e o preço de parecer bem quando tudo está em ruínas por dentro. É um grito de libertação contra o silêncio emocional — um exorcismo feito de raiva, dor e ironia.',
+      'O álbum desnuda a espiritualidade corrompida, a fé transformada em instrumento de controle e o amor travestido de redenção. É o retrato de uma alma sufocada pela exigência de pureza, aparência e perdão — crítica à forma como o divino foi domesticado para caber no ego humano.',
+      'A luz é plástica: moldada, fria, industrial — brilho artificial do que a sociedade espera ver. Helena rasga esse verniz e expõe o que pulsa por baixo: carne, falha e humanidade. Da culpa à consciência, da fé fingida à raiva lúcida — a “graça” não vem do céu; é sintética. Do plástico queimado nasce a alma crua.',
+      'Clima: moderado, introspectivo, contido, espiritual e desconfiado. Temas: crítica à fé institucionalizada, vaidade espiritual, moralidade de fachada, busca por pureza num mundo adulterado.',
+      "Projeto: Helena's Son · Álbum: Plastic Grace · Genesis · Lameck S. Fernandes, Adriano Lima e Rodrigo Alves.",
+    ],
+    trackCount: plasticGraceTracks.length,
+    tracks: plasticGraceTracks,
+    clips: [],
+    spotifyUrl: 'https://open.spotify.com/album/3LIbl6h4ZxUaAXqRYN68q2',
+    lyricsUrl: 'https://genius.com/albums/Helenas-son/Plastic-grace',
+    lyricsLabel: 'Genius',
+  },
+  {
+    slug: 'new-day',
+    title: 'New Day',
+    chapter: 'Genesis · 2',
+    year: '2025',
+    type: 'Album',
+    cover: '/images/albums/new-day.png',
+    summary:
+      'O silêncio após a queda: niilismo, luto existencial e a busca por sentido entre as ruínas da fé.',
+    description: [
+      'New Day é o segundo capítulo de Genesis. Após perceber a ilusão de Plastic Grace, o personagem mergulha num estado de vazio e perda de propósito. Tudo o que sustentava fé e identidade se dissolve.',
+      'O silêncio vira a única resposta — e dói. Não há redenção fácil, apenas lucidez. As letras carregam tristeza contida e exaustão espiritual: alguém que ainda tenta encontrar sentido entre as ruínas do que acreditava.',
+      'As faixas principais seguem o lançamento no Spotify. Abaixo da tracklist oficial, o documento Genesis reúne faixas extras que prolongam o clima de luto e desconexão — também listadas no Unplugged.',
+      'Clima: denso, melancólico, frio e confessional. Temas: niilismo e esgotamento emocional; a morte da fé e o luto existencial; o peso da lucidez e a solidão após o despertar; busca por significado em meio à ausência de sentido.',
+      "Projeto: Helena's Son · Álbum: New Day · Genesis · Lameck S. Fernandes, Adriano Lima e Rodrigo Alves.",
+    ],
+    trackCount: newDayTracks.length,
+    tracks: newDayTracks,
+    extraTracks: newDayExtraTracks,
+    extraTracksLabel: 'Faixas extras',
+    clips: [],
+    spotifyUrl: 'https://open.spotify.com/album/6ItUU1ZnXNELGTLRCD3r9Y',
+    lyricsUrl: 'https://genius.com/albums/Helenas-son/New-day',
+    lyricsLabel: 'Genius',
+  },
+  {
+    slug: 'the-computer',
+    title: 'The Computer',
+    chapter: 'Genesis · 3',
+    year: '2025',
+    type: 'Album',
+    cover: '/images/albums/the-computer.png',
+    summary:
+      'O homem e a máquina: conexões falsas, carne e código, e o brilho digital que não salva ninguém.',
+    description: [
+      'The Computer é o terceiro capítulo de Genesis. O personagem tenta se reconstruir pela tecnologia — e descobre que o mundo digital oferece só uma nova ilusão. A promessa de conexão vira isolamento; o ruído das máquinas espelha o caos interno.',
+      'Há mais energia e tensão, mistura de raiva e desespero pela humanidade que se esvai. Letras com metáforas digitais e emoção crua: a mente como sistema sobrecarregado, prestes a falhar.',
+      'Clima: energético, elétrico e claustrofóbico. Temas: falsas conexões e solidão digital; fusão entre carne e código; identidade fragmentada; a tecnologia como espelho do vazio humano.',
+      "Projeto: Helena's Son · Álbum: The Computer · Genesis · Lameck S. Fernandes, Adriano Lima e Rodrigo Alves.",
+    ],
+    trackCount: theComputerTracks.length,
+    tracks: theComputerTracks,
+    clips: [],
+    spotifyUrl: 'https://open.spotify.com/album/2TqFaz0RQrDm7mDpdVEDOn',
+    lyricsUrl: 'https://genius.com/albums/Helenas-son/The-computer',
+    lyricsLabel: 'Genius',
+  },
+  {
+    slug: 'unplugged',
+    title: 'Unplugged',
+    chapter: 'Genesis · 4',
+    year: '2026',
+    type: 'Album',
+    cover: '/images/albums/hs-unplugged.jpg',
+    summary:
+      'An Unforgettable Night (Unplugged): setlist do Spotify com versões acústicas — ao lado de cada faixa, o álbum de origem.',
+    description: [
+      'Unplugged encerra a sequência Genesis com clima sentimental, nostálgico e belo. No Spotify, An Unforgettable Night (Unplugged) [Acoustic Live Versions] reúne intros e faixas de Plastic Grace, New Day e The Computer em versões acústicas / live, além de Protect e Buy the Pain.',
+      'A lista abaixo é a tracklist publicada no Spotify. Ao lado de cada título aparece o álbum de origem. As letras e traduções completas ficam nos álbuns de estúdio (quando a faixa existe lá) — aqui não duplicamos o modal de letra.',
+      "Projeto: Helena's Son · An Unforgettable Night (Unplugged) · Genesis · Lameck S. Fernandes, Adriano Lima e Rodrigo Alves.",
+    ],
+    trackCount: unpluggedTracks.length,
+    tracks: unpluggedTracks,
+    clips: [],
+    spotifyUrl: 'https://open.spotify.com/album/6p3KSfHU1aG28DI86R6wA3',
+  },
+];
+
+/**
  * Álbuns de A Grande Multidão (project-4).
  * Sources: https://agrandemultidao.vercel.app/ · Spotify album 2khPW0DgXHc5NcKg3uPZKl
  */
@@ -543,6 +696,7 @@ export const projectDetailsBySlug: Record<string, ProjectDetail> = {
   [bunnyLandMusic.slug]: bunnyLandMusic,
   [rosaNegraHalfeti.slug]: rosaNegraHalfeti,
   [aGrandeMultidao.slug]: aGrandeMultidao,
+  [helenaSon.slug]: helenaSon,
 };
 
 /** Discographies keyed by project slug. */
@@ -550,6 +704,7 @@ export const projectAlbumsBySlug: Record<string, ProjectAlbum[]> = {
   [bunnyLandMusic.slug]: bunnyLandAlbums,
   [rosaNegraHalfeti.slug]: [],
   [aGrandeMultidao.slug]: aGrandeMultidaoAlbums,
+  [helenaSon.slug]: helenaSonAlbums,
 };
 
 export function getProjectDetailBySlug(slug: string): ProjectDetail | undefined {

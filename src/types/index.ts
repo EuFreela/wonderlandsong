@@ -160,6 +160,13 @@ export type ProjectAlbum = {
     note?: string;
   };
   tracks: BunnyAlbumTrack[];
+  /**
+   * Optional bonus / unreleased tracks shown under “Faixas extras”
+   * (e.g. New Day Genesis extras not on the Spotify album).
+   */
+  extraTracks?: BunnyAlbumTrack[];
+  /** Label for the extras section (default: "Faixas extras"). */
+  extraTracksLabel?: string;
   /** Music video clips for this chapter/album. */
   clips: BunnyAlbumClip[];
 };

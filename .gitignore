@@ -3,3 +3,13 @@ Dist
 dist
 .vite
 coverage
+
+# One-off extraction dumps (PDFs, scrapes, debug) — not part of the app
+*.pdf
+agm-bundle.js
+agm-lyrics.json
+agm-verses-debug.json
+helena-genesis*
+helena-parsed.json
+caution-lyrics*
+*-debug.json
