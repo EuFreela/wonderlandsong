@@ -416,6 +416,121 @@ export const ussShenandoahAlbums: ProjectAlbum[] = [
 ];
 
 /**
+ * Lameck & Southern Birds Band — project-7 detail page (home: project-7).
+ * Antes: IEAS (projeto inacabado). Fonte: wonderlandsong / post _ieas.
+ */
+export const lameckSouthernBirdsBand: ProjectDetail = {
+  slug: 'lameck-southern-birds-band',
+  title: 'Lameck & Southern Birds Band',
+  category: 'Blues',
+  image: '/images/lsbb.png',
+  tagline:
+    'Blues de estrada e palco: do projeto inacabado IEAS (2018) à banda orgânica para turnês e instrumentais com feeling.',
+  historyTitle: 'Sobre Lameck & Southern Birds Band',
+  historyLead:
+    'Lameck & Southern Birds Band é o nome que o projeto IEAS ganhou ao amadurecer — de rascunhos instrumentais em 2018 a uma banda de blues pensada para palco, turnê e música que permanece.',
+  pullQuote:
+    'Primeiro nasce o sentimento, depois vem a estrada. Música boa não corre — ela permanece.',
+  footerNote: 'Lameck & Southern Birds Band · Blues · IEAS (2018)',
+  albumsEmptyMessage: 'Os álbuns de Lameck & Southern Birds Band serão adicionados em breve.',
+  historySections: [
+    {
+      id: 'ieas',
+      title: 'IEAS — o começo',
+      paragraphs: [
+        'O projeto nasceu em 2018, logo depois de Room 07, Motel Salaria, em Roma, na Itália. Na época, Lameck estava imerso na composição de álbuns no Guitar Pro e nos estudos musicais, ouvindo muito Steve Vai e Joe Satriani — o que reacendeu a vontade de criar algo instrumental, com feeling, técnica e emoção real. As primeiras ideias foram rascunhadas sem pressa, mas com intensidade.',
+        'O clima também carregava referências do Lacuna Coil, principalmente por Cristina Scabbia. Dessa energia nasceu o nome IEAS: In Estasi All’Interno di Scabbia in Fm — “Em Êxtase Dentro da Scabbia em Fá menor.” Apesar de iniciado lá atrás, o projeto sempre acompanhou o compositor; partituras e rascunhos ficaram guardados em backups, com valor pessoal forte, esperando o momento certo de voltar.',
+      ],
+    },
+    {
+      id: 'rename',
+      title: 'De IEAS para a banda',
+      paragraphs: [
+        'O nome mudou de IEAS para Lameck & Southern Birds Band para soar mais como banda de blues — algo orgânico, de estrada e de palco. A mudança importa pensando em apresentações ao vivo e possíveis turnês, onde o nome precisa respirar música antes da primeira nota.',
+        'Amigos com quem se compartilham composições podem acompanhar nas performances, formando uma banda flexível, viva e verdadeira. A organização de ideias, formatos e próximos passos segue no ritmo do blues: primeiro o sentimento, depois a estrada.',
+      ],
+    },
+    {
+      id: 'credits',
+      title: 'Créditos',
+      paragraphs: [
+        'Projeto: Lameck & Southern Birds Band · Origem: IEAS (2018) · Compositor: Lameck S. Fernandes · Gênero: Blues · Instrumental e autoral · Universo Wonderland Song.',
+      ],
+    },
+  ],
+  historySourceUrl: 'https://agencylk7.wixsite.com/wonderlandsong/post/_ieas',
+  historySourceLabel: 'Wonderland Song · IEAS',
+  spotifyUrl: 'https://open.spotify.com/intl-pt/artist/6jZsG3waoXclu0mC2tv4eX',
+  spotifyLabel: 'Ouvir no Spotify',
+};
+
+/** Álbuns de Lameck & Southern Birds Band (project-7). */
+export const lameckSouthernBirdsBandAlbums: ProjectAlbum[] = [
+  {
+    slug: 'check-in-after-midnight-in-passalacqua',
+    title: 'Check-In After Midnight In Passalacqua',
+    year: '2026',
+    type: 'Album',
+    cover: '/images/albums/lsbb-passalacqua.jpg',
+    summary:
+      'Instrumental de safra setentista, inspirado em Passalacqua (Lago de Como): classe, estudo e identidade própria — com Jimmy Page no horizonte.',
+    description: [
+      'Em 2025 o antigo IEAS voltou à estrada sob o nome Lameck & Southern Birds Band, com Check-In After Midnight In Passalacqua. Passalacqua é um lugar mágico no Lago de Como: no século XVIII, um refúgio para amigos, amor, lazer, a mesa e a arte italiana do dolce far niente — e continua sendo esse refúgio até hoje.',
+      'Inspirado em Passalacqua, com classe e bom gosto, a proposta é música instrumental de boa qualidade, inspirada na melhor safra sonora dos anos 70. O álbum nasce também do estudo em música, transpondo influências marcantes — com destaque especial para Jimmy Page — filtradas por uma identidade própria, contemporânea e autoral.',
+      'A faixa 1 é um segredo velado que só se revela no lançamento. Em resumo: raízes setentistas, alma moderna e zero pressa — porque música boa não corre, ela permanece.',
+      'Projeto: Lameck & Southern Birds Band · Álbum: Check-In After Midnight In Passalacqua · Origem conceitual: IEAS · Lameck S. Fernandes.',
+    ],
+    duration: '43 min',
+    trackCount: 12,
+    spotifyUrl: 'https://open.spotify.com/intl-pt/album/3pjTnZyMeCm6foIgVK5Ajn',
+    tracks: [
+      { title: 'Prelude in E Minor Op.28 No.4' },
+      { title: 'A Pelle, Passalacqua, Camera 7' },
+      { title: 'Passalacqua, Check-In After Midnight' },
+      { title: 'Fire Stone' },
+      { title: 'So Excited' },
+      { title: 'On Shores Of Lake Como' },
+      { title: 'In Your Sinuous Movement' },
+      { title: 'Love All’italiana' },
+      { title: 'In Their Game Of Exchanging Glances' },
+      { title: 'With Me, She Becomes A Woman' },
+      { title: "She's A Bad Girl, Too" },
+      { title: "My Little Angel, I Don't Want To Hurt You" },
+    ],
+    clips: [],
+  },
+  {
+    slug: 'instinct-in-minor-key',
+    title: 'Instinct in Minor Key',
+    year: '2026',
+    type: 'Album',
+    cover: '/images/albums/lsbb-instinct.jpg',
+    summary:
+      'Segundo capítulo no Spotify: blues e rock instrumental em tom menor — instinto, noite e estrada.',
+    description: [
+      'Instinct in Minor Key continua a linha de Lameck & Southern Birds Band: composição instrumental com feeling, técnica e clima de estrada. O título aponta para a tonalidade emocional do disco — instinto, sombra e movimento em clave menor.',
+      'Projeto: Lameck & Southern Birds Band · Álbum: Instinct in Minor Key · Lameck S. Fernandes.',
+    ],
+    duration: '36 min',
+    trackCount: 10,
+    spotifyUrl: 'https://open.spotify.com/album/70ulKmwVvGyPmxLZqwMX7q',
+    tracks: [
+      { title: 'Instinct in Minor Key' },
+      { title: 'The Space Between Bends' },
+      { title: 'The Night She Knows' },
+      { title: 'Sweet And Beautiful Illusion' },
+      { title: 'Electric Blood & Wood' },
+      { title: 'Give Me The Signal, Baby' },
+      { title: 'The Rains Of Alabama Rise' },
+      { title: 'She Knows How Yo Awaken My Instincts' },
+      { title: 'Overwound Soul' },
+      { title: "She's Lying On My Sailboat Sailing In The Gulf Of Mexico" },
+    ],
+    clips: [],
+  },
+];
+
+/**
  * Álbuns de Helena's Son (project-5) — Genesis.
  */
 export const helenaSonAlbums: ProjectAlbum[] = [
@@ -763,6 +878,7 @@ export const projectDetailsBySlug: Record<string, ProjectDetail> = {
   [aGrandeMultidao.slug]: aGrandeMultidao,
   [helenaSon.slug]: helenaSon,
   [ussShenandoah.slug]: ussShenandoah,
+  [lameckSouthernBirdsBand.slug]: lameckSouthernBirdsBand,
 };
 
 /** Discographies keyed by project slug. */
@@ -772,6 +888,7 @@ export const projectAlbumsBySlug: Record<string, ProjectAlbum[]> = {
   [aGrandeMultidao.slug]: aGrandeMultidaoAlbums,
   [helenaSon.slug]: helenaSonAlbums,
   [ussShenandoah.slug]: ussShenandoahAlbums,
+  [lameckSouthernBirdsBand.slug]: lameckSouthernBirdsBandAlbums,
 };
 
 export function getProjectDetailBySlug(slug: string): ProjectDetail | undefined {
