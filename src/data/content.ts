@@ -1,6 +1,9 @@
 import type { Artist, Project, ProjectAlbum, ProjectDetail, Release } from '../types';
 import { aVerdadeAindaChamaTracks } from './agm-lyrics';
 import { cautionAudioGatewayTracks } from './blm-chapter1-lyrics';
+import { inTheForestTracks } from './blm-chapter2-lyrics';
+import { inTimeWithYourHeartTracks } from './blm-chapter3-lyrics';
+import { listenToDaddyTracks } from './blm-chapter4-lyrics';
 
 /**
  * Homepage parallax panels (POFO-style fixed background sequence).
@@ -389,25 +392,9 @@ export const bunnyLandAlbums: ProjectAlbum[] = [
       'Projeto: In The Forest · Compositor/DJ: Lameck S. Fernandes · Vulgo: Bunny Land Music.',
     ],
     duration: '42 min',
-    trackCount: 14,
+    trackCount: inTheForestTracks.length,
     spotifyUrl: 'https://open.spotify.com/album/2ds30x0CDVRqQtOZVI6fft',
-    youtubeUrl: 'https://www.youtube.com/playlist?list=PLZaxj1t8hrg5Lpm_PXyyMNDuNCpu_vh4c',
-    tracks: [
-      { title: 'Burn It Down' },
-      { title: 'Runaway Lights' },
-      { title: 'Lost In Time' },
-      { title: 'Lost In The Night' },
-      { title: 'Falling Apart' },
-      { title: 'Take The Lead' },
-      { title: 'Slow Weekend' },
-      { title: 'Fading Echoes' },
-      { title: 'No Mercy' },
-      { title: 'In My Zone - Part 1' },
-      { title: 'Lost In The Night - Remix' },
-      { title: 'In My Zone - Part 2' },
-      { title: 'Falling Apart - Remix' },
-      { title: 'Lost Without You' },
-    ],
+    tracks: inTheForestTracks,
     clips: [
       {
         id: 'burn-it-down',
@@ -479,10 +466,8 @@ export const bunnyLandAlbums: ProjectAlbum[] = [
     ],
     warning: 'Este capítulo transmite emoções fortes e revelações íntimas. Ouça com moderação.',
     duration: '1 h 6 min',
-    trackCount: 16,
+    trackCount: inTimeWithYourHeartTracks.length,
     spotifyUrl: 'https://open.spotify.com/intl-pt/album/6aOOALcMvYmoVUQXhOPufv',
-    lyricsUrl: 'https://genius.com/albums/Bunny-land-music/Chapter-3-in-time-with-your-heart',
-    lyricsLabel: 'Letras',
     easterEgg: {
       title: 'Revelations',
       subtitle: 'Chapter 3 · In Time With Your Heart',
@@ -490,24 +475,7 @@ export const bunnyLandAlbums: ProjectAlbum[] = [
         'Cada música expressa uma relação amorosa: ilusão, platônica ou real. Cada música é uma garota.',
       note: 'Easter egg do álbum — o mapa emocional por trás das faixas.',
     },
-    tracks: [
-      { title: 'When You Say Nothing, I Bleed', dedication: 'Josi' },
-      { title: 'Velvet Ruin', dedication: 'Scabbia' },
-      { title: 'Games Of Love', dedication: 'Silana' },
-      { title: 'Not Your Game', dedication: 'Kelly' },
-      { title: 'She Knows The Line', dedication: 'Layla' },
-      { title: 'Forbidden Zone', dedication: 'Secret' },
-      { title: 'Rented Dreams', dedication: 'Jéssica' },
-      { title: 'Between The Pause', dedication: 'Natália' },
-      { title: 'Half Of Us', dedication: 'Vanessa' },
-      { title: 'Violence Words', dedication: 'Elaine' },
-      { title: 'The Way I Stay', dedication: 'Ellen (sobre mim)' },
-      { title: 'Only When You Need Me', dedication: 'Resposta a Ellen' },
-      { title: 'Fake Love Glow', dedication: 'Talita' },
-      { title: 'Keys I Never Held', dedication: 'Silana' },
-      { title: 'Nice To Meet You', dedication: 'Viviana' },
-      { title: 'Only When You Need Me (Dakmode)' },
-    ],
+    tracks: inTimeWithYourHeartTracks,
     clips: [
       {
         id: 'chapter-3-trailer',
@@ -555,22 +523,9 @@ export const bunnyLandAlbums: ProjectAlbum[] = [
       'Projeto: Listen To Daddy · Compositor/Produtor: Lameck S. Fernandes · Projeto musical: Bunny Land Music.',
     ],
     duration: '46 min',
-    trackCount: 10,
+    trackCount: listenToDaddyTracks.length,
     spotifyUrl: 'https://open.spotify.com/album/5LmYLnlAgYhi6tTrP2WLYg',
-    lyricsUrl: 'https://genius.com/albums/Bunny-land-music/Chapter-1-listen-to-daddy',
-    lyricsLabel: 'Letras',
-    tracks: [
-      { title: 'Spirit That Won’t Fall' },
-      { title: 'I’ve Been You' },
-      { title: 'Not Yet' },
-      { title: 'When The Room Goes Quiet' },
-      { title: 'Rooms Without Windows' },
-      { title: 'Let Go Of The Weight' },
-      { title: 'It Doesn’t Mean You Don’t Belong' },
-      { title: 'When You Feel Alone' },
-      { title: 'Where Nothing Dies' },
-      { title: 'Nights You Cry' },
-    ],
+    tracks: listenToDaddyTracks,
     clips: [
       {
         id: 'spirit-that-wont-fall-short',
