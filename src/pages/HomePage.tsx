@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import Header from '../components/layout/Header';
+import ScrollToTop from '../components/layout/ScrollToTop';
 import ParallaxProjectPanel from '../components/parallax/ParallaxProjectPanel';
 import { projects } from '../data/content';
 
@@ -33,6 +34,8 @@ function HomePage() {
         <strong className="uppercase tracking-[0.14em]">Wonderland Song</strong>
         <span>Music, stories and imagined worlds.</span>
       </footer>
+
+      <ScrollToTop />
     </div>
   );
 }
