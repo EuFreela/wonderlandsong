@@ -88,6 +88,10 @@ export type BunnyAlbum = {
   spotifyUrl?: string;
   bandcampUrl?: string;
   youtubeUrl?: string;
+  /** Lyrics page (e.g. Genius album page). */
+  lyricsUrl?: string;
+  /** Label for the lyrics button (default: "Letras"). */
+  lyricsLabel?: string;
   /**
    * Easter Eggs / revelations modal content.
    * When set, the album page shows an “Easter Eggs” button that opens a modal.

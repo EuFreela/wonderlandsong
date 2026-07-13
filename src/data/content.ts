@@ -104,11 +104,28 @@ export const bunnyLandMusic = {
   category: 'Dark EDM + Pop',
   image: '/images/caution2.png',
   tagline:
-    'Remixes, exploração sonora e um coelho que leva a música para outro nível de consciência.',
+    'BunnyMan · Tommy o DJ coelho — uma jornada sonora por emoções, identidade e o universo Wonderland Song.',
   historyLead:
-    'Bunny Land Music nasceu de encontros no Twitch, da curiosidade por EDM e dark wave, e de um MIDI controller que mudou a forma de compor — um projeto de fim de semana que se tornou um universo próprio.',
+    'Bunny Land Music é um projeto conceitual de Lameck: o alter ego BunnyMan — o DJ coelho Tommy — guia uma jornada sonora por emoções e identidade. Nasceu de encontros no Twitch, da curiosidade por EDM e dark wave, e de um MIDI controller que mudou a forma de compor.',
   pullQuote: 'Tudo se resume ao Twitch.',
   historySections: [
+    {
+      id: 'concept',
+      title: 'O projeto e o Tommy',
+      paragraphs: [
+        'Bunny Land Music é um projeto conceitual criado por Lameck, em que o alter ego BunnyMan — representado por um DJ coelho chamado Tommy — conduz uma jornada sonora por emoções e identidade.',
+        'Tommy é o personagem que representa Lameck: o garoto que se torna DJ no mundo Wonderland Song. Por trás da máscara e da batida está a mesma curiosidade de quem descobre a música eletrônica e quer dividir essa paixão com o mundo.',
+      ],
+    },
+    {
+      id: 'dream',
+      title: 'O sonho de Bunny Land',
+      paragraphs: [
+        'Enquanto dormia, Tommy foi levado a um mundo mágico coberto de neve. Guiado por uma figura misteriosa vestida de vermelho, encontrou uma princesa japonesa e criaturas encantadas — sem ter certeza se estava na China ou no Japão. No começo teve medo; em seguida percebeu que se transformara em um DJ coelho.',
+        'Encorajado por fadas, Tommy começou a tocar em um controlador mágico, com a ajuda de outros coelhos e de um pen drive encantado. A música ecoou pela floresta: os animais dançaram, o ambiente respondeu ao som e a experiência virou algo único e transformador. Ele se sentiu mais vivo do que nunca, imerso na energia da música.',
+        'No fim do show, as fadas revelaram que o reino precisava de um DJ para dar vida às noites de fantasia — e recompensaram Tommy pelo talento. Na manhã seguinte, ele acordou na cama e entendeu que tudo fora um sonho. Mesmo assim, prometeu a si mesmo continuar buscando formas de compartilhar sua paixão pela música com o mundo.',
+      ],
+    },
     {
       id: 'origin',
       title: 'Origem',
@@ -140,7 +157,7 @@ export const bunnyLandMusic = {
       id: 'bunny',
       title: 'Por que um coelho?',
       paragraphs: [
-        'Gosto do universo de Alice no País das Maravilhas por vários motivos. O coelho leva Alice para o fundo da toca — um mundo de fantasias. O Bunny Man encaixa nesse conceito: levar a música a outro nível de consciência.',
+        'Gosto do universo de Alice no País das Maravilhas por vários motivos. O coelho leva Alice para o fundo da toca — um mundo de fantasias. O Bunny Man encaixa nesse conceito: levar a música a outro nível de consciência. Tommy, o DJ coelho, é a face desse portal no universo Wonderland Song.',
       ],
     },
     {
@@ -331,6 +348,8 @@ export const bunnyLandAlbums: BunnyAlbum[] = [
     duration: '1 h 6 min',
     trackCount: 16,
     spotifyUrl: 'https://open.spotify.com/intl-pt/album/6aOOALcMvYmoVUQXhOPufv',
+    lyricsUrl: 'https://genius.com/albums/Bunny-land-music/Chapter-3-in-time-with-your-heart',
+    lyricsLabel: 'Letras',
     easterEgg: {
       title: 'Revelations',
       subtitle: 'Chapter 3 · In Time With Your Heart',
@@ -405,6 +424,8 @@ export const bunnyLandAlbums: BunnyAlbum[] = [
     duration: '46 min',
     trackCount: 10,
     spotifyUrl: 'https://open.spotify.com/album/5LmYLnlAgYhi6tTrP2WLYg',
+    lyricsUrl: 'https://genius.com/albums/Bunny-land-music/Chapter-1-listen-to-daddy',
+    lyricsLabel: 'Letras',
     tracks: [
       { title: 'Spirit That Won’t Fall' },
       { title: 'I’ve Been You' },

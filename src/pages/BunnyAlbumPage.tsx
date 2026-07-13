@@ -141,6 +141,16 @@ function BunnyAlbumPage() {
                     Reverve Universe Demo
                   </a>
                 ) : null}
+                {album.lyricsUrl ? (
+                  <a
+                    href={album.lyricsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={secondaryLinkClassName}
+                  >
+                    {album.lyricsLabel?.trim() || 'Letras'}
+                  </a>
+                ) : null}
                 {album.easterEgg ? (
                   <button
                     type="button"
