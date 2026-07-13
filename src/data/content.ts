@@ -1,5 +1,6 @@
 import type { Artist, Project, ProjectAlbum, ProjectDetail, Release } from '../types';
 import { aVerdadeAindaChamaTracks } from './agm-lyrics';
+import { cautionAudioGatewayTracks } from './blm-chapter1-lyrics';
 
 /**
  * Homepage parallax panels (POFO-style fixed background sequence).
@@ -346,23 +347,9 @@ export const bunnyLandAlbums: ProjectAlbum[] = [
       'A personagem Liat, ao chegar em casa depois de um dia exaustivo, adormece ao som de Bunny Land Music – Caution! Audio Gateway e mergulha em outra realidade: o mundo de Bunny Land.',
       'Projeto: Caution! Audio Gateway · Origem: Reverse Universe (demo) · Compositor/DJ: Lameck S. Fernandes · Vulgo: Bunny Land Music.',
     ],
-    trackCount: 13,
+    trackCount: cautionAudioGatewayTracks.length,
     bandcampUrl: 'https://wonderlandsong.bandcamp.com/album/chapter-1-reverse-universe',
-    tracks: [
-      { title: 'The Gateway to Bunny Land (Intro)' },
-      { title: 'Bunny Land' },
-      { title: 'Apocalipse In Me' },
-      { title: 'Synthetic Dreams' },
-      { title: 'Minerva' },
-      { title: 'My Pulse' },
-      { title: 'Glitch In Time' },
-      { title: 'Shattered Parallels' },
-      { title: 'Veins of Autumn' },
-      { title: 'Who I Was (Shadows of Who I Might Have Been)' },
-      { title: 'Fragments of Light' },
-      { title: 'Welcome Home' },
-      { title: 'After the Fall' },
-    ],
+    tracks: cautionAudioGatewayTracks,
     clips: [
       {
         id: 'apocalipse-in-me-remix',

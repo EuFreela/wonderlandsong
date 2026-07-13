@@ -145,14 +145,27 @@ function TrackLyricsModal({ open, onClose, track, trackNumber }: Props) {
                   <p className="m-0 text-base leading-relaxed text-white/80">{expl.message}</p>
                 ) : null}
 
-                {expl?.sections?.map((section) => (
-                  <div key={section.title}>
-                    <h4 className="m-0 mb-1.5 text-sm font-bold uppercase tracking-[0.1em] text-white/55">
-                      {section.title}
-                    </h4>
-                    <p className="m-0 text-sm leading-relaxed text-white/70">{section.content}</p>
-                  </div>
-                ))}
+                {expl?.sections?.map((section) => {
+                  const isTranslation =
+                    /tradu/i.test(section.title) || /\(pt\)|portugu/i.test(section.title);
+                  return (
+                    <div key={section.title}>
+                      <h4 className="m-0 mb-1.5 text-sm font-bold uppercase tracking-[0.1em] text-white/55">
+                        {section.title}
+                      </h4>
+                      {/* Keep line breaks/spacing like the lyrics panel (esp. PT translations). */}
+                      <pre
+                        className={`m-0 whitespace-pre-wrap font-sans text-white/70 ${
+                          isTranslation
+                            ? 'text-[0.95rem] leading-[1.7]'
+                            : 'text-sm leading-[1.7]'
+                        }`}
+                      >
+                        {section.content}
+                      </pre>
+                    </div>
+                  );
+                })}
               </div>
             ) : (
               <p className="m-0 text-sm text-white/45">Explicação em breve.</p>
