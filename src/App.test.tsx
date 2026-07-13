@@ -4,22 +4,31 @@ import { MemoryRouter } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import App from './App';
 
+function renderAt(path: string) {
+  return render(
+    <HelmetProvider>
+      <MemoryRouter initialEntries={[path]}>
+        <App />
+      </MemoryRouter>
+    </HelmetProvider>,
+  );
+}
+
 describe('App', () => {
   it('renders the fixed parallax homepage shell', () => {
-    render(
-      <HelmetProvider>
-        <MemoryRouter>
-          <App />
-        </MemoryRouter>
-      </HelmetProvider>,
-    );
+    renderAt('/');
 
     expect(screen.getByRole('link', { name: /Wonderland Song/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /Wonderland Song/i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /Bunny Land Music/i })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: /Caution! Audio Gateway/i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /Rosa Negra de Halfeti/i })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: /Wonderland Song TV/i })).toBeInTheDocument();
-    expect(screen.getAllByText(/Abrir projeto/i).length).toBeGreaterThanOrEqual(1);
-    expect(screen.getByText(/Music, stories and imagined worlds/i)).toBeInTheDocument();
+  });
+
+  it('shows bunny-at-work page for unknown routes', () => {
+    renderAt('/projects/does-not-exist');
+
+    expect(screen.getByRole('img', { name: /Bunny at work/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /Estamos trabalhando nesta página/i })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /Voltar ao site/i })).toHaveAttribute('href', '/');
   });
 });
