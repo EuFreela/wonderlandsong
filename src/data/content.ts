@@ -44,7 +44,7 @@ export const projects: Project[] = [
     image: '/images/rnh3.png',
     href: '/projects/rosa-negra-halfeti',
     buttonLabel: 'Abrir projeto',
-    youtubeUrl: 'https://www.youtube.com/watch?v=b9QHotS4408',
+    youtubeUrl: 'https://www.youtube.com/watch?v=_xHNXhUetcQ',
     youtubeLabel: 'YouTube',
   },
   {
@@ -56,7 +56,7 @@ export const projects: Project[] = [
     buttonLabel: 'Abrir projeto',
     spotifyUrl: 'https://open.spotify.com/intl-pt/artist/0nUtKTD6CkcADpjPYYCzHu',
     spotifyLabel: 'Ouvir no Spotify',
-    youtubeUrl: 'https://www.youtube.com/watch?v=_xHNXhUetcQ',
+    youtubeUrl: 'https://www.youtube.com/watch?v=b9QHotS4408',
     youtubeLabel: 'YouTube',
   },
   {
