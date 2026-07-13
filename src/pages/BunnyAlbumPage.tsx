@@ -1,11 +1,12 @@
 import { useState } from 'react';
-import { Helmet } from 'react-helmet-async';
 import { Link, Navigate, useParams } from 'react-router-dom';
 import AlbumClipsGallery from '../components/project/AlbumClipsGallery';
 import EasterEggsModal from '../components/project/EasterEggsModal';
 import TrackLyricsModal from '../components/project/TrackLyricsModal';
+import Seo from '../components/seo/Seo';
 import SpotifyIcon from '../components/ui/SpotifyIcon';
 import YouTubeIcon from '../components/ui/YouTubeIcon';
+import { absoluteUrl } from '../config/site';
 import {
   getProjectAlbum,
   getProjectAlbums,
@@ -65,14 +66,32 @@ function BunnyAlbumPage() {
   const easterEggClassName =
     'inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full border border-amber-300/40 bg-amber-400/15 px-6 text-[0.7rem] font-bold uppercase tracking-[0.12em] text-amber-100 shadow-md transition duration-200 hover:scale-[1.02] hover:border-amber-200/60 hover:bg-amber-400/25 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-300';
 
+  const path = `${projectBase}/albums/${album.slug}`;
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'MusicAlbum',
+    name: album.title,
+    description: album.summary,
+    url: absoluteUrl(path),
+    image: absoluteUrl(album.cover),
+    datePublished: album.year,
+    byArtist: {
+      '@type': 'MusicGroup',
+      name: project.title,
+      url: absoluteUrl(projectBase),
+    },
+    numTracks: album.trackCount ?? album.tracks.length,
+  };
+
   return (
     <div className="min-w-[320px] bg-[#05030a] text-[#f7f5fa]">
-      <Helmet>
-        <title>
-          {displayTitle} — {project.title}
-        </title>
-        <meta name="description" content={album.summary} />
-      </Helmet>
+      <Seo
+        title={`${displayTitle} — ${project.title}`}
+        description={album.summary}
+        path={path}
+        image={album.cover}
+        jsonLd={jsonLd}
+      />
 
       <header className="sticky top-0 z-50 flex h-[72px] items-center justify-between border-b border-white/10 bg-black/40 px-[4.5vw] backdrop-blur-[10px]">
         <Link

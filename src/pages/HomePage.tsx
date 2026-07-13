@@ -1,7 +1,8 @@
-import { Helmet } from 'react-helmet-async';
 import Header from '../components/layout/Header';
 import ScrollToTop from '../components/layout/ScrollToTop';
 import ParallaxProjectPanel from '../components/parallax/ParallaxProjectPanel';
+import Seo from '../components/seo/Seo';
+import { absoluteUrl, SITE_DEFAULT_DESCRIPTION, SITE_NAME } from '../config/site';
 import { projects } from '../data/content';
 
 /**
@@ -9,15 +10,34 @@ import { projects } from '../data/content';
  * (inspired by POFO portfolio parallax structure, original implementation).
  */
 function HomePage() {
+  const jsonLd = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      name: SITE_NAME,
+      url: absoluteUrl('/'),
+      description: SITE_DEFAULT_DESCRIPTION,
+      logo: absoluteUrl('/images/wonderland2.png'),
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: SITE_NAME,
+      url: absoluteUrl('/'),
+      description: SITE_DEFAULT_DESCRIPTION,
+      inLanguage: 'pt-BR',
+    },
+  ];
+
   return (
     <div className="min-w-[320px] bg-white text-[#171717]">
-      <Helmet>
-        <title>Wonderland Song</title>
-        <meta
-          name="description"
-          content="Wonderland Song — music, stories and imagined worlds."
-        />
-      </Helmet>
+      <Seo
+        title={SITE_NAME}
+        description={SITE_DEFAULT_DESCRIPTION}
+        path="/"
+        image="/images/wonderland2.png"
+        jsonLd={jsonLd}
+      />
 
       <Header />
 

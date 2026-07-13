@@ -1,5 +1,5 @@
-import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+import Seo from '../components/seo/Seo';
 
 /**
  * Fallback for routes / project pages that are not built yet.
@@ -7,11 +7,13 @@ import { Link } from 'react-router-dom';
 function ComingSoonPage() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-[#000000] px-6 py-16 text-center text-[#ffffff]">
-      <Helmet>
-        <title>Em construção — Wonderland Song</title>
-        <meta name="description" content="Esta página ainda está em construção." />
-        <meta name="robots" content="noindex" />
-      </Helmet>
+      <Seo
+        title="Em construção"
+        description="Esta página ainda está em construção no Wonderland Song."
+        path="/"
+        image="/images/bunnyatwork.png"
+        noIndex
+      />
 
       <img
         src="/images/bunnyatwork.png"

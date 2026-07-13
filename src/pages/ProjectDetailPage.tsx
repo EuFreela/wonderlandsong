@@ -1,7 +1,8 @@
-import { Helmet } from 'react-helmet-async';
 import { Link, useParams } from 'react-router-dom';
+import Seo from '../components/seo/Seo';
 import SpotifyIcon from '../components/ui/SpotifyIcon';
 import YouTubeIcon from '../components/ui/YouTubeIcon';
+import { absoluteUrl } from '../config/site';
 import {
   getProjectAlbums,
   getProjectDetailBySlug,
@@ -48,12 +49,26 @@ export function ProjectDetailView({ project, albums }: ProjectDetailViewProps) {
 
   const basePath = `/projects/${slug}`;
 
+  const path = basePath;
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'MusicGroup',
+    name: title,
+    description: tagline,
+    url: absoluteUrl(path),
+    image: absoluteUrl(image),
+    genre: category,
+  };
+
   return (
     <div className="min-w-[320px] bg-[#05030a] text-[#f7f5fa]">
-      <Helmet>
-        <title>{title} — Wonderland Song</title>
-        <meta name="description" content={tagline} />
-      </Helmet>
+      <Seo
+        title={title}
+        description={tagline}
+        path={path}
+        image={image}
+        jsonLd={jsonLd}
+      />
 
       <header className="sticky top-0 z-50 flex h-[72px] items-center justify-between border-b border-white/10 bg-black/40 px-[4.5vw] backdrop-blur-[10px]">
         <Link

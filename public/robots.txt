@@ -1,0 +1,6 @@
+# https://wonderlandsong.com
+User-agent: *
+Allow: /
+
+# Prefer the generated sitemap (update domain via VITE_SITE_URL when deploying).
+Sitemap: https://wonderlandsong.com/sitemap.xml
