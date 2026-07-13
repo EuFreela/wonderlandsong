@@ -25,6 +25,8 @@ export type Project = {
   headerTone?: 'light' | 'dark';
   href: string;
   buttonLabel?: string;
+  /** Optional short message under the title (homepage panel only). */
+  message?: string;
   /** Spotify page/playlist/artist URL — shows a Spotify button when set. */
   spotifyUrl?: string;
   /** Label for the Spotify button (default: "Spotify"). */

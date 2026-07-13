@@ -101,6 +101,12 @@ function ParallaxProjectPanel({ project }: Props) {
           {project.title}
         </h2>
 
+        {project.message?.trim() ? (
+          <p className="mt-3 m-0 block w-fit max-w-xl bg-white/95 px-3 py-2 text-[0.9rem] leading-snug text-black/75 sm:text-base">
+            {project.message.trim()}
+          </p>
+        ) : null}
+
         {showActions ? (
           <div className="mt-6 flex flex-wrap items-center gap-3">
             {showButton ? (

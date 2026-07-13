@@ -31,6 +31,7 @@ export const projects: Project[] = [
     // buttonLabel: 'Abrir projeto',
     // spotifyUrl: 'https://open.spotify.com/',
     // spotifyLabel: 'Spotify',
+    message: 'Ajudando a construir música boa no Brasil',
     youtubeUrl: 'https://www.youtube.com/@wonderlandsong/videos',
     youtubeLabel: 'YouTube',
   },
