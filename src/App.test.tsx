@@ -15,27 +15,30 @@ function renderAt(path: string) {
 }
 
 describe('App', () => {
-  it('renders the fixed parallax homepage shell', () => {
+  it('renders the fixed parallax homepage shell', async () => {
     renderAt('/');
 
-    expect(screen.getByRole('link', { name: /Wonderland Song/i })).toBeInTheDocument();
+    // Lazy route + heavy content data can take a moment in jsdom.
+    expect(
+      await screen.findByRole('heading', { name: /Bunny Land Music/i }, { timeout: 5000 }),
+    ).toBeInTheDocument();
+    expect(screen.getAllByRole('link', { name: /Wonderland Song/i }).length).toBeGreaterThan(0);
     expect(screen.getByRole('heading', { name: /Wonderland Song/i })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: /Bunny Land Music/i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /Rosa Negra de Halfeti/i })).toBeInTheDocument();
   });
 
-  it('shows bunny-at-work page for unknown routes', () => {
+  it('shows bunny-at-work page for unknown routes', async () => {
     renderAt('/projects/does-not-exist');
 
-    expect(screen.getByRole('img', { name: /Bunny at work/i })).toBeInTheDocument();
+    expect(await screen.findByRole('img', { name: /Bunny at work/i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /Estamos trabalhando nesta página/i })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /Voltar ao site/i })).toHaveAttribute('href', '/');
   });
 
-  it('opens Bunny Land Music project page from Abrir projeto route', () => {
+  it('opens Bunny Land Music project page from Abrir projeto route', async () => {
     renderAt('/projects/bunny-land-music');
 
-    expect(screen.getByRole('heading', { name: /^Bunny Land Music$/i })).toBeInTheDocument();
+    expect(await screen.findByRole('heading', { name: /^Bunny Land Music$/i })).toBeInTheDocument();
     expect(screen.getByText('Dark EDM + Pop')).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /Álbuns lançados/i })).toBeInTheDocument();
     expect(
@@ -54,10 +57,10 @@ describe('App', () => {
     expect(screen.getByRole('link', { name: /Voltar à home/i })).toHaveAttribute('href', '/');
   });
 
-  it('opens Rosa Negra de Halfeti project page with the shared project layout', () => {
+  it('opens Rosa Negra de Halfeti project page with the shared project layout', async () => {
     renderAt('/projects/rosa-negra-halfeti');
 
-    expect(screen.getByRole('heading', { name: /^Rosa Negra de Halfeti$/i })).toBeInTheDocument();
+    expect(await screen.findByRole('heading', { name: /^Rosa Negra de Halfeti$/i })).toBeInTheDocument();
     expect(screen.getByText('MPB · Experimental · Atmosférico')).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /Álbuns lançados/i })).toBeInTheDocument();
     expect(
@@ -77,10 +80,10 @@ describe('App', () => {
     expect(screen.getByRole('link', { name: /Voltar à home/i })).toHaveAttribute('href', '/');
   });
 
-  it('opens A Grande Multidão project page with shared layout', () => {
+  it('opens A Grande Multidão project page with shared layout', async () => {
     renderAt('/projects/a-grande-multidao');
 
-    expect(screen.getByRole('heading', { name: /^A Grande Multidão$/i })).toBeInTheDocument();
+    expect(await screen.findByRole('heading', { name: /^A Grande Multidão$/i })).toBeInTheDocument();
     expect(screen.getByText('Gospel + TJ')).toBeInTheDocument();
     expect(
       screen.getByRole('heading', { name: /Sobre A Grande Multidão/i }),
@@ -106,10 +109,10 @@ describe('App', () => {
     expect(screen.getByRole('link', { name: /Voltar à home/i })).toHaveAttribute('href', '/');
   });
 
-  it('opens A Verdade Ainda Chama album page under A Grande Multidão', () => {
+  it('opens A Verdade Ainda Chama album page under A Grande Multidão', async () => {
     renderAt('/projects/a-grande-multidao/albums/a-verdade-ainda-chama');
 
-    expect(screen.getByRole('heading', { name: /^A Verdade Ainda Chama$/i })).toBeInTheDocument();
+    expect(await screen.findByRole('heading', { name: /^A Verdade Ainda Chama$/i })).toBeInTheDocument();
     expect(
       screen.getAllByText(/álbum de A Grande Multidão/i).length,
     ).toBeGreaterThan(0);
@@ -119,11 +122,11 @@ describe('App', () => {
     );
   });
 
-  it('shows album gallery links on Bunny Land Music page', () => {
+  it('shows album gallery links on Bunny Land Music page', async () => {
     renderAt('/projects/bunny-land-music');
 
     expect(
-      screen.getByRole('link', { name: /Ver álbum.*Caution! Audio Gateway/i }),
+      await screen.findByRole('link', { name: /Ver álbum.*Caution! Audio Gateway/i }),
     ).toHaveAttribute(
       'href',
       '/projects/bunny-land-music/albums/chapter-1-caution-audio-gateway',
@@ -139,10 +142,10 @@ describe('App', () => {
     );
   });
 
-  it('opens a dedicated album page for Chapter 3', () => {
+  it('opens a dedicated album page for Chapter 3', async () => {
     renderAt('/projects/bunny-land-music/albums/chapter-3-in-time-with-your-heart');
 
-    expect(screen.getByRole('heading', { name: /^In Time With Your Heart$/i })).toBeInTheDocument();
+    expect(await screen.findByRole('heading', { name: /^In Time With Your Heart$/i })).toBeInTheDocument();
     expect(
       screen.getByText(/Álbum conceitual sobre o tempo emocional/i),
     ).toBeInTheDocument();
@@ -159,10 +162,10 @@ describe('App', () => {
     );
   });
 
-  it('opens Easter Eggs modal with revelations map on Chapter 3', () => {
+  it('opens Easter Eggs modal with revelations map on Chapter 3', async () => {
     renderAt('/projects/bunny-land-music/albums/chapter-3-in-time-with-your-heart');
 
-    fireEvent.click(screen.getByRole('button', { name: /^Easter Eggs$/i }));
+    fireEvent.click(await screen.findByRole('button', { name: /^Easter Eggs$/i }));
 
     expect(screen.getByRole('dialog', { name: /Revelations/i })).toBeInTheDocument();
     expect(
@@ -172,10 +175,10 @@ describe('App', () => {
     expect(screen.getByText(/→ Josi/i)).toBeInTheDocument();
   });
 
-  it('shows music clip gallery on Chapter 1 album page', () => {
+  it('shows music clip gallery on Chapter 1 album page', async () => {
     renderAt('/projects/bunny-land-music/albums/chapter-1-caution-audio-gateway');
 
-    expect(screen.getByRole('heading', { name: /^Caution! Audio Gateway$/i })).toBeInTheDocument();
+    expect(await screen.findByRole('heading', { name: /^Caution! Audio Gateway$/i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /Clips musicais/i })).toBeInTheDocument();
     expect(
       screen.getByRole('button', { name: /Apocalipse In Me \(Remix\)/i }),
@@ -184,10 +187,10 @@ describe('App', () => {
     expect(screen.getByText('After the Fall')).toBeInTheDocument();
   });
 
-  it('redirects unknown album slugs back to the project page', () => {
+  it('redirects unknown album slugs back to the project page', async () => {
     renderAt('/projects/bunny-land-music/albums/does-not-exist');
 
-    expect(screen.getByRole('heading', { name: /^Bunny Land Music$/i })).toBeInTheDocument();
+    expect(await screen.findByRole('heading', { name: /^Bunny Land Music$/i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /Álbuns lançados/i })).toBeInTheDocument();
   });
 });

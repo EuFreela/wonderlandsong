@@ -3,6 +3,16 @@ Dist
 dist
 .vite
 coverage
+*.tsbuildinfo
+
+# Vite tsc emit next to vite.config.ts (source is vite.config.ts)
+vite.config.js
+vite.config.d.ts
+
+# Lighthouse / perf audit dumps
+lighthouse*
+*.report.html
+*.report.json
 
 # One-off extraction dumps (PDFs, scrapes, debug) — not part of the app
 *.pdf
