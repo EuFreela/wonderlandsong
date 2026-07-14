@@ -20,7 +20,8 @@ export const SITE_DEFAULT_IMAGE = '/images/wonderland2.png';
  */
 export const SITE_LAST_UPDATED = '13 de julho de 2026, 23:45';
 
-export const SITE_LAST_UPDATED_LABEL = `Última atualização: ${SITE_LAST_UPDATED}`;
+/** Compact header stamp under the logo. */
+export const SITE_LAST_UPDATED_LABEL = `Last update ${SITE_LAST_UPDATED}`;
 
 /** Absolute URL for a site path or asset. */
 export function absoluteUrl(path = '/'): string {

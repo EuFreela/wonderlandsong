@@ -3,6 +3,7 @@ import { Menu, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { Link } from 'react-router-dom';
+import { SITE_LAST_UPDATED_LABEL } from '../../config/site';
 import { projects } from '../../data/content';
 import { useActivePanelTone } from '../../hooks/useActivePanelTone';
 
@@ -125,11 +126,20 @@ function Header() {
       >
         <Link
           to="/"
-          className={`text-base font-extrabold uppercase tracking-[0.16em] transition-colors duration-300 ${
+          className={`flex flex-col gap-0.5 transition-colors duration-300 ${
             isLightText ? 'text-white' : 'text-[#171717]'
           }`}
         >
-          Wonderland Song
+          <span className="text-base font-extrabold uppercase tracking-[0.16em]">
+            Wonderland Song
+          </span>
+          <span
+            className={`text-[0.58rem] font-medium normal-case tracking-[0.04em] ${
+              isLightText ? 'text-white/55' : 'text-[#171717]/50'
+            }`}
+          >
+            {SITE_LAST_UPDATED_LABEL}
+          </span>
         </Link>
 
         <nav
