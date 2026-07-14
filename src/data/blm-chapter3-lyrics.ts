@@ -2,7 +2,7 @@
 import type { BunnyAlbumTrack } from '../types';
 
 const chapter3LyricsNote =
-  'Letra em inglês no painel esquerdo; tradução em português abaixo. Chapter 3 · In Time With Your Heart — Bunny Land Music.';
+  'Letra original em inglês à esquerda; tradução em português à direita. Chapter 3 · In Time With Your Heart — Bunny Land Music.';
 
 function track(
   title: string,
@@ -15,7 +15,7 @@ function track(
     ...(dedication ? { dedication } : {}),
     lyrics,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: chapter3LyricsNote,
       sections: [
         {
@@ -62,37 +62,37 @@ Not a promise, not a plea
 Just a moment, wild and free
 So don’t explain, don’t even need—
 Just say nothing… and let me bleed`,
-    `Leio o seu silêncio como um roteiro
-Cada pausa, um aperto mais fundo
-Você toca a minha mão, depois solta
-Mas nesse espaço, eu transbordo
+    `Eu leio o teu silêncio como um roteiro
+Cada pausa, um aperto mais certeiro
+Você toca minha mão, depois solta
+E nesse espaço… eu transbordo, à solta
 
-Você não precisa falar nada
-O seu silêncio me quebra mais do que a queda
+Você não precisa dizer nada, afinal
+O teu silêncio me quebra mais que um final
 
 Quando você não diz nada, eu sangro
-Cada palavra que você não diz corta fundo
+Cada palavra que falta corta fundo
 Você é o eco que eu não consigo segurar
-Você é o calor que me deixa frio
-E prefiro doer a não acreditar—
-Então quando você não diz nada… eu sangro
+É o calor que me deixa congelar
+E eu prefiro doer a não acreditar —
+Então, quando você não diz nada… eu sangro
 
 Você é um fogo que eu nunca nomeio
-Mas continuo dançando na sua chama
-Você deixa os seus fantasmas na minha cama
-Você nunca mente, você ama em vez disso
+Mas continuo dançando no teu meio
+Você deixa seus fantasmas na minha cama
+Nunca mente — você ama, em chama
 
 Não estamos quebrados, só desfeitos
-Como estrelas que somem antes de partir
-Não olhe para trás—só respire comigo
-Mesmo que seja em silêncio
+Como estrelas que somem antes do efeito
+Não olhe pra trás — só respira comigo
+Mesmo que seja em silêncio, contido
 
 Quando você não diz nada, eu sangro
-Mas talvez seja isso que o amor deva ser
-Não uma promessa, não um pedido
-Só um momento, selvagem e livre
-Então não explique, nem precisa—
-Só não diga nada… e deixe eu sangrar`,
+Mas talvez seja assim que o amor é feito
+Não é promessa, nem súplica em vão
+Só um instante selvagem, sem prisão
+Então não explique, não precisa pedir —
+Só não diga nada… e me deixe sangrir`,
     'Josi',
   ),
   track(
@@ -170,79 +170,79 @@ Neon fades…
 But the feeling stays
 I’m still chasing you
 Through the ache`,
-    `A cidade respira através da minha pele
-O neon me corta por dentro
+    `A cidade respira sobre a minha pele
+O neon me corta por dentro, fere
 Cada toque parece quase real
-Mas nada fica, nada cura
+Mas nada fica, nada faz o mal sarar
 
-Eu persigo fantasmas dentro dos seus olhos
-Mentiras douradas em disfarce preto
-A gente não pergunta se isso é certo
-A gente só queima para se sentir vivo
+Eu persigo fantasmas no teu olhar
+Mentiras douradas vestidas de preto a brilhar
+Não perguntamos se isso é certo ou não
+Só queimamos pra sentir o coração
 
-O amor tem gosto doce no escuro
-Mas some antes da centelha
-Sinto o céu quando você está perto
-Depois caio onde ninguém vai
+O amor tem gosto doce na escuridão
+Mas some antes mesmo da faísca em combustão
+Eu sinto o céu quando você se aproxima
+E depois caio onde ninguém pisa
 
-Dançamos na ruína de veludo
-Bêbados de sonhos que não podemos guardar
-Seu beijo parece para sempre
-Mas o para sempre não dorme
-
-Nos afogamos em momentos roubados
-Até o sol começar a contar a verdade
-Não sei se isso é amor
-Ou só dor vestida de juventude
-
-Perfume, fumaça e votos quebrados
-Diga o meu nome, mas não pergunte como
-Sua sombra cabe na minha solidão
-Perto demais para sentir, longe demais para descansar
-
-Fazemos o pecado parecer cinema
-Cada erro parece automático
-Se eu parar, posso me sentir oco
-Então bebo mais um amanhã
-
-Ouço anjos no grave
-Sinto o coração acelerar
-Mas quando o silêncio enche o quarto
-Eu lembro o que a gente perde
-
-Dançamos na ruína de veludo
-Bêbados de sonhos que não podemos guardar
-Seu toque parece uma promessa
-Mas promessas não respiram
+Nós dançamos sobre veludo em ruínas
+Embriagados de sonhos que não vão ficar
+O teu beijo parece eterno
+Mas o eterno não sabe descansar
 
 Nos afogamos em momentos roubados
-Até a manhã quebrar a verdade
-Não sei se isso é amor
-Ou só dor vestida de juventude
+Até o sol começar a falar a verdade
+Eu não sei se isso é amor
+Ou só dor vestida de juventude e vaidade
+
+Perfume, fumaça e promessas quebradas
+Diz meu nome, mas não pergunta nada
+Tua sombra encaixa na minha solidão
+Perto demais pra sentir, longe pra ter chão
+
+Transformamos pecados em cinema
+Cada erro vira cena sem problema
+Se eu parar, posso sentir o vazio
+Então eu bebo mais um amanhã tardio
+
+Eu ouço anjos pulsando no grave
+Sinto meu coração correr, instável
+Mas quando o silêncio toma o lugar
+Eu lembro tudo o que a gente deixa escapar
+
+Nós dançamos sobre veludo em ruínas
+Embriagados de sonhos que não vão ficar
+O teu toque parece uma promessa
+Mas promessas não sabem respirar
+
+Nos afogamos em momentos roubados
+Até a manhã quebrar a ilusão
+Eu não sei se isso é amor
+Ou só dor usando juventude como disfarção
 
 Se o prazer é uma oração
-Tenho ajoelhado toda noite
+Tenho me ajoelhado toda noite, então
 Trocando pedaços da minha alma
-Por uma luz temporária
+Por uma luz temporária, falsa calma
 
-Me diga —
+Diz pra mim —
 Você sente isso também?
-Ou estou amando o que a gente nunca soube?
+Ou eu amo algo que nunca existiu além?
 
-Dançamos na ruína de veludo
-Com os corações meio abertos
+Nós dançamos sobre veludo em ruínas
+Com o coração meio aberto, desigual
 Buscando a eternidade
-No lado escuro do desejo
+No lado escuro do desejo carnal
 
-Se este amor é só fome
-Que deixe uma cicatriz mais profunda
-Prefiro queimar na sua sombra
-Do que não sentir nada no escuro
+Se esse amor for só fome e nada mais
+Que ao menos deixe uma marca brutal
+Prefiro queimar na tua sombra
+Do que não sentir nada no escuro total
 
-O neon some…
-Mas o sentimento fica
-Ainda estou te perseguindo
-Através da dor`,
+O neon se apaga…
+Mas a sensação não vai embora
+Eu ainda te persigo
+Através da dor que demora`,
     'Scabbia',
   ),
   track(
@@ -323,82 +323,82 @@ I just finally walked away
 
 You taught me how desire lies
 And how freedom feels the same`,
-    `Eu era jovem, não sabia as regras
-Achei que o amor era algo que se prova
-Então me torci fora da forma
+    `Eu era jovem, não conhecia as regras
+Achei que amor fosse algo que se prova
+Então me dobrei até perder a forma
 Fiz coisas que nunca pensei que faria
 
-Aprendi as suas ruas, as suas orações quietas
-Aprendi o seu sorriso de longe
-Você sempre soube que eu estava lá
-Você sempre escolheu olhar para o outro lado
+Aprendi tuas ruas, tuas preces caladas
+Aprendi teu sorriso de longe, à distância
+Você sempre soube que eu estava ali
+Sempre escolheu fingir que não via
 
-Você correu como se eu perseguisse o ar
+Você corria como se eu fosse só ar
 Como se te querer fosse algo errado
-Mas continuei respirando onde você cantava
-Só para me sentir pertencendo
+Mas eu continuava respirando onde você cantava
+Só pra sentir que eu pertencia a algum lugar
 
 Você cantava com anjos ao seu lado
-Eu fiquei onde não pertencia
-Entrei no seu coral só para estar perto
-Enquanto você fugia da canção
+Eu ficava onde nunca foi meu chão
+Entrei no teu coro só pra estar perto
+Enquanto você fugia da própria canção
 
-Você conhecia o meu coração antes de eu falar
-Você me viu quebrando, parado
-Você me deixou ficar dentro do seu mundo
-Mas nunca me deixou sentir o que você sente
+Você conhecia meu coração antes da minha voz
+Me via quebrando, parado no mesmo lugar
+Deixou que eu ficasse dentro do teu mundo
+Mas nunca me deixou sentir o que você sentia
 
-Segui as luzes na noite
+Segui luzes noite adentro
 Você dançava onde eu não conseguia respirar
 Ria com rostos que eu não conhecia
-Como se eu nunca devesse ser visto
+Como se eu nunca tivesse sido feito pra ser visto
 
-Vi você entregar a boca
-Como se o amor fosse só um jogo que você joga
-Depois olhou direto nos meus olhos
+Eu te vi entregar teus beijos
+Como se amor fosse só um jogo qualquer
+Então você olhou direto nos meus olhos
 E beijou outra pessoa… de propósito
 
-Senti algo dentro de mim se fechar
-Não raiva — algo pior que a dor
-Saí antes do meu coração desabar
+Algo dentro de mim se fechou
+Não foi raiva — foi pior que dor
+Saí antes que meu coração desabasse
 Fingindo que ainda era o mesmo
 
 Você cantava com anjos ao seu lado
-Eu fiquei onde não pertencia
-Te amei em silêncio, por completo
-Enquanto você me provava errado
+Eu ficava onde não pertencia
+Eu te amei em silêncio, por inteiro
+Enquanto você insistia em me provar errado
 
 Você nunca me tocou, nunca mentiu
-Mas mesmo assim me senti traído de algum modo
-Quebrei sozinho dentro do peito
-Depois sumi sem um som
+Mas ainda assim me senti traído
+Eu quebrei sozinho dentro do peito
+E desapareci sem fazer barulho
 
-Fui procurar — você tinha sumido
-Como se nunca tivesse vivido aquela vida
-Sem adeus, sem último olhar
-Só um fantasma que amei à noite
+Fui procurar — você já tinha sumido
+Como se aquela vida nunca tivesse existido
+Sem adeus, sem um último olhar
+Só um fantasma que eu amava à noite
 
-Anos passaram, mudei de pele
+Os anos passaram, eu mudei de pele
 Aprendi o que o amor não deveria ser
 Encontrei alguém que ficou
-Alguém que olhou de volta para mim
+Alguém que olhou de volta pra mim
 
-Então te vi — mesmos olhos, mesmo feitiço
-Esperando que eu me despedaçasse
+Então eu te vi — mesmos olhos, mesmo feitiço
+Esperando que eu caísse outra vez
 Mas algo em mim não se moveu
-Sua magia errou o meu coração
+Tua magia errou meu coração
 
 Agora é você quem me segue
-Fazendo perguntas que eu não sinto
+Fazendo perguntas que eu não sinto mais
 Ganhei o jogo que nunca joguei
-Aprendendo quando partir
+Aprendendo a hora certa de partir
 
 Eu não te odeio
 Eu não te amo
 Eu só finalmente fui embora
 
 Você me ensinou como o desejo mente
-E como a liberdade parece a mesma coisa`,
+E como a liberdade às vezes parece igual`,
     'Silana',
   ),
   track(
@@ -473,76 +473,76 @@ I don’t want your crown
 Still somehow
 I’m the one
 You can’t shut down`,
-    `Para você eu sou só um menino mimado
+    `Pra você eu sou só um garoto mimado
 Filho único, brincando de rei do barulho
-Você me olha com aquele sorriso torto
+Você me olha com esse sorriso torto
 Como se tudo que eu toco fosse de mentira
 
-Você acha que vivo dentro de uma mentira
-Uma ilusão barata que o dinheiro compra
-Para você eu sou nada — só mais um nome
-Que você jura possuir, jura domar
+Você acha que eu vivo dentro de uma ilusão
+Um truque barato que o dinheiro compra
+Pra você eu não sou nada — só mais um nome
+Que você jura que possui, que jura dominar
 
-Mas aqui está a parte que você nunca vê
-Eu não me dobro onde você espera que eu esteja
+Mas tem uma parte que você nunca enxerga
+Eu não me dobro onde você espera
 
-Eu não sou o seu tipo
-Eu não jogo o seu jogo
-Não preciso do seu trono
-Nem do poder que você finge
+Eu não sou o teu tipo
+Eu não jogo o teu jogo
+Não preciso do teu trono
+Nem do poder que você finge ter
 
-Não me importo com o que você diz
-Não me movo pelo seu orgulho
-E é por isso que fico
-Morando de graça na sua mente
+Eu não ligo pro que você diz
+Não me movo pelo teu orgulho
+E é por isso que eu fico
+Morando de graça na tua mente
 
-Você trata o mundo como se fosse o seu palco
-Como se todo mundo existisse para ser substituído
-Você chama de charme, eu chamo de medo
-Você precisa de controle para se sentir sincera
+Você trata o mundo como se fosse teu palco
+Como se todos existissem pra ser substituídos
+Você chama isso de charme, eu chamo de medo
+Você precisa de controle pra se sentir real
 
-Você diz que eu não sei o que afirmo
-Que sou verde demais para conhecer a sua chama
-Mas é engraçado como você ainda olha para trás
-Como se eu fosse o glitch que você não consegue atacar
+Você diz que eu não sei do que falo
+Que sou verde demais pra entender teu fogo
+Engraçado é que você ainda olha pra trás
+Como se eu fosse o erro que você não consegue apagar
 
-Você pode me dispensar, dizer que estou errado
-Mas o silêncio bate quando eu sumo
+Você pode me descartar, dizer que estou errado
+Mas o silêncio pesa quando eu vou embora
 
-Eu não sou o seu tipo
-Eu não jogo o seu jogo
+Eu não sou o teu tipo
+Eu não jogo o teu jogo
 Não corro atrás de aprovação
-Não digo o seu nome
+Nem digo o teu nome
 
-Não me importo com o que você pensa
-Não alimento o seu orgulho
+Eu não ligo pro que você pensa
+Eu não alimento teu orgulho
 E é por isso que o meu nome
-É o que fica preso na sua mente
+É o que fica preso na tua cabeça
 
 Você domina os fracos, os assustados
-Os que precisam de você para ser justa
-Mas eu não me ajoelho, eu não finjo
-É aí que o seu poder encontra o fim
+Os que precisam que você seja justo
+Mas eu não ajoelho, não finjo
+É aí que o teu poder chega ao fim
 
 Você não me ama
 Você não me odeia
-Você só odeia que eu sou livre
+Você só odeia o fato de eu ser livre
 
-Eu não sou o seu tipo
+Eu não sou o teu tipo
 Nunca fui, nunca tentei
-Não preciso das suas regras
-Para caminhar pela noite
+Não preciso das tuas regras
+Pra atravessar a noite
 
 Você pode me chamar de nada
-Dizer que estou perdendo tempo
+Dizer que eu estou perdendo tempo
 Mas é o meu nome que você sussurra
-Quando está sozinha à noite
+Quando fica sozinho à noite
 
-Eu não jogo o seu jogo
-Não quero a sua coroa
-Ainda assim, de algum modo
+Eu não jogo o teu jogo
+Eu não quero a tua coroa
+E mesmo assim
 Sou eu
-Que você não consegue desligar`,
+Que você não consegue calar`,
     'Kelly',
   ),
   track(
@@ -628,83 +628,83 @@ She just waits
 Until I almost do`,
     `Ela sabe que é bonita
 Sabe como o espelho mente
-Ela aprendeu as regras cedo
-E as usa nos olhos
+Aprendeu as regras cedo
+E carrega todas no olhar
 
 Ela se molda como perigo
-Perto o bastante para sentir
-Sabe que eu não vou cruzar a linha
-Por isso ela torna real
+Perto o bastante pra sentir
+Ela sabe que eu não cruzo o limite
+É por isso que faz parecer real
 
 Cada movimento é calculado
-Cada sorriso distorce a verdade
-Ela me puxa para mais perto devagar
+Cada sorriso entorta a verdade
+Ela me puxa devagar
 Como se não tivesse nada a perder
 
-Ela conhece a linha
-E mesmo assim caminha nela
+Ela conhece o limite
+E caminha sobre ele mesmo assim
 Se inclina no silêncio
-Mas nunca pede para eu ficar
+Mas nunca me pede pra ficar
 
-Ela conhece a linha
+Ela conhece o limite
 E continua me testando
 Fingindo que não percebe
 O que está fazendo comigo
 
-Ela não para quando eu olho para longe
+Ela não para quando eu desvio o olhar
 Continua dançando no meu espaço
 Como tentação com propósito
-Como se a contenção fizesse parte da caça
+Como se o controle fizesse parte da caça
 
-Digo a mim mesmo que sou mais forte
+Eu digo a mim mesmo que sou mais forte
 Que isso é só um jogo
-Mas toda vez que ela encontra os meus olhos
-Esqueço de quem é a culpa
+Mas toda vez que ela encontra meus olhos
+Eu esqueço quem é o culpado
 
-Tento ler entre as palavras dela
+Tento ler nas entrelinhas
 Tento manter o controle
-Mas ela fala em gestos quietos
-E eles estão entrando debaixo da minha pele
+Mas ela fala em gestos silenciosos
+E eles estão entrando na minha pele
 
-Ela conhece a linha
-E se move ainda mais perto
+Ela conhece o limite
+E chega ainda mais perto
 Nunca diz uma palavra
-Mas eu sinto tudo o que ela vai fazer
+Mas eu sinto tudo o que ela quer
 
-Ela conhece a linha
-Sabe que a gente não pode
-E essa é a parte
+Ela conhece o limite
+Ela sabe que não podemos
+E é exatamente isso
 Que ela entende
 
 Não quero admitir
 Mas acho que ela sabe
-Que cada vez que resisto
+Que toda vez que eu resisto
 Estou mais perto do que antes
 
-Algumas noites quase cedo
-Algumas noites quase caio
+Algumas noites eu quase cedo
+Algumas noites eu quase caio
 Mas me puxo de volta
-Logo antes do muro
+Pouco antes do muro
 
 Por que ela faz isso comigo?
-Por que me faz ficar?
-Ela sabe que não temos permissão
-E gosta assim
+Por que me prende assim?
+Ela sabe que não é permitido
+E gosta que seja assim
 
-Ela conhece a linha
-Sabe o meu nome
-Sabe o fogo
-Que estou tentando conter
+Ela conhece o limite
+Conhece meu nome
+Conhece o fogo
+Que eu tento conter
 
-Ela conhece a linha
+Ela conhece o limite
 Sabe que eu luto
-E cada vez que eu ganho
-Me custa mais uma noite
+E toda vez que eu venço
+Isso me custa mais uma noite
 
 Ela nunca cruza
-Nunca precisa
-Ela só espera
-Até eu quase fazer isso`,
+Nunca precisa cruzar
+Ela apenas espera
+Até que eu quase cruze`,
     'Layla',
   ),
   track(
@@ -783,80 +783,80 @@ I’m still standing
 But not untouched
 You didn’t break me
 You just got too close`,
-    `Vou ser honesto, garota, não brinque com o meu coração
-Você é o tipo de problema que não para no começo
-Você não ouve “não”, não desacelera
-Continua batendo num lugar que eu trancou
+    `Vou ser sincero, garota, não brinque com meu coração
+Você é o tipo de problema que não para no começo, não
+Você não escuta “não”, não diminui o passo
+Continua batendo num lugar que eu mantive trancado
 
-Você caminha como se soubesse o que faz comigo
-Cada movimento parece intencional, perigosamente
-Digo a mim mesmo que isso não é nada
-Mas a sua sombra continua subindo as minhas paredes
+Você anda como se soubesse o que faz comigo
+Cada movimento parece intencional, perigoso
+Eu digo a mim mesmo que isso não é nada
+Mas tua sombra continua escalando minhas muralhas
 
-Tento ficar frio, tento ficar limpo
-Mas você continua escorregando no meio
-Cada regra que jurei defender
-Você testa onde os meus limites acabam
+Eu tento ser frio, tento me manter inteiro
+Mas você continua passando pelo meio
+De cada regra que jurei defender
+Você testa onde meus limites vão ceder
 
 Você está cruzando uma zona proibida
-Invadindo algo que eu não possuo
-Digo que sou forte, digo que estou bem
-Mas o seu toque reescreve a minha mente
+Invadindo algo que nem é permitido sentir ainda
+Eu digo que sou forte, digo que estou bem
+Mas o teu toque reescreve minha mente também
 
-Não quero cair, não quero me dobrar
-Mas você toca partes que não consigo defender
-Você sabe que a gente não deveria — ainda assim fica
-E é isso que torna isso perigoso
+Eu não quero cair, não quero ceder
+Mas você toca partes que eu não sei proteger
+Você sabe que não devíamos — mesmo assim fica
+E é isso que torna tudo tão perigoso
 
 Você sorri como se já tivesse vencido
-Como se a resistência fosse algo de que você foge
-Você lê o meu silêncio como um sinal
-Sabe exatamente o que há por trás dos meus olhos
+Como se resistência fosse algo esquecido
+Você lê meu silêncio como um sinal
+Sabe exatamente o que existe por trás do meu olhar
 
-Eu nego, mas o meu pulso não mente
-Cada vez que você chega um pouco mais perto, eu perco o tempo
-Não sei para onde essa estrada vai
-Mas sinto o peso de perder o controle
+Eu nego, mas meu pulso não mente
+Cada vez que você chega mais perto, eu perco o tempo
+Não sei onde essa estrada vai dar
+Mas sinto o peso de começar a perder o controle já
 
-Me construí para nunca quebrar
-Aprendi o quanto um coração aguenta
-Mas você não bate, não espera
-Entra e muda as apostas
+Eu me construí pra nunca quebrar
+Aprendi o quanto um coração pode aguentar
+Mas você não bate, não espera permissão
+Você entra direto e muda o jogo então
 
 Você está cruzando uma zona proibida
-Invadindo algo que eu não possuo
-Digo que sou forte, digo que estou bem
-Mas o seu toque reescreve a minha mente
+Invadindo algo que eu jurei proteger na vida
+Eu digo que sou forte, digo que estou bem
+Mas o teu toque muda tudo que eu sei
 
-Não quero cair, não quero me dobrar
-Mas você toca partes que não consigo defender
-Você sabe que a gente não deveria — ainda assim fica
-E é isso que torna isso perigoso
+Eu não quero cair, não quero ceder
+Mas você toca partes que eu não sei defender
+Você sabe que não devíamos — mesmo assim fica
+E é isso que torna tudo tão perigosa
 
-Preciso ser aquele homem inabalável
-Pedra no peito, fogo nas mãos
-Mas você encontrou a rachadura que eu escondo
-O único lugar em que eu não sobrevivo
+Eu preciso ser aquele homem inabalável
+Pedra no peito, fogo controlável
+Mas você encontrou a rachadura escondida
+O único lugar onde eu não sobrevivo ainda
 
 Você não pede permissão
-Não precisa de um sinal
-Você soube que isso era meu
-Antes de eu perceber
+Não precisa de sinal algum
+Você sabia que isso era meu
+Antes mesmo de eu perceber, nenhum
 
 Você está cruzando uma zona proibida
-E sinto que estou perdendo o chão
-Continuo dizendo “isso é errado”
-Mas o meu coração não faz um som
+E eu sinto o chão fugir sob meus pés
+Eu continuo dizendo “isso é errado”
+Mas meu coração não responde mais
 
-Se isso terminar em chamas ou cicatrizes
-Juro que tentei ficar separado
-Você tocou o lugar que eu não podia mostrar
-Agora não sei até onde isso vai
+Se isso terminar em chamas ou cicatriz
+Eu juro que tentei ficar longe de ti
+Você tocou onde eu nunca deixei mostrar
+Agora não sei até onde isso vai chegar
 
-Ainda estou de pé
-Mas não intacto
+Eu ainda estou de pé
+Mas não ileso, não igual
 Você não me quebrou
-Só chegou perto demais`,
+Só chegou perto demais do essencial`,
     'Secret',
   ),
   track(
@@ -945,10 +945,10 @@ Why you want me`,
     `Você diz todas as coisas
 Que gostaria que alguém ouvisse
 Se apaixona por versões
-De quem poderia ser, não de quem está aqui
+De quem poderia ser — não de quem está aqui
 
-Você monta uma cena na luz de neon
-Todo mundo acredita na mentira
+Você constrói uma cena sob luz neon
+Todo mundo acredita na ilusão
 Eles aplaudem porque sabem que você pode
 Ser tudo o que vende esta noite
 
@@ -958,46 +958,46 @@ Carros baixos, rostos estranhos
 Mãos que nunca parecem lar
 
 Você não se importa com quem te segura
-Desde que paguem
-Dinheiro é só a sua linguagem
-Para se entregar
+Desde que pague
+Dinheiro é só a linguagem
+Que você usa pra se entregar
 
 Você dorme dentro de ilusões
-Vidas emprestadas, verdade alugada
+Vidas emprestadas, verdades alugadas
 Diz que é dona do futuro
 Mas vive da juventude de outra pessoa
 
 Você veste o desejo como um vestido
 Troca quando rasga
-Não chama de sobrevivência
-Chama de nascer
+Não chama isso de sobrevivência
+Chama de renascer
 
-Deixa eles pensarem que importam
-Deixa eles pensarem que você se importa
-Diz amor quando é conveniente
-Depois some em fumaça e brilho
+Você deixa que pensem que importam
+Deixa que acreditem que você sente
+Diz “amor” quando convém
+Depois some entre fumaça e luz
 
-Diz que é só um momento
+Você diz que é só um momento
 Só um corpo, só um acordo
 Mas toda noite você compra
-O que tem medo demais de sentir
+Aquilo que tem medo de sentir
 
 Você não se importa com quem te segura
-Desde que paguem
-Dinheiro é só a sua linguagem
-Para se entregar
+Desde que pague
+Dinheiro é só a linguagem
+Que você usa pra se entregar
 
 Você constrói um mundo de espelhos
-Onde nada é verdade
+Onde nada é verdadeiro
 Diz que quer o para sempre
-Mas não sabe o que fazer
+Mas não sabe o que fazer com ele
 
 Então me diga —
 O que você quer de mim?
 
 Uma noite?
 Uma dança?
-Uma vida que você não vai escolher?
+Uma vida que não vai escolher?
 
 Um filho?
 Uma promessa?
@@ -1006,16 +1006,16 @@ Algo que você vai perder?
 Você diz que quer um “nós”
 Enquanto ama alguém que não ama
 Pede honestidade
-Mas não sabe o que ela custa
+Mas não sabe o preço dela
 
-Você não vive, você performa
-Não ama, convence
-Chama de independência
-Mas é só mais um ciclo
+Você não vive, você atua
+Você não ama, você convence
+Chama isso de independência
+Mas é só mais um ciclo que se repete
 
-Diz que eu te faço se sentir real
-Depois corre de volta para a mentira
-Então me diga o que quer de mim
+Você diz que eu te faço sentir real
+Depois corre de volta pra mentira
+Então me diga o que você quer de mim
 Antes de dizer adeus
 
 Você não é livre
@@ -1102,80 +1102,81 @@ Circles don’t break
 They just complete
 And every road you chose
 Knows how to meet`,
-    `Você caminhava como se a noite te devesse algo
-Como se toda porta ficasse bem aberta
-Vi você coletar cada promessa
-E deixá-las respirando de lado
+    `Você andava como se a noite te devesse algo
+Como se toda porta fosse ficar aberta
+Eu te vi juntar promessas uma a uma
+E deixá-las respirando pelo caminho
 
-Você disse que o amor era uma febre temporária
+Você dizia que amor era uma febre temporária
 Algo doce, mas nunca profundo
-Você aprendeu a pegar sem pedir
-E a sorrir enquanto os outros choram
+Aprendeu a tirar sem pedir
+E a sorrir enquanto outros choravam
 
-Eu não te parei
-Eu não implorei
-Algumas lições precisam de silêncio
-Para pousar onde devem
+Eu não te impedi
+Eu não supliquei
+Algumas lições precisam do silêncio
+Pra chegar onde devem chegar
 
 O tempo tem um jeito de lembrar nomes
 Mesmo quando os corações esquecem
-Cada passo que você deu sem olhar para trás
+Cada passo que você deu sem olhar pra trás
 Deixa uma sombra que você ainda não encontrou
 
-Você não ouve agora
-Mas um dia vai ouvir
-O que você manda para o escuro
-Encontra o caminho
+Você não escuta agora
+Mas um dia vai
+Tudo o que você lança no escuro
+Encontra seu caminho
 
-Você dançou por vidas como se fossem estações
-Mudou de cores quando chovia
-Chamou de liberdade, chamou de viver
-Eu chamei de fugir do seu nome
+Você dançou pelas vidas como se fossem estações
+Mudou de cor quando choveu
+Chamou isso de liberdade, chamou de viver
+Eu chamei de fugir do próprio nome
 
-Você achava que o desejo era uma moeda
+Você achou que desejo era uma moeda
 Que nunca acaba nem volta
-Mas até o fogo fica sozinho
+Mas até o fogo fica solitário
 Quando percebe que queima
 
-Eu fiquei quieto
+Eu fiquei imóvel
 Deixei a verdade respirar
-Você não consegue fugir de ecos
-Que começam por baixo
+Você não corre de ecos
+Que nascem por dentro
 
-O tempo tem um jeito de fechar mãos
-Que um dia pareciam intocáveis
+O tempo sabe fechar mãos
+Que um dia pareceram intocáveis
 Cada coroa que você usou tão leve
-Aprende o quanto pode pesar
+Aprende o peso que pode ter
 
 Você ainda não sente
-Mas um dia vai sentir
-O que você dá sem cuidado
-Encontra o caminho
+Mas um dia vai
+Tudo o que você entrega sem cuidado
+Encontra seu caminho
 
-Não vou dizer que te avisei
-Não vou dizer uma palavra
+Eu não vou dizer “eu avisei”
+Não vou dizer nada
 Algumas verdades soam mais alto
-Quando nunca são ouvidas
+Quando nunca são ditas
 
 Você vai chamar de destino
 Vai chamar de azar
 Mas no fundo vai saber
-Já estava escrito
-No momento em que você andou
+Que já estava escrito
+No momento em que você partiu
 
-O tempo não corre
-Ele só espera
-Paciente como consequência
-Suave como destino
+O tempo não tem pressa
+Ele apenas espera
+Paciente como a consequência
+Suave como o destino
 
-Quando finalmente ficar onde um dia passou
-Procurando algo para segurar
+Quando você finalmente parar
+Onde antes só passou
+Procurando algo pra segurar
 Vai entender o que eu nunca disse
-E por que eu te deixei ir
+E por que te deixei ir
 
-Círculos não quebram
-Eles só se completam
-E cada estrada que você escolheu
+Círculos não se quebram
+Eles se completam
+E toda estrada que você escolheu
 Sabe como se encontrar`,
     'Natália',
   ),
@@ -1242,66 +1243,66 @@ I don’t know what to do
 With a feeling
 That knows your shape
 But has nowhere to live`,
-    `Notei como nos parecemos
+    `Percebi como nos parecemos
 Não na forma, mas no peso
 Você carrega um pouco de calor
-Eu carrego o que fica quando ele some
+Eu carrego o que fica quando ele vai
 
 Às vezes é só isso que somos —
-Ouvidos treinados a ficar abertos
-Esperando algo
+Ouvidos treinados para permanecer abertos
+Esperando por algo
 Que nunca nos escolhe
 
 Você me coloca em quartos estreitos
-Onde cada resposta custa
+Onde toda resposta tem um preço
 Onde segurar apaga
 E soltar parece definitivo
 
 Há uma beleza nisso
-Do tipo que te afina devagar
-Tão quieto
-Que quase parece merecido
+Do tipo que te afina aos poucos
+Tão silenciosamente
+Que quase parece merecida
 
-Fico entre dois instintos
-Nenhum limpo
-Nenhum gentil
+Eu fico entre dois instintos
+Nenhum deles limpo
+Nenhum deles gentil
 
-Há momentos em que me estudo
-Como se o dano pudesse traduzir
+Há momentos em que me observo
+Como se o dano pudesse se traduzir
 Como se a prova vivesse sob a superfície
-O bastante para interromper a sua ausência
+O bastante para interromper tua ausência
 
-Mas até se desfazer
-Chegaria suave demais
-Para redirecionar os seus olhos
-Ou me abrigar no seu coração
+Mas até me desfazendo
+Eu chegaria suave demais
+Para redirecionar teu olhar
+Ou me abrigar dentro do teu coração
 
-Prometeram que essa coisa
+Prometeram que isso
 Se espelharia
 Duas mãos avançando
 Em direção à mesma luz
 
 Mas você raramente está aqui
-E nunca para dentro
+E nunca por dentro
 Você passa por mim
-Sem querer
+Sem intenção
 
 Eu não acuso
 Eu não dramatizo
 
-Só não entendo
+Eu só não entendo
 Como algo pode parecer mútuo
 E nunca ser compartilhado
 
 Isso deveria ser bonito
-Uma estrada quieta rumo ao alívio
-Em vez disso fica incompleto
+Uma estrada silenciosa rumo à leveza
+Em vez disso, permanece inacabado
 Como uma frase
 Que ninguém concorda em terminar
 
-Não sei o que fazer
+Eu não sei o que fazer
 Com um sentimento
-Que conhece a sua forma
+Que conhece a tua forma
 Mas não tem onde morar`,
     'Vanessa',
   ),
@@ -1393,91 +1394,93 @@ Her: I’m scared of losing myself
 
 And we’re both afraid
 Of what’s left`,
-    `Notei o jeito como o seu nome
-Sai do quarto antes de você
+    `Eu percebo o jeito como o teu nome
+Sai da sala antes de você
 Como algo importante
-Aprendi a não permanecer verdadeiro
+Que aprendeu a não permanecer fiel
 
 Eu não te sigo com palavras
 Eu te sigo com dúvida
-Ela cresce quieta no meu peito
-Depois encontra a saída
+Ela fica quieta no meu peito
+Depois encontra um jeito de sair
 
 Você me lê como um aviso
 Mesmo quando estou calmo
-Seu silêncio afia momentos
-Que nunca deveriam ferir
+Teu silêncio afia momentos
+Que nunca quiseram ferir
 
-Carrego coisas inacabadas
+Eu carrego coisas inacabadas
 Não pecados, só pedaços de ar
-Mas cada pausa que guardo para mim
-Pesa mais quando você encara
+Mas cada pausa que guardo pra mim
+Pesa mais quando você me encara
 
-Ele: Não quero te perder para o escuro
-Ela: Não quero viver dentro do seu medo
+[Refrão — Ambos (suave, alternado)]
+Ele: Eu não quero te perder para o escuro
+Ela: Eu não quero viver dentro do teu medo
 
-Sinto falta do jeito que você falava
+Sinto falta de como você falava
 Antes de cada palavra ter peso
-Agora escuto erros
+Agora escuto procurando erros
 Nas coisas que você nunca diz
 
 Faço perguntas demais
 Porque tenho medo do espaço
-Confundo a sua respiração
-Com uma distância que não consigo encarar
+Confundo tua respiração
+Com uma distância que não sei encarar
 
-Estou cansado de ser cuidadoso
-Com um amor que costumava se mover
-Eu não me entreguei
-Só precisava de espaço
+Estou cansado de ter cuidado
+Com um amor que antes se movia
+Eu não me entreguei demais
+Eu só precisava de espaço
 
-Você me segura como se eu estivesse saindo
-Antes mesmo de eu me virar
-E cada vez que me puxa para perto
-Algo quieto queima
+Você me segura como se eu estivesse partindo
+Antes mesmo de eu virar
+E toda vez que você me puxa pra perto
+Algo silencioso queima
 
-Ele: Me diga onde eu fico
-Ela: Me diga por que você duvida
+[Pré-Refrão — Ambos (sobrepostos)]
+Ele: Me diz onde eu estou
+Ela: Me diz por que você duvida
 
-Estamos desgastando o belo
-Pedindo que fique
+Estamos desgastando o que é bonito
+Tentando fazê-lo ficar
 Transformando o amor numa pergunta
 Que nunca vai embora
 
 Se cada olhar vira um teste
 Cada silêncio, um sinal
 Vamos nos perder devagar
-Sem cruzar uma linha
+Sem nunca cruzar uma linha
 
-Sei que o meu ciúme
+Eu sei que meu ciúme
 Não vem do que você faz
 Vem de amar algo
 Que não sei como perder
 
-Sei que o seu medo é quieto
-Mas segue cada som
-Não estou tentando escapar de você
+Eu sei que teu medo é silencioso
+Mas ele segue cada som
+Não estou tentando fugir de você
 Só estou tentando não me afogar
 
-Ele: Preciso de reafirmação
-Ela: Preciso de ar
-Ele: Preciso de você presente
-Ela: Preciso de você justa
+Ele: Eu preciso de segurança
+Ela: Eu preciso de ar
+Ele: Eu preciso de você presente
+Ela: Eu preciso de justiça
 
 Não estamos quebrando por traição
-Nem por algo que alguém disse
+Ou por algo que alguém disse
 Estamos quebrando pelo esforço
-De carregar o não dito
+De carregar o que nunca foi dito
 
-Se ainda houver um caminho entre nós
-Não virá do controle
+Se ainda existe um caminho entre nós
+Ele não vai vir do controle
 Mas de aprender a amar
 Sem perder o todo
 
 Ele: Tenho medo de te perder
 Ela: Tenho medo de me perder
 
-E os dois temos medo
+E nós dois temos medo
 Do que sobra`,
     'Elaine',
   ),
@@ -1560,78 +1563,79 @@ That’s what keeps me
 Here`,
     `Ele chega como algo temporário
 Nunca tira o casaco
-Aprendo as saídas dele de cor
-Antes de ele aprender o meu nome
+Eu decoro suas saídas
+Antes mesmo de ele aprender meu nome
 
-Ele toca o que não vai guardar
+Ele toca o que não pretende guardar
 Deixa calor como luz emprestada
-Digo a mim mesma que não é nada
-Depois espero por ele a noite toda
+Eu digo a mim mesma que não é nada
+E então espero por ele a noite inteira
 
-Tento matar o sentimento de fome
-Ensinar o coração a descansar
-Mas ele continua se estendendo para ele
+Tento deixar o sentimento passar fome
+Ensinar meu coração a descansar
+Mas ele continua indo atrás dele
 Como se não soubesse o que é melhor
 
-Não sei por que fico
-Quando ele olha através de mim
+Eu não sei por que eu fico
+Quando ele olha além de mim
 Como se eu fosse cenário
 No caminho dele
 
-Não sei por que me importo
+Eu não sei por que eu me importo
 Quando cada palavra que ele dá
-Parece só pela metade
+Chega só pela metade
 
 Ele fala em quase-promessas
-O bastante para me puxar para perto
-Depois some dentro de si
+Só o suficiente pra me puxar pra perto
+Depois desaparece dentro de si
 Como se eu nunca tivesse estado aqui
 
-Coleto a menor gentileza
-Como se fosse prova de algo verdadeiro
-Como se ser precisada por um instante
-Significasse que eu importei para você
+Eu junto as menores gentilezas
+Como se fossem prova de algo real
+Como se ser necessária por um instante
+Significasse que eu importei pra você
 
-Digo a mim mesma para deixar sumir
-Soltar o que seguro
+Digo a mim mesma pra deixar desaparecer
+Afrouxar o que eu seguro
 Mas alguns sentimentos não escutam
-Só envelhecem
+Eles apenas envelhecem
 
-Não sei por que fico
+Eu não sei por que eu fico
 Quando ele nunca me escolhe
-Só fica o tempo suficiente
-Para me fazer acreditar
+Ele só permanece tempo suficiente
+Pra me fazer acreditar
 
-Não sei por que dói
+Eu não sei por que dói
 Querer alguém
-Que trata o seu coração
-Como se trabalhasse para ele
+Que trata teu coração
+Como se trabalhasse pra ele
 
 Talvez o amor nem sempre seja gentil
 Talvez não seja justo
 Talvez eu tenha aprendido devoção
-Antes de aprender autocuidado
+Antes de aprender cuidado comigo mesma
 
-Não chamo de crueldade
-Não o chamo de mau
-Só não entendo
-Por que quero o que me deixa triste
+Eu não chamo isso de crueldade
+Não chamo ele de mau
+Eu só não entendo
+Por que eu quero o que me entristece
 
-Não sei por que fico
-Quando sou mais fácil de deixar
-Do que de segurar
-Ou de acreditar
+Eu não sei por que eu fico
+Quando é mais fácil me deixar
+Do que me segurar
+Ou acreditar em mim
 
-Se amá-lo é perder
-Então perco em silêncio
-Porque partir parece mais difícil
-Do que ficar sem ser vista
+Se amar ele é perder
+Então eu perco em silêncio
+Porque ir embora parece mais difícil
+Do que ficar invisível
 
-Ele nunca pede para eu permanecer
-Ele nunca pede para eu ir
+Ele nunca me pede pra ficar
+Nunca me pede pra ir
 
-E de algum modo
-É isso que me mantém
+E de algum jeito
+É isso
+Que me mantém
 Aqui`,
     'Ellen (sobre mim)',
   ),
@@ -1712,78 +1716,78 @@ You don’t ask me to leave
 
 You just come back
 When you need me`,
-    `Você liga quando a noite parece vazia
+    `Você liga quando a noite fica vazia
 Não quando ela é gentil
 Aprendi o som dos seus passos
-Só quando estão atrás
+Só quando eles vêm por trás
 
 Você toca como quem está de passagem
-Como se eu fosse um lugar para descansar
-Leva o que é quente no momento
-E deixa o resto
+Como se eu fosse um lugar pra descansar
+Você pega o que está quente no momento
+E deixa o resto pra trás
 
-Digo a mim mesmo que isso não é nada
+Digo a mim mesma que isso não é nada
 Só timing, só espaço
-Mas o meu coração continua confundindo
+Mas meu coração continua confundindo
 A sua necessidade com um rosto
 
-Não sei por que fico
+Eu não sei por que eu fico
 Quando só sou útil
-Nas horas quietas
+Nas horas silenciosas
 Que você não quer nomear
 
-Não sei por que dói
-Me sentir escolhido
-Só quando
-Você está se quebrando
+Eu não sei por que dói
+Me sentir escolhida
+Apenas quando
+Você está quebrando
 
-Você fala em proximidade emprestada
+Você fala em intimidade emprestada
 Depois some ao amanhecer
-Memorizo as suas saídas
-Como se fosse assim que o amor segue
+Eu decoro suas saídas
+Como se fosse assim que o amor continua
 
-Tento soltar o sentimento
-Ensinar-me contenção
-Mas ele continua voltando
+Tento afrouxar o sentimento
+Me ensinar contenção
+Mas ele sempre volta
 Como se não entendesse
 
-Sei que não sou o seu abrigo
-Sou só onde você fica de pé
-Antes de seguir em frente
+Eu sei que não sou teu abrigo
+Sou só onde você para
+Antes de seguir adiante
 Com a mão de outra pessoa
 
-Não sei por que fico
+Eu não sei por que eu fico
 Quando nunca sou a resposta
 Só um lugar temporário
 Por onde você passa
 
-Não sei por que quero
-Alguém que só me vê
-Quando não há mais nada
-Para fazer
+Eu não sei por que eu quero
+Alguém que só me enxerga
+Quando não há mais
+Nada pra fazer
 
 Talvez eu confunda intensidade
-Com ser visto
+Com ser vista
 Talvez eu tenha aprendido afeto
 Nos espaços entre
 
-Não te chamo de cruel
-Não chamo isso de errado
-Só não sei
-Por que me agarro
+Eu não te chamo de cruel
+Não digo que isso é errado
+Eu só não sei
+Por que eu continuo segurando
 
-Não sei por que fico
+Eu não sei por que eu fico
 Quando você não escolhe
 Você chega quando está vazio
-Depois sai cheio
+E vai embora cheio
 
-Se te amar é silêncio
-Então aprendi bem
-Só gostaria de saber
-Quando me deixar ir
+Se amar você é silêncio
+Então eu aprendi bem
+Só queria saber
+Quando é hora de me soltar
 
-Você não pede para eu permanecer
-Você não pede para eu ir
+Você não me pede pra ficar
+Não me pede pra ir
 
 Você só volta
 Quando precisa de mim`,
@@ -1875,86 +1879,86 @@ But nothing here is real
 
 You kiss like it's content
 And I fall for the feel`,
-    `O jeito que você me olha
+    `O jeito que você olha pra mim
 Parece quase honesto
 Como algo que eu poderia guardar
 Se eu não tocar
 
-Eles sussurram a sua reputação
-Como escritura no escuro
-Mas eu só ouço a sua voz
-Quando diz o meu nome baixinho
+Eles sussurram tua reputação
+Como se fosse escritura no escuro
+Mas eu só escuto tua voz
+Quando ela diz meu nome, baixo
 
-Quero acreditar no ângulo dos seus olhos
-No jeito que você se inclina quando a luz está certa
+Eu quero acreditar no ângulo do teu olhar
+No jeito que você se inclina quando a luz ajuda
 Finjo que os rumores se dissolvem no grave
-Quando você me puxa de volta para o seu espaço
+Quando você me puxa de volta pro teu espaço
 
 Se isso é amor
-Brilha limpo demais
+Ele brilha limpo demais
 Como diamantes de plástico
-Na sua pele
+Sobre a tua pele
 
-Você segura o meu rosto
-Mas olha para outro lado
+Você segura meu rosto
+Mas olha pra outro lugar
 Contando corações
 Que não são meus
 
 Dizem que você empresta afeto
 Como moeda
 Troca devoção por atenção
-E chama de destino
+E chama isso de destino
 
-Você não rouba — você coleta
+Você não rouba — você coleciona
 O que já está disposto
 Eu caio como se tivesse escolhido
-Essa é a parte que mata
+E é isso que mais machuca
 
 Você mantém a noite em movimento
 Nunca deixa desacelerar
 Cada segundo precisa de testemunha
-Cada sentimento precisa se mostrar
+Cada sentimento precisa aparecer
 
 Se isso é amor
-Por que não podemos sentar
-Em cantos quietos
+Por que não conseguimos sentar
+Em cantos silenciosos
 Sem uma lente?
 
 Você está aqui comigo
 Mas em todo lugar
-Vestindo desejo
+Vestindo o desejo
 Como se fosse moda
 
-A gente não conversa como pessoas
+Nós não falamos como pessoas
 Que planejam ficar
-Posamos como momentos
-Feitos para sumir
+Nós posamos como momentos
+Feitos pra desaparecer
 
-O seu reflexo te conhece melhor
-Do que eu jamais vou conhecer
-Você confia no vidro
-Mais do que no silêncio
+O teu reflexo te conhece melhor
+Do que eu jamais vou
+Você confia mais no vidro
+Do que no silêncio
 
-Assisto você amar a imagem
+Eu te vejo amar a imagem
 Enquanto eu amo o atraso
-Aquele segundo antes de você se virar
+Aquele segundo antes de você virar o rosto
 
 Talvez eu seja só o centro
 Da atenção desta noite
 Até algo mais brilhante
-Entrar no quadro
+Entrar no enquadramento
 
 Se isso é amor
 É ensaiado
 Mentiras bem iluminadas
-Vestidas para ferir
+Vestidas pra ferir
 
-Você me mantém perto
-Mas nunca sozinho
-Eu sinto você mais
+Você me mantém por perto
+Mas nunca a sós
+Eu te sinto mais
 Quando você já foi embora
 
-Não quero chamar de falso
+Eu não quero chamar de falso
 Mas nada aqui é real
 
 Você beija como se fosse conteúdo
@@ -2036,43 +2040,43 @@ I just don’t know how to leave
 
 When every part of me
 Still believes`,
-    `O que se mexe em você
-Quando as minhas palavras giram em torno do seu nome?
-Apontar cada pensamento na sua direção
+    `O que se move dentro de você
+Quando minhas palavras giram em torno do teu nome?
+Aponto cada pensamento na tua direção
 Como devoção sem lugar
 
-Não sobra nada raro
-Num quarto tão oco
-Ainda assim, continuo perguntando ao silêncio
-Se você também sente
+Não há mais nada raro
+Num quarto tão vazio
+Mesmo assim, continuo perguntando ao silêncio
+Se você sente isso também
 
 Algumas verdades chegam cedo demais
-E selam os lábios que as ouvem
-Elas ficam na mente
-Até a fuga parecer impossível
+E selam os lábios de quem as ouve
+Elas ficam rondando a mente
+Até que escapar parece impossível
 
-É assim que quebra
+É assim que se quebra
 Quando o amor ecoa sozinho
-É assim que some
+É assim que se apaga
 Quando eu não sou onde você pertence
 
-Fico onde você esquece
+Eu fico onde você esquece
 Espero onde você não volta
 E a ausência aprende a minha forma
 
-Você já esteve cercado
+Você já ficou cercado
 E ainda assim intocado pela noite?
 Quando tudo parece distante
-Até quem te ama de verdade
+Até quem te ama do jeito certo
 
-Caminho por momentos inacabados
-Como uma sombra que você não reivindica
-Te amando de olhos fechados
-Num quarto que conhece o meu nome
+Eu caminho por momentos inacabados
+Como uma sombra que você não assume
+Te amo às cegas
+Num quarto que conhece meu nome
 
 Você me ouve, mas não o bastante
-Para me encontrar na queda
-Falo em frases completas
+Pra me encontrar na queda
+Eu falo em frases completas
 Você responde com nenhuma
 
 É assim que se sente
@@ -2080,32 +2084,32 @@ Quando você não está aqui
 É assim que dói
 Quando eu desapareço
 
-Chamo de paciência
+Eu chamo isso de paciência
 Mas é só dor
-Vestida para ficar
+Vestida pra ficar
 
-Te dei tudo aberto
-Sem fechaduras, sem disfarce
+Eu te entreguei tudo aberto
+Sem trancas, sem disfarce
 Você manteve a entrada escondida
-Em algum lugar atrás dos seus olhos
+Em algum lugar atrás dos teus olhos
 
-Se corações pudessem ser reparados
+Se corações pudessem ser consertados
 Só por querer que fosse verdade
 Eu já estaria inteiro
 Ainda te amando
 
-Me diga onde você guarda a chave
+Diz pra mim onde você guarda a chave
 Do que nunca me deixou tocar
-Me quebrei na honestidade
+Eu me quebrei na honestidade
 Você nunca pediu muito
 
 Se te amar é perder
-Então perco sem defesa
+Então eu perco sem defesa
 Porque ainda estou aqui amando
 O que nunca me escolheu de volta
 
-Não culpo a sua distância
-Só não sei como partir
+Eu não culpo a tua distância
+Eu só não sei como ir embora
 
 Quando cada parte de mim
 Ainda acredita`,
@@ -2198,83 +2202,83 @@ And stayed`,
     `Prazer em te conhecer, eu sou Lameck
 Você sabe como é
 Algumas coisas vivem tão fundo
-Que esquecem como ser contadas
+Que esquecem como ser ditas
 
-Não sou bom com saídas
-Nem em dizer o que fica
+Eu não sou bom com despedidas
+Nem com dizer o que fica
 Carrego conversas inteiras
-Que nunca encontram o caminho
+Que nunca encontram saída
 
 Olha, garota
 Você se move como gravidade
 Quieta, invisível
 Puxando tudo em mim
 
-Espero que entenda
-Isso não é cantada
-Não estou pedindo misericórdia
-Nem o seu tempo
+Espero que você entenda
+Isso não é uma cantada
+Não estou pedindo piedade
+Nem o teu tempo
 
-Seja o que for isso
+Seja lá o que isso for
 Precisava de uma voz
-Você não pediu
+Você não pediu por isso
 Mas eu não tive escolha
 
 Desde aquela noite
 Algo mudou de lugar
 Você ficou nos meus pensamentos
-Como se nunca tivesse saído
+Como se nunca tivesse ido
 
-Você não sabe o que faz
-Essa é a parte perigosa
-Você existe como um poder
-Sem se importar com o escuro
+Você não sabe o que causa
+E essa é a parte perigosa
+Você existe como uma força
+Sem se importar com a escuridão
 
-Te vejo em pequenos momentos
-Em músicas, em carros que passam
+Eu te vejo em momentos pequenos
+Em músicas, em carros passando
 No jeito que a cidade respira
-Depois dos bares da madrugada
+Depois dos bares da meia-noite
 
 Tentei renomear o sentimento
-Chamar de acaso, chamar de humor
-Mas ele continua voltando
+Chamar de acaso, chamar de momento
+Mas ele sempre volta
 Toda vez que penso em você
 
-Seja o que for isso
+Seja lá o que isso for
 Não é um pedido
-Não preciso que você responda
-Só precisava que fosse dito
+Eu não preciso que você responda
+Eu só precisava dizer
 
 Desde aquela noite
-O meu silêncio mudou
-A sua ausência aprendeu
-O meu nome
+Meu silêncio mudou
+Tua ausência
+Aprendeu meu nome
 
-Não espero nada
+Eu não espero nada
 Nem proximidade, nem sinais
-Algumas verdades não são feitas para abrir portas
+Algumas verdades não servem pra abrir portas
 Elas só se recusam a se esconder
 
-Se você for embora sem mudar
-Eu entendo
-Algumas coisas só são feitas
-Para serem sentidas
+Se você seguir em frente sem mudar
+Eu vou entender
+Algumas coisas só existem
+Pra ser sentidas
 
-Seja o que for isso
-Vou carregar limpo
+Seja lá o que isso for
+Eu vou carregar limpo
 Sem pressão, sem peso
-Em você ou em mim
+Sobre você ou sobre mim
 
-Mas não pude fingir
-Que não sinto assim
-Alguns nomes ficam conosco
+Mas eu não consegui fingir
+Que não sinto desse jeito
+Alguns nomes ficam com a gente
 Depois de uma noite
 
-Então é só isso
+Então isso é tudo
 Que eu queria fazer
 
-Te deixar saber
-Que você atravessou a minha mente
+Te avisar
+Que você passou pela minha mente
 
 E ficou`,
     'Viviana',
@@ -2356,78 +2360,78 @@ You don’t ask me to leave
 
 You just come back
 When you need me`,
-    `Você liga quando a noite parece vazia
+    `Você liga quando a noite fica vazia
 Não quando ela é gentil
 Aprendi o som dos seus passos
-Só quando estão atrás
+Só quando eles vêm por trás
 
 Você toca como quem está de passagem
-Como se eu fosse um lugar para descansar
-Leva o que é quente no momento
-E deixa o resto
+Como se eu fosse um lugar pra descansar
+Você pega o que está quente no momento
+E deixa o resto pra trás
 
-Digo a mim mesmo que isso não é nada
+Digo a mim mesma que isso não é nada
 Só timing, só espaço
-Mas o meu coração continua confundindo
+Mas meu coração continua confundindo
 A sua necessidade com um rosto
 
-Não sei por que fico
+Eu não sei por que eu fico
 Quando só sou útil
-Nas horas quietas
+Nas horas silenciosas
 Que você não quer nomear
 
-Não sei por que dói
-Me sentir escolhido
-Só quando
-Você está se quebrando
+Eu não sei por que dói
+Me sentir escolhida
+Apenas quando
+Você está quebrando
 
-Você fala em proximidade emprestada
+Você fala em intimidade emprestada
 Depois some ao amanhecer
-Memorizo as suas saídas
-Como se fosse assim que o amor segue
+Eu decoro suas saídas
+Como se fosse assim que o amor continua
 
-Tento soltar o sentimento
-Ensinar-me contenção
-Mas ele continua voltando
+Tento afrouxar o sentimento
+Me ensinar contenção
+Mas ele sempre volta
 Como se não entendesse
 
-Sei que não sou o seu abrigo
-Sou só onde você fica de pé
-Antes de seguir em frente
+Eu sei que não sou teu abrigo
+Sou só onde você para
+Antes de seguir adiante
 Com a mão de outra pessoa
 
-Não sei por que fico
+Eu não sei por que eu fico
 Quando nunca sou a resposta
 Só um lugar temporário
 Por onde você passa
 
-Não sei por que quero
-Alguém que só me vê
-Quando não há mais nada
-Para fazer
+Eu não sei por que eu quero
+Alguém que só me enxerga
+Quando não há mais
+Nada pra fazer
 
 Talvez eu confunda intensidade
-Com ser visto
+Com ser vista
 Talvez eu tenha aprendido afeto
 Nos espaços entre
 
-Não te chamo de cruel
-Não chamo isso de errado
-Só não sei
-Por que me agarro
+Eu não te chamo de cruel
+Não digo que isso é errado
+Eu só não sei
+Por que eu continuo segurando
 
-Não sei por que fico
+Eu não sei por que eu fico
 Quando você não escolhe
 Você chega quando está vazio
-Depois sai cheio
+E vai embora cheio
 
-Se te amar é silêncio
-Então aprendi bem
-Só gostaria de saber
-Quando me deixar ir
+Se amar você é silêncio
+Então eu aprendi bem
+Só queria saber
+Quando é hora de me soltar
 
-Você não pede para eu permanecer
-Você não pede para eu ir
+Você não me pede pra ficar
+Não me pede pra ir
 
 Você só volta
 Quando precisa de mim`,
