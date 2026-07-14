@@ -18,7 +18,7 @@ export const SITE_DEFAULT_IMAGE = '/images/wonderland2.png';
  * Manual “last updated” stamp shown in site footers.
  * Bump this when you ship content or code changes.
  */
-export const SITE_LAST_UPDATED = '13 de julho de 2026, 23:48';
+export const SITE_LAST_UPDATED = '14 de julho de 2026, 00:03';
 
 /** Compact header stamp under the logo. */
 export const SITE_LAST_UPDATED_LABEL = `Last update ${SITE_LAST_UPDATED}`;
