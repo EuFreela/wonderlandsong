@@ -397,6 +397,7 @@ export const ussShenandoah: ProjectDetail = {
   title: 'USS Shenandoah',
   category: 'Hard Rock 1960',
   image: '/images/usss.webp',
+  imagePositionMobile: 'center 32%',
   tagline:
     'Projeto musical de hard rock com a linguagem dos anos 60 — peso, groove e gravação orgânica.',
   historyTitle: 'Sobre USS Shenandoah',
