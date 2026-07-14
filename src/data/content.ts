@@ -41,6 +41,7 @@ export const projects: Project[] = [
     category: 'Dark EDM + Pop',
     title: 'Bunny Land Music',
     image: '/images/caution2.webp',
+    imagePositionMobile: 'center 30%',
     // video: '/videos/caution.mp4',
     // Color tint over the media — change hex + opacity as needed
     // filterColor: '#9cbfff',
@@ -58,6 +59,7 @@ export const projects: Project[] = [
     category: 'MPB · Experimental · Atmosférico',
     title: 'Rosa Negra de Halfeti',
     image: '/images/rnh3.webp',
+    imagePositionMobile: 'center 28%',
     href: '/projects/rosa-negra-halfeti',
     buttonLabel: 'Abrir projeto',
     youtubeUrl: 'https://www.youtube.com/watch?v=0-nnIYlwXC0',
@@ -78,6 +80,7 @@ export const projects: Project[] = [
     category: 'Grunge',
     title: 'Helena Son',
     image: '/images/hs2.webp',
+    imagePositionMobile: 'center 22%',
     href: '/projects/helena-son',
     buttonLabel: 'Abrir projeto',
     spotifyUrl: 'https://open.spotify.com/intl-pt/artist/3w2iPAIrdoXXzJ38C59np8',
@@ -88,6 +91,7 @@ export const projects: Project[] = [
     category: 'Hard Rock 1960',
     title: 'USS Shenandoah',
     image: '/images/usss.webp',
+    imagePositionMobile: 'center 32%',
     href: '/projects/uss-shenandoah',
     buttonLabel: 'Abrir projeto',
     spotifyUrl: 'https://open.spotify.com/intl-pt/artist/008vDYJA7fvRWxchF8QN1F',
@@ -116,6 +120,7 @@ export const bunnyLandMusic: ProjectDetail = {
   title: 'Bunny Land Music',
   category: 'Dark EDM + Pop',
   image: '/images/caution2.webp',
+  imagePositionMobile: 'center 30%',
   tagline:
     'BunnyMan · Tommy o DJ coelho — uma jornada sonora por emoções, identidade e o universo Wonderland Song.',
   historyTitle: 'Como nasceu o Bunny Land Music',
@@ -204,6 +209,7 @@ export const rosaNegraHalfeti: ProjectDetail = {
   title: 'Rosa Negra de Halfeti',
   category: 'MPB · Experimental · Atmosférico',
   image: '/images/rnh3.webp',
+  imagePositionMobile: 'center 28%',
   tagline:
     'Letras autorais, MPB densa e a beleza rara que nasce da dor — amor, perda, identidade e transformação.',
   historyTitle: 'Sobre a Rosa Negra de Halfeti',
@@ -339,6 +345,7 @@ export const helenaSon: ProjectDetail = {
   title: "Helena's Son",
   category: 'Grunge',
   image: '/images/hs2.webp',
+  imagePositionMobile: 'center 22%',
   tagline:
     'Grunge conceitual dos anos 90 revisitado: fé, desilusão e a falha da conexão humana na era digital.',
   historyTitle: "Sobre Helena's Son",

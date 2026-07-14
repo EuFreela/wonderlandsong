@@ -1,5 +1,5 @@
 import { useReducedMotion } from 'framer-motion';
-import { useRef } from 'react';
+import { useRef, type CSSProperties } from 'react';
 import { Link } from 'react-router-dom';
 import { useMobileParallax } from '../../hooks/useMobileParallax';
 import type { Project } from '../../types';
@@ -34,6 +34,14 @@ function ParallaxProjectPanel({ project }: Props) {
   const hasColorFilter = Boolean(project.filterColor) && filterOpacity > 0;
   const showActions = showButton || showSpotify || showYouTube;
 
+  /** object-position: desktop + mobile focal points for better framing. */
+  const mediaStyle = {
+    ...(project.imagePosition ? { '--media-pos': project.imagePosition } : {}),
+    ...(project.imagePositionMobile
+      ? { '--media-pos-mobile': project.imagePositionMobile }
+      : {}),
+  } as CSSProperties;
+
   useMobileParallax(panelRef, mediaRef);
 
   const buttonClassName =
@@ -58,6 +66,7 @@ function ParallaxProjectPanel({ project }: Props) {
             {useVideo ? (
               <video
                 className="parallax-media__asset"
+                style={mediaStyle}
                 src={project.video}
                 poster={project.image}
                 autoPlay
@@ -69,6 +78,7 @@ function ParallaxProjectPanel({ project }: Props) {
             ) : (
               <img
                 className="parallax-media__asset"
+                style={mediaStyle}
                 src={project.image}
                 alt=""
                 decoding="async"

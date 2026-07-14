@@ -4,6 +4,16 @@ export type Project = {
   title: string;
   /** Poster / fallback image (also used when reduced motion is preferred). */
   image: string;
+  /**
+   * CSS object-position for the panel media (desktop).
+   * Example: `center top`, `center 30%`, `left center`.
+   */
+  imagePosition?: string;
+  /**
+   * object-position on small screens (portrait crop).
+   * Defaults to a slight upward bias so faces/subjects stay framed.
+   */
+  imagePositionMobile?: string;
   /** Optional full-bleed background video (same frame as the image). */
   video?: string;
   /**
@@ -61,6 +71,10 @@ export type ProjectDetail = {
   title: string;
   category: string;
   image: string;
+  /** CSS object-position for the hero image (desktop). */
+  imagePosition?: string;
+  /** object-position on small screens for better framing. */
+  imagePositionMobile?: string;
   tagline: string;
   /** H2 above the history lead, e.g. "Como nasceu o …". */
   historyTitle: string;

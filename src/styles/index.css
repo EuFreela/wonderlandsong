@@ -82,8 +82,15 @@ a {
   height: 100%;
   max-width: none;
   object-fit: cover;
-  object-position: center center;
+  /* Desktop default; per-panel override via --media-pos */
+  object-position: var(--media-pos, center center);
   pointer-events: none;
+}
+
+/* Full-bleed hero / cover crops (project detail, etc.) */
+.media-cover {
+  object-fit: cover;
+  object-position: var(--media-pos, center center);
 }
 
 @media (max-width: 900px) {
@@ -104,6 +111,19 @@ a {
     width: 100%;
     /* height applied in px by useMobileParallax for stability */
     height: 100vh;
+  }
+
+  /*
+    Portrait phones crop wide photos aggressively.
+    Bias the focal point slightly upward so faces/subjects stay in frame.
+    Override with --media-pos-mobile on the asset when needed.
+  */
+  .parallax-media__asset {
+    object-position: var(--media-pos-mobile, center 24%);
+  }
+
+  .media-cover {
+    object-position: var(--media-pos-mobile, center 24%);
   }
 }
 

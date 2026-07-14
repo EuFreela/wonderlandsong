@@ -1,3 +1,4 @@
+import type { CSSProperties } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import Seo from '../components/seo/Seo';
 import SpotifyIcon from '../components/ui/SpotifyIcon';
@@ -31,6 +32,8 @@ export function ProjectDetailView({ project, albums }: ProjectDetailViewProps) {
     title,
     category,
     image,
+    imagePosition,
+    imagePositionMobile,
     tagline,
     historyTitle,
     historyLead,
@@ -46,6 +49,11 @@ export function ProjectDetailView({ project, albums }: ProjectDetailViewProps) {
     footerNote,
     albumsEmptyMessage,
   } = project;
+
+  const heroMediaStyle = {
+    ...(imagePosition ? { '--media-pos': imagePosition } : {}),
+    ...(imagePositionMobile ? { '--media-pos-mobile': imagePositionMobile } : {}),
+  } as CSSProperties;
 
   const basePath = `/projects/${slug}`;
 
@@ -96,7 +104,8 @@ export function ProjectDetailView({ project, albums }: ProjectDetailViewProps) {
             <img
               src={image}
               alt=""
-              className="h-full w-full object-cover object-center"
+              className="media-cover h-full w-full"
+              style={heroMediaStyle}
               decoding="async"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#05030a] via-[#05030a]/55 to-black/30" />
