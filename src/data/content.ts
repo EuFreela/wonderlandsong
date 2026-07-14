@@ -62,8 +62,6 @@ export const projects: Project[] = [
     imagePositionMobile: 'center 28%',
     href: '/projects/rosa-negra-halfeti',
     buttonLabel: 'Abrir projeto',
-    youtubeUrl: 'https://www.youtube.com/watch?v=0-nnIYlwXC0',
-    youtubeLabel: 'YouTube',
   },
   {
     id: 'project-4',
@@ -262,8 +260,6 @@ export const rosaNegraHalfeti: ProjectDetail = {
     'Rosas Negras de Halfeti é uma visão da MPB — linguagem culta na expressão mais bela da arte brasileira. Espero que, ao ouvir, você sinta.',
   historySourceUrl: 'https://agencylk7.wixsite.com/halfeti',
   historySourceLabel: 'Site Rosa Negra de Halfeti',
-  youtubeUrl: 'https://www.youtube.com/watch?v=0-nnIYlwXC0',
-  youtubeLabel: 'YouTube',
 };
 
 /**
@@ -292,7 +288,14 @@ export const rosaNegraHalfetiAlbums: ProjectAlbum[] = [
       'https://wonderlandsong.bandcamp.com/album/simplesmente-eu-literalmente-aos-peda-os-em-frases-e-achados-demo',
     bandcampLabel: 'RNH - Simplesmente eu...',
     tracks: simplesmenteEuTracks,
-    clips: [],
+    clips: [
+      {
+        id: 'paralelos-fractais',
+        title: 'Paralelos Fractais',
+        subtitle: 'Simplesmente eu… · Rosa Negra de Halfeti',
+        youtubeId: '_xHNXhUetcQ',
+      },
+    ],
   },
 ];
 

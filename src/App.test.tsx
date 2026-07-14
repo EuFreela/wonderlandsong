@@ -75,10 +75,7 @@ describe('App', () => {
     expect(
       screen.getByRole('link', { name: /Site Rosa Negra de Halfeti/i }),
     ).toHaveAttribute('href', 'https://agencylk7.wixsite.com/halfeti');
-    expect(screen.getByRole('link', { name: /^YouTube$/i })).toHaveAttribute(
-      'href',
-      expect.stringContaining('youtube.com'),
-    );
+    expect(screen.queryByRole('link', { name: /^YouTube$/i })).not.toBeInTheDocument();
     expect(screen.getByRole('link', { name: /Voltar à home/i })).toHaveAttribute('href', '/');
   });
 
