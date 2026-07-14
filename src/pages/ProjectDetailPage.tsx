@@ -73,9 +73,14 @@ export function ProjectDetailView({ project, albums }: ProjectDetailViewProps) {
       <header className="sticky top-0 z-50 flex h-[72px] items-center justify-between border-b border-white/10 bg-black/40 px-[4.5vw] backdrop-blur-[10px]">
         <Link
           to="/"
-          className="text-base font-extrabold uppercase tracking-[0.16em] text-white transition hover:text-white/70"
+          className="flex flex-col gap-0.5 text-white transition hover:text-white/70"
         >
-          Wonderland Song
+          <span className="text-base font-extrabold uppercase tracking-[0.16em]">
+            Wonderland Song
+          </span>
+          <span className="text-[0.58rem] font-medium normal-case tracking-[0.04em] text-white/50">
+            {SITE_LAST_UPDATED_LABEL}
+          </span>
         </Link>
         <Link
           to="/"
@@ -321,10 +326,7 @@ export function ProjectDetailView({ project, albums }: ProjectDetailViewProps) {
 
       <footer className="border-t border-white/10 px-[5vw] py-10">
         <div className="mx-auto flex max-w-5xl flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
-          <div className="flex flex-col gap-1.5">
-            <strong className="uppercase tracking-[0.14em] text-white/80">Wonderland Song</strong>
-            <span className="text-sm text-white/40">{SITE_LAST_UPDATED_LABEL}</span>
-          </div>
+          <strong className="uppercase tracking-[0.14em] text-white/80">Wonderland Song</strong>
           <span className="text-sm text-white/45">{footerNote || `${title} · ${category}`}</span>
         </div>
       </footer>
