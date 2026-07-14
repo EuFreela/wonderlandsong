@@ -364,7 +364,7 @@ export const helenaSon: ProjectDetail = {
         'Plastic Grace — A revelação da ilusão: clima moderado e introspectivo. O personagem vive saturado de crenças e símbolos e começa a perceber que a “graça” ao redor é plástica — fé vendida e performática. Temas: crítica à fé institucionalizada, vaidade espiritual, busca por pureza num mundo adulterado.',
         'New Day — O silêncio após a queda: denso, melancólico e confessional. Após a ilusão, o personagem mergulha no vazio e no luto existencial. Não há redenção fácil — só lucidez e a busca por sentido entre ruínas. No Spotify, as faixas oficiais; abaixo, faixas extras do Genesis.',
         'The Computer — O homem e a máquina: energético, elétrico e claustrofóbico. A tentativa de se reconstruir pela tecnologia revela só uma nova ilusão — conexão que vira isolamento, carne e código, identidade fragmentada.',
-        'Unplugged — fechamento sentimental e nostálgico: setlist no Spotify (An Unforgettable Night) com versões acústicas; ao lado de cada faixa, o álbum de origem. Letras nos álbuns de estúdio.',
+        'Unplugged — fechamento sentimental e nostálgico: setlist no Spotify (An Unforgettable Night) com versões acústicas; ao lado de cada faixa, o álbum de origem. Letras e traduções abrem direto na página do Unplugged.',
       ],
     },
     {
@@ -642,10 +642,10 @@ export const helenaSonAlbums: ProjectAlbum[] = [
     type: 'Album',
     cover: '/images/albums/hs-unplugged.webp',
     summary:
-      'An Unforgettable Night (Unplugged): setlist do Spotify com versões acústicas — ao lado de cada faixa, o álbum de origem.',
+      'An Unforgettable Night (Unplugged): setlist acústica com letras das faixas de estúdio — clique para ler sem sair da página.',
     description: [
       'Unplugged encerra a sequência Genesis com clima sentimental, nostálgico e belo. No Spotify, An Unforgettable Night (Unplugged) [Acoustic Live Versions] reúne intros e faixas de Plastic Grace, New Day e The Computer em versões acústicas / live, além de Protect e Buy the Pain.',
-      'A lista abaixo é a tracklist publicada no Spotify. Ao lado de cada título aparece o álbum de origem. As letras e traduções completas ficam nos álbuns de estúdio (quando a faixa existe lá) — aqui não duplicamos o modal de letra.',
+      'A lista abaixo é a tracklist do Spotify. Ao lado de cada título aparece o álbum de origem. Onde a faixa existe em estúdio, o título abre a letra e a tradução no mesmo modal — sem precisar ir a cada álbum.',
       "Projeto: Helena's Son · An Unforgettable Night (Unplugged) · Genesis · Lameck S. Fernandes, Adriano Lima e Rodrigo Alves.",
     ],
     trackCount: unpluggedTracks.length,

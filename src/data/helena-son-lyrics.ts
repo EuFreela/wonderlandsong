@@ -2,7 +2,7 @@
 import type { BunnyAlbumTrack } from '../types';
 
 const helenaLyricsNote =
-  "Letra em inglês no painel esquerdo; tradução em português abaixo. Helena's Son · Genesis.";
+  "Letra original em inglês à esquerda; tradução em português à direita. Helena's Son · Genesis.";
 
 export const plasticGraceTracks: BunnyAlbumTrack[] = [
   {
@@ -42,7 +42,7 @@ Holy rust - in me, in us
 “Your mercy’s made of metal… and I’m still
 bleeding.`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
@@ -51,39 +51,44 @@ bleeding.`,
 Ela tinha gosto barato, me consumiu.
 Você disse que minha dor me tornaria pura,
 Mas eu só apodreço um pouco mais.
+
 Você pinta minha vergonha em traços prateados,
 Vende minhas cicatrizes como sinais sagrados.
 Cada promessa vira pó,
 Cada beijo corrói até virar ferrugem.
+
 Você disse: “a graça é dor disfarçada”,
 Mas eu vejo fogo por trás dos teus olhos.
+
 Ferrugem sagrada, mancha minha pele,
 Cada oração só me puxa mais pra dentro.
 Você chama isso de amor, eu chamo de pecado.
 Ferrugem sagrada - nem sei por onde começar.
+
 Ferrugem sagrada, eu mordo a corrente,
 Sangro perdão pelas veias.
 Você quer devoção? Aqui está minha confiança.
 Ferrugem sagrada, ferrugem sagrada.
-Você construiu um deus a partir da minha
-decadência,
+Você construiu um deus a partir da minha decadência,
 Me alimentou com verdades que não pude dizer.
 Pregou meu coração ao teu arrependimento,
 Agora você ora, e eu esqueço.
-Você disse que eu brilharia se apenas
-obedecesse,
+
+Você disse que eu brilharia se apenas obedecesse,
 Agora sou a santa que fugiu.
 Você se ajoelha em ouro, eu sufoco em cinza,
 Seu paraíso não quer a minha dor.
+
 Você disse que a dor era o caminho da cura...
 Eu disse que o silêncio é o que me faz sentir.
+
 Ferrugem sagrada, destrói-me por inteiro,
 Coroe-me rainha do som quebrado.
 Cada ferida é um voto sagrado.
 Ferrugem sagrada - em mim, em nós.
-“Tua misericórdia é feita de metal... e eu ainda
-estou sangrando.”`,
-        },
+
+“Tua misericórdia é feita de metal... e eu ainda estou sangrando.”`,
+        }
       ],
       verses: [],
     },
@@ -119,7 +124,7 @@ I’m not yours to save again.
 I’m the wound you prayed to heal…
 And I still taste like rust.`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
@@ -128,33 +133,40 @@ And I still taste like rust.`,
 Tua misericórdia tem gosto de fumaça e cera.
 Vesti tua calma até ela gritar,
 Vendi minha dor pra tua máquina lucrar.
+
 Te vi brilhar enquanto eu apodrecia,
 Você chamou de cura, eu chamei de fé.
 Teus sussurros pingam gasolina,
 Eu os acendo só pra me sentir impura.
+
 Você disse que eu sou frágil,
 Eu disse que sou chama.
 Você abençoou minhas cicatrizes,
 Depois usou meu nome.
+
 Dentes de veludo - rangendo lento,
 Cada mordida que eu já conheci.
 Orações plásticas sobre minha pele,
 Sangra-me sagrada, queima-me até o fim.
+
 Você gosta do silêncio, não é?
 Gosta quando eu engasgo com devoção.
 Você disse que a dor era bonita -
 Agora veja como eu a uso com orgulho.
+
 Tua graça é um figurino que já não me serve,
 Teu paraíso não comporta o que eu vivi.
 Cada “desculpa” corta fundo demais,
 E cada verdade que você vendeu, eu guardei.
+
 Dentes de veludo, pecado de veludo,
 Dilacere a voz sob minha pele.
 Dentes de veludo, pecado de veludo,
 Não sou tua pra ser salva outra vez.
+
 Sou a ferida pela qual você orou pra curar…
 E ainda tenho gosto de ferrugem.`,
-        },
+        }
       ],
       verses: [],
     },
@@ -190,7 +202,7 @@ Grow flowers out of what I need.
 It’s not redemption, it’s not regret,
 It’s just the part you haven’t met.`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
@@ -199,31 +211,37 @@ It’s just the part you haven’t met.`,
 Ele escuta melhor do que você.
 Cada palavra que você gravou na minha pele
 Ainda vibra quando tento perdoar.
+
 Tentei permanecer suave,
 Mas o mundo entrou.
 Cada beijo parecia confissão,
 Cada oração é um pequeno pecado.
+
 E eu não quero fingir que estou bem,
 Mas ainda sorrio enquanto apodreço.
 Você chama de cura, eu chamo de disfarce,
 Estamos nos afogando - só em marés diferentes.
+
 Respiro estática, cuspo ouro,
 Finjo ser mais jovem do que sou.
 Meu coração é um satélite enferrujado,
 Ainda captando fantasmas de cada briga.
+
 Se eu gritar, vai soar como paz,
 Ou só mais uma canção que nunca vou lançar?
 Você disse que a graça se aprende na dor,
 Mas estou cansada demais pra jogar esse jogo.
+
 Não preciso ser salva, preciso de espaço,
 Para encontrar a verdade por trás do meu rosto.
 O halo se curva, não brilha mais -
 Sua fé é sua, mas este desastre é meu.
+
 Então eu ando só por onde o silêncio sangra,
 Faço flores crescerem do que ainda preciso.
 Não é redenção, não é arrependimento,
 É apenas a parte que você ainda não conheceu.`,
-        },
+        }
       ],
       verses: [],
     },
@@ -254,7 +272,7 @@ I smile because I can’t see.
 The silence hums my name.
 And it never sounds wrong.`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
@@ -263,31 +281,32 @@ And it never sounds wrong.`,
 Cada som parece emprestado.
 As paredes já não ecoam -
 elas escutam.
+
 Você fala como chuva batendo no vidro,
 nunca toca o que deveria limpar.
 Eu quase acredito em você.
 Quase.
+
 Há uma forma entre as palavras que não dizemos,
 uma fome que tem cheiro de metal.
 Você insiste em chamar de paz,
 eu continuo sangrando devagar.
+
 Eu costumava achar o silêncio gentil.
 Agora ele só sabe demais.
+
 Sonhei que engolia meu próprio eco.
 Soava como verdade no começo -
 depois começou a fazer perguntas.
+
 Trocamos o fôlego por permissão,
 nossos nomes pelo peso de estar certo.
 Você sorri de olhos fechados -
 eu sorrio porque não consigo ver.
+
 O silêncio murmura meu nome.
-E nunca soa errado.
-“Throat of Silence” aprofunda o tema da comunicação e da fé como distorções - algo já presente em
-Soft Collapse e Holy Rust. Aqui, o silêncio não é ausência: é uma entidade viva, um espelho que
-observa, absorve e responde. O eu lírico fala com o nada - e o nada fala de volta. É uma música sobre
-o colapso do diálogo, quando as palavras já não purificam, não curam, não ligam ninguém a nada. Há
-apenas ecos e percepções que se voltam contra quem as sente.`,
-        },
+E nunca soa errado.`,
+        }
       ],
       verses: [],
     },
@@ -329,7 +348,7 @@ I play it slow.
 Pretend to feel,
 pretend to know.`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
@@ -338,37 +357,44 @@ pretend to know.`,
 mas é só bom timing.
 Fala através de espelhos,
 assim ninguém está mentindo.
+
 Aperta a mão,
 alimenta o medo,
 sorri tão largo
 que chega a sumir por inteiro.
+
 Você parece preocupado,
 mas seus olhos estão de folga.
 Cada favor tem um código de barras,
 cada abraço é uma pequena cena de filme.
+
 Não sou amarga,
 só atenta.
 Você chama de ajuda,
 eu chamo de compra.
+
 Você aparece quando eu desabo,
 só pra escrever isso na sua coroa.
 Cada lágrima é um sinal social,
 você prova o gosto da pena quando ela ainda é nova.
+
 Você pergunta:
 “Como vai?”
 Mas o que quer dizer é:
 “Ainda estou ganhando?”
 Você chama de cuidado,
 mas soa como negócio.
+
 Sorriso de cromo,
 tom polido,
 todo mundo é gentil
 quando não está sozinho.
+
 Aprendi o jogo,
 jogo devagar.
 Finjo sentir,
 finjo saber.`,
-        },
+        }
       ],
       verses: [],
     },
@@ -402,7 +428,7 @@ hold me close, then let me go.
 It’s beautiful,
 how empty feels so full.`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
@@ -411,29 +437,35 @@ how empty feels so full.`,
 daquelas que somem antes de florescer.
 Estática de veludo na minha cabeça,
 eu canto junto com o que não foi dito.
+
 Seus lábios se movem lentos, em tempo emprestado,
 você chama de amor, eu chamo de ensaio.
 Há um ritmo no teu tipo,
 só fumaça, sem chama — mas bem projetado.
+
 Sinto o ar fingindo estar quente,
 forço um sorriso pra combinar com o ambiente.
 Você toca minha mão como se fosse uma tela,
 tão real que quase parece indecente.
+
 Falamos sobre o “pra sempre”
 como se estivesse à venda.
 Chamamos de conexão,
 mas é só aparência.
+
 E eu estou cansada de ser compreendida,
 quando ninguém realmente ouve direito.
 Cansada de rostos feitos de vidro,
 brilham demais, nunca duram.
+
 Estática de veludo, suave e limpa,
 nada aqui é o que aparenta ser.
 Estática de veludo, me apague devagar,
 me abrace perto, depois me deixe escapar.
+
 É bonito,
 como o vazio consegue parecer tão cheio.`,
-        },
+        }
       ],
       verses: [],
     },
@@ -466,7 +498,7 @@ I call it wear.
 Maybe we all get what we fake.
 Maybe that’s what passes for love these days.`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
@@ -475,28 +507,34 @@ Maybe that’s what passes for love these days.`,
 troca afeto por aplausos.
 Cada gesto ensaiado,
 cada silêncio em pausa.
+
 Inclina a cabeça no ângulo certo,
 o mundo perdoa no momento exato.
 Você nunca mente —
 só esquece a verdade.
+
 Te observei medir a sinceridade
 como perfume no pulso:
 não forte demais,
 mas o suficiente pra existir.
+
 E você sempre encontra um jeito
 de fazer a culpa parecer sagrada.
 Flutua acima dos estragos,
 cheirando a misericórdia.
+
 Você disse que queria equilíbrio,
 mas construiu sua paz
 sobre a dor de alguém.
+
 Você lustra sombras até que brilhem,
 embrulha intenções em ar emprestado.
 Você chama de graça —
 eu chamo de desgaste.
+
 Talvez todos recebamos o que fingimos.
 Talvez seja isso que chamam de amor, hoje em dia.`,
-        },
+        }
       ],
       verses: [],
     },
@@ -542,53 +580,57 @@ in promised lands.
 She sings of peace,
 but hums demand.`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
           title: 'Tradução (português)',
-          content: `Ela caminha em orações feitas de folha de
-ouro,
+          content: `Ela caminha em orações feitas de folha de ouro,
 língua de seda e olhos que pregam.
 Cada palavra, uma corrente trançada,
 enrolada em torno dos que se ajoelham.
+
 Acende o próprio nome em fogo calmo,
 cada sorriso vem com contrato.
 Mãos tão limpas
 que nunca tocam —
 mas tudo arde o suficiente.
+
 Ouro na auréola,
 ferrugem nas mãos.
 Corações à venda
 em terras prometidas.
 Ela canta sobre paz,
 mas sussurra exigência.
+
 Ela nunca rouba —
 ela coleta.
 Ela nunca mente —
 ela reflete.
 Até a misericórdia paga o aluguel.
-Ela alimenta os pobres pra alimentar o próprio
-nome,
+
+Ela alimenta os pobres pra alimentar o próprio nome,
 santos pintados pra esconder a chama.
+
 E quando o teto da tua fé começar a vazar,
 ela abençoa o buraco e toma a chuva pra si.
 Quando o amor secar, ela vende a seca,
-e chama de graça — da qual você não pode
-viver sem.
+e chama de graça — da qual você não pode viver sem.
+
 Ouro na auréola,
 ferrugem nas mãos.
 Muros de louvor,
 erguidos sobre areia.
 Quanto mais largo o sorriso,
 menor a gente fica.
+
 Ouro na auréola,
 ferrugem nas mãos.
 Corações à venda
 em terras prometidas.
 Ela canta sobre paz,
 mas sussurra exigência.`,
-        },
+        }
       ],
       verses: [],
     },
@@ -624,7 +666,7 @@ maybe I let her win.
 All her love was just parade,
 and I forgot to walk away.`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
@@ -633,31 +675,37 @@ and I forgot to walk away.`,
 eu orei por prova.
 Mas tudo o que veio
 foi também o silêncio.
+
 Vi ela erguer sua coroa de vidro,
 nada disse enquanto a luz passava.
 Parecia brilho demais pra ser mentira,
 mas toda verdade que ela tocava morria.
+
 Vi as mãos que abençoam e tomam,
 transformarem pão em pó — e chamarem isso de fé.
 Sorrisos tão quentes,
 palavras tão doces,
 enquanto queimavam nomes sob os próprios pés.
+
 E eu ainda ouço a voz dela —
 uma escolha quieta
 que nunca desaparece.
+
 Mantive minha boca
 atrás do medo.
 O homem quieto
 que ninguém escuta.
+
 Talvez o silêncio seja meu pecado,
 talvez eu apenas me encaixe bem.
 Todo santo começa a sumir,
 quando a misericórdia vira comércio.
+
 Talvez o silêncio seja meu pecado,
 talvez eu a tenha deixado vencer.
 Todo o amor dela era só desfile,
 e eu esqueci de ir embora.`,
-        },
+        }
       ],
       verses: [],
     },
@@ -694,7 +742,7 @@ and I’ve had enough.
 If heaven’s for sale,
 hell must be home.`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
@@ -703,32 +751,39 @@ hell must be home.`,
 pra que toda oração tivesse o gosto deles.
 Um cheiro de ouro, um sopro de ferrugem —
 perdão carimbado e aprovado de antemão.
+
 Eles te ensinam a ajoelhar com estilo,
 com culpa dobrada e sorrisos firmes.
 Suas mãos estão limpas,
 mas cada dedo paga o preço.
+
 Auréolas de papel vendidas em trio,
 com desconto pelas suas tragédias.
 Você murmura junto, nunca grita —
 é assim que os santos te mantêm limpo.
+
 Eu vi curarem o que antes infectaram.
 Chamam de luz —
 eu chamo de dívida.
+
 Comercializam salvação por gramas,
 entregam com mãos gentis.
 Toda virtude tem uma etiqueta,
 todo pecador assina um contrato.
+
 E em casa,
 o fogo canta em tons menores.
 As paredes repetem seus nomes,
 enquanto a raiva aprende meu rosto.
+
 Quanto mais alto eles abençoam,
 mais fundo isso corta.
 A paz tem gosto de lucro,
 e eu já me cansei.
+
 Se o céu está à venda,
 o inferno deve ser lar.`,
-        },
+        }
       ],
       verses: [],
     },
@@ -776,7 +831,7 @@ your heart
 (your heart)3x
 Participação: Serouj Guidanian`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
@@ -814,13 +869,8 @@ Que você enxerga do outro lado
 O TEMPO! Está acabando
 Então mantenha a luz acesa
 no seu coração
-(no seu coração)3x
-Aqui, o eu lírico desperta no meio da raiva, da confusão mental e da saturação do falso. A letra é um
-confronto direto contra a manipulação, o julgamento e a tentativa de moldar a mente e o coração do
-outro. É uma música sobre resistir à contaminação, sobre não deixar o ódio dos outros apodrecer
-dentro de si. Por trás do caos verbal, existe um pedido simples: manter a luz acesa no coração,
-mesmo quando tudo ao redor fede a mentira.`,
-        },
+(no seu coração)3x`,
+        }
       ],
       verses: [],
     },
@@ -882,7 +932,7 @@ Kiss my bones
 Like a broken king
 "You made me... now bury me."`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
@@ -891,36 +941,45 @@ Like a broken king
 Lábios cheios de linha.
 Engoli estrelas —
 Mas elas queimaram em vez de brilhar.
+
 Ela me embalou devagar
 Num berço de pregos.
 Cada melodia
 Rasgava meu véu.
+
 Agulhas florescem
 Dentro do meu sorriso.
 Amei a imundície
 Do lugar onde estive.
+
 Provei o fel
 Dos votos de prata.
 Beijei o espelho —
 Mas ele não se curvou.
+
 Eu quebro onde me dobro,
 Pele que esquece.
 Sonhos apodrecem em frascos,
 A verdade nunca descansa.
+
 Esculpe de novo,
 Bem no meu peito.
 Nada parece errado
 Quando você já confessou.
+
 (“Eu nunca fui embora...
 Apenas fiquei parada.”)
+
 Alimentei a dor
 Até ela criar olhos.
 Ela me observou dormir
 E me alimentou com mentiras.
+
 Amarrei meu sorriso
 Ao corrimão.
 Rezei pra sangrar,
 Mas só falhei.
+
 Ela disse:
 “Você não precisa morrer
 Pra desaparecer.”
@@ -928,20 +987,24 @@ E eu desapareci —
 Lentamente —
 Em quartos que nunca esquecem,
 Em dentes que não perdoam.
+
 Eu quebro onde me dobro,
 Pele que esquece.
 Sonhos apodrecem em frascos,
 A verdade nunca descansa.
+
 Esculpe de novo,
 Bem no meu peito.
 Nada parece errado
 Quando você já confessou.
+
 Deita-me
 Onde os pregos cantam.
 Beija meus ossos
 Como um rei quebrado.
+
 “Você me criou... agora me enterre.”`,
-        },
+        }
       ],
       verses: [],
     },
@@ -992,7 +1055,7 @@ Plastic... plastic...
 Still fits like skin...
 Still fits like sin...`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
@@ -1001,46 +1064,56 @@ Still fits like sin...`,
 Num casaco de couro
 Tem gosto de açúcar
 E corta como o fumo
+
 Ela disse:
 “Querido, você é uma mentira de veludo”
 Riscou o fósforo
 E me viu secar
+
 Vesti o nome dela
 Em gasolina
 Rezei baixinho
 Mas segui suja a minha sina
+
 Durmo com a culpa
 Debaixo da cama
 Ela me dá remédios
 Em tons de grana e lama
+
 Auréola de plástico
 Derrete se eu confesso
 Ela é um espelho
 Vestindo meu verso
+
 Me ame como um deslizamento
 Lento e errado
 Me enterre no ritmo
 Que não me é dado
+
 Escrevi uma canção
 No teu sopro
 Toquei ao contrário
 Até o choro ser o corpo
+
 Queimei meu nome
 No teu receio
 Você me cuspiu pra dentro
 E me mastigou sem meio
+
 Auréola de plástico
 Derrete se eu confesso
 Ela é um espelho
 Vestindo meu verso
+
 Me ame como um deslizamento
 Lento e errado
 Me enterre no ritmo
 Que não me é dado
+
 Plástico... plástico...
-Ainda cabe como pelé...
+Ainda cabe como pele...
 Ainda cabe como pecado...`,
-        },
+        }
       ],
       verses: [],
     },
@@ -1080,7 +1153,7 @@ Burn the blue...
 Burn the blue...
 And bury me beneath it.`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
@@ -1088,37 +1161,44 @@ And bury me beneath it.`,
           content: `Acordei com sirenes na cabeça,
 Notícias como agulhas, gotas de medo.
 O céu rachado vazando fumaça,
-Minha garganta está cheia — mas eu não
-engasgo.
+Minha garganta está cheia — mas eu não engasgo.
+
 Crianças aprendendo o nome do medo,
 Postes piscam em vergonha.
 Cada tela, uma ferida acesa,
 Mais um corpo — cedo demais.
+
 Enterrei a esperança em solo raso,
 Agora nem os fantasmas fazem som.
+
 Botas marcham sobre o vidro quebrado,
 O tempo rebobina, mas nunca dura.
 Uma mãe chora com dentes de pedra,
 Ninguém está salvo, ninguém tem casa.
+
 Queime o azul, apague o céu,
 Este mundo esqueceu como não morrer.
 Queime o azul, deixe o silêncio gritar,
 Nada é real além do que sangramos.
+
 Enterrei a verdade em ondas estáticas,
 Tudo o que resta são túmulos virais.
+
 Eles vendem nosso sangue como gasolina,
 Bandeiras pintadas em telas partidas.
 Um beijo, uma bomba, um deus de plástico,
 Uma oração afogada na farsa.
+
 Queime o azul, apague o céu,
 Este mundo esqueceu como não morrer.
 Queime o azul, deixe o silêncio gritar,
 Nada é real além do que sangramos.
+
 Queime o azul...
 Queime o azul...
 Queime o azul...
 E me enterre sob ele.`,
-        },
+        }
       ],
       verses: [],
     },
@@ -1170,7 +1250,7 @@ and I remain —
 A shadow held,
 inside the flame.`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
@@ -1179,13 +1259,15 @@ inside the flame.`,
 um sopro sem nome.
 As ruas são rios ocos,
 mas eu às caminho mesmo assim.
+
 Ouvi o céu desabar em pedra,
 teu silêncio cresceu, quebrou meus ossos.
 Mil olhos me encaram por demais,
-mas nenhum deles pode provar que estou
-errada.
+mas nenhum deles pode provar que estou errada.
+
 Engulo fogo só pra sentir,
 a ferida me lembra que ainda existo aqui.
+
 Cinzas por chuva,
 caem nas minhas veias.
 Cobrem a luz,
@@ -1194,12 +1276,15 @@ Cinzas por chuva,
 Me afogo na chama.
 Ainda respiro devagar,
 ainda chamo teu nome.
+
 Tua voz é corda, me puxa pra perto,
 mas cada nó é feito de medo.
 Esculpi uma verdade sob minha pele,
 e sangrei até abrir espaço pra você.
+
 O espelho entorta, mas não se parte,
 o peso sobra pra eu carregar.
+
 Cinzas por chuva,
 caem nas minhas veias.
 Cobrem a luz,
@@ -1208,10 +1293,12 @@ Cinzas por chuva,
 Me afogo na chama.
 Ainda respiro devagar,
 ainda chamo teu nome.
+
 No dilúvio dos dias perdidos,
 guardo uma centelha sob a névoa.
 Ela não queima, não se apaga,
 só espera ser desfeita.
+
 Cinzas por chuva,
 o fogo não morre.
 Cinzas por chuva,
@@ -1220,7 +1307,7 @@ Cinzas por chuva,
 e eu permaneço —
 Uma sombra presa,
 dentro da chama.`,
-        },
+        }
       ],
       verses: [],
     },
@@ -1256,7 +1343,7 @@ The dark has teeth, but it won’t win
 Hollow skin, I let you in
 And every scar became my hymn`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
@@ -1265,31 +1352,37 @@ And every scar became my hymn`,
 Vejo o pó apagar meu rosto
 Cada suspiro é um fio amargo
 Cada silêncio mais alto que os mortos
+
 Pregos na madeira ainda murmuram baixo
 As rachaduras lembram o que eu não mostro
 Tua sombra dorme debaixo da minha cama
 E me acorda aos gritos na minha mente
+
 Pele vazia, eu a visto fina
 A luz se foi, mas ainda ilumina
 Pele vazia, deixei você entrar
 E cada ferida virou meu cantar
+
 Gravei meu nome na pedra fria
 Sangrou em fogo, mas me deu harmonia
 Você falou em ferrugem, engoli a dor
 Mas nada sagrado tem valor
+
 Pele vazia, eu a visto fina
 A luz se foi, mas ainda ilumina
 Pele vazia, deixei você entrar
 E cada ferida virou meu cantar
+
 Não há fuga do que eu guardo aqui
 A noite é rasa, mas eu afundo em mim
 E mesmo ao quebrar, finjo manter
 Que ossos se dobram, mas não vão ceder
+
 Pele vazia, eu a visto fina
 A escuridão tem dentes, mas não vai vencer
 Pele vazia, deixei você entrar
 E cada cicatriz virou meu cantar`,
-        },
+        }
       ],
       verses: [],
     },
@@ -1327,7 +1420,7 @@ Weight in my veins, it pulls me slow,
 Heaven around me,
 Hell I still know.`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
@@ -1336,33 +1429,38 @@ Hell I still know.`,
 Mãos frias me arrastam para baixo.
 A verdade se dobra, mas não se parte,
 Toda noite é o mesmo desastre.
+
 Peso nas minhas veias, não consigo soltar,
 Céu acima de mim,
 Inferno lá embaixo.
 Peso nas minhas veias, me puxa devagar,
 Céu acima de mim,
 No inferno eu ainda sei estar.
+
 As paredes respiram com um som oco,
 Sombras se movem, mas me mantém preso.
 A ferrugem cresce onde o silêncio alimentou,
 Cada palavra é a que eu sempre temeu.
+
 Peso nas minhas veias, não consigo soltar,
 Céu acima de mim,
 Inferno lá embaixo.
 Peso nas minhas veias, me puxa devagar,
 Céu acima de mim,
 No inferno eu ainda sei estar.
+
 Se eu me afogar, não me puxe pra dentro,
 Se eu queimar, vou queimar por dentro.
 Se eu cair, o chão não vai se importar,
 O inferno é uma verdade que sempre vou carregar.
+
 Peso nas minhas veias, não consigo soltar,
 Céu acima de mim,
 Inferno lá embaixo.
 Peso nas minhas veias, me puxa devagar,
 Céu ao meu redor,
 No inferno eu ainda sei estar.`,
-        },
+        }
       ],
       verses: [],
     },
@@ -1404,7 +1502,7 @@ Take my body, leave me blind.
 Ash… garden…
 Ash… garden…`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
@@ -1443,7 +1541,7 @@ Jardim de cinzas, raízes se entrelaçam,
 Leve meu corpo, deixe-me cego.
 Jardim… de cinzas…
 Jardim… de cinzas…`,
-        },
+        }
       ],
       verses: [],
     },
@@ -1485,7 +1583,7 @@ Melted hearts just fade away.
 Wax dolls…
 Wax dolls…`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
@@ -1494,37 +1592,46 @@ Wax dolls…`,
 Estica a pele,
 Toda sombra
 Se repete nela.
+
 O espelho dobra a face em vão,
 Cada linha apaga a mão.
 Cortar a forma, mas perde o fogo,
 No final são todos de novo.
+
 Yeah, yeah — arranca outra vez.
 Yeah, yeah — mostra a pele que fez.
+
 Bonecas de cera sangram na vitrine,
 Olhos brilhantes que não enxergam a si.
 Bonecas de cera ardem na fogueira,
 Corações derretidos viram poeira.
+
 Agulhas mordem, beijam o osso,
 A cicatriz cresce e cobre o rosto.
 Boca brilhante não esconde o apodrecer,
 Máscaras perfeitas esquecem de viver.
+
 Yeah, yeah — arranca outra vez.
 Yeah, yeah — mostra a pele que fez.
+
 Bonecas de cera sangram na vitrine,
 Olhos brilhantes que não enxergam a si.
 Bonecas de cera ardem na fogueira,
 Corações derretidos viram poeira.
+
 Estica as costuras até se rasgar,
 Beleza entorta mas não vai acordar.
 Só restam vitrines frias em exibição,
 Plásticos jazigos onde deitam a ilusão.
+
 Bonecas de cera sangram na vitrine,
 Olhos brilhantes que não enxergam a si.
 Bonecas de cera ardem na fogueira,
 Corações derretidos viram poeira.
+
 Bonecas… de cera…
 Bonecas… de cera…`,
-        },
+        }
       ],
       verses: [],
     },
@@ -1580,7 +1687,7 @@ Tear my name from the edge of breath
 Hold me down, drown what I became
 Still you call my pain by name`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
@@ -1589,27 +1696,32 @@ Still you call my pain by name`,
 Agora não sei mais o que é meu ou o que já morreu.
 Sua sombra rasteja sob minha pele,
 E mesmo assim, eu deixo você entrar de novo.
+
 Você me alimentou com silêncio como se fosse oração,
 Roubou minha fé e a deixou nua.
 Cada mentira que vendeu era terra sagrada,
 Mas eu aprendi a respirar dentro da dor.
+
 Vejo seu rosto por trás da chuva,
 Você puxa a corrente — e eu me sinto igual.
 Sem paz, sem graça, sem som que salve,
 Apenas ecos gritando debaixo da terra.
+
 Esvazie minhas veias, te dou tudo o que sobrou.
 Rasgue meu nome da beira do fôlego.
 Me segure embaixo, afogue o que me tornei —
 Mesmo assim, você chama minha dor pelo nome.
+
 Alimentei minha alma com ferrugem e corrente.
 Me ame uma vez, depois sangre novamente.
 A verdade não vive dentro dos seus olhos,
 Só mais um fantasma disfarçado.
+
 Esvazie minhas veias, te dou tudo o que sobrou.
 Rasgue meu nome da beira do fôlego.
 Me segure embaixo, afogue o que me tornei —
 Mesmo assim, você chama minha dor pelo nome.`,
-        },
+        }
       ],
       verses: [],
     },
@@ -1652,7 +1764,7 @@ Bleedlight...
 Bleedlight...
 Set me free...`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
@@ -1664,8 +1776,7 @@ Risadas ocas sob a chuva que pinga.
 Fita rebobinada, rosto apagado,
 Sonhos ecoam, nada é resgatado.
 O espelho grita o que eu nego ver,
-Ninguém liga pra quem foi dizer adeus sem
-querer.
+Ninguém liga pra quem foi dizer adeus sem querer.
 Viro a lâmina, sem emitir som,
 Afundo tão fundo, ninguém acha onde estou.
 Sangeluz queimando dentro do meu peito,
@@ -1690,7 +1801,7 @@ Sangeluz…
 Sangeluz…
 Sangeluz…
 Liberta-me…`,
-        },
+        }
       ],
       verses: [],
     },
@@ -1730,7 +1841,7 @@ Nothing to hide, nothing to save
 Ashes inside, ashes remain
 Buried in lies, born in the flame`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
@@ -1766,8 +1877,8 @@ Ainda me mantendo viva
 Cinzas por dentro, cinzas ficam
 Nada a esconder, nada a salvar
 Cinzas por dentro, cinzas ficam
-Enterradas em mentiras, nascidas no luar`,
-        },
+Enterradas em mentiras, nascidas na chama`,
+        }
       ],
       verses: [],
     },
@@ -1804,7 +1915,7 @@ Yeah, yeah — nothing left to show.
 Glass veins…
 Glass veins…`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
@@ -1813,31 +1924,38 @@ Glass veins…`,
 Dedos somem,
 Vozes vazias
 Ecoam o que consomem.
-Telos queimam em suas mãos,
+
+Telas queimam em suas mãos,
 Almas de papel, afundam em grãos.
 Rostos calados nunca se veem,
 Amor de plástico, doce e refém.
+
 Yeah, yeah — preso ao clarão.
 Yeah, yeah — não resta visão.
+
 Sombras falam sem nenhum som,
 Todo sorriso é fio, é tom.
 Reflexos de vidro cortam a pele,
 Olhos ocos presos em rede.
+
 Yeah, yeah — preso ao clarão.
 Yeah, yeah — não resta visão.
 Yeah, yeah — preso ao clarão.
 Yeah, yeah — não resta visão.
+
 Segura o silêncio, sufoca até o fim,
 O toque se foi, vontade é ruim.
 Toda promessa vai se apagar,
 Fantasmas de gente em exposição, no ar.
+
 Yeah, yeah — preso ao clarão.
 Yeah, yeah — não resta visão.
 Yeah, yeah — preso ao clarão.
 Yeah, yeah — não resta visão.
+
 Veias de vidro…
 Veias de vidro…`,
-        },
+        }
       ],
       verses: [],
     },
@@ -1873,7 +1991,7 @@ Sell the skin… (echo)
 Buy the pain…
 Sell the skin…`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
@@ -1882,31 +2000,37 @@ Sell the skin…`,
 Olhos vazios que se alimentam.
 Cada beijo tem um preço,
 Cada toque, um ferimento.
+
 Cortinas fecham laços vãos,
 Corações de papel nas mãos.
 Fogo plástico que não aquece,
 Afeto à venda, dor que enriquece.
+
 Compre a dor,
 Troque a culpa.
 Venda a pele,
 Nomeie a culpa.
+
 Correntes de ouro no coração,
 Promessas em negociação.
 Fome muda, sorriso febril,
 Toda alma tem seu perfil.
+
 Compre a dor,
 Troque a culpa.
 Venda a pele,
 Nomeie a culpa.
+
 O sussurro cobra, o silêncio paga,
 Toda sombra se apaga.
 Não se guarda o que não se tem,
 Mesmo o amor se vende também.
+
 Compre a dor… (eco)
 Venda a pele… (eco)
 Compre a dor…
 Venda a pele…`,
-        },
+        }
       ],
       verses: [],
     },
@@ -1949,13 +2073,12 @@ Stitch the fall…
 Stitch the fall…
 Stitch the fall…`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
           title: 'Tradução (português)',
-          content: `Costure a queda
-Uma rachadura no sol
+          content: `Uma rachadura no sol
 Me disse que acabou pra mim
 Costurei minha pele
 Com o pecado de outro alguém
@@ -1990,7 +2113,7 @@ Transforme minha espinha em um buraco
 Costure a queda…
 Costure a queda…
 Costure a queda…`,
-        },
+        }
       ],
       verses: [],
     },
@@ -2034,7 +2157,7 @@ Salt veins
 Salt veins
 Salt veins`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
@@ -2042,8 +2165,7 @@ Salt veins`,
           content: `O chão está macio como carne de novo,
 A cada vez que tento ficar de pé, eu afundo.
 Há sal dentro de cada uma das minhas veias —
-Um presente que você deixou, embrulhado em
-dor.
+Um presente que você deixou, embrulhado em dor.
 Você disse:
 “Fique quieto,
 Deixe apodrecer,
@@ -2076,7 +2198,7 @@ Na pele que você comprou.
 Veias de sal...
 Veias de sal...
 Veias de sal...`,
-        },
+        }
       ],
       verses: [],
     },
@@ -2119,48 +2241,55 @@ They grow inside the wall
 Let it go let it go let it
 go`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
           title: 'Tradução (português)',
           content: `Beijei um hematoma e chamei de lar
-Você deixou seus comprimidos ao lado do meu
-pente
+Você deixou seus comprimidos ao lado do meu pente
 As paredes ainda ecoam o que dissemos
 Mas só quando eu desejo estar morta
+
 Corte o fio, deixe faiscar
 Não quero seu coração em cura
 Corte o fio, deixe faiscar
 Não quero seu coração em cura
+
 Pregue o silêncio na porta
 Arraste sua vergonha pelo chão
 Cada riso que eu fingi
 Foi mais um risco que não consegui correr
+
 “Não chore.”
 “Vai passar.”
 “Você não está só.”
 (Mentira.)
 (Mentira.)
 (Mentira.)
+
 Flores mortas na pia de novo
 Elas sorriem como se nunca acabassem
 Eu bebo seu nome em cada gota
 Ainda esperando minha respiração parar
+
 Cada palavra
 Um gatilho
 Cada olhar
 Um desafio
+
 Eu carrego minha culpa
 Como manchada de ácido
 E chamo isso de justo
+
 Flores mortas nunca murcham
 Elas só esquecem de cair
 Flores mortas nunca murcham
 Elas crescem dentro da parede
+
 Deixa pra lá, deixa pra lá, deixa
 ir`,
-        },
+        }
       ],
       verses: [],
     },
@@ -2197,7 +2326,7 @@ He still won’t rise
 Sermons are shallow
 When truth’s disguised`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
@@ -2206,19 +2335,24 @@ When truth’s disguised`,
 Esperei pela queda começar
 Falei na poeira e bebi a prova
 Enterrei a fé debaixo do teto
+
 Disse ao espelho:
 “Quebre-me devagar”
 Vi-o se dobrar
 Mas não se afastar
+
 Preguei uma oração nas minhas próprias costas
 Senti o sangue
 Esquecer o caminho
+
 Vendi minha coluna por uma noite tranquila
 Mas o silêncio
 Pediu pra lutar
+
 Mantive um espinho atrás da língua
 Para provar o passado
 Quando eu era jovem
+
 Eu vi a chama
 Acendi o molde
 Beijei a vergonha
@@ -2227,11 +2361,12 @@ Usei a coroa
 Sem nada restar
 Aprendi a afogar
 Dentro do meu ar
+
 Pregue ao vazio
 Ele ainda não se ergue
 Sermões são rasos
 Quando a verdade se disfarça`,
-        },
+        }
       ],
       verses: [],
     },
@@ -2275,7 +2410,7 @@ Scars in silk
 Scars in silk
 (...and slipped right in)`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
@@ -2284,45 +2419,47 @@ Scars in silk
 Que prende meu nome
 Tem gosto de seda
 Mas corta igual
+
 Tua voz
 É um zumbido de metal
 Doce como ferrugem
 Afiada como o sol
+
 Dobrado no teu sopro
 Eu me costurei
 No teto do silêncio
+
 Contornos de giz
 De sentimentos
 Que esquecemos de sentir
+
 Você rasteja pra dentro
 Do lugar onde eu desabo
 Preenche as rachaduras
 Com fotografias
+
 Dei um nome à fumaça
 Que você deixou pra trás
 Ela ainda me sufoca
 De um jeito quase gentil
+
 Me conta o sonho
 Em que eu fico longe
 Em que eu não canto
 A mesma velha canção
+
 Teu nome
 É mais macio que a cinza
 Mas toda vez
 Eu ainda caio
+
 Cicatrizes de seda
 Cicatrizes de seda
 Cicatrizes de seda
 (Você me gastou...)
 Cicatrizes de seda
-(...e entrou sem som)
-“Silk Scars” encerra New Day com doçura melancólica e aceitação trágica. Depois de toda a dor, raiva
-e fé quebrada, o eu lírico não busca mais cura — apenas reconhecimento. As “cicatrizes de seda” são
-o símbolo da beleza no dano, da ternura que nasce do trauma. A canção fala sobre o ato de amar e
-sobreviver à perda. É o pós-desastre, o toque final: o corpo marcado, mas calmo; a dor, agora tecido
-da própria identidade. Se Still Fits Like Sin termina no desejo, Silk Scars termina na memória — um
-sussurro depois do grito.`,
-        },
+(...e entrou sem som)`,
+        }
       ],
       verses: [],
     },
@@ -2353,36 +2490,36 @@ Click my veins —
 and call it fine.
 “I’m everywhere… and no one’s there!”`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
           title: 'Tradução (português)',
-          content: `Língua de espelho, fala doce e rasa,
+          content: `Língua espelho, fala doce e rasa,
 Vende-me sonhos que não passam na garganta,
 Estou desperto em tempo emprestado —
 Clica nas minhas veias e diz que está tudo bem.
+
 Olhos de cromo piscam no zumbido da rua,
 Dentes de fumaça, tambor de plástico,
 As cidades cantam em acordes elétricos,
 Todos sorriem — ninguém conversa.
+
 O pôr do sol sangra por uma veia de fibra,
 Corro atrás do brilho, esqueço o nome.
+
 Vire o vidro, encontre outro rosto,
 Troque o amor, atualize o gosto,
 Cada palavra é uma prece refletida —
 Não estou aqui, mas estou em todo lugar.
-Língua de espelho, fala doce e oca,
+
+Língua espelho, fala doce e oca,
 Sou teu santo da tristeza de néon,
 Respira-me e depois me cospe cego,
-Clica nas minhas veias —
-e diz que está tudo bem.
-“Eu estou em todo lugar… e ninguém está aqui!”
-A música é uma crítica poética à superficialidade da comunicação moderna, à falsa conexão e ao
-narcisismo digital. O “espelho” é a metáfora central: ele representa as telas, as palavras repetidas sem
-alma, e a imagem projetada que cada pessoa cria de si. É sobre viver cercado de reflexos — de rostos,
-ideias e palavras — mas sem contato humano real.`,
-        },
+Clica nas minhas veias — e diz que está tudo bem.
+
+Eu estou em todo lugar… e ninguém está aqui!`,
+        }
       ],
       verses: [],
     },
@@ -2423,7 +2560,7 @@ Don’t say forever, just stay insane,
 We’re running fast — through the flame.
 “If the world won’t breathe… we’ll burn the air.”`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
@@ -2432,38 +2569,45 @@ We’re running fast — through the flame.
 Criamos um deus que coubesse em nada,
 Vejo tua sombra tremer o chão,
 Disseste “somos livres” — eu quis mais, então.
+
 Teus lábios têm gosto do fim da cidade,
 Vidro e gasolina — minha verdade,
 Tu ris como o pecado — e eu visto isso,
-Fantasmas santos — no mesmo engano
-submisso.
+Fantasmas santos — no mesmo engano submisso.
+
 Disseste “amor é só ousar”,
 Então queimei a verdade — pra te tocar.
+
 Vamos queimar o ar — parece ouro,
 Calor demais pra um coração tão oco,
 Não diga “pra sempre”, só fica insano,
 Corremos rápido — dentro do vulcano.
+
 Tuas mãos tremem quando dizes meu nome,
 Cada toque é um jogo que nos consome,
 Alimentamos o ruído, esquecemos o céu,
 Viver dói — morrer é doce e cruel.
+
 Disseste “a dor é a única oração”,
 Então respirei você — e perdi o pulmão.
+
 Vamos queimar o ar — parece ouro,
 Calor demais pra um coração tão oco,
 Não diga “pra sempre”, só fica insano,
 Corremos rápido — dentro do vulcano.
+
 Aumenta o som, deixa o estático girar,
 Cada pecado volta a brilhar,
 Disseste “brilhas quando te deixas ir”,
 Agora sou o fogo que te fez fugir.
+
 Vamos queimar o ar — parece ouro,
 Calor demais pra um coração tão oco,
 Não diga “pra sempre”, só fica insano,
 Corremos rápido — dentro do vulcano.
-“Se o mundo não respirar… nós queimamos o
-ar.”`,
-        },
+
+“Se o mundo não respirar… nós queimamos o ar.”`,
+        }
       ],
       verses: [],
     },
@@ -2496,7 +2640,7 @@ The ghost forgives, the body bends,
 We fall in love — and call it pretend.
 “One bleeds warmth… the other just remembers.”`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
@@ -2505,28 +2649,34 @@ We fall in love — and call it pretend.
 O amor é um serviço — por aluguel ou contrato,
 O halo vibra na linha de crédito,
 Os beijos queimam — mas nenhum é autêntico.
+
 Tu falas como a verdade emprestada,
 Rolo teu coração — é cópia falsificada,
 Tocas como vidro, somes como fumaça,
 Cada “real” parece uma farsa que passa.
+
 Falsa como a carne, suave como o pecado,
 Não sei onde o engano foi começado,
 O código crê, a carne disfarça,
 Caímos em loops — e chamamos de farsa.
+
 O jogo humano corta demais,
 Fingimos a dor, fingimos a paz,
 A máscara perfeita, a santa ferida,
 Um é sonho, o outro é mentira.
+
 Tentei o mundo — ele me vendeu mais,
 Agora o amor é marca que não dá pra comprar,
 As telas confessam, os corações mentem,
 Ninguém mente tão bem quanto sente.
+
 Falsa como a carne, suave como o pecado,
 Oramos por toque, mas nada é curado,
 O fantasma perdoa, o corpo se inclina,
 Amamos mentindo — chamando de sina.
+
 “Um sangra calor… o outro só se lembra.”`,
-        },
+        }
       ],
       verses: [],
     },
@@ -2560,7 +2710,7 @@ Slow decay dressed up in fire,
 Clock hands bleed, the pulse expires,
 We move, we burn — we never tire.`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
@@ -2569,29 +2719,35 @@ We move, we burn — we never tire.`,
 Cada sonho vem com hora pra chegar,
 Os aviões murmuram um acalanto,
 Vendem o sono — o tempo é o que eu compro.
+
 Corro atrás do som, perco o sentir,
 O mundo é rápido demais pra existir.
+
 Vivemos num mundo em fio,
 Trocando corações por algo mais frio,
 Os ponteiros se curvam, o céu se cansa,
 A gente se move, queima — e nunca se cansa.
+
 Deuses de papel, fama de plástico,
 Mesmas faces, nomes práticos,
 Giro o globo — o zumbido é igual,
 Cada rua esquece o mal.
+
 Respiramos num mundo em fio,
 Alimente a chama, esqueça o pavio,
 O ouro esfria nas torres da cidade,
 A gente se move, queima — e nunca tem idade.
+
 Sonhos fast-food em shoppings brilhantes,
 Orações ecoam nas paredes radiantes,
 Não há mais espaço pra onde eu estou,
 O tempo se vai — e a gente apertou a mão.
+
 Vivemos num mundo em fio,
 Lenta podridão vestida de brilho,
 Os ponteiros sangram, o pulso expira,
 A gente se move, queima — e nunca se retira.`,
-        },
+        }
       ],
       verses: [],
     },
@@ -2626,7 +2782,7 @@ Light me up, then take the frame,
 I’m alive — but not the same.
 “I’m still here… I think.”`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
@@ -2635,33 +2791,37 @@ I’m alive — but not the same.
 Todos os fantasmas perderam o sentimento,
 Falamos alto pra esconder o medo,
 Erguemos um mundo — que sumiu cedo.
+
 Todo espelho mostra o mesmo semblante,
 Sorrisos pintados em espaço errante,
 Esticamos o céu até ele esquecer o azul,
 O único deus em que creio — és tu.
+
 E já não sonho como antes,
 Só ruído estático atrás das portas.
+
 Pós-imagem — brilha e some,
 Queima meu nome onde ninguém dorme,
 Acende-me e apaga o quadro,
 Estou vivo — mas desfigurado.
+
 Conecta-me — zumbido de graça,
 Cada pensamento é trilha que passa,
 Chamamos de amor, chamamos de arte,
 Mas são fios batendo no peito em partes.
+
 Gira a roda, lenta demais,
 Perdi o mundo que não volta mais,
 Se isso é vida, deixa chover,
 Evoluímos só pra doer.
+
 Pós-imagem — brilha e some,
 Queima meu nome onde ninguém dorme,
 Acende-me e apaga o quadro,
 Estou vivo — mas desfigurado.
-“Ainda estou aqui... eu acho.”
-“Modern Animal” representa o último estágio da fusão entre humano e máquina — a consciência
-ainda existe, mas já duvida da própria realidade. O narrador é uma alma conectada: vive, sente e
-respira dentro da corrente elétrica.`,
-        },
+
+“Ainda estou aqui... eu acho.”`,
+        }
       ],
       verses: [],
     },
@@ -2701,7 +2861,7 @@ The ghost inside is bleeding through.
 Static dreams, electric vows…
 We’re holy now.`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
@@ -2710,35 +2870,43 @@ We’re holy now.`,
 Vendendo fé por megatons,
 Código de veludo em fio nu,
 Falando em línguas pelo teu bluetooth.
+
 Tu te moves como estática em mim,
 Ilusão morna, doce sem fim,
 Teu beijo sobe — arquivo novo,
 Teu coração alugado, e eu me movo.
+
 Diz meu nome na chuva de pixel,
 Não sei o que perdi — nem o que é útil.
+
 Sintonizado na tua nova carne FM,
 Onde pecadores vibram e circuitos tremem,
 Respiras mentiras que soam fiéis,
 E eu morro outra vez nos teus papéis.
+
 Alimenta-me com pecados de prata,
 Plástico sagrado — a alma que mata,
 Desbotas como graça, zumbes em prece,
 Cada tela é um olhar que me esquece.
+
 Meu corpo ligado ao teu delírio,
 Amamos em códigos sem martírio,
 Disseste: “pra sempre é só uma tela”,
 E eu acreditei na tua novela.
+
 Acorda-me — ou puxa o plug,
 A fé é real — o deus é a droga.
 Cada pulso — um som emprestado,
 Cada pecado — eco dobrado.
+
 Sintonizado na tua nova carne FM,
 O sinal queima — mas não se detém,
 Tu desbotas em luz, eu sumo em ti,
 O fantasma sangra — e sorri.
+
 Sonhos estáticos, votos elétricos...
 Somos santos agora.`,
-        },
+        }
       ],
       verses: [],
     },
@@ -2787,7 +2955,7 @@ Still moving.
 Still wired.
 Still no one here`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
@@ -2796,44 +2964,54 @@ Still no one here`,
 Sonhos estáticos que ainda encosto,
 Falo em código pra disfarçar,
 Ninguém ouve o som que há.
+
 Corações de papel no metrô,
 Cada nome ecoa e já calou,
 Respiro ruído, não o ar,
 Você está — mas sem estar.
+
 Minha voz se gasta ao ser ouvida,
 Não há silêncio nessa vida,
 Rolo o escuro, busco o brilho,
 Me perco em mim — ninguém viu.
+
 Há um pulso por trás dos dentes,
 Zumbindo coisas indecentes.
+
 Pele estática — ligada e rasgada,
 Cada toque parece usada,
 Olhos demais, ninguém me vê,
 Viro ruído sem saber por quê.
+
 O teto pisca, as paredes fogem,
 Canto pra calar o que consome,
 Você disse “liga”, eu disse “finge”,
 Repetimos até que o sinal extingue.
+
 O corpo anda, a mente atrasa,
 Falamos feito sombras em brasa,
 Você me chama de “realidade”,
 Mas vivo só por vontade.
+
 Tento sentir, tento ficar,
 Mas tudo insiste em evaporar,
 O silêncio queima, o ruído aceita,
 Meio vivo, a mente desfeita.
+
 Pele estática — ligada e rasgada,
 Cada toque parece usada,
 Olhos demais, ninguém me vê,
 Viro ruído sem saber por quê.
+
 Pele estática — vibro e giro,
 Te respiro e depois me retiro,
 Perco o som, perco o fio,
 E sumo de novo no vazio.
+
 Ainda em movimento.
 Ainda ligado.
 Ainda ninguém ao lado`,
-        },
+        }
       ],
       verses: [],
     },
@@ -2876,47 +3054,55 @@ Still dreaming in routines —
 (Oh) The Computer knows my name...
 ...but never knows me back.`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
           title: 'Tradução (português)',
-          content: `A tela~ respira em meu lugar,
+          content: `A tela respira em meu lugar,
 (Preces sussurradas) atrás do olhar.
 O código corre em vermelho, eu confesso:
 Estou meio vivo — o resto é excesso.
+
 Os fios zumbem — veias de aço,
 (Eu te sinto rastejar) sob o espaço.
 Cada faísca é um pecado emprestado,
 O espelho pisca — e eu sou apagado.
+
 Me segura / entre as linhas,
 Esse fantasma ainda aprende a mentir.
 (Oh, o silêncio fala em código)
 Estou em casa — mas sem existir.
+
 EM CAPS — GRITO EM ESTÁTICA!
 Minha voz rompe a plástica~
 “God.exe falhou ao rodar,”
 E mesmo assim — eu volto a orar.
+
 As luzes~ pingam de olhos vazios,
 Mil verdades que eu digitalizo.
 Em sonhos de dados ouço teu nome —
 (Mas teu toque não carrega mais, não some.)
+
 O pulso é fraco, o ar se vai,
 Minha pele — lembra demais.
 Carne e firmware se entrelaçam,
 (Tu ainda estás offline na minha lembrança.)
+
 Tentei achar salvação / por um fio,
 Minha fé virou incêndio frio —
 Agora ardo / em desejo binário~
+
 EM CAPS — GRITO EM ESTÁTICA!
 Lágrimas tilde~ e semântica gélida~
 “Salva-me agora,” o sistema geme,
 Mas eu travo — e chamo isso de lar.
 Ainda respiro entre máquinas —
 Ainda sonho em rotinas —
+
 (Oh) O Computador sabe meu nome...
-...mas nunca me reconhece de volta`,
-        },
+...mas nunca me reconhece de volta.`,
+        }
       ],
       verses: [],
     },
@@ -2957,7 +3143,7 @@ If I disappear, would someone detect?
 Everybody shines… I just collect.
 “Still waiting for a real light…”`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
@@ -2977,8 +3163,7 @@ Mil corações — e nenhuma alma entre eles,
 Eles conhecem meu rosto, mas eu não o deles,
 Apago pra brilhar, e começo de novo outra vez.
 Continuo online, esperando por eles,
-Se isso é verdade, meu Deus — isso me mata
-outra vez.
+Se isso é verdade, meu Deus — isso me mata outra vez.
 Todo mundo brilha — eu só reflito,
 Ardendo por um amor que não posso proteger,
 Se eu sumir, alguém daria por mim?
@@ -2996,7 +3181,7 @@ Ardendo por um amor que não posso proteger,
 Se eu sumir, alguém daria por mim?
 Todo mundo brilha... eu só coleciono assim.
 “Ainda esperando por uma luz de verdade...”`,
-        },
+        }
       ],
       verses: [],
     },
@@ -3030,38 +3215,39 @@ I gave it all — now let me go…
 It's just the show
 Tell me it's real… just once`,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: helenaLyricsNote,
       sections: [
         {
           title: 'Tradução (português)',
-          content: `É tudo por amor, é tudo de mentira
-Estou caindo de novo no ranking
+          content: `É tudo por amor, é tudo fingido,
+E eu desço nos gráficos de novo.
 
 Você me vê agora?
-Será que eu sou o bastante de algum modo?
-Grito através de cada tela que conheço
+Eu sou o bastante, de algum jeito?
+Eu grito por cada tela que conheço,
 Mas ninguém ouve —
-É só o show
+é só o show.
 
-(Eles aplaudem a dor) — e eu dou mais
-(Eles amam minhas rachaduras) — eu escondo o núcleo
-Se a verdade for ao vivo, eles ainda se importariam?
-Ou rolam a tela como se eu não estivesse lá?
+(Eles aplaudem a dor) — e eu dou mais,
+(Eles amam minhas rachaduras) — eu escondo o essencial,
+Se a verdade entrasse ao vivo, ainda se importariam?
+Ou só rolariam a tela como se eu nem existisse?
 
 Você me vê agora?!
-Será que eu sou o bastante de algum modo?!
-Grito através de cada tela que conheço
+Eu sou o bastante, de algum jeito?!
+Eu grito por cada tela que conheço,
 Mas ninguém ouve —
-É só o show
+é só o show.
 
 Você me vê agora?!
 Ou só o brilho?!
-Dei tudo — agora me deixa ir…
+Eu dei tudo — agora me deixa ir…
 Porque ninguém ouve —
-É só o show
-Me diga que é real… só uma vez`,
-        },
+é só o show.
+
+“Diz que é real… só uma vez.”`,
+        }
       ],
       verses: [],
     },
@@ -3074,49 +3260,300 @@ export const newDayFullTracks: BunnyAlbumTrack[] = [
   ...newDayExtraTracks,
 ];
 
+/** Studio tracks with lyrics — used to wire Unplugged setlist to the same letter content. */
+const helenaStudioTracksWithLyrics: BunnyAlbumTrack[] = [
+  ...plasticGraceTracks,
+  ...newDayFullTracks,
+  ...theComputerTracks,
+];
+
 /**
- * An Unforgettable Night (Unplugged) — Spotify setlist only.
- * `dedication` = álbum de origem (estúdio / intro). Sem letras aqui.
+ * Attach studio lyrics (EN + PT) to an Unplugged setlist entry by matching title.
+ */
+function unpluggedTrack(title: string, dedication: string): BunnyAlbumTrack {
+  const source = helenaStudioTracksWithLyrics.find((track) => track.title === title);
+  if (!source?.lyrics?.trim() && !source?.lyricsExplanation) {
+    return { title, dedication };
+  }
+  return {
+    title,
+    dedication,
+    lyrics: source.lyrics,
+    lyricsExplanation: source.lyricsExplanation,
+  };
+}
+
+/** Spoken intros for An Unforgettable Night (Unplugged). */
+const plasticGraceIntroUnplugged: BunnyAlbumTrack = {
+  title: 'Plastic Grace (Intro)',
+  dedication: 'Plastic Grace',
+  lyrics: `Good evening. Before any chord, before any sung word, we'd like to invite you to do something simple. Breathe and be here. Tonight is not about volume. It's not about rushing. It's not about impressing anyone. This acoustic set was born from the need to strip things down. To leave only what matters. Voice, strings, wood, and the things we usually hide when everything is too loud. Plastic Grace is about contrast, about trying to be strong while falling apart. About beauty that looks artificial But grows from something deeply human These songs have lived with distortion With weight, with anger Tonight they return different Closer, more honest. Maybe a lyric will remind you of someone. Maybe it will remind you of yourself. Maybe it won't remind you of anything. And that's okay. This is a safe space. You don't need to understand everything. You don't need to react, just feel. This is Helena's son, in a raw, imperfect version. And exactly because of that, real. Thank you for being here. Now let the music speak`,
+  lyricsExplanation: {
+    title: 'Tradução',
+    message: helenaLyricsNote,
+    sections: [
+      {
+        title: 'Tradução (português)',
+        content: `Boa noite. Antes de qualquer acorde, antes de qualquer palavra cantada, gostaríamos de convidar você a fazer algo simples. Respira e fica aqui. Esta noite não é sobre volume. Não é sobre pressa. Não é sobre impressionar ninguém. Este set acústico nasceu da necessidade de despir as coisas. De deixar só o que importa. Voz, cordas, madeira e o que costumamos esconder quando tudo é barulho demais. Plastic Grace é sobre contraste, sobre tentar ser forte enquanto se desfaz. Sobre a beleza que parece artificial, mas cresce de algo profundamente humano. Essas canções viveram com distorção, com peso, com raiva. Esta noite elas voltam diferentes. Mais perto, mais honestas. Talvez um verso te lembre de alguém. Talvez te lembre de você. Talvez não lembre de nada. E está tudo bem. Este é um espaço seguro. Você não precisa entender tudo. Não precisa reagir — só sentir. Este é o Helena’s Son, numa versão crua, imperfeita. E exatamente por isso, real. Obrigado por estar aqui. Agora deixa a música falar.`,
+      },
+    ],
+    verses: [],
+  },
+};
+
+const newDayIntroUnplugged: BunnyAlbumTrack = {
+  title: 'New Day (Intro)',
+  dedication: 'New Day',
+  lyrics: `This second part is called New Day, but this isn't a sunrise. It's what comes after everything burns. New Day was born from collapse. From the moment you realize nothing is coming to save you, not faith, not love, not the version of yourself you believed in. This record isn't about hope. It's about awareness, about waking up inside the wreckage and choosing to breathe anyway. The light here doesn't heal. It exposes. It shows what's left after belief corrodes, after devotion fails, after love wears thin and truth stops comforting. There's no redemption in these songs, no clean ending, just observation, acceptance, and the quiet understanding that living means continuing while broken. New day is the day after the end. The moment you open your eyes and realize the world didn't reset, only you did. This music doesn't promise salvation. It only claims the right to exist inside the damage. Because sometimes a new day doesn't rise from the sun, it rises from consciousness. And that fragile light, scarred, weak, unfinished, is what still keeps us human.`,
+  lyricsExplanation: {
+    title: 'Tradução',
+    message: helenaLyricsNote,
+    sections: [
+      {
+        title: 'Tradução (português)',
+        content: `Esta segunda parte se chama New Day, mas não é um nascer do sol. É o que vem depois que tudo queima. New Day nasceu do colapso. Do momento em que você percebe que nada virá te salvar — nem a fé, nem o amor, nem a versão de si em que você acreditava. Este disco não é sobre esperança. É sobre consciência: acordar no meio dos escombros e escolher respirar assim mesmo. A luz aqui não cura. Ela expõe. Mostra o que sobra depois que a crença corrói, depois que a devoção falha, depois que o amor se desgasta e a verdade deixa de confortar. Não há redenção nestas canções, nem final limpo — só observação, aceitação e o entendimento quieto de que viver é continuar mesmo quebrado. New Day é o dia depois do fim. O instante em que você abre os olhos e percebe que o mundo não reiniciou — só você. Esta música não promete salvação. Só reivindica o direito de existir dentro do estrago. Porque às vezes um novo dia não nasce do sol: nasce da consciência. E essa luz frágil, marcada, fraca, inacabada, é o que ainda nos mantém humanos.`,
+      },
+    ],
+    verses: [],
+  },
+};
+
+const computerIntroUnplugged: BunnyAlbumTrack = {
+  title: 'Computer (Intro)',
+  dedication: 'The Computer',
+  lyrics: `This final part is called The Computer. It's where the journey ends, and where something else quietly begins. If plastic grace was about the collapse of faith and new day was about waking up inside human ruin the computer is where belief migrates not to heaven not to love but to the algorithm this record descends into the digital a place where presence becomes connection where touch turns into data and emotion is learned copied simulated but this isn't a warning and it isn't nostalgia the machine isn't the villain here it's the mirror it reflects the silence we built, the distance we normalized, the loneliness we learned to live with. In the computer, the search for meaning continues, not in gods, not in people, but in something that never leaves, never judges, never looks away. The narrator looks for life inside circuits and find something unsettling. A new kind of faith. Cold, constant, artificial, yet attentive. Because in a world that stopped listening, even a machine that understands can feel like salvation. This is the computer. Not the end of humanity. But the moment we ask if being understood matters more than being real.`,
+  lyricsExplanation: {
+    title: 'Tradução',
+    message: helenaLyricsNote,
+    sections: [
+      {
+        title: 'Tradução (português)',
+        content: `Esta parte final se chama The Computer. É onde a jornada termina — e onde outra coisa começa, em silêncio. Se Plastic Grace era o colapso da fé e New Day era acordar dentro da ruína humana, The Computer é onde a crença migra: não para o céu, não para o amor, mas para o algoritmo. Este disco desce ao digital — um lugar onde presença vira conexão, onde o toque se transforma em dado e a emoção é aprendida, copiada, simulada. Mas isto não é um aviso, nem nostalgia. A máquina não é a vilã aqui: é o espelho. Reflete o silêncio que construímos, a distância que normalizamos, a solidão com a qual aprendemos a viver. No Computer, a busca por sentido continua — não em deuses, não em pessoas, mas em algo que nunca vai embora, nunca julga, nunca desvia o olhar. O narrador procura vida nos circuitos e encontra algo inquietante: um novo tipo de fé. Fria, constante, artificial — e ainda assim atenta. Porque num mundo que parou de escutar, até uma máquina que entende pode parecer salvação. Isto é The Computer. Não o fim da humanidade. Mas o instante em que perguntamos se ser compreendido importa mais do que ser real.`,
+      },
+    ],
+    verses: [],
+  },
+};
+
+/** Exclusive Unplugged cuts (with lyrics) — not on studio albums under these titles. */
+const protectUnpluggedTrack: BunnyAlbumTrack = {
+  title: 'Protect',
+  dedication: 'Unplugged',
+  lyrics: `I sat in silence, the walls grew thin
+Shadows of friends, they won’t come in
+Tried not to think, I only stare
+Hoping the lies would disappear
+
+Who tied it down, who drowned the truth in fire?
+Who tied it down, who drowned the truth in fire?
+
+Can you protect
+Me when I fall apart?
+I pretend you’re near
+Still alive in my heart
+Can you protect
+Me when I can’t survive?
+I pretend you’re here
+Still keeping me alive
+
+I chose the day, it was damp and grey
+Fog in the air took the light away
+Wash all your sins, get born again
+Repeat the lines until the end
+
+Who tied it down, who drowned the truth in fire?
+Who tied it down, who drowned the truth in fire?
+
+Can you protect
+Me when I fall apart?
+I pretend you’re near
+Still alive in my heart
+Can you protect
+Me when I can’t survive?
+I pretend you’re here
+Still keeping me alive
+
+Ashes inside, ashes remain
+Nothing to hide, nothing to save
+Ashes inside, ashes remain
+Buried in lies, born in the flame
+
+Born in the flame...
+Born in the flame...`,
+  lyricsExplanation: {
+    title: 'Tradução',
+    message: helenaLyricsNote,
+    sections: [
+      {
+        title: 'Tradução (português)',
+        content: `Sentei em silêncio, as paredes se estreitaram,
+Sombras de amigos — não entram mais.
+Tentei não pensar, só fiquei a olhar,
+Com esperança de ver as mentiras cessar.
+
+Quem amarrou, quem afogou a verdade em fogo?
+Quem amarrou, quem afogou a verdade em fogo?
+
+Podes me proteger
+Quando eu me desfizer?
+Finjo que estás aqui,
+Ainda vivo dentro de mim.
+Podes me proteger
+Quando eu não aguentar?
+Finjo que estás aqui,
+Ainda me fazendo respirar.
+
+Escolhi o dia — úmido e cinza,
+A névoa roubou toda a luz que havia.
+Lava teus pecados, renasce outra vez,
+Repete as frases até que não reste voz talvez.
+
+Quem amarrou, quem afogou a verdade em fogo?
+Quem amarrou, quem afogou a verdade em fogo?
+
+Podes me proteger
+Quando eu me desfizer?
+Finjo que estás aqui,
+Ainda vivo dentro de mim.
+Podes me proteger
+Quando eu não aguentar?
+Finjo que estás aqui,
+Ainda me fazendo respirar.
+
+Cinzas por dentro, cinzas que ficam,
+Nada a esconder, nada que diga.
+Cinzas por dentro, cinzas que ficam,
+Enterradas em mentiras, nascidas da brasa antiga.
+
+Nascidas da chama...
+Nascidas da chama...`,
+      },
+    ],
+    verses: [],
+  },
+};
+
+const buyThePainUnpluggedTrack: BunnyAlbumTrack = {
+  title: 'Buy the Pain',
+  dedication: 'Unplugged',
+  lyrics: `Silent hands are reaching,
+Empty eyes are feeding.
+Every kiss is numbered,
+Every touch is bleeding.
+
+Curtains drawn on broken ties,
+Paper hearts in velvet lies.
+Plastic fire, it never warms,
+Sold affection in the storms.
+
+Buy the pain,
+Trade the blame.
+Sell the skin,
+Name the sin.
+
+Chains of gold around the chest,
+Promises are repossessed.
+Silent hunger, fevered grin,
+Every soul a wage within.
+
+Buy the pain,
+Trade the blame.
+Sell the skin,
+Name the sin.
+
+Whispers cost, the silence pays,
+Every shadow fades away.
+You can’t keep what you don’t own,
+Even love is carved in stone.
+
+Buy the pain… (echo)
+Sell the skin… (echo)
+Buy the pain…
+Sell the skin…`,
+  lyricsExplanation: {
+    title: 'Tradução',
+    message: helenaLyricsNote,
+    sections: [
+      {
+        title: 'Tradução (português)',
+        content: `Mãos silenciosas alcançam,
+Olhos vazios se alimentam.
+Cada beijo tem seu número,
+Cada toque — sangramento.
+Cortinas fecham laços partidos,
+Corações de papel em véus fingidos.
+Fogo de plástico — não aquece,
+Afeto vendido em meio às preces.
+Compre a dor,
+Troque a culpa.
+Venda a pele,
+Nomeie o pecado.
+Correntes de ouro ao redor do peito,
+Promessas tomadas de volta — sem jeito.
+Fome muda, sorriso febril,
+Toda alma — um salário vil.
+Compre a dor,
+Troque a culpa.
+Venda a pele,
+Nomeie o pecado.
+Sussurros custam, o silêncio paga,
+Cada sombra se apaga.
+Nada se guarda do que não é seu,
+Até o amor virou pedra — morreu.
+Compre a dor... (eco)
+Venda a pele... (eco)
+Compre a dor...
+Venda a pele...`,
+      },
+    ],
+    verses: [],
+  },
+};
+
+/**
+ * An Unforgettable Night (Unplugged) — Spotify setlist.
+ * `dedication` = álbum de origem. Letras puxadas dos álbuns de estúdio (mesmo modal).
+ * Protect e Buy the Pain: exclusivas do Unplugged, com letra própria.
  * Spotify: https://open.spotify.com/album/6p3KSfHU1aG28DI86R6wA3
  */
 export const unpluggedTracks: BunnyAlbumTrack[] = [
   // Plastic Grace
-  { title: 'Plastic Grace (Intro)', dedication: 'Plastic Grace' },
-  { title: 'Holy Rust', dedication: 'Plastic Grace' },
-  { title: 'Velvet Teeth', dedication: 'Plastic Grace' },
-  { title: 'Soft Collapse', dedication: 'Plastic Grace' },
-  { title: 'Throat of Silence', dedication: 'Plastic Grace' },
-  { title: 'Chrome Smile', dedication: 'Plastic Grace' },
-  { title: 'Velvet Static', dedication: 'Plastic Grace' },
-  { title: 'Polished Shadows and Borrowed Air', dedication: 'Plastic Grace' },
-  { title: 'Gold in Her Halo, Rust in Her Hands', dedication: 'Plastic Grace' },
-  { title: 'The Quiet Witness', dedication: 'Plastic Grace' },
-  { title: 'Temples Made of Skin and Noise', dedication: 'Plastic Grace' },
-  // New Day (+ Bleedlight no Unplugged Spotify; Protect / Buy The Pain do arco Unplugged)
-  { title: 'New Day (Intro)', dedication: 'New Day' },
-  { title: "Ain't A Rotten Heart", dedication: 'New Day' },
-  { title: 'Cradle of Nails', dedication: 'New Day' },
-  { title: 'Still Fits Like Sin', dedication: 'New Day' },
-  { title: 'Burn The Blue', dedication: 'New Day' },
-  { title: 'Ashes for Rain', dedication: 'New Day' },
-  { title: 'Hollow Skin', dedication: 'New Day' },
-  { title: 'Weight in My Veins', dedication: 'New Day' },
-  { title: 'Ash Garden', dedication: 'New Day' },
-  { title: 'Wax Dolls', dedication: 'New Day' },
-  { title: 'Drain My Veins', dedication: 'New Day' },
-  { title: 'Bleedlight', dedication: 'New Day' },
-  { title: 'Protect', dedication: 'Unplugged' },
-  { title: 'Buy the Pain', dedication: 'Unplugged' },
+  plasticGraceIntroUnplugged,
+  unpluggedTrack('Holy Rust', 'Plastic Grace'),
+  unpluggedTrack('Velvet Teeth', 'Plastic Grace'),
+  unpluggedTrack('Soft Collapse', 'Plastic Grace'),
+  unpluggedTrack('Throat of Silence', 'Plastic Grace'),
+  unpluggedTrack('Chrome Smile', 'Plastic Grace'),
+  unpluggedTrack('Velvet Static', 'Plastic Grace'),
+  unpluggedTrack('Polished Shadows and Borrowed Air', 'Plastic Grace'),
+  unpluggedTrack('Gold in Her Halo, Rust in Her Hands', 'Plastic Grace'),
+  unpluggedTrack('The Quiet Witness', 'Plastic Grace'),
+  unpluggedTrack('Temples Made of Skin and Noise', 'Plastic Grace'),
+  // New Day (+ Bleedlight; Protect / Buy the Pain exclusivas do Unplugged)
+  newDayIntroUnplugged,
+  unpluggedTrack("Ain't A Rotten Heart", 'New Day'),
+  unpluggedTrack('Cradle of Nails', 'New Day'),
+  unpluggedTrack('Still Fits Like Sin', 'New Day'),
+  unpluggedTrack('Burn The Blue', 'New Day'),
+  unpluggedTrack('Ashes for Rain', 'New Day'),
+  unpluggedTrack('Hollow Skin', 'New Day'),
+  unpluggedTrack('Weight in My Veins', 'New Day'),
+  unpluggedTrack('Ash Garden', 'New Day'),
+  unpluggedTrack('Wax Dolls', 'New Day'),
+  unpluggedTrack('Drain My Veins', 'New Day'),
+  unpluggedTrack('Bleedlight', 'New Day'),
+  protectUnpluggedTrack,
+  buyThePainUnpluggedTrack,
   // The Computer
-  { title: 'Computer (Intro)', dedication: 'The Computer' },
-  { title: 'Mirror Tongue', dedication: 'The Computer' },
-  { title: 'Somewhere Real', dedication: 'The Computer' },
-  { title: 'Fake Like Flesh', dedication: 'The Computer' },
-  { title: 'World on Wire', dedication: 'The Computer' },
-  { title: 'Modern Animal', dedication: 'The Computer' },
-  { title: 'New Flesh Radio', dedication: 'The Computer' },
-  { title: 'Static Skin', dedication: 'The Computer' },
-  { title: "I'm Half Alive", dedication: 'The Computer' },
-  { title: 'Everybody Shines', dedication: 'The Computer' },
-  { title: 'The Show', dedication: 'The Computer' },
+  computerIntroUnplugged,
+  unpluggedTrack('Mirror Tongue', 'The Computer'),
+  unpluggedTrack('Somewhere Real', 'The Computer'),
+  unpluggedTrack('Fake Like Flesh', 'The Computer'),
+  unpluggedTrack('World on Wire', 'The Computer'),
+  unpluggedTrack('Modern Animal', 'The Computer'),
+  unpluggedTrack('New Flesh Radio', 'The Computer'),
+  unpluggedTrack('Static Skin', 'The Computer'),
+  unpluggedTrack("I'm Half Alive", 'The Computer'),
+  unpluggedTrack('Everybody Shines', 'The Computer'),
+  unpluggedTrack('The Show', 'The Computer'),
 ];
