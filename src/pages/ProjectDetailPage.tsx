@@ -2,7 +2,7 @@ import { Link, useParams } from 'react-router-dom';
 import Seo from '../components/seo/Seo';
 import SpotifyIcon from '../components/ui/SpotifyIcon';
 import YouTubeIcon from '../components/ui/YouTubeIcon';
-import { absoluteUrl } from '../config/site';
+import { absoluteUrl, SITE_LAST_UPDATED_LABEL } from '../config/site';
 import {
   getProjectAlbums,
   getProjectDetailBySlug,
@@ -321,7 +321,10 @@ export function ProjectDetailView({ project, albums }: ProjectDetailViewProps) {
 
       <footer className="border-t border-white/10 px-[5vw] py-10">
         <div className="mx-auto flex max-w-5xl flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
-          <strong className="uppercase tracking-[0.14em] text-white/80">Wonderland Song</strong>
+          <div className="flex flex-col gap-1.5">
+            <strong className="uppercase tracking-[0.14em] text-white/80">Wonderland Song</strong>
+            <span className="text-sm text-white/40">{SITE_LAST_UPDATED_LABEL}</span>
+          </div>
           <span className="text-sm text-white/45">{footerNote || `${title} · ${category}`}</span>
         </div>
       </footer>

@@ -14,6 +14,14 @@ export const SITE_DEFAULT_DESCRIPTION =
 
 export const SITE_DEFAULT_IMAGE = '/images/wonderland2.png';
 
+/**
+ * Manual “last updated” stamp shown in site footers.
+ * Bump this when you ship content or code changes.
+ */
+export const SITE_LAST_UPDATED = '13 de julho de 2026, 23:45';
+
+export const SITE_LAST_UPDATED_LABEL = `Última atualização: ${SITE_LAST_UPDATED}`;
+
 /** Absolute URL for a site path or asset. */
 export function absoluteUrl(path = '/'): string {
   if (/^https?:\/\//i.test(path)) return path;

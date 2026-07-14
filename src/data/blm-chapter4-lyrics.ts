@@ -2,14 +2,14 @@
 import type { BunnyAlbumTrack } from '../types';
 
 const chapter4LyricsNote =
-  'Letra em inglês no painel esquerdo; tradução em português abaixo. Chapter 4 · Listen To Daddy — Bunny Land Music.';
+  'Letra original em inglês à esquerda; tradução em português à direita. Chapter 4 · Listen To Daddy — Bunny Land Music.';
 
 function track(title: string, lyrics: string, translation: string): BunnyAlbumTrack {
   return {
     title,
     lyrics,
     lyricsExplanation: {
-      title: 'Tradução e contexto',
+      title: 'Tradução',
       message: chapter4LyricsNote,
       sections: [
         {
@@ -74,55 +74,68 @@ You still shine
 
 Hold on…
 Spirit that won’t fall…`,
-    `O que você vai segurar quando a noite ficar oca?
-Em quem você vai confiar quando nenhuma voz seguir?
+    `O que você vai segurar quando a noite ficar vazia?
+(quando a noite ficar vazia)
+Em quem vai confiar quando nenhuma voz responde?
+(responde, responde)
 
-Onde você vai ficar quando a força parecer pequena?
-Como você vai se levantar quando começar a cair?
-Não quebre
-Não desvaneça
+Onde vai ficar quando sua força parecer pequena?
+Como vai se erguer quando começar a cair?
+"não quebre" (não quebre)
+"não apague" (não apague)
 
 O silêncio no seu peito
-Ainda chama o seu nome
-Ainda chama o seu nome
+ainda chama seu nome
+ainda chama seu no-o-me
 
-SEGURE O ESPÍRITO QUE NÃO CAI
-SEGURE O ESPÍRITO QUE NÃO CAI
-Mesmo quando o escuro envolve tudo
+SEGURE O ESPÍRITO QUE NÃO VAI CAIR
+(o espírito que não vai cair)
+SEGURE O ESPÍRITO QUE NÃO VAI CAIR
+(cair, cair)
+Mesmo quando a escuridão envolve tudo
 Você ainda está de pé
+(ainda de pé)
 
-O que você vai encontrar quando o orgulho for abalado?
-Para onde você vai virar quando o caminho parecer tomado?
-Continue
-Continue respirando
+O que você encontra quando o orgulho se parte?
+Para onde vai quando o caminho parece fechado?
+"continue" (continue)
+"continue respirando" (continue respirando)
 
-E cada asa quebrada
-Ainda aprende a voar
-Ainda aprende a voar
+E toda asa quebrada
+ainda aprende a voar
+ainda aprende a voa-a-ar
 
-SEGURE O ESPÍRITO QUE NÃO CAI
-SEGURE O ESPÍRITO QUE NÃO CAI
-
-Levante o coração acima do peso de tudo
+SEGURE O ESPÍRITO QUE NÃO VAI CAIR
+(o espírito que não vai cair)
+SEGURE O ESPÍRITO QUE NÃO VAI CAIR
+(cair, cair)
+Eleve seu coração acima de todo o peso
 Você ainda está subindo
+(subindo, subindo)
 
 Não deixe as sombras ficarem
-Não deixe elas te puxarem para dentro
-(vire a cabeça)
+Não deixe elas te puxarem
+(vire o rosto agora)
+(vire o rosto agora)
 
-A luz cresce dentro das rachaduras
-Onde a esperança começa
+A luz cresce nas rachaduras
+onde a esperança começa
+(começa, começa)
 
-SEGURE O ESPÍRITO QUE NÃO CAI
-ESPÍRITO QUE NÃO CAI
-
-SEGURE O ESPÍRITO QUE NÃO CAI
-Quando tudo some e você se sente tão pequeno
+SEGURE O ESPÍRITO QUE NÃO VAI CAIR
+O ESPÍRITO QUE NÃO VAI CAIR
+(cair, cair)
+SEGURE O ESPÍRITO QUE NÃO VAI CAIR
+(o espírito não vai cair)
+Quando tudo se apaga e você se sente tão pequeno
 Você ainda brilha
+(você ainda bri-i-ilha)
 Você ainda brilha
 
 Segure…
-Espírito que não cai…`,
+(segure…)
+O espírito que não vai cair…
+(cair, cair)`,
   ),
   track(
     'I’ve Been You',
@@ -212,90 +225,92 @@ You’re not behind
 You’re on your way…
 (on your way)`,
     `Você está aqui agora
-(eu sinto)
+(eu consigo sentir)
 Você não planejou ficar
 (mas ficou)
 
-Você caminha como se o chão pesasse mais hoje
-Olhos à frente, mas o coração olha para longe
-Cada sorriso parece aprendido, não verdadeiro
-Como se você fizesse o que se espera que faça
+Você anda como se o chão estivesse mais pesado hoje
+olhos à frente, mas o coração longe
+Cada sorriso parece ensaiado, não real
+como se você estivesse fazendo o que esperam de você
 
-Vejo a pausa na sua respiração
-As palavras que você nunca diz
+Eu vejo a pausa no seu fôlego
+as palavras que você nunca diz
 Eu conheço esse peso
-Eu carreguei o mesmo
+eu já carreguei ele também
 
-Você acha que ninguém nota a rachadura
-Mas eu noto
-Eu já fui você
+Você acha que ninguém percebe a rachadura
+mas eu percebo
+eu já fui você
 
 O que você ganha
-Pensando no pior?
+pensando sempre no pior?
 Isso te protege
-Ou dói?
+ou só machuca mais?
 
-DEIXE VIR
-(deixe vir~)
-DEIXE SE MOVER
-(deixe se mover~)
+DEIXA VIR
+(deixa vir)
+DEIXA SE MOVER
+(deixa se mover)
 O amor não pede que você seja imune
-Só aberto, só verdadeiro
+apenas aberta, apenas verdadeira
 
 Você não perde
-Quando cai às vezes
-Você está aprendendo
-A se realinhar
+quando às vezes cai
+você está aprendendo
+a se realinhar
 
-Você repete momentos que não pode rebobinar
-Tentando consertar o que vive no tempo
+Você revive momentos que não pode rebobinar
+tentando consertar o que só o tempo resolve
 Mas cada cicatriz que você esconde tão bem
-É prova de que se levantou depois de cair
+é prova de que você se levantou depois de cair
 
-Você diz “talvez seja só eu”
-Como se a esperança fosse algo perigoso
-Eu também disse isso
-Antes de aprender a respirar
+Você diz “talvez o problema seja eu”
+como se a esperança fosse perigosa
+Eu disse isso também
+antes de aprender a respirar
 
 Você não precisa vencer hoje
-Só precisa ficar
+só precisa permanecer
 
-DEIXE VIR
-(deixe vir)
-DEIXE SE MOVER
-(deixe se mover)
-O amor cresce melhor quando você deixa espaço—
-Sem força, sem regras
+DEIXA VIR
+(deixa vir)
+DEIXA SE MOVER
+(deixa se mover)
+O amor cresce melhor quando você dá espaço
+sem força, sem regras
 
 Cada queda
-Ensina onde se firmar
-Você quebra
-Depois sobe de novo
+te ensina onde ficar
+você quebra
+e depois se levanta
 
 Pare de perguntar por que dói
-Comece a perguntar o que mostra
-(vire-se para isso)
-(vire-se para isso)
-Nada real chega intocado
-É assim que é
-(é assim que é)
+comece a perguntar o que isso revela
+(olhe pra isso)
+(olhe pra isso)
+Nada real chega intacto
+é assim que acontece
+(é assim que aco-o-ontece)
 
-DEIXE VIR
+DEIXA VIR
 SEM MEDO
-DEIXE SE MOVER
+DEIXA SE MOVER
 VOCÊ AINDA ESTÁ AQUI
 O amor te encontra quando você para de lutar
-E confia na noite
+e confia na noite
 
 Você cai
-Depois aprende a ficar de pé
-De novo…
+e aprende a ficar de pé
+de novo…
 (de novo)
 
-Você não está atrasado
-(não está atrasado)
+[Outro]
+
+Você não está atrasada
+(não está)
 Você está a caminho…
-(a caminho)`,
+(a cami-i-nho)`,
   ),
   track(
     'Not Yet',
@@ -365,72 +380,72 @@ But someday
 
 Someday
 (some da-a-ay)`,
-    `Você deu o coração antes de ele aprender o nome
-Acreditou que cada centelha era para ficar
-Segurou uma promessa com mãos trêmulas
-Mas algumas verdades só o tempo explica
+    `Você entregou seu coração antes de ele saber quem era
+achou que toda faísca era feita pra ficar
+Segurou uma promessa com as mãos trêmulas
+mas algumas verdades só o tempo sabe explicar
 
-Você está doendo agora e perguntando por quê
-Como se o amor fosse algo que você fez errado
+Você está sofrendo agora e se perguntando por quê
+como se amar fosse algo que você fez errado
 Mas escolher errado uma vez no escuro
-Não significa que a sua luz se foi
+não significa que a sua luz se apagou
 
-Esta é a idade das perguntas
-Não a idade dos votos
+Este é o tempo das perguntas
+não o tempo dos votos
 Você não precisa saber o para sempre
-Só precisa saber o agora
+só precisa saber o agora
 
-Nem todo coração que se sente sincero
-Sabe como ficar ou como cuidar
+Nem todo coração que parece sincero
+sabe ficar ou sabe cuidar
 Algumas pessoas amam como fogo aberto
-Brilhante no começo, depois some no ar
+brilham no começo e depois viram ar
 
-Há uma estação para aprender a dor
-E outra para saber quem você é
+Existe um tempo para aprender com a dor
+e outro para saber quem você é
 Alguns amores chegam quando você ainda corre
 Os que duram caminham onde você está
 
 ESPERE O AMOR QUE NÃO TEM PRESSA
-(espere espere)
+(espere, espere)
 ESPERE O TOQUE QUE CONSTRÓI, NÃO ESMAGA
-(constrói, não esmaga)
-O que é para ficar não vai pedir que você sangre
-Vai te encontrar quando você estiver pronto
+(constrói, não machuca)
+O que é feito pra ficar não vai pedir que você sangre
+Vai te encontrar quando você estiver pronta
 
 Você vê o mundo com olhos gentis
-Isso não é fraqueza, é graça
-Mas nem todo mundo merece segurar
-A suavidade no seu rosto
+isso não é fraqueza, é graça
+Mas nem todos merecem segurar
+a suavidade do seu rosto
 
 Crescer não é fechar o coração
-É aprender onde ele pertence
-A garota que você é basta agora
-A mulher vai chegar
+é aprender onde ele pertence
+A menina que você é já basta agora
+A mulher vem com o tempo
 
-ESPERE O AMOR QUE SABE O SEU NOME
-(sabe o seu nome)
-ESPERE AQUELE QUE PERMANECE O MESMO
-(permanece o mesmo)
-Um amor duradouro também é paciente
-Cresce como você cresce
+ESPERE O AMOR QUE SABE SEU NOME
+(sabe seu nome)
+ESPERE AQUELE QUE PERMANECE IGUAL
+(permanece igual)
+Um amor que dura também é paciente
+Ele cresce junto com você
 
-Sem corrida para correr
-(sem corrida)
-Sem coroa para ganhar
-(sem coroa)
-Algumas portas abrem
-Quando você está inteiro por dentro
+Não há corrida pra vencer
+(nenhuma corrida)
+Nenhuma coroa pra ganhar
+(nenhuma coroa)
+Algumas portas só se abrem
+quando você está inteira por dentro
 (por dentro)
 
 ESPERE O AMOR QUE PARECE LAR
-(parece lar)
-Não alto, não rápido, não descontrolado
-Quando o tempo for certo, você saberá o caminho
+(parece la-a-ar)
+Não alto, não rápido, não exagerado
+Quando o tempo for certo, você vai saber o caminho
 Ainda não…
 Mas um dia
 
 Um dia
-(um di-i-ia)`,
+(um di-a-a)`,
   ),
   track(
     'When The Room Goes Quiet',
@@ -483,30 +498,30 @@ And if the night feels longer
 Than it should
 Remember:
 You’re not walking it alone`,
-    `Você senta onde o barulho desiste
+    `Você se senta onde o barulho desiste
 Onde até as paredes aprendem contenção
-A luz do celular vem e vai
+A luz do seu celular vai e volta
 Como se tivesse medo de ficar
 
-Pensamentos voltam sem urgência
-Eles não correm, eles se repetem
-Tomam o caminho longo
-Até você os reconhecer
+Os pensamentos retornam sem pressa
+Eles não correm, eles repetem
+Dão a volta mais longa
+Até que você os reconheça
 
 Você atravessa os dias se sentindo distante
-Não das pessoas — do peso
+Não das pessoas — mas do peso
 Tudo parece normal
 Mas nada parece leve
 
 Você tenta distrair o silêncio
 Com movimento, com som
-Mas ele espera com paciência
+Mas ele espera pacientemente
 Até você desacelerar
 
 Você não diz o que está acontecendo
-Não precisa
+Nem precisa
 Algumas coisas se anunciam
-Ficando
+Permanecendo
 
 O mundo continua oferecendo respostas
 Você continua recusando
@@ -515,23 +530,23 @@ Mas porque está cansado
 
 Você se pergunta se esse vazio
 Significa que algo está errado
-Ou se é só uma estação
+Ou se é apenas uma estação
 Que esqueceu como terminar
 
-Você não precisa consertar isso esta noite
-Não precisa nomear
-Só saiba isto —
+Você não precisa consertar isso hoje à noite
+Não precisa dar um nome
+Apenas saiba disso —
 Você é visto
 
-Quando os pensamentos dão a volta
-Deixe-os passar
+Quando os pensamentos voltarem a girar
+Deixe que passem
 Nem tudo o que fica
 Pertence a você
 
 E se a noite parecer mais longa
 Do que deveria
-Lembre:
-Você não a caminha sozinho`,
+Lembre-se:
+Você não está caminhando sozinho`,
   ),
   track(
     'Rooms Without Windows',
@@ -606,39 +621,39 @@ Just a moment
 Where nothing comes back`,
     `A cidade fala
 Mas não comigo
-As luzes dela se movem
+Suas luzes se movem
 Eu não
 
-Caminho pelos dias
+Eu atravesso os dias
 Como quartos inacabados
-Mobiliados com ecos
-E mais nada
+Mobília feita de ecos
+E nada além disso
 
-Pensamentos voltam
-Do jeito que as ondas voltam
+Os pensamentos voltam
+Como as ondas voltam
 Não altos
-Só pacientes
+Apenas pacientes
 
 Eu os renomeio toda noite
-Para que não me reconheçam
-Ainda assim, sentam ao lado da cama
-Como se sempre tivessem morado aqui
+Pra que não me reconheçam
+Mesmo assim, eles se sentam ao lado da minha cama
+Como se sempre tivessem vivido aqui
 
 Há espaço em todo lugar
-Exceto por dentro
+Menos por dentro
 
 Tento me manter ocupado
 Com movimento
 Com barulho
 Com luz
 
-Mas o silêncio conhece a minha postura
+Mas o silêncio conhece minha postura
 Melhor do que qualquer um
 Ele espera
 Até eu me sentar
 
-As pessoas perguntam como estou
-Respondo com o tempo
+As pessoas perguntam como eu estou
+Eu respondo falando do clima
 Algo vago
 Algo seguro
 
@@ -647,15 +662,15 @@ Como o vazio pode pesar
 Como a ausência
 Aprende a se repetir
 
-Não estou me despedaçando
+Eu não estou desmoronando
 Estou parado
 
-E isso pode ser pior
+E talvez isso seja pior
 
 É assim que é
 Viver intocado
 Cercado
-Mas nunca abraçado
+Mas nunca segurado
 
 O mundo continua se movendo
 Eu continuo esperando
@@ -663,13 +678,13 @@ Que algo sem nome
 Pare de voltar
 
 A mente não grita
-Ela gira em círculos
+Ela circula
 
 E cada pensamento
 Parece familiar
 
-Não preciso de resgate
-Não preciso de barulho
+Eu não preciso ser resgatado
+Eu não preciso de barulho
 
 Só um momento
 Em que nada volte`,
@@ -722,52 +737,67 @@ You still shine
 
 Let go
 Pay it with love, not war`,
-    `O que você vai escolher quando a dor parecer mais alta?
-Quem você vai ser quando a culpa crescer mais forte?
+    `O que você vai escolher quando a dor falar mais alto?
+(quando a dor falar mais alto)
+Quem você vai ser quando a culpa ficar mais forte?
+(mais forte, mais forte)
 
-Para onde você vai quando a raiva chamar?
-Como você para quando as paredes parecerem altas?
-
-Deixe ir
-Não revida
+Para onde você vai quando a raiva chama?
+Como você para quando os muros parecem altos?
+“deixa ir” (deixa ir)
+“não revida” (não revida)
 
 O fogo nas suas mãos
-Não precisa ficar
-Não precisa fi-i-icar
+não precisa ficar
+não precisa fica-a-ar
 
-Solte o peso de que você não precisa agora
-Solte o peso de que você não precisa agora
+DEIXE IR O PESO QUE VOCÊ NÃO PRECISA AGORA
+(o peso que você não precisa agora)
+DEIXE IR O PESO QUE VOCÊ NÃO PRECISA AGORA
+(agora, agora)
 Você não cura uma ferida devolvendo o golpe
 Você ainda está escolhendo
+(ainda escolhendo)
 
 O que você ganha quando responde com dor?
 O que você perde quando alimenta a chama?
-Seja a calma, expire
+“seja a calma” (seja a calma)
+“respira fundo” (respira fun-do)
 
-E cada coração endurecido
-Ainda pode mudar de caminho
-Ainda mudar de cami-i-inho
+E todo coração endurecido
+ainda pode mudar de caminho
+ainda pode muda-a-ar
 
-Solte o peso de que você não precisa agora
-Solte o peso de que você não precisa agora
-Levante as mãos acima da necessidade de jogar
+DEIXE IR O PESO QUE VOCÊ NÃO PRECISA AGORA
+(o peso que você não precisa agora)
+DEIXE IR O PESO QUE VOCÊ NÃO PRECISA AGORA
+(agora, agora)
+Erga as mãos acima da vontade de lançar
 Você ainda está subindo
+(subindo~ subindo)
 
 Não construa um trono com a dor
-Não coroe o passado de novo
-
+Não coroe o passado outra vez
+(vire isso)
+(vire isso)
 A misericórdia cresce no espaço
-Onde o amor permanece
+onde o amor permanece
+(permanece, permanece)
 
-Solte o peso de que você não precisa agora
-Peso de que você não precisa agora
-Solte o peso de que você não precisa agora
+DEIXE IR O PESO QUE VOCÊ NÃO PRECISA AGORA
+O PESO QUE VOCÊ NÃO PRECISA AGORA
+(agora, agora)
+DEIXE IR O PESO QUE VOCÊ NÃO PRECISA AGORA
 (você não precisa agora)
-Quando você responde ao escuro com um tom mais gentil
+Quando você responde à escuridão com um tom mais gentil
+Você ainda brilha
+(você ainda bri-i-ilha)
 Você ainda brilha
 
-Deixe ir
-Pague com amor, não com guerra`,
+Deixa ir…
+(deixa ir…)
+Pague com amor, não com guerra…
+(não guerra, não guerra)`,
   ),
   track(
     'It Doesn’t Mean You Don’t Belong',
@@ -831,66 +861,72 @@ Some hearts arrive gently
 And still arrive whole
 
 Whole`,
-    `Você sente o quarto antes de entrar
+    `Você sente o ambiente antes de entrar
 Como se cada respiração precisasse de permissão
-O peito aperta sem aviso
-E as palavras ficam logo fora do alcance
+Seu peito aperta sem aviso
+E as palavras ficam fora de alcance
 
-Há um medo quieto atrás dos seus olhos
-Perguntando se você será recusado
-Como se amor e lugar e voz
-Fossem coisas que você tivesse de provar
+Há um medo silencioso por trás dos seus olhos
+Perguntando se você vai ser recusado
+Como se amor, lugar e voz
+Fossem coisas que você tivesse que provar
 
 Esse sentimento não é fracasso
-É sensibilidade acordada
+É sensibilidade desperta
 Alguns corações sentem mais fundo primeiro
 Antes de se sentirem seguros
 
-Você se sente diferente na multidão
-Não errado, só desafinado
-Como se todo mundo tivesse aprendido um passo
+Você se sente diferente no meio da multidão
+Não errado, apenas fora do tom
+Como se todos tivessem aprendido um passo
 Que você nunca foi ensinado a usar
 
-O silêncio parece mais pesado que o som
+O silêncio pesa mais do que o som
 Mas falar parece uma queda
 Então você fica dentro de si
 E carrega tudo sozinho
 
-Você não pertence menos porque sente mais
-Você não perde valor por sentir medo
-
-Algumas pessoas florescem em quartos mais quietos
+VOCÊ NÃO PERTENCE MENOS POR SENTIR MAIS
+(sentir mais)
+VOCÊ NÃO PERDE VALOR POR SENTIR MEDO
+(medo)
+Algumas pessoas florescem em salas mais quietas
 E ainda assim mudam o ar
 
 Você se pergunta se a distância que sente
 Significa que está no lugar errado
-Mas nem todo espaço é feito para caber
-A suavidade da sua forma
+Mas nem todo espaço foi feito para caber
+Na suavidade da sua forma
 
 Ser cuidadoso não é fraqueza
-E o medo não cancela a verdade
-Só significa que o coração está ouvindo
-Antes de escolher quem
+E o medo não anula a verdade
+Ele só significa que o seu coração escuta
+Antes de escolher em quem confiar
 
-Você não precisa desaparecer para estar seguro
-Não precisa gritar para ser visto
+VOCÊ NÃO PRECISA DESAPARECER PARA ESTAR SEGURO
+(estar seguro)
+VOCÊ NÃO PRECISA GRITAR PARA SER VISTO
+(ser visto)
+O mundo certo não apressa a sua voz
+Ele espera por você
 
-O mundo certo não vai apressar a sua voz
-Ele vai esperar por você
-
-Sem veredito aqui
+Sem julgamento aqui
+(sem julgamento)
 Sem relógio para vencer
-
+(sem relógio)
 Pertencer não é barulho
 É alívio
+(alívio)
 
-Você não está fora da vida
-Você não está atrasado para si mesmo
-
-Alguns corações chegam com suavidade
+VOCÊ NÃO ESTÁ FORA DA VIDA
+(da vida)
+VOCÊ NÃO ESTÁ ATRASADO EM RELAÇÃO A SI MESMO
+(a si mesmo)
+Alguns corações chegam com delicadeza
 E ainda assim chegam inteiros
 
-Inteiros`,
+Inteiros
+(inte-e-eiros)`,
   ),
   track(
     'When You Feel Alone',
@@ -976,88 +1012,89 @@ Stay
 You don't need to rush your light
 I'm here
 And you're doing alright`,
-    `Por que o quarto parece mais alto
-Quando não há ninguém?
-Por que o coração continua perguntando
-Se isso é justo?
+    `Por que o quarto parece mais barulhento
+quando não há ninguém ali?
+Por que o seu coração continua perguntando
+se isso é justo?
 
-Você senta em lugares cheios de gente
-Mas se sente invisível
-Como se todo mundo tivesse aprendido a pertencer
-Exceto você e eu
+Você se senta em lugares cheios de pessoas
+mas se sente invisível
+Como se todos tivessem aprendido a pertencer
+menos você e eu
 
-Você ri quando se espera
-Acena, fica educado
+Você ri quando esperam
+Assente com a cabeça, permanece educada
 Mas eu vejo como você desaparece
-Um pouco mais a cada noite
+um pouco mais a cada noite
 
-Solidão não significa que você está vazio
-Significa que você sente fundo
-Antes do mundo
+Solidão não significa vazio
+Significa que você sente profundamente
+Antes que o mundo sinta
 
-Quando você se sente sozinho
-Não pense que está quebrado
-
-Quando você se sente sozinho
-Não significa
-Que foi deixado para trás
+QUANDO VOCÊ SE SENTE SOZINHA
+NÃO PENSE QUE ESTÁ QUEBRADA
+(alguns corações são amplos)
+QUANDO VOCÊ SE SENTE SOZINHA
+ISSO NÃO SIGNIFICA
+QUE VOCÊ FOI DEIXADA PARA TRÁS
 
 Você não está sem amor
-Está aprendendo a forma dele
-E eu estou bem aqui
+Você está aprendendo a forma dele
+E eu estou aqui
 Mesmo quando você se sente
-Tão longe
+Tão distante
 
 Haverá noites em que você vai questionar
-Se pertence a algum lugar
-Se ser quieto significa
-Que ninguém se importa de verdade
+se pertence a algum lugar
+Se ser quieta significa
+que ninguém realmente se importa
 
-Mas solidão não é rejeição
+Mas a solitude não é rejeição
 É espaço para crescer
-Algumas raízes se aprofundam no subterrâneo
+Algumas raízes se aprofundam no escuro
 Antes de aparecer
 
 Você não precisa preencher o silêncio
 Para ser real
-Não precisa de permissão
+Você não precisa de permissão
 Para sentir
 
-Quando você se sente sozinho
-Não se vire contra o coração
-Quando você se sente sozinho
-Não é o fim
-É só o começo
+QUANDO VOCÊ SE SENTE SOZINHA
+NÃO SE VOLTE CONTRA SEU CORAÇÃO
+(alguns corações sentem primeiro)
+QUANDO VOCÊ SE SENTE SOZINHA
+NÃO É O FIM
+É APENAS O COMEÇO
 
-Você não foi esquecido
-Está ficando forte
-E eu ainda estou aqui
+Você não foi esquecida
+Você está se tornando forte
+E eu continuo aqui
 Quando a noite parece longa
 
-Deixe o silêncio sentar com você
-Ele não é o seu inimigo
-A solidão é só um quarto
-Onde você encontra quem vai ser
+Deixe o silêncio ficar com você
+Ele não é seu inimigo
+A solidão é apenas um quarto
+Onde você encontra quem vai se tornar
 
-(vire-se para si mesmo)
-(respire, não corra)
+(vire-se para si mesma)
+(respire, não fuja)
 
-Quando você se sente sozinho
-Lembre disto
-Você é amado
-Mesmo assim
+QUANDO VOCÊ SE SENTE SOZINHA
+LEMBRE-SE DISSO
+VOCÊ É AMADA
+MESMO ASSIM
 
-Não mais alto
+Não mais alta
 Não diferente
-Não mais do que você é
+Não mais do que você já é
 
-Você não caminha esta estrada sozinho
-Mesmo quando parece escuro
+Você não caminha por essa estrada sozinha
+Mesmo quando tudo parece escuro
 
-Fique
+Fique…
 Você não precisa apressar a sua luz
-Estou aqui
-E você está se saindo bem`,
+Eu estou aqui
+E você está indo bem`,
   ),
   track(
     'Where Nothing Dies',
@@ -1117,60 +1154,73 @@ We are shining free
 Stay awhile
 Nothing fades here`,
     `Venha comigo
+(venha comigo)
 Caminhe devagar
+(de-va-gar…)
 
 Pés descalços no chão dourado
-Sem sombras penduradas ao redor
-Cada respiração é suave e clara
-Nenhum medo mora aqui
+nenhuma sombra ao nosso lado
+Cada respiro é leve e claro
+nenhum medo vive aqui
 
 Mãos abertas, olhos gentis
-Ninguém fica para trás
-Você está seguro, você pertence
+ninguém fica para trás
+“você está segura” (você está segura)
+“você pertence” (você pertence)
 
 O ar está cheio de paz
-Nada quebra
-Nada precisa partir
+nada se quebra
+nada precisa partir
 
-Este é o jardim do sempre-verde
-Este é o lugar que sempre vimos
-
-Nenhuma lágrima cai e nenhum coração se entristece
+ESTE É O JARDIM DO ETERNO VERDE
+(verde eterno~ eternamente verde)
+ESTE É O LUGAR QUE SEMPRE VIMOS
+(vimos, vimos)
+Nenhuma lágrima cai, nenhum coração sangra
 Estamos vivendo o sonho
+(vivendo o sonho)
 
 Cada rosto brilha jovem
-O tempo só começou
-Corpos fortes e espíritos leves
-Nenhuma doença à vista
+o tempo acabou de começar
+Corpos fortes, espíritos leves
+nenhuma doença à vista
 
-Animais descansam ao nosso lado
-Olhos gentis, bem abertos
-Nenhum mal aqui, só vida
+Animais repousam ao nosso lado
+olhos gentis, bem abertos
+“aqui não há dor” (não há dor)
+“somente vida” (so-omente vi-ida)
 
-Nenhuma dor escrita na nossa pele
-É assim que deve ser
+Nenhuma dor escrita na pele
+é assim que deveria ser
 
-Este é o jardim do sempre-verde
-Onde cada alma é pura e livre
+ESTE É O JARDIM DO ETERNO VERDE
+(verde eterno~ eternamente verde)
+ONDE TODA ALMA É PURA E LIVRE
+(livre, livre)
+Sem despedidas, sem cenas de tristeza
+Apenas alegria entre nós
+(alegria entre nós)
 
-Sem adeus, sem cenas de tristeza
-Só alegria entre nós
-
-Nenhuma morte espera na porta
+Nenhuma morte espera à porta
 Nenhuma tristeza no chão
-
-Cada coração está em sintonia
+(fique aqui)
+(fique aqui)
+Cada coração em sintonia
 O amor é sempre novo
+(sempre novo~ sempre novo)
 
-Este é o jardim do sempre-verde
-O lugar onde sempre estivemos
-
-Nenhuma noite cai sobre o que é limpo
+ESTE É O JARDIM DO ETERNO VERDE
+O LUGAR ONDE SEMPRE ESTIVEMOS
+(estivemos, estivemos)
+Nenhuma noite cai sobre o que é puro
 Estamos brilhando livres
+(brilhando livres)
 Estamos brilhando livres
 
-Fique um pouco
-Nada some aqui`,
+Fique um pouco…
+(fique um pouco…)
+Aqui nada desaparece…
+(na-a-da se vai…)`,
   ),
   track(
     'Nights You Cry',
@@ -1236,65 +1286,80 @@ You’re still here (2x)
 Let it fall
 Morning knows your name`,
     `Para onde vão as lágrimas
-Quando você chora no escuro?
-
+quando você chora no escuro?
+(quando você chora no escuro)
 Quem ouve a sua respiração
-Quando o quarto parece distante?
+quando o quarto parece distante?
+(distante, distante)
 
 Onde você se esconde quando a noite parece longa?
-Como você fica quando a força se foi?
+Como você permanece quando a força acaba?
+“não faça barulho” (não faça barulho)
+“não acorde ninguém” (não acorde ninguém)
 
-Não faça barulho
-Não acorde ninguém
-
-Você pressiona o rosto no travesseiro
-Para manter o mundo dormindo
+Você aperta o rosto no travesseiro
+pra manter o mundo dormindo
 Mas a dor não precisa de permissão
-Para falar
+pra falar
 
-As lágrimas no peito
-Ainda conhecem o caminho
+As lágrimas no seu peito
+ainda sabem o caminho
+ainda sabem o ca-mi-nho
 
-Aguente firme nas noites em que você chora
-Aguente firme nas noites em que você chora
-Chorar não significa que você está perdendo o chão
+SEGURE FIRME NAS NOITES EM QUE VOCÊ CHORA
+(noites em que você chora)
+SEGURE FIRME NAS NOITES EM QUE VOCÊ CHORA
+(chora, chora)
+Chorar não significa que você está perdendo terreno
 Você ainda está respirando
+(ainda respirando)
 
-O que você diz a si mesmo
-Quando os pensamentos não param?
-Por que o coração se sente culpado
-Por querer desistir?
+O que você diz a si mesma
+quando os pensamentos não param?
+Por que o seu coração se sente culpado
+por querer desistir?
+“seja forte” (seja forte)
+“você já devia ter superado isso” (superado isso)
 
-Seja forte
-Você já deveria ter superado isso
-
-Mas ninguém cura sob comando
-Ninguém faz no prazo
-Algumas feridas só abrem
-À noite
+Mas ninguém se cura por comando
+Ninguém faz no tempo certo
+Algumas feridas só se abrem
+à noite
 
 E cada lágrima que você esconde
-Ainda limpa a dor
+ainda limpa a dor
+ainda limpa a do-o-or
 
-Aguente firme nas noites em que você chora (2x)
-Deixe a tristeza passar pelos olhos
+SEGURE FIRME NAS NOITES EM QUE VOCÊ CHORA
+(noites em que você chora)
+SEGURE FIRME NAS NOITES EM QUE VOCÊ CHORA
+(chora, chora)
+Deixe a tristeza passar pelos seus olhos
 Você ainda está de pé
+(ainda de pé)
 
-Não puna o seu coração
-Por sentir fundo demais
+Não castigue o seu coração
+por sentir tão fundo
+(vire-se para si mesma)
+(vire-se para si mesma)
 
-Alguma força parece quebrar
-E continuar dormindo
+Alguma força se parece com quebrar
+e continuar dormindo
+(dormindo~ dormindo)
 
-Aguente firme nas noites em que você chora
-Nas noites em que você chora
+SEGURE FIRME NAS NOITES EM QUE VOCÊ CHORA
+ATRAVÉS DAS NOITES EM QUE VOCÊ CHORA
+(chora, chora)
+SEGURE FIRME NAS NOITES EM QUE VOCÊ CHORA
+(vai ficar tudo bem)
+Quando as lágrimas caem e você se sente desfeita
+Você ainda está aqui
+(ainda aqui-i-i)
+Você ainda está aqui
 
-Aguente firme nas noites em que você chora
-
-Quando as lágrimas caem e você se sente desfeito
-Você ainda está aqui (2x)
-
-Deixe cair
-A manhã sabe o seu nome`,
+Deixe cair…
+(deixe cair…)
+A manhã conhece o seu nome…
+(conhece o seu no-o-me)`,
   ),
 ];
