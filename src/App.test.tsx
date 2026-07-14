@@ -146,6 +146,23 @@ describe('App', () => {
     expect(screen.getByRole('button', { name: /Caleidoscópio/i })).toBeInTheDocument();
   });
 
+  it('opens album cover lightbox from the album detail page', async () => {
+    renderAt(
+      '/projects/rosa-negra-halfeti/albums/simplesmente-eu-literalmente-aos-pedacos-em-frases-e-achados',
+    );
+
+    expect(
+      await screen.findByRole('heading', {
+        name: /Simplesmente eu: literalmente, aos pedaços/i,
+      }),
+    ).toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole('button', { name: /Ampliar capa/i }));
+    expect(await screen.findByRole('dialog')).toBeInTheDocument();
+    expect(screen.getByText(/Capa · Simplesmente eu/i)).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /^Fechar$/i })).toBeInTheDocument();
+  });
+
   it('shows album gallery links on Bunny Land Music page', async () => {
     renderAt('/projects/bunny-land-music');
 

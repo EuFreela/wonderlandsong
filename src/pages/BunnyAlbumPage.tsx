@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, Navigate, useParams } from 'react-router-dom';
 import AlbumClipsGallery from '../components/project/AlbumClipsGallery';
+import AlbumCoverModal from '../components/project/AlbumCoverModal';
 import EasterEggsModal from '../components/project/EasterEggsModal';
 import TrackLyricsModal from '../components/project/TrackLyricsModal';
 import Seo from '../components/seo/Seo';
@@ -29,6 +30,7 @@ function BunnyAlbumPage() {
   const albums = getProjectAlbums(projectSlug);
   const album = getProjectAlbum(projectSlug, resolvedAlbumSlug);
   const [easterEggsOpen, setEasterEggsOpen] = useState(false);
+  const [coverOpen, setCoverOpen] = useState(false);
   const [lyricsTrack, setLyricsTrack] = useState<{
     track: BunnyAlbumTrack;
     number: number;
@@ -112,14 +114,22 @@ function BunnyAlbumPage() {
         <section className="px-[5vw] pb-10 pt-12 sm:pt-16">
           <div className="mx-auto grid max-w-5xl gap-10 lg:grid-cols-[minmax(0,280px)_minmax(0,1fr)] lg:gap-14">
             <div className="mx-auto w-full max-w-xs lg:mx-0">
-              <div className="overflow-hidden rounded-xl border border-white/10 shadow-2xl shadow-black/50">
+              <button
+                type="button"
+                onClick={() => setCoverOpen(true)}
+                className="group relative w-full overflow-hidden rounded-xl border border-white/10 shadow-2xl shadow-black/50 transition duration-200 hover:border-white/30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                aria-label={`Ampliar capa de ${displayTitle}`}
+              >
                 <img
                   src={album.cover}
                   alt={`Capa de ${displayTitle}`}
-                  className="aspect-square w-full object-cover"
+                  className="aspect-square w-full object-cover transition duration-300 group-hover:scale-[1.03]"
                   decoding="async"
                 />
-              </div>
+                <span className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-3 pb-3 pt-10 text-center text-[0.62rem] font-bold uppercase tracking-[0.14em] text-white/80 opacity-0 transition duration-200 group-hover:opacity-100 group-focus-visible:opacity-100">
+                  Ampliar capa
+                </span>
+              </button>
             </div>
 
             <div className="flex min-w-0 flex-col">
@@ -391,6 +401,14 @@ function BunnyAlbumPage() {
           tracks={album.tracks}
         />
       ) : null}
+
+      <AlbumCoverModal
+        open={coverOpen}
+        onClose={() => setCoverOpen(false)}
+        src={album.cover}
+        alt={`Capa de ${displayTitle}`}
+        title={album.title}
+      />
 
       <TrackLyricsModal
         open={Boolean(lyricsTrack)}
