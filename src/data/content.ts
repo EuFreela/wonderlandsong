@@ -722,6 +722,7 @@ export const bunnyLandAlbums: ProjectAlbum[] = [
       'Projeto: Caution! Audio Gateway · Origem: Reverse Universe (demo) · Compositor/DJ: Lameck S. Fernandes · Vulgo: Bunny Land Music.',
     ],
     trackCount: cautionAudioGatewayTracks.length,
+    spotifyUrl: 'https://open.spotify.com/intl-pt/album/18lZciTtMd3QBXNpvr7Ddz',
     bandcampUrl: 'https://wonderlandsong.bandcamp.com/album/chapter-1-reverse-universe',
     bandcampLabel: 'Reverse Universe Demo',
     tracks: cautionAudioGatewayTracks,
