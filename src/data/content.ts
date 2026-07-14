@@ -11,6 +11,7 @@ import {
   theComputerTracks,
   unpluggedTracks,
 } from './helena-son-lyrics';
+import { simplesmenteEuTracks } from './rnh-lyrics';
 import { uss1937Tracks } from './uss-1937-lyrics';
 
 /**
@@ -196,6 +197,7 @@ export const bunnyLandMusic: ProjectDetail = {
 /**
  * Rosa Negra de Halfeti — project-3 detail page.
  * Sources: author notes + https://agencylk7.wixsite.com/halfeti
+ * Álbum: Bandcamp (Demo, 15 mai 2025)
  */
 export const rosaNegraHalfeti: ProjectDetail = {
   slug: 'rosa-negra-halfeti',
@@ -203,14 +205,11 @@ export const rosaNegraHalfeti: ProjectDetail = {
   category: 'MPB · Experimental · Atmosférico',
   image: '/images/rnh3.webp',
   tagline:
-    'Simplesmente eu: literalmente, aos pedaços — em frases e achados. Letras autorais, MPB densa e a beleza rara que nasce da dor.',
+    'Letras autorais, MPB densa e a beleza rara que nasce da dor — amor, perda, identidade e transformação.',
   historyTitle: 'Sobre a Rosa Negra de Halfeti',
   historyLead:
     'Rosa Negra de Halfeti é um projeto musical autoral em formato de álbum, com letras introspectivas, existenciais e afetivas. Mistura MPB com linguagem densa e poética — amor, perda, identidade, solidão e transformação. O nome evoca a flor rara que nasce escura: a beleza incomum que nasce da dor.',
-  pullQuote: 'Simplesmente eu: literalmente, aos pedaços — em frases e achados.',
   footerNote: 'Rosa Negra de Halfeti · MPB contemporâneo · Experimental · Atmosférico',
-  albumsEmptyMessage:
-    'Serão 16 faixas de puro lirismo. Algumas demos já estão no YouTube; o álbum completo chega às plataformas em breve.',
   historySections: [
     {
       id: 'concept',
@@ -225,7 +224,7 @@ export const rosaNegraHalfeti: ProjectDetail = {
       title: 'De onde vêm as palavras',
       paragraphs: [
         'Rosa Negra de Halfeti é o reencontro do compositor com palavras que ele próprio deixou pelo caminho. Fragmentos de sentimentos, rabiscos em guardanapos, anotações em cadernos antigos — cada letra carrega uma situação vivida, um instante sentido com intensidade, reorganizado pela música como travessia emocional.',
-        'Essas canções não foram escritas de uma vez. Foram descobertas. Como quem reencontra a si mesmo em papéis gastos, escritos em fases distintas da vida — onde o único abrigo possível era o verso e a poesia. Daí o tema: “Simplesmente eu: literalmente, aos pedaços — em frases e achados”.',
+        'Essas canções não foram escritas de uma vez. Foram descobertas. Como quem reencontra a si mesmo em papéis gastos, escritos em fases distintas da vida — onde o único abrigo possível era o verso e a poesia.',
         'Há muitos anos Lameck escreve músicas. O rock sempre foi espinha dorsal da essência criativa, sem se limitar a um estilo só: a raiz mais visceral é a Música Popular Brasileira. Escrever foi refúgio — poemas livres, sussurros no papel, tentativas de traduzir o que doía, pulsava e ainda não tinha nome. Esses textos viviam em caixas, bordas de guardanapos e páginas de partituras, até o dia de reunir parte desses pedaços e lhes dar melodia.',
       ],
     },
@@ -239,7 +238,7 @@ export const rosaNegraHalfeti: ProjectDetail = {
     },
     {
       id: 'themes',
-      title: 'O que o álbum percorre',
+      title: 'O que o projeto percorre',
       paragraphs: [
         'Cada música é como uma pétala caída — fragmento de algo maior, irrecuperável e ainda assim belo. No conjunto, o disco atravessa relações difíceis e amores desequilibrados; perda de identidade e crise interna; solidão, silêncio e afastamento; autoquestionamento e escolhas que pesam; e, mesmo em meio à dor, a tentativa de reconstrução e a esperança de voltar a si.',
         'Não é um inventário de faixas, e sim um mapa emocional: o ouvinte entra num diário em pedaços, onde o que importa é a travessia — não o catálogo de títulos.',
@@ -260,6 +259,36 @@ export const rosaNegraHalfeti: ProjectDetail = {
   youtubeUrl: 'https://www.youtube.com/watch?v=0-nnIYlwXC0',
   youtubeLabel: 'YouTube',
 };
+
+/**
+ * Álbuns de Rosa Negra de Halfeti (project-3).
+ * Source: https://wonderlandsong.bandcamp.com/album/simplesmente-eu-literalmente-aos-peda-os-em-frases-e-achados-demo
+ */
+export const rosaNegraHalfetiAlbums: ProjectAlbum[] = [
+  {
+    slug: 'simplesmente-eu-literalmente-aos-pedacos-em-frases-e-achados',
+    title: 'Simplesmente eu: literalmente, aos pedaços — em frases e achados',
+    year: '2025',
+    type: 'Demo',
+    cover: '/images/albums/rnh-cover.webp',
+    summary:
+      'Demo de 16 faixas líricas: pedaços de vida reencontrados em poemas, MPB densa e a beleza que nasce da dor.',
+    description: [
+      'Simplesmente eu: literalmente, aos pedaços — em frases e achados é a demo de Rosa Negra de Halfeti: dezesseis faixas de lirismo, introspecção e afeto. Escrita, composição, produção e arte — tudo de Lameck S. Fernandes. Um trabalho nascido em Minas Gerais, lançado em maio de 2025.',
+      'O disco reúne escritos da adolescência e do começo da vida adulta — poemas livres, metáforas e perguntas existenciais — transformados em música. Mistura MPB com rock, jazz, blues e experimentação atmosférica, com estética quente e íntima inspirada nos anos 60–70, sempre priorizando a letra.',
+      'O nome do projeto evoca a rosa negra de Halfeti: a beleza que nasce da dor. Cada canção percorre amor, identidade, solidão e transformação, com vocabulário culto e forma livre. Não é música feita para fórmula comercial — é expressão artística sincera.',
+      'Rosa Negra de Halfeti é, em resumo, o compositor em pedaços, em poesia e em canção. Esperamos que, ao ouvir, você sinta.',
+      'Projeto: Rosa Negra de Halfeti · 2025 · Wonderland Song (Selo) · Lameck S. Fernandes.',
+    ],
+    duration: '56 min',
+    trackCount: simplesmenteEuTracks.length,
+    bandcampUrl:
+      'https://wonderlandsong.bandcamp.com/album/simplesmente-eu-literalmente-aos-peda-os-em-frases-e-achados-demo',
+    bandcampLabel: 'RNH - Simplesmente eu...',
+    tracks: simplesmenteEuTracks,
+    clips: [],
+  },
+];
 
 /**
  * A Grande Multidão — project-4 detail page (home: project-4).
@@ -686,6 +715,7 @@ export const bunnyLandAlbums: ProjectAlbum[] = [
     ],
     trackCount: cautionAudioGatewayTracks.length,
     bandcampUrl: 'https://wonderlandsong.bandcamp.com/album/chapter-1-reverse-universe',
+    bandcampLabel: 'Reverse Universe Demo',
     tracks: cautionAudioGatewayTracks,
     clips: [
       {
@@ -885,7 +915,7 @@ export const projectDetailsBySlug: Record<string, ProjectDetail> = {
 /** Discographies keyed by project slug. */
 export const projectAlbumsBySlug: Record<string, ProjectAlbum[]> = {
   [bunnyLandMusic.slug]: bunnyLandAlbums,
-  [rosaNegraHalfeti.slug]: [],
+  [rosaNegraHalfeti.slug]: rosaNegraHalfetiAlbums,
   [aGrandeMultidao.slug]: aGrandeMultidaoAlbums,
   [helenaSon.slug]: helenaSonAlbums,
   [ussShenandoah.slug]: ussShenandoahAlbums,

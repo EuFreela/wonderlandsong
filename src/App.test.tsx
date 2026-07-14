@@ -69,6 +69,8 @@ describe('App', () => {
     expect(
       screen.getAllByText(/Simplesmente eu: literalmente, aos pedaços/i).length,
     ).toBeGreaterThan(0);
+    expect(screen.getByText(/Demo de 16 faixas líricas/i)).toBeInTheDocument();
+    expect(screen.getByText(/Demo · 2025/i)).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /^O projeto$/i })).toBeInTheDocument();
     expect(
       screen.getByRole('link', { name: /Site Rosa Negra de Halfeti/i }),
@@ -120,6 +122,28 @@ describe('App', () => {
       'href',
       '/projects/a-grande-multidao',
     );
+  });
+
+  it('opens Rosa Negra album page with clickable track lyrics', async () => {
+    renderAt(
+      '/projects/rosa-negra-halfeti/albums/simplesmente-eu-literalmente-aos-pedacos-em-frases-e-achados',
+    );
+
+    expect(
+      await screen.findByRole('heading', {
+        name: /Simplesmente eu: literalmente, aos pedaços/i,
+      }),
+    ).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /← Rosa Negra de Halfeti/i })).toHaveAttribute(
+      'href',
+      '/projects/rosa-negra-halfeti',
+    );
+
+    fireEvent.click(screen.getByRole('button', { name: /Um Beijo Teu/i }));
+    expect(await screen.findByRole('dialog')).toBeInTheDocument();
+    expect(screen.getAllByText(/Tu exalas amor, tu és/i).length).toBeGreaterThan(0);
+    expect(screen.getByText(/^Mediatário do amor$/i)).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Caleidoscópio/i })).toBeInTheDocument();
   });
 
   it('shows album gallery links on Bunny Land Music page', async () => {

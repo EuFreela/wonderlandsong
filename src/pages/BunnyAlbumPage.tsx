@@ -179,7 +179,7 @@ function BunnyAlbumPage() {
                     rel="noopener noreferrer"
                     className={secondaryLinkClassName}
                   >
-                    Reverse Universe Demo
+                    {album.bandcampLabel?.trim() || 'Bandcamp'}
                   </a>
                 ) : null}
                 {album.lyricsUrl ? (

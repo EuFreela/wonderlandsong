@@ -145,6 +145,8 @@ export type ProjectAlbum = {
   trackCount?: number;
   spotifyUrl?: string;
   bandcampUrl?: string;
+  /** Label for the Bandcamp button (default: "Bandcamp"). */
+  bandcampLabel?: string;
   youtubeUrl?: string;
   /** Lyrics page (e.g. Genius album page). */
   lyricsUrl?: string;
