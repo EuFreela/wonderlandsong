@@ -49,7 +49,54 @@
     <title>Wonderland Song</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Replaced by React on boot; shows while the app bundle loads. -->
+      <div
+        style="
+          min-height: 100vh;
+          min-width: 320px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 1.25rem;
+          background: #05030a;
+          color: rgba(255, 255, 255, 0.45);
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 0.875rem;
+        "
+        role="status"
+        aria-live="polite"
+      >
+        <div
+          style="
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 9999px;
+            border: 2px solid rgba(255, 255, 255, 0.15);
+            border-top-color: rgba(255, 255, 255, 0.85);
+            animation: boot-spin 0.75s linear infinite;
+          "
+          aria-hidden="true"
+        ></div>
+        <p style="margin: 0; letter-spacing: 0.2em; text-transform: uppercase; font-size: 0.7rem; font-weight: 800; color: rgba(255, 255, 255, 0.9)">
+          Wonderland Song
+        </p>
+      </div>
+    </div>
+    <style>
+      @keyframes boot-spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        #root [aria-hidden='true'] {
+          animation: none !important;
+        }
+      }
+    </style>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
+

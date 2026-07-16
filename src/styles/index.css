@@ -134,6 +134,31 @@ a {
   }
 }
 
+/* Full-page route loading spinner */
+@keyframes page-loading-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.page-loading-spinner {
+  animation: page-loading-spin 0.75s linear infinite;
+}
+
+/* Top navigation progress bar */
+@keyframes page-loading-bar {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(400%);
+  }
+}
+
+.page-loading-bar {
+  animation: page-loading-bar 1s ease-in-out infinite;
+}
+
 /* Mobile menu open animation (replaces Framer Motion on the home shell) */
 @keyframes menu-fade-in {
   from {
@@ -165,8 +190,20 @@ a {
 
 @media (prefers-reduced-motion: reduce) {
   .animate-menu-fade,
-  .animate-menu-sheet {
+  .animate-menu-sheet,
+  .page-loading-spinner,
+  .page-loading-bar {
     animation: none;
+  }
+
+  .page-loading-spinner {
+    border-top-color: rgba(255, 255, 255, 0.55);
+    opacity: 0.85;
+  }
+
+  .page-loading-bar {
+    width: 100%;
+    opacity: 0.7;
   }
 
   html {

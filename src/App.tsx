@@ -1,5 +1,7 @@
 import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
+import NavigationLoading from './components/layout/NavigationLoading';
+import PageLoading from './components/layout/PageLoading';
 import ScrollToTopOnNavigate from './components/layout/ScrollToTopOnNavigate';
 // Home is the critical path — eager load avoids a dynamic-import waterfall.
 import HomePage from './pages/HomePage';
@@ -8,23 +10,12 @@ const ProjectDetailPage = lazy(() => import('./pages/ProjectDetailPage'));
 const BunnyAlbumPage = lazy(() => import('./pages/BunnyAlbumPage'));
 const ComingSoonPage = lazy(() => import('./pages/ComingSoonPage'));
 
-function RouteFallback() {
-  return (
-    <div
-      className="flex min-h-screen min-w-[320px] items-center justify-center bg-[#05030a] text-sm text-white/50"
-      role="status"
-      aria-live="polite"
-    >
-      Carregando…
-    </div>
-  );
-}
-
 function App() {
   return (
     <>
       <ScrollToTopOnNavigate />
-      <Suspense fallback={<RouteFallback />}>
+      <NavigationLoading />
+      <Suspense fallback={<PageLoading />}>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route
