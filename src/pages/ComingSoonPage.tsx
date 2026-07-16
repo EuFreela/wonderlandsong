@@ -11,12 +11,12 @@ function ComingSoonPage() {
         title="Em construção"
         description="Esta página ainda está em construção no Wonderland Song."
         path="/"
-        image="/images/bunnyatwork.png"
+        image="/images/bunnyatwork.webp"
         noIndex
       />
 
       <img
-        src="/images/bunnyatwork.png"
+        src="/images/bunnyatwork.webp"
         alt="Bunny at work — página em construção"
         className="mb-10 max-h-[min(70vh,560px)] w-full max-w-xl object-contain"
       />

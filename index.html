@@ -8,6 +8,9 @@
       content="Wonderland Song — selo e universo musical: projetos, álbuns e histórias. Ajudando a construir música boa no Brasil e no mundo."
     />
     <meta name="theme-color" content="#05030a" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="robots" content="index, follow" />
     <!-- Absolute canonical/OG URLs are set at runtime by Seo + VITE_SITE_URL (deploy host; no owned .com yet). -->
     <meta property="og:type" content="website" />
@@ -18,14 +21,31 @@
       property="og:description"
       content="Wonderland Song — selo e universo musical: projetos, álbuns e histórias. Ajudando a construir música boa no Brasil e no mundo."
     />
-    <meta property="og:image" content="/images/wonderland2.png" />
+    <meta property="og:image" content="/images/wonderland2.webp" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Wonderland Song" />
     <meta
       name="twitter:description"
       content="Wonderland Song — selo e universo musical: projetos, álbuns e histórias."
     />
-    <meta name="twitter:image" content="/images/wonderland2.png" />
+    <meta name="twitter:image" content="/images/wonderland2.webp" />
+    <!-- Discover LCP poster early (before JS hydrates the parallax panel). -->
+    <link
+      rel="preload"
+      as="image"
+      href="/images/wonderland2-sm.webp"
+      type="image/webp"
+      media="(max-width: 900px)"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/images/wonderland2.webp"
+      type="image/webp"
+      media="(min-width: 901px)"
+      fetchpriority="high"
+    />
     <title>Wonderland Song</title>
   </head>
   <body>

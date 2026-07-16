@@ -12,7 +12,7 @@ export const SITE_NAME = 'Wonderland Song';
 export const SITE_DEFAULT_DESCRIPTION =
   'Wonderland Song — selo e universo musical: projetos, álbuns e histórias. Ajudando a construir música boa no Brasil e no mundo.';
 
-export const SITE_DEFAULT_IMAGE = '/images/wonderland2.png';
+export const SITE_DEFAULT_IMAGE = '/images/wonderland2.webp';
 
 /**
  * Manual “last updated” stamp shown in site footers.

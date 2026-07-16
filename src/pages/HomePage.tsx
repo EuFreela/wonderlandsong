@@ -3,7 +3,7 @@ import ScrollToTop from '../components/layout/ScrollToTop';
 import ParallaxProjectPanel from '../components/parallax/ParallaxProjectPanel';
 import Seo from '../components/seo/Seo';
 import { absoluteUrl, SITE_DEFAULT_DESCRIPTION, SITE_NAME } from '../config/site';
-import { projects } from '../data/content';
+import { projects } from '../data/home-projects';
 
 /**
  * Homepage: fixed-background parallax panel sequence
@@ -17,7 +17,7 @@ function HomePage() {
       name: SITE_NAME,
       url: absoluteUrl('/'),
       description: SITE_DEFAULT_DESCRIPTION,
-      logo: absoluteUrl('/images/wonderland2.png'),
+      logo: absoluteUrl('/images/wonderland2.webp'),
     },
     {
       '@context': 'https://schema.org',
@@ -35,15 +35,19 @@ function HomePage() {
         title={SITE_NAME}
         description={SITE_DEFAULT_DESCRIPTION}
         path="/"
-        image="/images/wonderland2.png"
+        image="/images/wonderland2.webp"
         jsonLd={jsonLd}
       />
 
       <Header />
 
       <main id="home">
-        {projects.map((project) => (
-          <ParallaxProjectPanel key={project.id} project={project} />
+        {projects.map((project, index) => (
+          <ParallaxProjectPanel
+            key={project.id}
+            project={project}
+            priority={index === 0}
+          />
         ))}
       </main>
 

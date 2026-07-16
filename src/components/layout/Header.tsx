@@ -1,11 +1,10 @@
-import { AnimatePresence, motion } from 'framer-motion';
-import { Menu, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { Link } from 'react-router-dom';
 import { SITE_LAST_UPDATED_LABEL } from '../../config/site';
-import { projects } from '../../data/content';
+import { projects } from '../../data/home-projects';
 import { useActivePanelTone } from '../../hooks/useActivePanelTone';
+import { IconClose, IconMenu } from '../ui/Icons';
 
 const navItems = [
   { label: 'Selo', href: '#project-1' },
@@ -17,6 +16,10 @@ const navItems = [
   { label: 'LSBB', href: '#project-7' },
 ];
 
+/**
+ * Site header + mobile nav.
+ * CSS-only menu transitions (no Framer Motion) keep the home bundle light.
+ */
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
@@ -48,69 +51,54 @@ function Header() {
   const mobileMenu =
     mounted &&
     createPortal(
-      <AnimatePresence>
-        {menuOpen ? (
-          <motion.div
-            key="mobile-menu"
-            role="dialog"
-            aria-modal="true"
-            aria-label="Menu de navegação"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-[200] flex flex-col md:hidden"
-          >
-            {/* Dims the page behind the modal */}
-            <button
-              type="button"
-              className="absolute inset-0 bg-black/55 backdrop-blur-sm"
-              aria-label="Fechar menu"
-              onClick={() => setMenuOpen(false)}
-            />
+      menuOpen ? (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label="Menu de navegação"
+          className="fixed inset-0 z-[200] flex flex-col animate-menu-fade md:hidden"
+        >
+          <button
+            type="button"
+            className="absolute inset-0 bg-black/55 backdrop-blur-sm"
+            aria-label="Fechar menu"
+            onClick={() => setMenuOpen(false)}
+          />
 
-            {/* Light solid sheet — readable over any parallax panel */}
-            <motion.div
-              initial={{ y: -12, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: -12, opacity: 0 }}
-              transition={{ duration: 0.22 }}
-              className="relative z-10 flex min-h-full w-full flex-col bg-[#f7f4ef] text-[#171717] shadow-2xl"
-            >
-              <div className="flex h-[72px] items-center justify-between border-b border-black/10 px-[4.5vw]">
-                <span className="text-base font-extrabold uppercase tracking-[0.16em] text-[#171717]">
-                  Menu
-                </span>
-                <button
-                  type="button"
-                  className="rounded-full border border-black/15 bg-white p-2 text-[#171717] shadow-sm"
+          <div className="relative z-10 flex min-h-full w-full flex-col bg-[#f7f4ef] text-[#171717] shadow-2xl animate-menu-sheet">
+            <div className="flex h-[72px] items-center justify-between border-b border-black/10 px-[4.5vw]">
+              <span className="text-base font-extrabold uppercase tracking-[0.16em] text-[#171717]">
+                Menu
+              </span>
+              <button
+                type="button"
+                className="rounded-full border border-black/15 bg-white p-2 text-[#171717] shadow-sm"
+                onClick={() => setMenuOpen(false)}
+                aria-label="Fechar menu"
+              >
+                <IconClose size={20} />
+              </button>
+            </div>
+
+            <nav className="flex flex-1 flex-col gap-1 overflow-y-auto px-[4.5vw] py-8">
+              {navItems.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className="rounded-2xl border border-black/5 bg-white px-5 py-4 text-xl font-bold uppercase tracking-[0.16em] text-[#171717] shadow-sm transition hover:bg-white hover:shadow-md active:scale-[0.99]"
                   onClick={() => setMenuOpen(false)}
-                  aria-label="Fechar menu"
                 >
-                  <X size={20} />
-                </button>
-              </div>
+                  {item.label}
+                </a>
+              ))}
+            </nav>
 
-              <nav className="flex flex-1 flex-col gap-1 overflow-y-auto px-[4.5vw] py-8">
-                {navItems.map((item) => (
-                  <a
-                    key={item.href}
-                    href={item.href}
-                    className="rounded-2xl border border-black/5 bg-white px-5 py-4 text-xl font-bold uppercase tracking-[0.16em] text-[#171717] shadow-sm transition hover:bg-white hover:shadow-md active:scale-[0.99]"
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    {item.label}
-                  </a>
-                ))}
-              </nav>
-
-              <div className="border-t border-black/10 px-[4.5vw] py-6 text-sm uppercase tracking-[0.14em] text-black/50">
-                Wonderland Song
-              </div>
-            </motion.div>
-          </motion.div>
-        ) : null}
-      </AnimatePresence>,
+            <div className="border-t border-black/10 px-[4.5vw] py-6 text-sm uppercase tracking-[0.14em] text-black/50">
+              Wonderland Song
+            </div>
+          </div>
+        </div>
+      ) : null,
       document.body,
     );
 
@@ -170,7 +158,7 @@ function Header() {
           aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'}
           aria-expanded={menuOpen}
         >
-          {menuOpen ? <X size={18} /> : <Menu size={18} />}
+          {menuOpen ? <IconClose size={18} /> : <IconMenu size={18} />}
         </button>
       </header>
 

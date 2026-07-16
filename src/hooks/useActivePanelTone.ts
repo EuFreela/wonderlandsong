@@ -1,48 +1,129 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import type { Project } from '../types';
-import {
-  blendLuminance,
-  sampleImageLuminance,
-  toneFromLuminance,
-  type HeaderTone,
-} from '../utils/luminance';
+import type { HeaderTone } from '../utils/luminance';
 
-const toneCache = new Map<string, HeaderTone>();
+const HEADER_HEIGHT = 72;
 
-async function resolveProjectTone(project: Project): Promise<HeaderTone> {
-  if (project.headerTone === 'light' || project.headerTone === 'dark') {
+function toneForProject(project: Project | undefined): HeaderTone {
+  if (project?.headerTone === 'light' || project?.headerTone === 'dark') {
     return project.headerTone;
   }
-
-  const cached = toneCache.get(project.id);
-  if (cached) return cached;
-
-  const imageLum = await sampleImageLuminance(project.image);
-  const blended = blendLuminance(imageLum, project.filterColor, project.filterOpacity);
-  const tone = toneFromLuminance(blended);
-  toneCache.set(project.id, tone);
-  return tone;
+  // Safe default for dark full-bleed panels
+  return 'light';
 }
 
 /**
- * Tracks which parallax panel sits under the sticky header and returns
- * a contrast-safe text tone (`light` = white text, `dark` = black text).
+ * Sticky-header contrast tone from static `project.headerTone`.
+ * IntersectionObserver only (no canvas sampling / image decode on main thread).
  */
 export function useActivePanelTone(projects: Project[]): HeaderTone {
-  const [tone, setTone] = useState<HeaderTone>('dark');
+  const initial = toneForProject(projects[0]);
+  const [tone, setTone] = useState<HeaderTone>(initial);
+  const toneRef = useRef<HeaderTone>(initial);
+  const activeIdRef = useRef<string | null>(projects[0]?.id ?? null);
 
   useEffect(() => {
     let cancelled = false;
     const projectById = new Map(projects.map((p) => [p.id, p]));
 
-    // Prefetch tones for all panels
-    void Promise.all(projects.map((p) => resolveProjectTone(p)));
+    const applyTone = (next: HeaderTone) => {
+      if (cancelled || next === toneRef.current) return;
+      toneRef.current = next;
+      setTone(next);
+    };
 
-    const pickActive = () => {
-      const headerHeight = 72;
-      const probeY = headerHeight / 2;
-      const panels = Array.from(document.querySelectorAll<HTMLElement>('.parallax-panel'));
+    const activate = (id: string | null) => {
+      if (id === activeIdRef.current) return;
+      activeIdRef.current = id;
 
+      if (!id) {
+        applyTone('dark');
+        return;
+      }
+
+      applyTone(toneForProject(projectById.get(id)));
+    };
+
+    const panels = Array.from(
+      document.querySelectorAll<HTMLElement>('.parallax-panel'),
+    );
+
+    if (panels.length === 0) {
+      applyTone('dark');
+      return () => {
+        cancelled = true;
+      };
+    }
+
+    // Preferred: IntersectionObserver on a top probe band
+    if (typeof IntersectionObserver !== 'undefined') {
+      const ratios = new Map<string, number>();
+      let observer: IntersectionObserver | null = null;
+
+      const pickBestId = (): string | null => {
+        let bestId: string | null = null;
+        let bestRatio = 0;
+        for (const [id, ratio] of ratios) {
+          if (ratio > bestRatio) {
+            bestRatio = ratio;
+            bestId = id;
+          }
+        }
+        return bestId;
+      };
+
+      const buildObserver = () => {
+        observer?.disconnect();
+        ratios.clear();
+        const bottomShrink = Math.max(0, window.innerHeight - HEADER_HEIGHT);
+        observer = new IntersectionObserver(
+          (entries) => {
+            for (const entry of entries) {
+              const id = (entry.target as HTMLElement).id;
+              if (!id) continue;
+              if (entry.isIntersecting && entry.intersectionRatio > 0) {
+                ratios.set(id, entry.intersectionRatio);
+              } else {
+                ratios.delete(id);
+              }
+            }
+            activate(pickBestId());
+          },
+          {
+            root: null,
+            rootMargin: `0px 0px -${bottomShrink}px 0px`,
+            // Fewer thresholds → fewer callbacks / less main-thread work
+            threshold: [0, 0.5, 1],
+          },
+        );
+        for (const panel of panels) observer.observe(panel);
+      };
+
+      buildObserver();
+
+      let resizeFrame = 0;
+      const onResize = () => {
+        if (resizeFrame) return;
+        resizeFrame = window.requestAnimationFrame(() => {
+          resizeFrame = 0;
+          buildObserver();
+        });
+      };
+      window.addEventListener('resize', onResize, { passive: true });
+
+      return () => {
+        cancelled = true;
+        observer?.disconnect();
+        window.removeEventListener('resize', onResize);
+        if (resizeFrame) window.cancelAnimationFrame(resizeFrame);
+      };
+    }
+
+    // Fallback: rAF-throttled scroll (jsdom / rare envs)
+    let frame = 0;
+    const pickFromRects = () => {
+      frame = 0;
+      const probeY = HEADER_HEIGHT / 2;
       let active: HTMLElement | null = null;
       for (const panel of panels) {
         const rect = panel.getBoundingClientRect();
@@ -51,33 +132,21 @@ export function useActivePanelTone(projects: Project[]): HeaderTone {
           break;
         }
       }
-
-      // Footer / past last panel → dark text on white page
-      if (!active) {
-        if (!cancelled) setTone('dark');
-        return;
-      }
-
-      const id = active.id;
-      const project = projectById.get(id);
-      if (!project) {
-        if (!cancelled) setTone('dark');
-        return;
-      }
-
-      void resolveProjectTone(project).then((next) => {
-        if (!cancelled) setTone(next);
-      });
+      activate(active?.id ?? null);
     };
-
-    pickActive();
-    window.addEventListener('scroll', pickActive, { passive: true });
-    window.addEventListener('resize', pickActive);
+    const onScroll = () => {
+      if (frame) return;
+      frame = window.requestAnimationFrame(pickFromRects);
+    };
+    pickFromRects();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll, { passive: true });
 
     return () => {
       cancelled = true;
-      window.removeEventListener('scroll', pickActive);
-      window.removeEventListener('resize', pickActive);
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+      if (frame) window.cancelAnimationFrame(frame);
     };
   }, [projects]);
 

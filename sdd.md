@@ -181,9 +181,9 @@ wonderlandsong2/
 │   ├── images/
 │   │   ├── albums/          # capas WebP dos álbuns
 │   │   ├── *.webp / *.png   # artes dos painéis da home
-│   │   └── bunnyatwork.png  # fallback “em construção”
+│   │   └── bunnyatwork.webp # fallback “em construção”
 │   ├── videos/
-│   │   └── wonderland2.mp4  # hero/selo (painel 1)
+│   │   └── wonderland2.webm # hero/selo (painel 1)
 │   ├── robots.txt
 │   └── sitemap.xml
 │
@@ -610,7 +610,7 @@ Home usa fundo claro (`#ffffff` / texto `#171717`) nos painéis; páginas de pro
 ```text
 public/images/           painéis da home + bunnyatwork
 public/images/albums/    capas dos álbuns (WebP)
-public/videos/           wonderland2.mp4
+public/videos/           wonderland2.webm
 ```
 
 ### 19.2 Regras
@@ -631,7 +631,7 @@ public/videos/           wonderland2.mp4
 
 `ComingSoonPage`:
 
-* imagem `bunnyatwork.png`;
+* imagem `bunnyatwork.webp`;
 * mensagem “Estamos trabalhando nesta página”;
 * link “Voltar ao site”;
 * `noIndex` no SEO.

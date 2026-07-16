@@ -1,4 +1,4 @@
-import type { Artist, Project, ProjectAlbum, ProjectDetail, Release } from '../types';
+import type { Artist, ProjectAlbum, ProjectDetail, Release } from '../types';
 import { aVerdadeAindaChamaTracks } from './agm-lyrics';
 import { cautionAudioGatewayTracks } from './blm-chapter1-lyrics';
 import { inTheForestTracks } from './blm-chapter2-lyrics';
@@ -14,98 +14,8 @@ import {
 import { simplesmenteEuTracks } from './rnh-lyrics';
 import { uss1937Tracks } from './uss-1937-lyrics';
 
-/**
- * Homepage parallax panels (POFO-style fixed background sequence).
- * Images match the reference HTML (portfolio-item57–62).
- */
-export const projects: Project[] = [
-  {
-    id: 'project-1',
-    category: 'Record Label',
-    title: 'Wonderland Song',
-    image: '/images/wonderland2.png',
-    video: '/videos/wonderland2.mp4',
-    // Color tint over the media — change hex + opacity as needed
-    // filterColor: '#fff782',
-    // filterOpacity: 0.35,
-    href: '/projects/wonderland-song',
-    // buttonLabel: 'Abrir projeto',
-    // spotifyUrl: 'https://open.spotify.com/',
-    // spotifyLabel: 'Spotify',
-    message: 'Ajudando a construir música boa no Brasil e no mundo',
-    youtubeUrl: 'https://www.youtube.com/@wonderlandsong/videos',
-    youtubeLabel: 'YouTube',
-  },
-  {
-    id: 'project-2',
-    category: 'Dark EDM + Pop',
-    title: 'Bunny Land Music',
-    image: '/images/caution2.webp',
-    imagePositionMobile: 'center 30%',
-    // video: '/videos/caution.mp4',
-    // Color tint over the media — change hex + opacity as needed
-    // filterColor: '#9cbfff',
-    // filterOpacity: 0.35,
-    href: '/projects/bunny-land-music',
-    buttonLabel: 'Abrir projeto',
-    spotifyUrl: 'https://open.spotify.com/intl-pt/artist/7sf7qPbN4BiUlbOfEwziza',
-    spotifyLabel: 'Ouvir no Spotify',
-    youtubeUrl: 'https://www.youtube.com/@bunnylandmusic',
-    youtubeLabel: 'YouTube',
-  },
-
-  {
-    id: 'project-3',
-    category: 'MPB · Experimental · Atmosférico',
-    title: 'Rosa Negra de Halfeti',
-    image: '/images/rnh3.webp',
-    imagePositionMobile: 'center 28%',
-    href: '/projects/rosa-negra-halfeti',
-    buttonLabel: 'Abrir projeto',
-  },
-  {
-    id: 'project-4',
-    category: 'Gospel + TJ',
-    title: 'A Grande Multidão',
-    image: '/images/agm2.webp',
-    href: '/projects/a-grande-multidao',
-    buttonLabel: 'Abrir projeto',
-    spotifyUrl: 'https://open.spotify.com/intl-pt/artist/0nUtKTD6CkcADpjPYYCzHu',
-    spotifyLabel: 'Ouvir no Spotify',
-  },
-  {
-    id: 'project-5',
-    category: 'Grunge',
-    title: 'Helena Son',
-    image: '/images/hs2.webp',
-    imagePositionMobile: 'center 22%',
-    href: '/projects/helena-son',
-    buttonLabel: 'Abrir projeto',
-    spotifyUrl: 'https://open.spotify.com/intl-pt/artist/3w2iPAIrdoXXzJ38C59np8',
-    spotifyLabel: 'Ouvir no Spotify',
-  },
-  {
-    id: 'project-6',
-    category: 'Hard Rock 1960',
-    title: 'USS Shenandoah',
-    image: '/images/usss.webp',
-    imagePositionMobile: 'center 32%',
-    href: '/projects/uss-shenandoah',
-    buttonLabel: 'Abrir projeto',
-    spotifyUrl: 'https://open.spotify.com/intl-pt/artist/008vDYJA7fvRWxchF8QN1F',
-    spotifyLabel: 'Ouvir no Spotify',
-  },
-  {
-    id: 'project-7',
-    category: 'Blues',
-    title: 'Lameck & Southern Birds Band',
-    image: '/images/lsbb.webp',
-    href: '/projects/lameck-southern-birds-band',
-    buttonLabel: 'Abrir projeto',
-    spotifyUrl: 'https://open.spotify.com/intl-pt/artist/6jZsG3waoXclu0mC2tv4eX',
-    spotifyLabel: 'Ouvir no Spotify',
-  },
-];
+/** Re-export home panels for any legacy import of content.ts */
+export { projects } from './home-projects';
 
 /**
  * Detail data for the Bunny Land Music project page

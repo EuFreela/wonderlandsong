@@ -9,7 +9,6 @@ type Entry = {
 const entries = new Set<Entry>();
 let listening = false;
 let frame = 0;
-let viewportH = 0;
 let mqMobile: MediaQueryList | null = null;
 let mqReduce: MediaQueryList | null = null;
 
@@ -23,30 +22,23 @@ function mobileParallaxOn() {
 function clearTransforms() {
   for (const entry of entries) {
     entry.media.style.transform = '';
-    entry.media.style.height = '';
     entry.lastY = Number.NaN;
   }
 }
 
-function syncHeights() {
-  viewportH = window.innerHeight;
-  if (!mobileParallaxOn()) {
-    clearTransforms();
-    return;
-  }
-  for (const entry of entries) {
-    entry.media.style.height = `${viewportH}px`;
-  }
-}
-
+/**
+ * One rAF tick: read all geometries first, then write transforms.
+ * Avoids interleaved read/write forced reflows.
+ */
 function tick() {
   frame = 0;
 
-  // Desktop uses pure CSS fixed — never write transforms there
   if (!mobileParallaxOn()) return;
 
-  const vh = viewportH || window.innerHeight;
+  const vh = window.innerHeight;
+  const writes: { media: HTMLElement; y: number; entry: Entry }[] = [];
 
+  // Phase 1 — layout reads only
   for (const entry of entries) {
     const rect = entry.panel.getBoundingClientRect();
 
@@ -57,8 +49,13 @@ function tick() {
 
     const y = Math.round(-rect.top);
     if (y === entry.lastY) continue;
+    writes.push({ media: entry.media, y, entry });
+  }
+
+  // Phase 2 — style writes only
+  for (const { media, y, entry } of writes) {
     entry.lastY = y;
-    entry.media.style.transform = `translate3d(0, ${y}px, 0)`;
+    media.style.transform = `translate3d(0, ${y}px, 0)`;
   }
 }
 
@@ -69,7 +66,10 @@ function schedule() {
 }
 
 function onResize() {
-  syncHeights();
+  if (!mobileParallaxOn()) {
+    clearTransforms();
+    return;
+  }
   for (const entry of entries) entry.lastY = Number.NaN;
   schedule();
 }
@@ -79,8 +79,9 @@ function ensureListeners() {
   listening = true;
   mqMobile = window.matchMedia('(max-width: 900px)');
   mqReduce = window.matchMedia('(prefers-reduced-motion: reduce)');
-  syncHeights();
-  // Scroll listener only needed on mobile; still attach once and gate in schedule()
+  if (!mobileParallaxOn()) {
+    clearTransforms();
+  }
   window.addEventListener('scroll', schedule, { passive: true });
   window.addEventListener('resize', onResize, { passive: true });
   mqMobile.addEventListener('change', onResize);
@@ -104,7 +105,8 @@ function teardownIfEmpty() {
 /**
  * Mobile-only fixed-window parallax.
  * Desktop uses pure CSS (position:fixed) — this loop no-ops there.
- * One shared rAF loop + integer pixels to avoid scroll shimmer.
+ * Shared rAF loop: batched geometry reads → integer translate3d writes.
+ * Layer height comes from CSS (100vh / 100dvh), not JS — avoids reflow.
  */
 export function useMobileParallax(
   panelRef: RefObject<HTMLElement | null>,
@@ -118,13 +120,11 @@ export function useMobileParallax(
     const entry: Entry = { panel, media, lastY: Number.NaN };
     entries.add(entry);
     ensureListeners();
-    syncHeights();
     schedule();
 
     return () => {
       entries.delete(entry);
       media.style.transform = '';
-      media.style.height = '';
       teardownIfEmpty();
     };
   }, [panelRef, mediaRef]);

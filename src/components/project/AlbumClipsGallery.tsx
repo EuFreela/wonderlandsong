@@ -1,6 +1,6 @@
-import { Play } from 'lucide-react';
 import { useCallback, useEffect, useId, useState } from 'react';
 import type { BunnyAlbumClip } from '../../types';
+import { IconPlay } from '../ui/Icons';
 import YouTubeIcon from '../ui/YouTubeIcon';
 
 type Props = {
@@ -124,7 +124,7 @@ function AlbumClipsGallery({ clips, albumTitle }: Props) {
                     aria-hidden
                   >
                     <span className="flex h-14 w-14 items-center justify-center rounded-full bg-[#FF0000] text-white shadow-lg transition duration-200 group-hover:scale-110">
-                      <Play size={22} fill="currentColor" className="ml-0.5" />
+                      <IconPlay size={22} className="ml-0.5" />
                     </span>
                   </span>
                 </div>

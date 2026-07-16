@@ -6,13 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4173",
+    "lighthouse:serve": "npm run build && vite preview --host 127.0.0.1 --port 4173",
+    "lighthouse:mobile": "lighthouse http://127.0.0.1:4173/ --only-categories=performance --only-categories=accessibility --only-categories=best-practices --only-categories=seo --form-factor=mobile --screenEmulation.mobile=true --chrome-flags=\"--headless --no-sandbox --disable-gpu\" --quiet --output=json --output-path=./lighthouse-mobile.json",
+    "lighthouse:desktop": "lighthouse http://127.0.0.1:4173/ --only-categories=performance --only-categories=accessibility --only-categories=best-practices --only-categories=seo --preset=desktop --chrome-flags=\"--headless --no-sandbox --disable-gpu\" --quiet --output=json --output-path=./lighthouse-desktop.json",
     "lint": "eslint . --ext .ts,.tsx",
     "typecheck": "tsc -b",
     "test": "vitest run"
   },
   "dependencies": {
-    "framer-motion": "^11.11.9",
-    "lucide-react": "^0.468.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-helmet-async": "^2.0.1",
@@ -32,6 +34,7 @@
     "eslint-plugin-react-refresh": "^0.4.0",
     "globals": "^15.0.0",
     "jsdom": "^25.0.0",
+    "lighthouse": "^12.8.2",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.16",
     "typescript": "^5.7.3",

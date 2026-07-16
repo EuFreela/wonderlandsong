@@ -1,8 +1,9 @@
 import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import ScrollToTopOnNavigate from './components/layout/ScrollToTopOnNavigate';
+// Home is the critical path — eager load avoids a dynamic-import waterfall.
+import HomePage from './pages/HomePage';
 
-const HomePage = lazy(() => import('./pages/HomePage'));
 const ProjectDetailPage = lazy(() => import('./pages/ProjectDetailPage'));
 const BunnyAlbumPage = lazy(() => import('./pages/BunnyAlbumPage'));
 const ComingSoonPage = lazy(() => import('./pages/ComingSoonPage'));

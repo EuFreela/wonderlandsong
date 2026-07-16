@@ -1,24 +1,37 @@
-import { useReducedMotion } from 'framer-motion';
-import { useRef, type CSSProperties } from 'react';
+import { useEffect, useRef, useState, type CSSProperties } from 'react';
 import { Link } from 'react-router-dom';
 import { useMobileParallax } from '../../hooks/useMobileParallax';
+import { usePrefersReducedMotion } from '../../hooks/usePrefersReducedMotion';
 import type { Project } from '../../types';
 import SpotifyIcon from '../ui/SpotifyIcon';
 import YouTubeIcon from '../ui/YouTubeIcon';
 
 type Props = {
   project: Project;
+  /** First homepage panel: eager image + high fetch priority for LCP. */
+  priority?: boolean;
 };
+
+/** Matches CSS mobile parallax breakpoint — no heavy background video on phones. */
+const DESKTOP_MEDIA = '(min-width: 901px)';
 
 /**
  * Fixed-background parallax panel.
  * Desktop: CSS position:fixed + clip (no JS).
  * Mobile: shared rAF loop with integer translate3d (same window effect, less jitter).
+ *
+ * Performance:
+ * - Poster/image paints first (LCP-friendly).
+ * - Background video only on desktop, after idle (skips ~2MB webm on mobile).
+ * - Non-priority panels use loading="lazy".
  */
-function ParallaxProjectPanel({ project }: Props) {
-  const prefersReducedMotion = useReducedMotion();
+function ParallaxProjectPanel({ project, priority = false }: Props) {
+  const prefersReducedMotion = usePrefersReducedMotion();
   const panelRef = useRef<HTMLElement>(null);
   const mediaRef = useRef<HTMLDivElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isDesktop, setIsDesktop] = useState(false);
+  const [loadVideo, setLoadVideo] = useState(false);
 
   const isHashLink = project.href.startsWith('#');
   const label = project.buttonLabel?.trim();
@@ -29,7 +42,8 @@ function ParallaxProjectPanel({ project }: Props) {
   const youtubeUrl = project.youtubeUrl?.trim();
   const showYouTube = Boolean(youtubeUrl);
   const youtubeLabel = project.youtubeLabel?.trim() || 'YouTube';
-  const useVideo = Boolean(project.video) && !prefersReducedMotion;
+  const wantsVideo =
+    Boolean(project.video) && !prefersReducedMotion && isDesktop;
   const filterOpacity = Math.min(1, Math.max(0, project.filterOpacity ?? 0));
   const hasColorFilter = Boolean(project.filterColor) && filterOpacity > 0;
   const showActions = showButton || showSpotify || showYouTube;
@@ -43,6 +57,48 @@ function ParallaxProjectPanel({ project }: Props) {
   } as CSSProperties;
 
   useMobileParallax(panelRef, mediaRef);
+
+  useEffect(() => {
+    const mq = window.matchMedia(DESKTOP_MEDIA);
+    const update = () => setIsDesktop(mq.matches);
+    update();
+    mq.addEventListener('change', update);
+    return () => mq.removeEventListener('change', update);
+  }, []);
+
+  // Defer video so poster/image can become LCP without competing with ~2MB webm.
+  useEffect(() => {
+    if (!wantsVideo) {
+      setLoadVideo(false);
+      return;
+    }
+
+    const enable = () => setLoadVideo(true);
+    const win = window as Window & {
+      requestIdleCallback?: (cb: () => void, opts?: { timeout: number }) => number;
+      cancelIdleCallback?: (id: number) => void;
+    };
+
+    if (typeof win.requestIdleCallback === 'function') {
+      const id = win.requestIdleCallback(enable, { timeout: 2500 });
+      return () => win.cancelIdleCallback?.(id);
+    }
+
+    const t = window.setTimeout(enable, 1200);
+    return () => window.clearTimeout(t);
+  }, [wantsVideo]);
+
+  useEffect(() => {
+    if (!loadVideo || !videoRef.current) return;
+    const el = videoRef.current;
+    const play = () => {
+      void el.play().catch(() => {
+        /* autoplay may be blocked; poster remains visible */
+      });
+    };
+    if (el.readyState >= 2) play();
+    else el.addEventListener('loadeddata', play, { once: true });
+  }, [loadVideo]);
 
   const buttonClassName =
     'inline-flex min-h-[38px] items-center justify-center gap-2 bg-[#111] px-5 text-[0.65rem] font-bold uppercase tracking-[0.1em] text-white transition duration-200 hover:bg-white hover:text-[#111] focus-visible:bg-white focus-visible:text-[#111] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#111]';
@@ -63,28 +119,38 @@ function ParallaxProjectPanel({ project }: Props) {
       <div className="parallax-media" aria-hidden>
         <div className="parallax-media__clip">
           <div ref={mediaRef} className="parallax-media__layer">
-            {useVideo ? (
+            {/* Poster always present — LCP candidate; video layers on top when ready. */}
+            <img
+              className="parallax-media__asset"
+              style={mediaStyle}
+              src={project.image}
+              srcSet={
+                project.image.includes('wonderland2')
+                  ? '/images/wonderland2-sm.webp 800w, /images/wonderland2.webp 1600w'
+                  : undefined
+              }
+              sizes={project.image.includes('wonderland2') ? '100vw' : undefined}
+              alt=""
+              width={priority ? 1600 : undefined}
+              height={priority ? 900 : undefined}
+              decoding="async"
+              loading={priority ? 'eager' : 'lazy'}
+              fetchPriority={priority ? 'high' : 'auto'}
+              draggable={false}
+            />
+            {wantsVideo && loadVideo ? (
               <video
-                className="parallax-media__asset"
+                ref={videoRef}
+                className="parallax-media__asset parallax-media__video"
                 style={mediaStyle}
                 src={project.video}
-                poster={project.image}
-                autoPlay
                 muted
                 loop
                 playsInline
-                preload="metadata"
+                preload="none"
+                autoPlay
               />
-            ) : (
-              <img
-                className="parallax-media__asset"
-                style={mediaStyle}
-                src={project.image}
-                alt=""
-                decoding="async"
-                draggable={false}
-              />
-            )}
+            ) : null}
           </div>
         </div>
       </div>
