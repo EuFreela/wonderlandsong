@@ -134,15 +134,22 @@ a {
   }
 }
 
-/* Full-page route loading spinner */
-@keyframes page-loading-spin {
-  to {
-    transform: rotate(360deg);
+/* Full-page loading: boy.webp pulse */
+@keyframes page-loading-pulse {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.06);
   }
 }
 
-.page-loading-spinner {
-  animation: page-loading-spin 0.75s linear infinite;
+.page-loading-boy {
+  animation: page-loading-pulse 1.1s ease-in-out infinite;
+  will-change: transform, opacity;
 }
 
 /* Top navigation progress bar */
@@ -191,14 +198,13 @@ a {
 @media (prefers-reduced-motion: reduce) {
   .animate-menu-fade,
   .animate-menu-sheet,
-  .page-loading-spinner,
+  .page-loading-boy,
   .page-loading-bar {
     animation: none;
   }
 
-  .page-loading-spinner {
-    border-top-color: rgba(255, 255, 255, 0.55);
-    opacity: 0.85;
+  .page-loading-boy {
+    opacity: 0.9;
   }
 
   .page-loading-bar {

@@ -5,7 +5,7 @@ type Props = {
 
 /**
  * Shared loading UI for lazy routes and navigation.
- * Visual only (spinner / bar) — no “Carregando…” copy.
+ * Full-page uses public/boy.webp; bar keeps the thin top progress.
  */
 function PageLoading({ variant = 'page' }: Props) {
   if (variant === 'bar') {
@@ -29,15 +29,15 @@ function PageLoading({ variant = 'page' }: Props) {
       aria-busy="true"
       aria-label="Carregando"
     >
-      <div className="flex flex-col items-center gap-5">
-        <div
-          className="page-loading-spinner h-11 w-11 rounded-full border-2 border-white/15 border-t-white/85"
-          aria-hidden
-        />
-        <p className="m-0 text-[0.7rem] font-extrabold uppercase tracking-[0.2em] text-white/90">
-          Wonderland Song
-        </p>
-      </div>
+      <img
+        src="/boy.webp"
+        alt=""
+        width={140}
+        height={140}
+        decoding="async"
+        className="page-loading-boy h-[8.75rem] w-[8.75rem] object-contain"
+        aria-hidden
+      />
     </div>
   );
 }

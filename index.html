@@ -68,31 +68,38 @@
         role="status"
         aria-live="polite"
       >
-        <div
-          style="
-            width: 2.5rem;
-            height: 2.5rem;
-            border-radius: 9999px;
-            border: 2px solid rgba(255, 255, 255, 0.15);
-            border-top-color: rgba(255, 255, 255, 0.85);
-            animation: boot-spin 0.75s linear infinite;
-          "
+        <img
+          src="/boy.webp"
+          alt=""
+          width="140"
+          height="140"
           aria-hidden="true"
-        ></div>
-        <p style="margin: 0; letter-spacing: 0.2em; text-transform: uppercase; font-size: 0.7rem; font-weight: 800; color: rgba(255, 255, 255, 0.9)">
-          Wonderland Song
-        </p>
+          style="
+            width: 8.75rem;
+            height: 8.75rem;
+            object-fit: contain;
+            animation: boot-pulse 1.1s ease-in-out infinite;
+            will-change: transform, opacity;
+          "
+        />
       </div>
     </div>
     <style>
-      @keyframes boot-spin {
-        to {
-          transform: rotate(360deg);
+      @keyframes boot-pulse {
+        0%,
+        100% {
+          opacity: 0.45;
+          transform: scale(0.9);
+        }
+        50% {
+          opacity: 1;
+          transform: scale(1.06);
         }
       }
       @media (prefers-reduced-motion: reduce) {
-        #root [aria-hidden='true'] {
+        #root img[src='/boy.webp'] {
           animation: none !important;
+          opacity: 0.9 !important;
         }
       }
     </style>
