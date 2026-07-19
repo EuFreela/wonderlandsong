@@ -79,6 +79,39 @@ describe('App', () => {
     expect(screen.getByRole('link', { name: /Voltar à home/i })).toHaveAttribute('href', '/');
   });
 
+  it('opens Resonance project page with shared layout', async () => {
+    renderAt('/projects/resonance');
+
+    expect(await screen.findByRole('heading', { name: /^Resonance$/i })).toBeInTheDocument();
+    expect(screen.getByText('Post-Grunge / Alternative Rock')).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /Sobre Resonance/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /Álbuns lançados/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole('link', { name: /Ver álbum.*Echoes of Redemption/i }),
+    ).toHaveAttribute('href', '/projects/resonance/albums/echoes-of-redemption');
+    expect(screen.getByRole('link', { name: /Voltar à home/i })).toHaveAttribute('href', '/');
+  });
+
+  it('opens Echoes of Redemption album with EN lyrics and PT translation', async () => {
+    renderAt('/projects/resonance/albums/echoes-of-redemption');
+
+    expect(
+      await screen.findByRole('heading', { name: /^Echoes of Redemption$/i }),
+    ).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /← Resonance/i })).toHaveAttribute(
+      'href',
+      '/projects/resonance',
+    );
+
+    fireEvent.click(
+      screen.getByRole('button', { name: /Breaking Point.*Ver letra/i }),
+    );
+    expect(await screen.findByRole('dialog')).toBeInTheDocument();
+    expect(screen.getAllByText(/This is my breaking point/i).length).toBeGreaterThan(0);
+    expect(screen.getByText(/^Tradução \(português\)$/i)).toBeInTheDocument();
+    expect(screen.getAllByText(/ponto de ruptura/i).length).toBeGreaterThan(0);
+  });
+
   it('opens A Grande Multidão project page with shared layout', async () => {
     renderAt('/projects/a-grande-multidao');
 

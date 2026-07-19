@@ -14,6 +14,7 @@ const navItems = [
   { label: 'HS', href: '#project-5' },
   { label: 'USSS', href: '#project-6' },
   { label: 'LSBB', href: '#project-7' },
+  { label: 'RES', href: '#project-8' },
 ];
 
 /**

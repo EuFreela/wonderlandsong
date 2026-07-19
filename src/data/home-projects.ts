@@ -90,4 +90,14 @@ export const projects: Project[] = [
     spotifyUrl: 'https://open.spotify.com/intl-pt/artist/6jZsG3waoXclu0mC2tv4eX',
     spotifyLabel: 'Ouvir no Spotify',
   },
+  {
+    id: 'project-8',
+    category: 'Post-Grunge / Alternative Rock',
+    title: 'Resonance',
+    image: '/images/albums/Ressonance.webp',
+    imagePositionMobile: 'center 30%',
+    headerTone: 'light',
+    href: '/projects/resonance',
+    buttonLabel: 'Abrir projeto',
+  },
 ];

@@ -11,6 +11,7 @@ import {
   theComputerTracks,
   unpluggedTracks,
 } from './helena-son-lyrics';
+import { echoesOfRedemptionTracks } from './resonance-lyrics';
 import { simplesmenteEuTracks } from './rnh-lyrics';
 import { uss1937Tracks } from './uss-1937-lyrics';
 
@@ -824,6 +825,94 @@ export const bunnyLandAlbums: ProjectAlbum[] = [
   },
 ];
 
+/**
+ * Resonance — project-8 detail page (home: project-8).
+ * Álbum: Echoes of Redemption. Letras sem nomes de faixas na história.
+ */
+export const resonance: ProjectDetail = {
+  slug: 'resonance',
+  title: 'Resonance',
+  category: 'Post-Grunge / Alternative Rock',
+  image: '/images/albums/Ressonance.webp',
+  imagePositionMobile: 'center 30%',
+  tagline:
+    'Post-grunge e alternative rock sobre superação, redenção e renascimento — a jornada de quem enfrenta a escuridão interior e encontra força para recomeçar.',
+  historyTitle: 'Sobre Resonance',
+  historyLead:
+    'Resonance é um projeto musical e conceitual que explora redenção, superação, luta interior e transformação pessoal. A sonoridade post-grunge e alternative rock carrega emoção densa, metáforas profundas e instrumentação atmosférica para narrar quem enfrenta as próprias sombras e busca um novo começo.',
+  pullQuote:
+    'Por mais difícil que seja, sempre há um caminho para a redenção.',
+  footerNote: 'Resonance · Post-Grunge / Alternative Rock · Alpinópolis-MG',
+  albumsEmptyMessage: 'Os álbuns de Resonance serão adicionados em breve.',
+  historySections: [
+    {
+      id: 'vision',
+      title: 'Visão do projeto',
+      paragraphs: [
+        'Resonance — e o ciclo Echoes of Redemption (Ecos da Redenção) — conta a história de quem carrega o passado como eco e ainda assim tenta se libertar do sofrimento para achar um propósito renovado. Cada faixa é um fragmento dessa travessia, ligada por temas recorrentes: memórias, dor, esperança e renascimento.',
+        'O “eco” no conceito remete a lembranças que não somem fácil; a “redenção” aponta para o ato de soltar o peso e seguir em frente com outra força. O projeto nasceu em Alpinópolis-MG, no universo Wonderland Song.',
+      ],
+    },
+    {
+      id: 'themes',
+      title: 'Temas centrais',
+      paragraphs: [
+        'Superação e resiliência — a luta contra dores antigas e a busca por renovação. Conflito interno e autodescoberta — encarar falhas e incertezas de frente. Libertação e crescimento — quebrar o que ainda prende ao passado. Memórias e reflexões — a presença constante do que já foi, ecoando no presente.',
+        'A narrativa do disco desenha um arco: alguém perdido, um processo de dor e reflexão, e a força de recomeçar. A mensagem final é clara: por mais difícil que seja, sempre há caminho para a redenção.',
+      ],
+    },
+    {
+      id: 'symbols',
+      title: 'Metáforas e simbolismos',
+      paragraphs: [
+        'Fogo e cinzas — dor, destruição e renascimento. Luz e sombra — o dualismo entre esperança e desespero. Oceano e abismo — a sensação de estar perdido e a incerteza do futuro. Tempo e correntes — o peso do que ficou pra trás e a dificuldade de seguir em frente.',
+        'Essas imagens atravessam as letras sem virar catálogo: são o vocabulário emocional do projeto, o jeito de falar de luto interior sem perder a força de quem se ergue.',
+      ],
+    },
+    {
+      id: 'credits',
+      title: 'Créditos',
+      paragraphs: [
+        'Projeto: Resonance · Álbum conceitual: Echoes of Redemption · Tema: superação, redenção e renascimento · Envolvidos: Lameck S. Fernandes, Adriano Lima e Rodrigo Alves · Cidade: Alpinópolis-MG · Gênero: Post-grunge / Alternative rock · Universo Wonderland Song.',
+      ],
+    },
+  ],
+  historyClosing:
+    'Echoes of Redemption é a luta contra o passado e a aceitação do presente — a prova de que recomeçar dói, mas também libera.',
+};
+
+/** Álbuns de Resonance (project-8). */
+export const resonanceAlbums: ProjectAlbum[] = [
+  {
+    slug: 'echoes-of-redemption',
+    title: 'Echoes of Redemption',
+    year: '2026',
+    type: 'Demo',
+    cover: '/images/albums/Ressonance.webp',
+    summary:
+      'Superação, redenção e renascimento — a jornada de quem enfrenta a escuridão interior e encontra força para recomeçar.',
+    description: [
+      'Echoes of Redemption (Ecos da Redenção) é o álbum conceitual de Resonance: post-grunge e alternative rock com carga emocional forte, metáforas densas e instrumentação atmosférica. Cada faixa é um pedaço da travessia de quem enfrenta as próprias sombras e busca um novo começo.',
+      'O disco amarra memórias do passado, dor, esperança e renascimento. O “eco” remete a lembranças que insistam em voltar; a “redenção” é o ato de se libertar do sofrimento e achar propósito de novo. Temas de superação, conflito interno, libertação e reflexão atravessam o conjunto.',
+      'Simbolismos recorrentes — fogo e cinzas, luz e sombra, oceano e abismo, tempo e correntes — dão unidade poética ao arco narrativo: da queda à força de seguir em frente.',
+      'Projeto: Resonance · Álbum: Echoes of Redemption (Demo) · Lameck S. Fernandes, Adriano Lima e Rodrigo Alves · Alpinópolis-MG · Wonderland Song.',
+    ],
+    trackCount: echoesOfRedemptionTracks.length,
+    tracks: echoesOfRedemptionTracks,
+    bandcampUrl:
+      'https://wonderlandsong.bandcamp.com/album/echoes-of-redemption-demo',
+    bandcampLabel: 'DEMO Echos Redemptation',
+    clips: [
+      {
+        id: 'breaking-point',
+        title: 'Breaking Point',
+        subtitle: 'Echoes of Redemption · Resonance',
+        youtubeId: 'b83oG9Ni55c',
+      },
+    ],
+  },
+];
+
 /** All project detail pages keyed by URL slug (`/projects/:slug`). */
 export const projectDetailsBySlug: Record<string, ProjectDetail> = {
   [bunnyLandMusic.slug]: bunnyLandMusic,
@@ -832,6 +921,7 @@ export const projectDetailsBySlug: Record<string, ProjectDetail> = {
   [helenaSon.slug]: helenaSon,
   [ussShenandoah.slug]: ussShenandoah,
   [lameckSouthernBirdsBand.slug]: lameckSouthernBirdsBand,
+  [resonance.slug]: resonance,
 };
 
 /** Discographies keyed by project slug. */
@@ -842,6 +932,7 @@ export const projectAlbumsBySlug: Record<string, ProjectAlbum[]> = {
   [helenaSon.slug]: helenaSonAlbums,
   [ussShenandoah.slug]: ussShenandoahAlbums,
   [lameckSouthernBirdsBand.slug]: lameckSouthernBirdsBandAlbums,
+  [resonance.slug]: resonanceAlbums,
 };
 
 export function getProjectDetailBySlug(slug: string): ProjectDetail | undefined {
