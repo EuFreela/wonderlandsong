@@ -78,7 +78,7 @@ export function ProjectDetailView({ project, albums }: ProjectDetailViewProps) {
         jsonLd={jsonLd}
       />
 
-      <header className="sticky top-0 z-50 flex h-[72px] items-center justify-between border-b border-white/10 bg-black/40 px-[4.5vw] backdrop-blur-[10px]">
+      <header className="sticky top-0 z-50 flex h-[72px] items-center justify-between border-b border-white/10 bg-black px-[4.5vw]">
         <Link
           to="/"
           className="flex flex-col gap-0.5 text-white transition hover:text-white/70"

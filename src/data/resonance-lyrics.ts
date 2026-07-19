@@ -63,41 +63,41 @@ Nothing can stop me, I’m finally free
 Now I see, I’m stronger this way
 
 "I’m stronger this way..."`,
-      `Me arrastei pelas sombras, acorrentado no chão
+      `Me arrastei pelas sombras, acorrentado ao chão
 Cada erro marcado bem fundo em mim
-Mas o tempo não espera, não dá pra voltar
-Chegou a hora — eu preciso me erguer
+Mas o tempo não espera, não volta atrás
+Chegou o momento — eu preciso me erguer
 
-Dá pra sentir o medo se desmanchando
-O peso das correntes caindo no chão
+Posso sentir o medo se desfazendo
+O peso das correntes caindo ao chão
 
 Queimando a dor, eu renasço das cinzas
-O passado se foi, não me segura mais
-Nada me para, tô finalmente livre
-Agora eu vejo — sou mais forte assim
+O passado se foi, não pode me prender
+Nada pode me parar, estou finalmente livre
+Agora vejo — sou mais forte assim
 
 Caminhei entre ruínas, perdido em mim mesmo
-Cada cicatriz, mais uma lição pra contar
+Cada cicatriz, mais uma lição a contar
 Mas a luz brilha forte, me chamando de volta
-Não tem volta — agora é tudo ou nada
+Não há retorno — agora é tudo ou nada
 
-Dá pra sentir o medo se desmanchando
-O peso das correntes caindo no chão
+Posso sentir o medo se desfazendo
+O peso das correntes caindo ao chão
 
 Queimando a dor, eu renasço das cinzas
-O passado se foi, não me segura mais
-Nada me para, tô finalmente livre
-Agora eu vejo — sou mais forte assim
+O passado se foi, não pode me prender
+Nada pode me parar, estou finalmente livre
+Agora vejo — sou mais forte assim
 
-O tempo passou, não tem mais prisão
+O tempo passou, não há mais prisão
 Ecos gritam na escuridão
-Mas eu vou me erguer, eu vou ficar
-Eu sou o fogo — eu não vou sumir!
+Mas eu me erguerei, eu permanecerei
+Eu sou o fogo — eu não vou desaparecer!
 
 Queimando a dor, eu renasço das cinzas
-O passado se foi, não me segura mais
-Nada me para, tô finalmente livre
-Agora eu vejo — sou mais forte assim
+O passado se foi, não pode me prender
+Nada pode me parar, estou finalmente livre
+Agora vejo — sou mais forte assim
 
 "Sou mais forte assim..."`,
     ),
@@ -142,43 +142,43 @@ But I’m stronger now, I won’t be afraid
 This time I fight back, I won’t break
 
 No, I won’t break...`,
-      `Sinto o peso esmagando em cima de mim
-Cada passo fica mais difícil de acreditar
+      `Sinto o peso esmagando sobre mim
+Cada passo se torna mais difícil de acreditar
 Perdido nos ecos dos meus erros do passado
-Me afogando nas palavras que eu não aguentei
+Afogando-me nas palavras que não pude suportar
 
-Mas eu não vou deixar isso me destruir
+Mas eu não deixarei que isso me destrua
 Já estive perto do abismo antes
 
-Esse é o meu ponto de ruptura — não vou cair de novo
+Este é o meu ponto de ruptura — não cairei de novo
 Já passei pelo fogo, já senti toda a dor
-Mas agora eu tô mais forte, não vou ter medo
-Dessa vez eu luto de volta, eu não vou quebrar
+Mas agora estou mais forte, não terei medo
+Desta vez luto de volta, não vou me quebrar
 
-Cada cicatriz conta uma história que eu não apago
-Lutando contra as vozes que não param de vir
-Elas me puxam pro fundo, mas eu não vou me afogar
-Vou achar a luz, vou ficar de pé
+Cada cicatriz conta uma história que não posso apagar
+Lutando contra as vozes que não desaparecem
+Elas me puxam para o fundo, mas eu não me afogarei
+Encontrarei a luz, permanecerei de pé
 
-Mas eu não vou deixar isso me destruir
+Mas eu não deixarei que isso me destrua
 Já estive perto do abismo antes
 
-Esse é o meu ponto de ruptura — não vou cair de novo
+Este é o meu ponto de ruptura — não cairei de novo
 Já passei pelo fogo, já senti toda a dor
-Mas agora eu tô mais forte, não vou ter medo
-Dessa vez eu luto de volta, eu não vou quebrar
+Mas agora estou mais forte, não terei medo
+Desta vez luto de volta, não vou me quebrar
 
 Já me perdi mil vezes
-Mas eu vou me erguer, vou pegar o que é meu
-Sem mais fuga, sem mais medo
-Eu fico de pé — ainda tô aqui
+Mas eu me erguerei, tomarei o que é meu
+Sem mais fugas, sem mais medo
+Permaneço de pé — ainda estou aqui
 
-Esse é o meu ponto de ruptura — não vou cair de novo
+Este é o meu ponto de ruptura — não cairei de novo
 Já passei pelo fogo, já senti toda a dor
-Mas agora eu tô mais forte, não vou ter medo
-Dessa vez eu luto de volta, eu não vou quebrar
+Mas agora estou mais forte, não terei medo
+Desta vez luto de volta, não vou me quebrar
 
-Não, eu não vou quebrar...`,
+Não, eu não vou me quebrar...`,
     ),
   },
   {
@@ -228,49 +228,49 @@ I built this prison with my own hands
 The chains grow tighter, no mercy stands
 If all that remains is the weight of the pain
 What awaits me beyond the flames?`,
-      `O tempo parou, as paredes tão se fechando
+      `O tempo parou, as paredes estão se fechando
 O silêncio chama pelo meu nome
 Preso em memórias que nunca se apagam
-Carregando o peso de tudo o que eu sou
+Carregando o peso de tudo o que sou
 
-Sinto o frio correndo nas veias
-Cada erro esculpido na pele
+Sinto o frio correndo em minhas veias
+Cada erro esculpido em minha pele
 A luz se apagou, as sombras me cercam
-Sou só um eco dentro de mim
-Os rostos que eu amei viraram fantasma
-Olhos vazios cheios de desprezo
-Tentei correr, mas não tem fuga
-Meu destino tá selado no escuro incerto
+Sou apenas um eco dentro de mim
+Os rostos que amei tornaram-se fantasmas
+Seus olhos vazios transbordam de desprezo
+Tentei correr, mas não há fuga
+Meu destino está selado no escuro incerto
 
-E se não tiver redenção pra mim?
-Se a minha voz for engolida pelo vento?
+E se não houver redenção para mim?
+Se minha voz for engolida pelo vento?
 O tempo é um carcereiro impiedoso
-E eu sou prisioneiro do que eu virei
+E eu sou prisioneiro do que me tornei
 
-Eu construí essa prisão com as minhas próprias mãos
-As correntes apertam, não tem piedade
-Se tudo que sobra é o peso da dor
+Construí esta prisão com as minhas próprias mãos
+As correntes apertam, não há piedade
+Se tudo o que resta é o peso da dor
 O que me espera além das chamas?
 
-Minhas preces se perdem num céu vazio
+Minhas preces se perdem em um céu vazio
 O vazio responde e me arrasta de volta
 
-E se não tiver redenção pra mim?
-Se a minha voz for engolida pelo vento?
+E se não houver redenção para mim?
+Se minha voz for engolida pelo vento?
 
-Eu construí essa prisão com as minhas próprias mãos
-As correntes apertam, não tem piedade
-Se tudo que sobra é o peso da dor
+Construí esta prisão com as minhas próprias mãos
+As correntes apertam, não há piedade
+Se tudo o que resta é o peso da dor
 O que me espera além das chamas?
 
 Os dias se arrastam como correntes pesadas
-O sol não toca essa jaula congelada
-Se tem esperança, onde ela tá agora?
-Se tem redenção, por que eu ainda sangro?
+O sol não toca esta jaula congelada
+Se há esperança, onde ela está agora?
+Se há redenção, por que ainda sangro?
 
-Eu construí essa prisão com as minhas próprias mãos
-As correntes apertam, não tem piedade
-Se tudo que sobra é o peso da dor
+Construí esta prisão com as minhas próprias mãos
+As correntes apertam, não há piedade
+Se tudo o que resta é o peso da dor
 O que me espera além das chamas?`,
     ),
   },
@@ -305,7 +305,6 @@ And the light I had is lost to the sea
 Time devours all it touches
 And I am nothing but another scar
 
-2x
 And what if I fade into silence?
 What if I vanish like dust in the wind?
 
@@ -323,51 +322,50 @@ I am breaking down, worn away by time
 Rust is claiming all I used to be
 Shadows pull me into a nameless abyss
 And the light I had is lost to the sea`,
-      `Sinto a ferrugem se espalhando sob a pele
-Cada cicatriz é uma história que eu não apago
+      `Sinto a ferrugem se espalhando sob minha pele
+Cada cicatriz é uma história que não posso apagar
 O espelho reflete um estranho me encarando
 Um casco vazio, perdido no tempo e no espaço
 Os dias pesam como correntes de ferro
-Me segurando, me puxando pra trás
-Um fantasma sem nome, sem pra onde ir
-Esperando uma mão que nunca vem
+Me segurando, me puxando para trás
+Um fantasma sem nome, sem ter para onde ir
+Esperando por uma mão que nunca chega
 
-E se eu sumir no silêncio?
-Se eu virar poeira no vento?
-A ferrugem afunda nos meus ossos
-Não sobra nada além do eco dentro de mim
+E se eu desaparecer no silêncio?
+E se eu sumir como poeira ao vento?
+A ferrugem afunda em meus ossos
+Nada resta além do eco dentro de mim
 
-A cada dia me levam mais longe
+A cada dia sou levado mais longe
 Cada sombra sussurra o meu nome
 
-E se eu sumir no silêncio?
-Se eu virar poeira no vento?
+E se eu desaparecer no silêncio?
+E se eu sumir como poeira ao vento?
 
-Tô desmoronando, desgastado pelo tempo
-A ferrugem come tudo o que eu fui
-As sombras me puxam pra um abismo sem nome
+Estou desmoronando, desgastado pelo tempo
+A ferrugem consome tudo o que eu fui
+As sombras me puxam para um abismo sem nome
 E a luz que eu tinha se perdeu no mar
 
 O tempo devora tudo o que toca
-E eu sou só mais uma cicatriz
+E eu sou apenas mais uma cicatriz
 
-2x
-E se eu sumir no silêncio?
-Se eu virar poeira no vento?
+E se eu desaparecer no silêncio?
+E se eu sumir como poeira ao vento?
 
-Tô desmoronando, desgastado pelo tempo
-A ferrugem come tudo o que eu fui
-As sombras me puxam pra um abismo sem nome
+Estou desmoronando, desgastado pelo tempo
+A ferrugem consome tudo o que eu fui
+As sombras me puxam para um abismo sem nome
 E a luz que eu tinha se perdeu no mar
 
-Nada para as mãos do tempo
+Nada pode parar as mãos do tempo
 Ele consome, quebra, apaga
 Cada memória, cada promessa
-Sumindo num piscar de olhos
+Desaparecendo num piscar de olhos
 
-Tô desmoronando, desgastado pelo tempo
-A ferrugem come tudo o que eu fui
-As sombras me puxam pra um abismo sem nome
+Estou desmoronando, desgastado pelo tempo
+A ferrugem consome tudo o que eu fui
+As sombras me puxam para um abismo sem nome
 E a luz que eu tinha se perdeu no mar`,
     ),
   },
@@ -420,40 +418,40 @@ O tempo passou sem pedir licença
 Levando promessas que ninguém guardou
 
 Ela olha no espelho e vê um rosto distante
-Marcado pelo passado que ela costumava conhecer
-Os sonhos que guardava viraram ruína
+Marcado pelo passado que costumava conhecer
+Os sonhos que guardava tornaram-se ruínas
 E agora as cicatrizes contam o que a memória apagou
 
 Se ela pudesse voltar e refazer os passos
-Se pudesse sentir sem medo de cair
+Se pudesse sentir sem o medo de cair
 Mas a vida é escrita em linhas quebradas
-E ninguém ensinou como reconstruir
+E ninguém lhe ensinou como reconstruir
 
 Mas o passado não pode definir
-Se tem um amanhã, ela precisa seguir
-Mesmo que a dor faça ela hesitar
-As cicatrizes do amanhã vão lembrar
+Se houver um amanhã, ela precisa seguir
+Mesmo que a dor a faça hesitar
+As cicatrizes do amanhã a farão lembrar
 
 Ela caminha entre sombras e ecos
-Sente os fantasmas do tempo chamando o nome dela
+Sente os fantasmas do tempo chamando o seu nome
 
 Se ela pudesse voltar e refazer os passos
-Se pudesse sentir sem medo de cair
+Se pudesse sentir sem o medo de cair
 
 Mas o passado não pode definir
-Se tem um amanhã, ela precisa seguir
-Mesmo que a dor faça ela hesitar
-As cicatrizes do amanhã vão lembrar
+Se houver um amanhã, ela precisa seguir
+Mesmo que a dor a faça hesitar
+As cicatrizes do amanhã a farão lembrar
 
-As vozes da dúvida sussurram no ouvido
-Que é mais fácil ficar do que recomeçar
+As vozes da dúvida sussurram em seu ouvido
+Que é mais fácil permanecer do que recomeçar
 Mas a vida pulsa além das feridas
-E talvez algo espere no fim da estrada
+E talvez algo a espere no fim da estrada
 
 Mas o passado não pode definir
-Se tem um amanhã, ela precisa seguir
-Mesmo que a dor faça ela hesitar
-As cicatrizes do amanhã vão lembrar`,
+Se houver um amanhã, ela precisa seguir
+Mesmo que a dor a faça hesitar
+As cicatrizes do amanhã a farão lembrar`,
     ),
   },
   {
@@ -499,46 +497,46 @@ You're addicted to pain, you don't know escape
 Always running back to what makes you break
 Nothing can save you, ‘cause you won’t change
 You’d rather be lost than break from these chains`,
-      `Você se agarrou na mentira por tempo demais
-Cada palavra afiada como lâmina fria
-O castelo que você construiu começa a ruir
-Mas você prefere fechar os olhos
+      `Você se agarrou à mentira por tempo demais
+Cada palavra afiada como uma lâmina fria
+O castelo que construiu começa a ruir
+Mas prefere fechar os olhos
 
 Cada queda foi uma escolha sua
 Cada ferida, um ciclo que se repete
-Você sangra e chama de redenção
+Você sangra e chama isso de redenção
 Mas só afunda ainda mais
 
-Se tudo tá desmoronando
-Por que você ainda se recusa a sair?
+Se tudo está desmoronando
+Por que ainda se recusa a sair?
 
 Você é viciado na dor, não sabe escapar
-Sempre volta pro que te faz quebrar
-Nada te salva, porque você não muda
-Prefere se perder do que quebrar essas correntes
+Sempre volta para o que o faz quebrar
+Nada pode salvá-lo, pois você não muda
+Prefere se perder a romper essas correntes
 
-Você veste as cicatrizes como troféu
+Você exibe as cicatrizes como um troféu
 Como se o mundo precisasse ver
-Mas ninguém te tira daqui
+Mas ninguém pode tirá-lo daqui
 Se você mesmo não quiser se libertar
 
-Se tudo tá desmoronando
-Por que você ainda se recusa a sair?
+Se tudo está desmoronando
+Por que ainda se recusa a sair?
 
 Você é viciado na dor, não sabe escapar
-Sempre volta pro que te faz quebrar
-Nada te salva, porque você não muda
-Prefere se perder do que quebrar essas correntes
+Sempre volta para o que o faz quebrar
+Nada pode salvá-lo, pois você não muda
+Prefere se perder a romper essas correntes
 
 As correntes que você não vê
-São as mesmas que te seguram aqui
-O que mais você precisa perder
-Pra admitir que é hora de sumir?
+São as mesmas que o seguram aqui
+O que mais precisa perder
+Para admitir que é hora de desaparecer?
 
 Você é viciado na dor, não sabe escapar
-Sempre volta pro que te faz quebrar
-Nada te salva, porque você não muda
-Prefere se perder do que quebrar essas correntes`,
+Sempre volta para o que o faz quebrar
+Nada pode salvá-lo, pois você não muda
+Prefere se perder a romper essas correntes`,
     ),
   },
   {
@@ -574,33 +572,33 @@ If I’m just a name lost in the wind
 Then who am I without the past?
 
 "Echoes never fade away..."`,
-      `Os quadros na parede ainda contam as histórias
-De dias que pareciam nunca sumir
+      `Os quadros na parede ainda contam suas histórias
+De dias que pareciam nunca desaparecer
 Mas o tempo pintou rachaduras na memória
 E agora só restam sombras
 
 Tentei apagar os nomes no vidro
-Mas o frio sempre traz eles de volta
-O que sobra quando o passado é tudo o que você tem?
+Mas o frio sempre os traz de volta
+O que resta quando o passado é tudo o que se tem?
 
 Ecos que restaram gritam na noite
-Sussurram promessas que eu nunca cumpri
-Eu corro, mas tudo volta pra mim
-Sou só o reflexo do que eu já perdi
+Sussurram promessas que nunca cumpri
+Corro, mas tudo retorna a mim
+Sou apenas o reflexo do que já perdi
 
-As ruas parecem iguais, mas algo mudou
+As ruas parecem as mesmas, mas algo mudou
 Não reconheço os lugares que um dia chamei de lar
-Cada porta fechada soa como aviso
-De que não tem caminho de volta pra onde eu pertenço
+Cada porta fechada soa como um aviso
+De que não há caminho de volta para onde pertenço
 
 Ecos que restaram gritam na noite
-Sussurram promessas que eu nunca cumpri
-Eu corro, mas tudo volta pra mim
-Sou só o reflexo do que eu já perdi
+Sussurram promessas que nunca cumpri
+Corro, mas tudo retorna a mim
+Sou apenas o reflexo do que já perdi
 
-Se tudo o que eu tenho são memórias que doem
-O que acontece se eu esquecer?
-Se eu sou só um nome perdido no vento
+Se tudo o que tenho são memórias que doem
+O que acontece se eu as esquecer?
+Se sou apenas um nome perdido no vento
 Então quem sou eu sem o passado?
 
 "Os ecos nunca desaparecem..."`,
@@ -649,44 +647,44 @@ Speak now, don’t let them silence your voice
 We are many, we won’t be controlled
 Silence has never brought liberation
 Be the force that shatters the chains`,
-      `A gente ouve as promessas que nunca nos alcançam
-Vende verdades que nunca chegam
+      `Ouvimos as promessas que nunca nos alcançam
+Vendemos verdades que nunca chegam
 A justiça se esconde atrás dos muros
-Enquanto a esperança se apaga no escuro
+Enquanto a esperança se apaga na escuridão
 
-Os gritos são pagos pra ficar calados
+Os gritos são pagos para permanecerem calados
 A verdade enterrada sob mentiras frias
-Palácios se erguem em cima da miséria
+Palácios se erguem sobre a miséria
 E eles chamam isso de evolução
 
-Mas se a gente ficar junto, a gente fica mais forte
-Se der as mãos, ninguém nos derruba
+Mas se estivermos juntos, seremos mais fortes
+Se dermos as mãos, ninguém poderá nos derrubar
 
-Fala agora, não deixa calarem a sua voz
-Somos muitos, não vamos ser controlados
+Fale agora, não deixe que calem a sua voz
+Somos muitos, não seremos controlados
 O silêncio nunca trouxe libertação
 Seja a força que quebra as correntes
 
-Eles compram o medo pra nos manter cegos
-Desviam o caminho pra a gente não ver
+Eles compram o medo para nos manter cegos
+Desviam o caminho para que não possamos ver
 Mas a verdade ainda queima dentro de nós
-E as mãos deles nunca vão apagar
+E as mãos deles nunca poderão apagá-la
 
-Mas se a gente ficar junto, a gente fica mais forte
-Se der as mãos, ninguém nos derruba
+Mas se estivermos juntos, seremos mais fortes
+Se dermos as mãos, ninguém poderá nos derrubar
 
-Fala agora, não deixa calarem a sua voz
-Somos muitos, não vamos ser controlados
+Fale agora, não deixe que calem a sua voz
+Somos muitos, não seremos controlados
 O silêncio nunca trouxe libertação
 Seja a força que quebra as correntes
 
-Quantos mais precisam cair pra enxergarem?
+Quantos mais precisam cair para que enxerguem?
 Quantos gritos são afogados pela ganância?
 Se o preço do silêncio for a sua liberdade
-O que sobra além do escuro?
+O que restará além da escuridão?
 
-Fala agora, não deixa calarem a sua voz
-Somos muitos, não vamos ser controlados
+Fale agora, não deixe que calem a sua voz
+Somos muitos, não seremos controlados
 O silêncio nunca trouxe libertação
 Seja a força que quebra as correntes`,
     ),
@@ -741,48 +739,48 @@ Or let me fall without looking back
 "I just wanted one more chance..."`,
       `O vento sussurra o peso da minha culpa
 Cada passo me leva mais perto do fim
-Olho pra trás e vejo as sombras
-Mas a luz parece tão longe agora
-O chão tá se partindo sob os meus pés
-Cada erro volta pra me assombrar
-Eu continuo correndo, mas a estrada some
-Ainda tem um caminho pra voltar?
+Olho para trás e vejo as sombras
+Mas a luz parece tão distante agora
+O chão se parte sob meus pés
+Cada erro volta para me assombrar
+Continuo correndo, mas a estrada desaparece
+Ainda há um caminho para voltar?
 
-O tempo me julga, me forçando a enxergar
-Mas será tarde demais pra me libertar?
+O tempo me julga, forçando-me a enxergar
+Mas será tarde demais para me libertar?
 
-À beira do abismo, tentando segurar
-Mas o vento me empurra, eu não consigo parar
-Se tem caminho de volta, me mostra agora
-Ou me deixa cair sem olhar pra trás
+À beira do abismo, tentando me segurar
+Mas o vento me empurra, não consigo parar
+Se há um caminho de volta, mostre-me agora
+Ou deixe-me cair sem olhar para trás
 
-Ecos do passado continuam chamando meu nome
+Os ecos do passado continuam chamando o meu nome
 Cada cicatriz, um lembrete cruel
-Se eu pudesse mudar tudo o que eu fiz
-Eu ainda seria o mesmo?
+Se eu pudesse mudar tudo o que fiz
+Ainda seria o mesmo?
 
-O tempo me julga, me forçando a enxergar
-Mas será tarde demais pra me libertar?
+O tempo me julga, forçando-me a enxergar
+Mas será tarde demais para me libertar?
 
-À beira do abismo, tentando segurar
-Mas o vento me empurra, eu não consigo parar
-Se tem caminho de volta, me mostra agora
-Ou me deixa cair sem olhar pra trás
+À beira do abismo, tentando me segurar
+Mas o vento me empurra, não consigo parar
+Se há um caminho de volta, mostre-me agora
+Ou deixe-me cair sem olhar para trás
 
-Ecos do passado continuam chamando meu nome
+Os ecos do passado continuam chamando o meu nome
 Cada cicatriz, um lembrete cruel
-Se eu pudesse mudar tudo o que eu fiz
-Eu ainda seria o mesmo?
+Se eu pudesse mudar tudo o que fiz
+Ainda seria o mesmo?
 
-E se tudo isso for só um teste?
-E se o medo for só ilusão?
+E se tudo isso for apenas um teste?
+E se o medo for apenas uma ilusão?
 Talvez eu precise cair
-Pra aprender a me levantar de novo
+Para aprender a me levantar de novo
 
-À beira do abismo, tentando segurar
-Mas o vento me empurra, eu não consigo parar
-Se tem caminho de volta, me mostra agora
-Ou me deixa cair sem olhar pra trás
+À beira do abismo, tentando me segurar
+Mas o vento me empurra, não consigo parar
+Se há um caminho de volta, mostre-me agora
+Ou deixe-me cair sem olhar para trás
 "Eu só queria mais uma chance..."`,
     ),
   },
@@ -830,45 +828,45 @@ Time has stolen all that I had left
 If there’s a way out, I can’t see it
 Or am I too blind to understand?`,
       `Mais um dia, ainda lutando contra a minha mente
-Cada pensamento me puxa pra baixo
-Eu continuo correndo, mas não tem escapatória
-O passado não vai me soltar dessa vez
+Cada pensamento continua a me puxar para baixo
+Continuo correndo, mas não há escapatória
+O passado não me deixará ir desta vez
 
-Mentiras foram a única coisa que sobrou
+Mentiras foram a única coisa que me restou
 Promessas quebradas ecoam no vazio
-Se tem um jeito de quebrar essas correntes
-Então por que eu continuo voltando pra cá?
+Se há um jeito de quebrar essas correntes
+Então por que continuo a voltar para cá?
 
-Eu tentei escapar, mas o ciclo nunca termina
-Se isso é tudo o que sobrou, então me diz...
+Tentei escapar, mas o ciclo nunca termina
+Se isso é tudo o que restou, então diga-me...
 
-Não tem mais volta, tô preso aqui
-O tempo roubou tudo o que eu ainda tinha
-Se tem uma saída, eu não consigo ver
-Ou eu tô cego demais pra entender?
+Não há mais retorno, estou preso aqui
+O tempo roubou tudo o que me restava
+Se há uma saída, não consigo vê-la
+Ou estou cego demais para compreender?
 
-Cada escolha me trouxe a esse lugar
+Cada escolha me trouxe a este lugar
 Cada erro queimado fundo nas cicatrizes
-Olho no espelho, mas não tem mais nada
-Só sombras do que um dia eu fui
+Olho no espelho, mas não resta mais nada
+Apenas sombras do que um dia fui
 
-Eu tentei escapar, mas o ciclo nunca termina
-Se isso é tudo o que sobrou, então me diz...
+Tentei escapar, mas o ciclo nunca termina
+Se isso é tudo o que restou, então diga-me...
 
-Não tem mais volta, tô preso aqui
-O tempo roubou tudo o que eu ainda tinha
-Se tem uma saída, eu não consigo ver
-Ou eu tô cego demais pra entender?
+Não há mais retorno, estou preso aqui
+O tempo roubou tudo o que me restava
+Se há uma saída, não consigo vê-la
+Ou estou cego demais para compreender?
 
-Quanto tempo ainda até eu quebrar?
-Quanto tempo ainda até eu sumir?
-Se a redenção for só mais uma mentira
+Quanto tempo ainda até eu me quebrar?
+Quanto tempo ainda até eu desaparecer?
+Se a redenção for apenas mais uma mentira
 Então que me levem embora!
 
-Não tem mais volta, tô preso aqui
-O tempo roubou tudo o que eu ainda tinha
-Se tem uma saída, eu não consigo ver
-Ou eu tô cego demais pra entender?`,
+Não há mais retorno, estou preso aqui
+O tempo roubou tudo o que me restava
+Se há uma saída, não consigo vê-la
+Ou estou cego demais para compreender?`,
     ),
   },
   {
@@ -903,35 +901,35 @@ I see you now, through time and pain
 We’re still the same, just shadows that changed
 If I could go back, fix what was lost
 Would we still hear the echoes of us?`,
-      `A gente era jovem, sem medo de cair
-Corria contra o tempo, sem olhar pra trás
+      `Éramos jovens, sem medo de cair
+Corríamos contra o tempo, sem olhar para trás
 Mas os dias passaram, as vozes se calaram
-E o que restou foi o silêncio entre a gente
+E o que restou foi o silêncio entre nós
 
 Eu te vejo agora, através do tempo e da dor
-Ainda somos os mesmos — só sombras que mudaram
+Ainda somos os mesmos — apenas sombras que mudaram
 Se eu pudesse voltar, consertar o que se perdeu
-Será que a gente ainda ouviria os ecos de nós?
+Será que ainda ouviríamos os ecos de nós?
 
-A gente ouviu promessas que nunca cumpriu
-Deixou o orgulho falar mais alto que o coração
-Mas se a gente tá aqui, se ainda sente
-Talvez seja hora de achar redenção
+Ouvimos promessas que nunca cumprimos
+Deixamos o orgulho falar mais alto que o coração
+Mas se estamos aqui, se ainda sentimos
+Talvez seja hora de encontrar a redenção
 
 Eu te vejo agora, através do tempo e da dor
-Ainda somos os mesmos — só sombras que mudaram
+Ainda somos os mesmos — apenas sombras que mudaram
 Se eu pudesse voltar, consertar o que se perdeu
-Será que a gente ainda ouviria os ecos de nós?
+Será que ainda ouviríamos os ecos de nós?
 
-O tempo tentou apagar, mas nunca nos quebrou
-As cicatrizes contam a história, mas não definem a gente
-Se ainda tem algo em nós que valha a luta
+O tempo tentou nos apagar, mas nunca nos quebrou
+As cicatrizes contam nossa história, mas não nos definem
+Se ainda há algo em nós que valha a luta
 Então talvez seja hora de tentar de novo
 
 Eu te vejo agora, através do tempo e da dor
-Ainda somos os mesmos — só sombras que mudaram
+Ainda somos os mesmos — apenas sombras que mudaram
 Se eu pudesse voltar, consertar o que se perdeu
-Será que a gente ainda ouviria os ecos de nós?`,
+Será que ainda ouviríamos os ecos de nós?`,
     ),
   },
   {
@@ -966,35 +964,35 @@ I see the dawn breaking through the night
 Filling the sky with endless light
 A voice inside whispers my name
 Telling me I’ll never be the same`,
-      `Hoje eu ouvi palavras que mudaram tudo
-Um caminho novo que eu nunca pensei encontrar
-O coração disparou, caí de joelhos
-E uma oração escapou dos lábios
+      `Hoje ouvi palavras que mudaram tudo
+Um novo caminho que nunca pensei encontrar
+Meu coração disparou, caí de joelhos
+E uma oração escapou dos meus lábios
 
 Vejo o amanhecer rompendo a escuridão
 Preenchendo o céu com uma luz sem fim
-Uma voz dentro de mim sussurra meu nome
-Dizendo que eu nunca mais vou ser o mesmo
+Uma voz dentro de mim sussurra o meu nome
+Dizendo que nunca mais serei o mesmo
 
-Eu já temi o que não podia ver
-Mas agora acho esperança onde antes era só escuridão
+Já temi o que não podia ver
+Mas agora encontro esperança onde antes havia escuridão
 O tempo me derrubou tantas vezes
-Mas hoje eu sei que nunca estive sozinho
+Mas hoje sei que nunca estive sozinho
 
 Vejo o amanhecer rompendo a escuridão
 Preenchendo o céu com uma luz sem fim
-Uma voz dentro de mim sussurra meu nome
-Dizendo que eu nunca mais vou ser o mesmo
+Uma voz dentro de mim sussurra o meu nome
+Dizendo que nunca mais serei o mesmo
 
-Sei que não vou ser perfeito, mas eu vou tentar
-Cada erro vai ser um passo pra acertar
-E quando o dia chegar, eu seguro a sua mão
-E prometo que nunca vou te deixar partir
+Sei que não serei perfeito, mas tentarei
+Cada erro será um passo para acertar
+E quando o dia chegar, segurarei a sua mão
+E prometerei que nunca a deixarei partir
 
 Vejo o amanhecer rompendo a escuridão
 Preenchendo o céu com uma luz sem fim
-Uma voz dentro de mim sussurra meu nome
-Dizendo que eu nunca mais vou ser o mesmo`,
+Uma voz dentro de mim sussurra o meu nome
+Dizendo que nunca mais serei o mesmo`,
     ),
   },
   {
@@ -1031,37 +1029,37 @@ Through the pain, I find salvation
 A voice inside says, "you’re not alone"
 
 "You’re not alone..."`,
-      `O peso da noite me arrasta de novo
-Sussurros de dúvida ecoam na mente
-Olho pro céu, procurando sentido
+      `O peso da noite me arrasta novamente
+Sussurros de dúvida ecoam em minha mente
+Olho para o céu, buscando sentido
 Mas as estrelas já não brilham mais
 
 Você consegue ouvir os ecos da redenção?
-Me chamando de volta da escuridão
-Através da dor, eu encontro salvação
-Uma voz me diz: "você não tá sozinho"
+Chamando-me de volta da escuridão
+Através da dor, encontro a salvação
+Uma voz me diz: "você não está sozinho"
 
-Andei pelo fogo, me perdi nas brasas
-Cada passo parecia ruir
+Andei pelo fogo, perdi-me nas brasas
+Cada passo parecia desmoronar
 Mas bem no fundo ainda resta uma chama
-Uma promessa quieta de recomeçar
+Uma promessa silenciosa de recomeçar
 
 Você consegue ouvir os ecos da redenção?
-Me chamando de volta da escuridão
-Através da dor, eu encontro salvação
-Uma voz me diz: "você não tá sozinho"
+Chamando-me de volta da escuridão
+Através da dor, encontro a salvação
+Uma voz me diz: "você não está sozinho"
 
 O passado não me quebra, as correntes caem
-Cada ferida moldou quem eu sou hoje
+Cada ferida moldou quem sou hoje
 No silêncio, no medo
-Eu ainda acredito — eu ainda tô aqui
+Ainda acredito — ainda estou aqui
 
 Você consegue ouvir os ecos da redenção?
-Me chamando de volta da escuridão
-Através da dor, eu encontro salvação
-Uma voz me diz: "você não tá sozinho"
+Chamando-me de volta da escuridão
+Através da dor, encontro a salvação
+Uma voz me diz: "você não está sozinho"
 
-"Você não tá sozinho..."`,
+"Você não está sozinho..."`,
     ),
   },
   {
@@ -1104,43 +1102,43 @@ Through the fire, through the rain
 I will rise, I will remain
 
 "I will remain..."`,
-      `Eu caminhei pelo fogo, senti a chuva
-Cada passo marcado pela dor
+      `Caminhei pelo fogo, senti a chuva
+Cada passo foi marcado pela dor
 Mas entre as cinzas, uma voz permanece
-Me chamando além das chamas
+Chamando-me além das chamas
 
-Eu tava perdido dentro da tempestade?
-Ou só com medo de quebrar o padrão?
+Estive perdido dentro da tempestade?
+Ou apenas com medo de quebrar o padrão?
 
-Você consegue me levar mais alto, além da dor?
-Me mostrar um mundo onde o medo some
+Você pode me levar mais alto, além da dor?
+Me mostrar um mundo onde o medo desaparece
 Através do fogo, através da chuva
-Eu me ergo — eu permaneço
+Eu me erguerei, eu permanecerei
 
 Vejo o amanhecer romper o céu
-Não tô mais preso em mentiras sem fim
-O passado se foi, mas eu ainda tô de pé
+Não estou mais acorrentado a mentiras sem fim
+O passado se foi, mas ainda estou de pé
 Com os olhos abertos e as mãos livres
 
-Eu tava perdido dentro da tempestade?
-Ou só com medo de quebrar o padrão?
+Estive perdido dentro da tempestade?
+Ou apenas com medo de quebrar o padrão?
 
-Você consegue me levar mais alto, além da dor?
-Me mostrar um mundo onde o medo some
+Você pode me levar mais alto, além da dor?
+Me mostrar um mundo onde o medo desaparece
 Através do fogo, através da chuva
-Eu me ergo — eu permaneço
+Eu me erguerei, eu permanecerei
 
-O passado não me segura — achei meu caminho
-Não tô mais me afogando no ontem
+O passado não me prenderá — encontrei meu caminho
+Não me afogo mais no ontem
 Em cada queda, em cada luta
-Ainda acredito, eu vejo a luz
+Ainda acredito, vejo a luz
 
-Você consegue me levar mais alto, além da dor?
-Me mostrar um mundo onde o medo some
+Você pode me levar mais alto, além da dor?
+Me mostrar um mundo onde o medo desaparece
 Através do fogo, através da chuva
-Eu me ergo — eu permaneço
+Eu me erguerei, eu permanecerei
 
-"Eu permaneço..."`,
+"Eu permanecerei..."`,
     ),
   },
 ];
