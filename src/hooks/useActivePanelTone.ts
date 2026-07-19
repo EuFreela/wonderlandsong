@@ -37,7 +37,8 @@ export function useActivePanelTone(projects: Project[]): HeaderTone {
       activeIdRef.current = id;
 
       if (!id) {
-        applyTone('dark');
+        // Keep dark header (light text) until a panel is known — avoids a flash of gray/white.
+        applyTone('light');
         return;
       }
 
@@ -49,7 +50,7 @@ export function useActivePanelTone(projects: Project[]): HeaderTone {
     );
 
     if (panels.length === 0) {
-      applyTone('dark');
+      applyTone('light');
       return () => {
         cancelled = true;
       };

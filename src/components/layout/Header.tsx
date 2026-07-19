@@ -24,11 +24,21 @@ const navItems = [
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const tone = useActivePanelTone(projects);
   const isLightText = tone === 'light';
 
   useEffect(() => {
     setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    const updateScroll = () => {
+      setScrolled(window.scrollY > 8);
+    };
+    updateScroll();
+    window.addEventListener('scroll', updateScroll, { passive: true });
+    return () => window.removeEventListener('scroll', updateScroll);
   }, []);
 
   useEffect(() => {
@@ -107,10 +117,15 @@ function Header() {
     <>
       <header
         data-tone={tone}
-        className={`sticky top-0 z-[100] flex h-[72px] items-center justify-between border-b px-[4.5vw] backdrop-blur-[10px] transition-colors duration-300 ${
+        data-scrolled={scrolled ? 'true' : 'false'}
+        className={`sticky top-0 z-[100] flex h-[72px] items-center justify-between border-b px-[4.5vw] transition-[background-color,border-color,backdrop-filter] duration-300 ${
           isLightText
-            ? 'border-white/15 bg-black/25 text-white'
-            : 'border-black/[0.06] bg-white/90 text-[#171717]'
+            ? scrolled
+              ? 'border-white/15 bg-black/25 text-white backdrop-blur-[10px]'
+              : 'border-white/10 bg-black text-white'
+            : scrolled
+              ? 'border-black/[0.06] bg-white/90 text-[#171717] backdrop-blur-[10px]'
+              : 'border-black/[0.06] bg-white text-[#171717]'
         }`}
       >
         <Link
