@@ -1,12 +1,20 @@
 # SDD — Wonderland Song Parallax Portfolio
 
 **Metodologia:** SDD — **Spec-Driven Development** (desenvolvimento orientado por especificação)  
-**Status da spec:** viva (atualizado em 2026-07-13)  
+**Versão do produto:** `0.8.0` (alinhada a `package.json`)  
+**Status da spec:** viva (atualizado em 2026-07-19)  
 **Repositório:** `wonderlandsong2`  
 **Fase atual:** front-end rico com dados locais tipados (sem backend)  
 **Publicação:** em deploy (sem domínio `.com` próprio; URL pública via hospedagem / `VITE_SITE_URL`)
 
 Este arquivo é a **especificação viva** do produto no fluxo Spec-Driven Development. Ele descreve a visão, o que já foi implementado e o que permanece em backlog. O código deve seguir a spec; mudanças de escopo atualizam a spec junto.
+
+### Histórico de versões (produto)
+
+| Versão | Data | Destaque |
+| --- | --- | --- |
+| **0.8.0** | 2026-07-19 | **Resonance** na home + detalhe + álbum *Echoes of Redemption* (14 faixas EN/PT, preview `.webm`, clip YouTube); separação de conteúdo projeto vs. álbum; Lighthouse mobile 98 / desktop 100 (performance) |
+| 0.7.x | ≤2026-07-13 | Home com 7 painéis, discografias BLM/RNH/AGM/HS/USS/LSBB, SEO, parallax, letras em modal |
 
 ---
 
@@ -17,7 +25,7 @@ Este arquivo é a **especificação viva** do produto no fluxo Spec-Driven Devel
 | **Nome** | Wonderland Song |
 | **Tipo** | Site musical, artístico e portfólio narrativo |
 | **Referência estrutural** | POFO Portfolio Parallax (ideia de layout, não cópia) |
-| **Stack principal** | React 18, TypeScript, Vite 5, Tailwind CSS 3, Framer Motion, React Router 6 |
+| **Stack principal** | React 18, TypeScript, Vite 5, Tailwind CSS 3, React Router 6, React Helmet Async |
 | **Idioma** | Português (pt-BR) |
 | **Possibilidade futura** | Português e inglês |
 | **URL pública (SEO)** | URL do **deploy** (definir com `VITE_SITE_URL` no build). Não há domínio `.com` próprio documentado. |
@@ -100,9 +108,9 @@ O visitante deve perceber: profundidade, movimento, continuidade, elegância, mi
 | Objetivo | Status |
 | --- | --- |
 | Home parallax em painéis de tela cheia | **Feito** |
-| Exibir projetos / selos artísticos | **Feito** (7 painéis) |
+| Exibir projetos / selos artísticos | **Feito** (8 painéis, incl. Resonance) |
 | Páginas individuais de projeto (história + discografia) | **Feito** |
-| Páginas de álbum (faixas, letras, clips, easter eggs) | **Feito** |
+| Páginas de álbum (faixas, letras, clips, easter eggs, preview de vídeo) | **Feito** |
 | Integração Spotify e YouTube | **Feito** (links + ícones + galeria de clips) |
 | Menu responsivo + menu mobile overlay | **Feito** |
 | Parallax adaptado a mobile | **Feito** |
@@ -111,7 +119,8 @@ O visitante deve perceber: profundidade, movimento, continuidade, elegância, mi
 | Lazy loading de rotas + code splitting | **Feito** |
 | Página “em construção” para rotas inexistentes | **Feito** |
 | Botão scroll-to-top | **Feito** |
-| Letras e explicações em modal por faixa | **Feito** (BLM, AGM, HS, USS em grande parte) |
+| Letras e explicações em modal por faixa | **Feito** (BLM, AGM, HS, USS, RNH, Resonance / Echoes) |
+| Separação editorial: projeto = origem/geral; álbum = conceito/faixas | **Feito** (ex.: Resonance vs. Echoes of Redemption) |
 | Página dedicada de artistas (`/artists`) | **Pendente** |
 | Página de lançamentos agregada (`/releases`) | **Pendente** |
 | Página de vídeos agregada (`/videos`) | **Pendente** |
@@ -133,14 +142,16 @@ O visitante deve perceber: profundidade, movimento, continuidade, elegância, mi
 | TypeScript | Tipagem estrita (sem `any`) |
 | Vite 5 | Build e dev server |
 | Tailwind CSS 3 | Estilos utilitários |
-| Framer Motion | Menu mobile, `useReducedMotion` |
 | React Router 6 | Rotas SPA |
-| Lucide React | Ícones (menu, play, etc.) |
 | React Helmet Async | SEO / head tags |
+| Ícones SVG locais | `src/components/ui/Icons.tsx`, `SpotifyIcon`, `YouTubeIcon` |
 | Zod | Dependência presente; validação de API ainda não é o foco |
 | Vitest + Testing Library + jsdom | Testes unitários/integração de rotas |
+| Lighthouse (CLI) | Auditoria performance / a11y / BP / SEO |
 
-**Scripts npm:** `dev`, `build`, `lint`, `typecheck`, `test`.
+**Scripts npm:** `dev`, `build`, `preview`, `lighthouse:serve`, `lighthouse:mobile`, `lighthouse:desktop`, `lint`, `typecheck`, `test`.
+
+> **Nota:** Framer Motion e Lucide React **não** estão mais no `package.json`. Menu e reduced motion usam CSS/hooks próprios (`usePrefersReducedMotion`).
 
 ### 6.2 Parallax e animação (decisão de implementação)
 
@@ -148,8 +159,8 @@ Implementação **híbrida**, otimizada para performance:
 
 * **Desktop:** CSS `position: fixed` + `clip` na mídia do painel (sem JS no scroll).
 * **Mobile (≤900px):** loop `requestAnimationFrame` compartilhado (`useMobileParallax`) com `translate3d` em inteiros para simular o mesmo efeito de “janela”.
-* **Reduced motion:** não usa vídeo de fundo; desliga o parallax mobile.
-* Animações do menu: Framer Motion (`AnimatePresence`).
+* **Reduced motion:** não usa vídeo de fundo; desliga o parallax mobile; vídeo de preview de álbum também é omitido (`usePrefersReducedMotion`).
+* Menu mobile: overlay CSS + portal (sem Framer Motion).
 * Não usa jQuery, Bootstrap, scroll hijacking nem timers para posição de scroll.
 
 Hooks relacionados:
@@ -157,6 +168,7 @@ Hooks relacionados:
 * `src/hooks/useMobileParallax.ts` — parallax mobile compartilhado;
 * `src/hooks/useParallaxFixedMedia.ts` — utilitário de mídia fixa (API disponível);
 * `src/hooks/useActivePanelTone.ts` — contraste do header conforme o painel ativo;
+* `src/hooks/usePrefersReducedMotion.ts` — preferência de movimento reduzido;
 * `src/utils/luminance.ts` — detecção de tom claro/escuro da imagem.
 
 ### 6.3 Back-end (futuro)
