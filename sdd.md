@@ -191,11 +191,12 @@ Na fase atual, **todos os dados vêm de arquivos TypeScript locais** em `src/dat
 wonderlandsong2/
 ├── public/
 │   ├── images/
-│   │   ├── albums/          # capas WebP dos álbuns
-│   │   ├── *.webp / *.png   # artes dos painéis da home
+│   │   ├── albums/          # capas WebP (incl. Ressonance.webp)
+│   │   ├── *.webp           # artes dos painéis da home
 │   │   └── bunnyatwork.webp # fallback “em construção”
 │   ├── videos/
-│   │   └── wonderland2.webm # hero/selo (painel 1)
+│   │   ├── wonderland2.webm           # hero/selo (painel 1)
+│   │   └── ressonance-preview.webm    # preview do álbum Echoes of Redemption
 │   ├── robots.txt
 │   └── sitemap.xml
 │
@@ -203,32 +204,39 @@ wonderlandsong2/
 │   ├── components/
 │   │   ├── layout/
 │   │   │   ├── Header.tsx
+│   │   │   ├── NavigationLoading.tsx
+│   │   │   ├── PageLoading.tsx
 │   │   │   ├── ScrollToTop.tsx
 │   │   │   └── ScrollToTopOnNavigate.tsx
 │   │   ├── parallax/
 │   │   │   └── ParallaxProjectPanel.tsx
 │   │   ├── project/
 │   │   │   ├── AlbumClipsGallery.tsx
+│   │   │   ├── AlbumCoverModal.tsx
 │   │   │   ├── EasterEggsModal.tsx
 │   │   │   └── TrackLyricsModal.tsx
 │   │   ├── seo/
 │   │   │   └── Seo.tsx
 │   │   └── ui/
+│   │       ├── Icons.tsx
 │   │       ├── SpotifyIcon.tsx
 │   │       └── YouTubeIcon.tsx
 │   ├── config/
 │   │   └── site.ts            # SITE_URL, nome, description, absoluteUrl()
 │   ├── data/
-│   │   ├── content.ts         # projetos, detalhes, álbuns, artists/releases placeholder
+│   │   ├── home-projects.ts   # painéis da home (sem import de lyrics)
+│   │   ├── content.ts         # ProjectDetail, álbuns, registries, helpers
 │   │   ├── site-routes.ts     # paths públicos (sitemap/SEO)
 │   │   ├── agm-lyrics.ts
 │   │   ├── blm-chapter1-lyrics.ts … blm-chapter4-lyrics.ts
 │   │   ├── helena-son-lyrics.ts
+│   │   ├── resonance-lyrics.ts
 │   │   └── uss-1937-lyrics.ts
 │   ├── hooks/
 │   │   ├── useActivePanelTone.ts
 │   │   ├── useMobileParallax.ts
-│   │   └── useParallaxFixedMedia.ts
+│   │   ├── useParallaxFixedMedia.ts
+│   │   └── usePrefersReducedMotion.ts
 │   ├── pages/
 │   │   ├── HomePage.tsx
 │   │   ├── ProjectDetailPage.tsx   # layout compartilhado + rota
@@ -247,9 +255,11 @@ wonderlandsong2/
 │   ├── App.test.tsx
 │   └── main.tsx
 │
+├── lighthouse-mobile.json   # última auditoria mobile
+├── lighthouse-desktop.json  # última auditoria desktop
 ├── dist/                    # build de produção
-├── package.json
-├── vite.config.ts           # manualChunks (react, framer-motion, helmet)
+├── package.json             # version 0.8.0
+├── vite.config.ts           # manualChunks (react-vendor, content, helmet…)
 ├── vitest.config.ts
 ├── tailwind.config.js
 ├── eslint.config.js
@@ -270,6 +280,7 @@ Painel 4 — A Grande Multidão
 Painel 5 — Helena Son
 Painel 6 — USS Shenandoah
 Painel 7 — Lameck & Southern Birds Band
+Painel 8 — Resonance
 Footer minimalista (“Wonderland Song” + tagline)
 ScrollToTop
 ```
@@ -284,11 +295,10 @@ ScrollToTop
 
 * fixo e transparente sobre os painéis;
 * contraste dinâmico (`light` / `dark`) via `useActivePanelTone` + `headerTone` opcional no projeto;
-* navegação desktop por âncoras dos painéis: Selo, BLM, RNH, AGM, HS, USSS, LSBB;
+* navegação desktop por âncoras dos painéis: Selo, BLM, RNH, AGM, HS, USSS, LSBB, Resonance;
 * menu mobile em tela cheia (portal + fundo sólido legível);
 * fechamento com `Escape`, clique no backdrop e botão fechar;
-* `body` scroll lock com menu aberto;
-* animação de entrada/saída com Framer Motion.
+* `body` scroll lock com menu aberto.
 
 ### 9.2 Ainda não na home (backlog de navegação global)
 
@@ -314,6 +324,8 @@ export type Project = {
   category: string;
   title: string;
   image: string;
+  imagePosition?: string;
+  imagePositionMobile?: string;
   video?: string;
   filterColor?: string;
   filterOpacity?: number;
@@ -328,7 +340,7 @@ export type Project = {
 };
 ```
 
-Fonte: `src/data/content.ts` → `export const projects`.
+Fonte: `src/data/home-projects.ts` → `export const projects` (painel da home isolado de lyrics/álbuns para bundle leve).
 
 ### 10.3 Comportamento visual
 
@@ -339,7 +351,7 @@ Fonte: `src/data/content.ts` → `export const projects`.
 * categoria + título em “labels” brancos;
 * mensagem opcional sob o título;
 * ações: link interno “Abrir projeto”, botões circulares Spotify / YouTube;
-* vídeo de fundo só no painel do selo (e só se não houver reduced motion).
+* vídeo de fundo no painel do selo (e só se não houver reduced motion; em desktop após idle).
 
 ### 10.4 CSS principal
 
@@ -356,18 +368,19 @@ Classes em `src/styles/index.css`:
 | --- | --- | --- | --- | --- |
 | 1 | Wonderland Song | Record Label | `/projects/wonderland-song` (ainda sem detalhe → Coming Soon) | YouTube canal |
 | 2 | Bunny Land Music | Dark EDM + Pop | `/projects/bunny-land-music` | Spotify + YouTube |
-| 3 | Rosa Negra de Halfeti | MPB · Experimental · Atmosférico | `/projects/rosa-negra-halfeti` | YouTube |
+| 3 | Rosa Negra de Halfeti | MPB · Experimental · Atmosférico | `/projects/rosa-negra-halfeti` | YouTube / Bandcamp |
 | 4 | A Grande Multidão | Gospel + TJ | `/projects/a-grande-multidao` | Spotify |
 | 5 | Helena Son | Grunge | `/projects/helena-son` | Spotify |
 | 6 | USS Shenandoah | Hard Rock 1960 | `/projects/uss-shenandoah` | Spotify |
 | 7 | Lameck & Southern Birds Band | Blues | `/projects/lameck-southern-birds-band` | Spotify |
+| 8 | Resonance | Post-Grunge / Alternative Rock | `/projects/resonance` | Bandcamp (no álbum) + YouTube clip |
 
 ### 11.1 Evolução em relação ao SDD original
 
 * **Caution! Audio Gateway** deixou de ser painel isolado na home e passou a ser **Chapter 1** de Bunny Land Music.
 * **Wonderland Song TV** não é painel separado; o canal YouTube está ligado ao painel do selo.
 * **Compositores / artistas** não formam painel na home; conteúdo de artistas reais está nas histórias dos projetos (Lameck, Adriano, Rodrigo, etc.).
-* Entraram projetos novos: **A Grande Multidão**, **Helena Son**, **USS Shenandoah**, **LSBB**.
+* Entraram projetos: **A Grande Multidão**, **Helena Son**, **USS Shenandoah**, **LSBB**, **Resonance** (v0.8.0).
 
 ---
 
@@ -407,13 +420,25 @@ Code splitting: `React.lazy` + `Suspense` em `App.tsx` para Home, ProjectDetail,
 
 Layout compartilhado (`ProjectDetailView`) para todos os projetos com detalhe cadastrado:
 
-* header sticky com link à home e âncoras (álbuns / história / ouvir);
+* header sticky com link à home (“Voltar”);
 * hero com imagem, categoria, título, tagline;
-* links Spotify / YouTube do projeto;
 * galeria de álbuns (“Álbuns lançados”) com cards e CTA “Ver álbum”;
-* bloco de história (lead, pull quote, seções, closing, fonte opcional);
+* bloco de história “Sobre …” (lead, pull quote, seções numeradas, closing, fonte opcional);
+* aside “Ouça e assista” (Spotify / YouTube do projeto quando existirem) + nav “Nesta página”;
 * footer do projeto;
 * SEO + JSON-LD `MusicGroup`.
+
+### 13.0 Regra editorial: projeto vs. álbum
+
+| Página | Conteúdo esperado |
+| --- | --- |
+| **Projeto** (`/projects/:slug`) | Origem do projeto, integrantes, contexto geral, som do **projeto** (não o detalhe de um disco específico). Discografia como galeria de cards. |
+| **Álbum** (`…/albums/:albumSlug`) | Conceito do disco, temas, símbolos, faixas, letras, clips, preview de vídeo, links de streaming do álbum. |
+
+Exemplo canônico (**Resonance**, v0.8.0):
+
+* **Sobre Resonance** — amizade dos três integrantes, estudos de teoria, garagem, pausa e nascimento do projeto (WhatsApp + *In The Forest*).
+* **Echoes of Redemption** — identidade post-grunge, referências Creed/Alter Bridge, Drop-D, jornada emocional, 14 faixas, preview `ressonance-preview.webm`.
 
 ### 13.1 Modelo `ProjectDetail`
 
@@ -423,6 +448,8 @@ export type ProjectDetail = {
   title: string;
   category: string;
   image: string;
+  imagePosition?: string;
+  imagePositionMobile?: string;
   tagline: string;
   historyTitle: string;
   historyLead: string;
@@ -445,11 +472,12 @@ export type ProjectDetail = {
 | Slug | Discografia |
 | --- | --- |
 | `bunny-land-music` | 4 chapters (Caution, In The Forest, In Time With Your Heart, Listen To Daddy) |
-| `rosa-negra-halfeti` | sem álbuns no site (mensagem vazia / história + YouTube) |
+| `rosa-negra-halfeti` | 1 demo: Simplesmente eu… |
 | `a-grande-multidao` | 1 álbum: A Verdade Ainda Chama |
 | `helena-son` | 4 álbuns Genesis: Plastic Grace, New Day, The Computer, Unplugged |
 | `uss-shenandoah` | 1 álbum: 1937 |
 | `lameck-southern-birds-band` | 2 álbuns: Passalacqua, Instinct in Minor Key |
+| `resonance` | 1 demo: Echoes of Redemption (14 faixas + preview + clip Breaking Point) |
 
 Registro: `projectDetailsBySlug` e `projectAlbumsBySlug` em `content.ts`.
 
@@ -460,6 +488,20 @@ Helpers:
 * `getProjectAlbum`
 * `getBunnyAlbumBySlug` (deprecated)
 
+### 13.3 Resonance (detalhe de produto)
+
+| Campo | Valor |
+| --- | --- |
+| Slug | `resonance` |
+| Categoria | Post-Grunge / Alternative Rock |
+| Integrantes | Lameck Silva Fernandes, Adriano Lima, Rodrigo Alves |
+| Origem | Alpinópolis-MG · Wonderland Song |
+| Capa / painel | `/images/albums/Ressonance.webp` |
+| Álbum | `echoes-of-redemption` (Demo, 2026) |
+| Letras | `src/data/resonance-lyrics.ts` (EN + tradução PT-BR no modal) |
+| Preview de vídeo | `/videos/ressonance-preview.webm` (`ProjectAlbum.previewVideo`) |
+| Clip | Breaking Point (YouTube) |
+
 ---
 
 ## 14. Página de álbum (`BunnyAlbumPage`)
@@ -469,9 +511,11 @@ Rota: `/projects/:projectSlug/albums/:albumSlug`
 Conteúdo típico:
 
 * breadcrumb / voltar ao projeto;
-* capa, capítulo, ano, tipo, resumo e descrição;
+* capa (modal de capa opcional), capítulo, ano, tipo, resumo;
 * links: Spotify, Bandcamp, YouTube, Genius (quando existirem);
 * botão **Easter Eggs** (modal) quando `easterEgg` está definido;
+* bloco **Sobre o álbum** (`description[]`);
+* **preview de vídeo** opcional (`previewVideo`) — muted, loop, autoplay, `object-contain` (sem crop), omitido com reduced motion;
 * lista de faixas com abertura de **modal de letras** (`TrackLyricsModal`);
 * faixas extras (`extraTracks`) quando existirem;
 * galeria de **clips musicais** (`AlbumClipsGallery`) — iframe YouTube só após interação;
@@ -490,11 +534,14 @@ export type ProjectAlbum = {
   cover: string;
   summary: string;
   description: string[];
+  /** Teaser local (ex. /videos/….webm) na seção Sobre o álbum. */
+  previewVideo?: string;
   warning?: string;
   duration?: string;
   trackCount?: number;
   spotifyUrl?: string;
   bandcampUrl?: string;
+  bandcampLabel?: string;
   youtubeUrl?: string;
   lyricsUrl?: string;
   lyricsLabel?: string;
@@ -508,12 +555,15 @@ export type ProjectAlbum = {
 
 ### 14.2 Letras
 
-Arquivos dedicados em `src/data/*-lyrics.ts` com faixas, letras e `lyricsExplanation` (seções, versículos, mensagens).
+Arquivos dedicados em `src/data/*-lyrics.ts` com faixas, letras e `lyricsExplanation` (seções, versículos, mensagens, traduções).
+
+Inclui: `blm-chapter*-lyrics.ts`, `agm-lyrics.ts`, `helena-son-lyrics.ts`, `uss-1937-lyrics.ts`, **`resonance-lyrics.ts`**.
 
 Modais:
 
-* `TrackLyricsModal` — letra + explicação;
-* `EasterEggsModal` — mapa de revelações (ex.: Chapter 3 BLM com dedicatórias por faixa).
+* `TrackLyricsModal` — letra + explicação / tradução;
+* `EasterEggsModal` — mapa de revelações (ex.: Chapter 3 BLM com dedicatórias por faixa);
+* `AlbumCoverModal` — capa em destaque.
 
 ---
 
@@ -542,15 +592,19 @@ Modais:
 ### 16.1 Já aplicado
 
 * code splitting por rota (`React.lazy`);
-* `manualChunks` no Vite: `react-vendor`, `framer-motion`, `react-helmet`;
+* `manualChunks` no Vite: `react-vendor`, `content`, `react-helmet`, páginas;
+* home sem puxar lyrics (`home-projects.ts` separado);
 * imagens WebP nas capas e painéis (quando disponível);
-* vídeo de fundo só no painel 1, muted/loop/playsInline, desligado com reduced motion;
+* vídeo de fundo no painel 1 (desktop, após idle), muted/loop/playsInline, desligado com reduced motion;
+* preview de álbum (`previewVideo`) só na página do álbum, com reduced motion;
 * YouTube embed sob demanda na galeria de clips;
 * parallax desktop sem listener de scroll;
 * parallax mobile com rAF compartilhado e transform em inteiros;
 * `decoding="async"` nas imagens dos painéis.
 
-### 16.2 Metas (mantidas)
+### 16.2 Metas e última medição (home `/`, build preview, 2026-07-19)
+
+**Metas**
 
 ```text
 Lighthouse Performance desktop: > 90
@@ -559,6 +613,15 @@ Accessibility:                  > 90
 SEO:                            > 90
 CLS:                            < 0.1
 ```
+
+**Última corrida** (`npm run lighthouse:mobile` / `lighthouse:desktop` → JSON no root):
+
+| | Performance | Accessibility | Best Practices | SEO | LCP | CLS |
+| --- | ---: | ---: | ---: | ---: | --- | --- |
+| **Mobile** | **98** | **100** | **96** | **100** | ~2.3 s | 0 |
+| **Desktop** | **100** | **100** | **100** | **100** | ~0.5 s | 0 |
+
+Observações mobile: render-blocking residual (~150 ms), sizing de imagens, legibilidade de font-size em trechos pequenos.
 
 ### 16.3 Regras
 
@@ -621,8 +684,8 @@ Home usa fundo claro (`#ffffff` / texto `#171717`) nos painéis; páginas de pro
 
 ```text
 public/images/           painéis da home + bunnyatwork
-public/images/albums/    capas dos álbuns (WebP)
-public/videos/           wonderland2.webm
+public/images/albums/    capas dos álbuns (WebP), incl. Ressonance.webp
+public/videos/           wonderland2.webm, ressonance-preview.webm
 ```
 
 ### 19.2 Regras
@@ -663,7 +726,8 @@ Cobre, entre outros:
 
 * shell da home parallax (títulos dos projetos);
 * fallback bunny-at-work;
-* páginas BLM, RNH, AGM;
+* páginas BLM, RNH, AGM, **Resonance**;
+* álbum **Echoes of Redemption** (link de volta + letras EN/PT de Breaking Point);
 * galeria e página de álbum (Chapter 3, Easter Eggs, clips Chapter 1);
 * redirect de álbum inexistente.
 
@@ -688,7 +752,7 @@ A base da fase 1 está **atendida**:
 
 ## 23. O que já foi feito (changelog consolidado)
 
-Ordem aproximada do histórico git (`main`):
+Ordem aproximada do histórico + marcos de versão:
 
 1. **Scaffold inicial** — Vite + React + TS + Tailwind + home parallax + header + menu mobile.
 2. **Scroll to top** e ajustes de menu mobile com fundo legível.
@@ -698,10 +762,19 @@ Ordem aproximada do histórico git (`main`):
 6. **Parallax mobile** e correções desktop/mobile.
 7. **Conteúdo rico de Bunny Land Music** (história, 4 chapters, clips, easter eggs).
 8. **Letras em modal** + arquivos de lyrics (BLM chapters, AGM, Helena Son, USS 1937).
-9. **Discografias** de Helena Son, USS Shenandoah, LSBB, AGM.
+9. **Discografias** de Helena Son, USS Shenandoah, LSBB, AGM, RNH.
 10. **SEO** (Helmet, config de site, sitemap, robots, JSON-LD).
-11. **Performance** (lazy routes, manualChunks, WebP, limpeza de arquivos pesados).
+11. **Performance** (lazy routes, manualChunks, WebP, home-projects separado, limpeza de assets).
 12. **Capas e artes** atualizadas (incl. álbum USS 1937).
+13. **v0.8.0 — Resonance** (2026-07-19):
+    * painel 8 na home (`home-projects.ts`);
+    * `ProjectDetail` com história de origem (três amigos, teoria, garagem, pausa, nascimento);
+    * álbum **Echoes of Redemption**: descrição conceitual, 14 faixas, `resonance-lyrics.ts` (EN + PT), Bandcamp, clip Breaking Point;
+    * campo `ProjectAlbum.previewVideo` + UI em `BunnyAlbumPage` (sem crop; respeita reduced motion);
+    * asset `/videos/ressonance-preview.webm` e capa `Ressonance.webp`;
+    * testes de rota projeto/álbum Resonance;
+    * Lighthouse re-medido (mobile Perf 98 / desktop 100);
+    * regra editorial documentada: projeto geral vs. detalhes no álbum.
 
 ---
 
@@ -710,7 +783,7 @@ Ordem aproximada do histórico git (`main`):
 ### 24.1 Conteúdo e produto
 
 1. Página de detalhe do selo `/projects/wonderland-song` (hoje cai em Coming Soon).
-2. Completar discografia / letras onde ainda faltam (ex.: RNH álbuns; algumas faixas só com título).
+2. Completar discografia / letras onde ainda faltam (algumas faixas só com título; novos álbuns Resonance quando existirem).
 3. Substituir placeholders de `artists` / `releases` por dados reais e expor UI.
 4. Página agregada de vídeos (com lazy embed, reutilizando padrões de `AlbumClipsGallery`).
 5. Hero editorial ou seção “Sobre / Contato” se ainda forem desejados na home.
@@ -757,10 +830,11 @@ Até lá: **dados locais tipados** em `src/data/content.ts` e `*-lyrics.ts`.
 7. Não usar `any`.
 8. Preferir componentes reutilizáveis e dados tipados.
 9. Respeitar reduced motion e acessibilidade básica dos modais.
-10. Ao adicionar projeto/álbum: atualizar `content.ts`, letras se houver, capa em `public/images/albums/`, sitemap/robots se a URL do deploy for estável, e testes relevantes.
-11. Não avançar para backend sem pedido explícito.
-12. Não inventar domínio `.com` próprio — SEO absoluto usa `VITE_SITE_URL` / URL do deploy.
-13. Manter esta spec alinhada à realidade do código quando decisões de produto mudarem.
+10. Ao adicionar projeto/álbum: atualizar `home-projects.ts` (painel), `content.ts` (detalhe + álbuns), letras se houver, capa em `public/images/albums/`, vídeo opcional em `public/videos/`, `site-routes`/sitemap se aplicável, e testes relevantes.
+11. Respeitar a regra editorial: **página do projeto = origem/geral**; **página do álbum = conceito, faixas, mídia do disco**.
+12. Não avançar para backend sem pedido explícito.
+13. Não inventar domínio `.com` próprio — SEO absoluto usa `VITE_SITE_URL` / URL do deploy.
+14. Manter esta spec alinhada à realidade do código; ao fechar marco de produto, **atualizar versão** em `package.json` + tabela de versões deste SDD.
 
 ---
 
@@ -772,8 +846,9 @@ Leia integralmente o arquivo sdd.md (Spec-Driven Development) e use-o como fonte
 Execute a spec fase a fase — uma fase por vez. Não avance sozinho.
 Ao terminar a fase, pare e aguarde o autor revisar e pedir para prosseguir.
 
-O site Wonderland Song já possui home parallax com 7 painéis, páginas de projeto,
-páginas de álbum (letras, easter eggs, clips), SEO e fallback Coming Soon.
+O site Wonderland Song já possui home parallax com 8 painéis (incl. Resonance),
+páginas de projeto, páginas de álbum (letras, easter eggs, clips, previewVideo),
+SEO, Lighthouse scripts e fallback Coming Soon. Versão de produto em package.json / sdd.md.
 Está em deploy; não há domínio .com próprio — use VITE_SITE_URL / URL do ambiente.
 
 Não copie o código, os textos, a marca ou as imagens da demonstração pública do POFO.
@@ -802,15 +877,18 @@ Ao finalizar a fase:
 
 | Necessidade | Arquivo |
 | --- | --- |
-| Painéis da home | `src/data/content.ts` → `projects` |
+| Painéis da home | `src/data/home-projects.ts` → `projects` |
 | Detalhe / história | `src/data/content.ts` → `*Detail` + `projectDetailsBySlug` |
 | Discografia | `src/data/content.ts` → `*Albums` + `projectAlbumsBySlug` |
-| Letras | `src/data/*-lyrics.ts` |
-| Tipos | `src/types/index.ts` |
+| Letras | `src/data/*-lyrics.ts` (incl. `resonance-lyrics.ts`) |
+| Tipos | `src/types/index.ts` (`previewVideo` em `ProjectAlbum`) |
 | Rotas | `src/App.tsx` |
 | Parallax CSS | `src/styles/index.css` |
 | Parallax mobile | `src/hooks/useMobileParallax.ts` |
+| Reduced motion | `src/hooks/usePrefersReducedMotion.ts` |
 | SEO head | `src/components/seo/Seo.tsx` + `src/config/site.ts` (`VITE_SITE_URL`) |
 | Sitemap | `public/sitemap.xml` + `src/data/site-routes.ts` (URLs = deploy) |
+| Lighthouse | `npm run lighthouse:*` → `lighthouse-*.json` |
 | Testes de smoke | `src/App.test.tsx` |
+| Versão | `package.json` + tabela no topo deste SDD |
 | Spec (SDD) | `sdd.md` — Spec-Driven Development |
