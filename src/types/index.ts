@@ -163,6 +163,11 @@ export type ProjectAlbum = {
   /** Full description paragraphs for the album page. */
   description: string[];
   /**
+   * Optional “Demo” status block above “Sobre o álbum”
+   * (e.g. WIP note and current demo track).
+   */
+  demoInfo?: string[];
+  /**
    * Optional decorative preview video on the album page
    * (muted loop, shown under “Sobre o álbum”).
    */

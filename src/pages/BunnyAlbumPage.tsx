@@ -226,6 +226,24 @@ function BunnyAlbumPage() {
         <section className="border-t border-white/10 px-[5vw] py-14 sm:py-16">
           <div className="mx-auto grid max-w-5xl gap-12 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:gap-16">
             <div>
+              {album.demoInfo && album.demoInfo.length > 0 ? (
+                <div className="mb-10">
+                  <p className="mb-3 text-[0.67rem] font-bold uppercase tracking-[0.16em] text-white/45">
+                    Demo
+                  </p>
+                  <div className="flex flex-col gap-5">
+                    {album.demoInfo.map((paragraph, index) => (
+                      <p
+                        key={`${album.slug}-demo-${index}`}
+                        className="m-0 text-base leading-[1.75] text-white/70 sm:text-[1.05rem]"
+                      >
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+              ) : null}
+
               <p className="mb-3 text-[0.67rem] font-bold uppercase tracking-[0.16em] text-white/45">
                 Sobre o álbum
               </p>

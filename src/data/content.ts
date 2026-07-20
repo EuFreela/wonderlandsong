@@ -11,6 +11,7 @@ import {
   theComputerTracks,
   unpluggedTracks,
 } from './helena-son-lyrics';
+import { hereticsForkTracks } from './heretics-fork-lyrics';
 import { echoesOfRedemptionTracks } from './resonance-lyrics';
 import { simplesmenteEuTracks } from './rnh-lyrics';
 import { uss1937Tracks } from './uss-1937-lyrics';
@@ -993,6 +994,107 @@ export const resonanceAlbums: ProjectAlbum[] = [
   },
 ];
 
+/**
+ * Heretic's Fork — project-9 detail page (home: project-9).
+ * Metal moderno: Nu Metal, Heavy, Thrash e Groove — a batalha interior.
+ */
+export const hereticsFork: ProjectDetail = {
+  slug: 'heretics-fork',
+  title: "Heretic's Fork",
+  category: 'Metal Moderno · Nu Metal · Groove',
+  image: '/images/albums/heretics-fork.webp',
+  imagePositionMobile: 'center 28%',
+  tagline:
+    'Metal moderno de guitarras pesadas e grooves agressivos — a batalha silenciosa travada dentro de cada indivíduo.',
+  historyTitle: "Sobre Heretic's Fork",
+  historyLead:
+    "Heretic's Fork é um projeto de metal moderno inspirado na intensidade do Nu Metal, Heavy Metal, Thrash Metal e Groove Metal, combinando guitarras extremamente pesadas, riffs agressivos, grooves marcantes e vocais que alternam entre linhas melódicas e interpretações graves, carregadas de emoção.",
+  pullQuote:
+    'Porque, às vezes, o maior ato de força não é vencer um inimigo… é impedir que ele desperte dentro de você.',
+  footerNote: "Heretic's Fork · Metal Moderno · Nu Metal · Groove · Universo Wonderland Song",
+  historySections: [
+    {
+      id: 'name',
+      title: 'O nome',
+      paragraphs: [
+        "O nome do projeto faz referência ao instrumento histórico de tortura medieval conhecido como Heretic's Fork, utilizado para impedir que uma pessoa falasse, descansasse ou encontrasse alívio. Essa imagem simboliza perfeitamente o conceito do projeto: pessoas aprisionadas pelos próprios pensamentos, emoções e conflitos internos.",
+      ],
+    },
+    {
+      id: 'themes',
+      title: 'Temas e batalha interior',
+      paragraphs: [
+        'As músicas exploram sentimentos como raiva, ódio, frustração, culpa, ansiedade, medo e impulsividade, não como uma forma de glorificá-los, mas de revelar a batalha silenciosa travada dentro de cada indivíduo.',
+        'Cada faixa representa um momento dessa luta interior. Situações comuns do cotidiano tornam-se metáforas para conflitos emocionais profundos, mostrando como pensamentos reprimidos podem crescer até o ponto de parecer impossível contê-los. O verdadeiro inimigo raramente está do lado de fora — ele nasce na mente.',
+      ],
+    },
+    {
+      id: 'masks',
+      title: 'Máscaras e visual',
+      paragraphs: [
+        'As máscaras e o visual do projeto representam essas diferentes faces da psique humana. Cada personagem simboliza um estado emocional ou uma parte da personalidade que tenta assumir o controle durante momentos de pressão. São personificações daquilo que muitas vezes permanece escondido atrás de uma expressão aparentemente normal.',
+      ],
+    },
+    {
+      id: 'aesthetic',
+      title: 'Estética e metáforas',
+      paragraphs: [
+        "Em vez de contar histórias sobrenaturais, Heretic's Fork utiliza uma estética sombria, cinematográfica e inspirada no horror para retratar experiências profundamente humanas. Cemitérios, funerais, chuva, máscaras e cenários decadentes funcionam como metáforas para o luto emocional, a culpa, a repressão e o peso das escolhas.",
+      ],
+    },
+    {
+      id: 'resistance',
+      title: 'Resistência',
+      paragraphs: [
+        "No fim, Heretic's Fork fala sobre resistência. Sobre reconhecer que todos enfrentam impulsos destrutivos, pensamentos sombrios e emoções capazes de consumir a razão. As músicas convidam o ouvinte a encarar essas sombras de frente, mostrando que a maior batalha não acontece contra o mundo, mas dentro de si mesmo.",
+      ],
+    },
+    {
+      id: 'credits',
+      title: 'Créditos',
+      paragraphs: [
+        "Projeto: Heretic's Fork · Integrantes: Lameck S. Fernandes, Rodrigo Alves e Adriano Lima · Gênero: Metal moderno · Nu Metal · Heavy Metal · Thrash Metal · Groove Metal · Universo Wonderland Song.",
+      ],
+    },
+  ],
+  historyClosing:
+    'Porque, às vezes, o maior ato de força não é vencer um inimigo… é impedir que ele desperte dentro de você.',
+};
+
+/** Álbuns de Heretic's Fork (project-9). */
+export const hereticsForkAlbums: ProjectAlbum[] = [
+  {
+    slug: 'heretics-fork',
+    title: "Heretic's Fork",
+    year: '2026',
+    type: 'Demo',
+    cover: '/images/albums/heretics-fork.webp',
+    summary:
+      'Desilusão, raiva, pressão, angústia e desespero — o peso de cada sentimento que o álbum atravessa sem alívio.',
+    demoInfo: [
+      "O álbum Heretic's Fork ainda está em composição. Por enquanto existe uma música demo: No Hope Left — o primeiro registro desse funeral simbólico da antiga identidade.",
+    ],
+    description: [
+      'O caixão presente na capa não simboliza a morte de uma pessoa, mas o sepultamento de uma identidade.',
+      'Ao longo do álbum, o eu lírico enfrenta conflitos internos, decepções, manipulações, impulsos e sentimentos reprimidos que lentamente destroem a versão de si mesmo que existia até então. Cada música representa uma etapa desse processo de ruptura, como se partes da antiga personalidade fossem sendo enterradas uma a uma.',
+      'O funeral retratado na capa marca o fim dessa antiga identidade. Não é um ato de derrota, mas uma passagem inevitável. A pessoa que entrou nessa jornada já não existe mais. No lugar dela nasce alguém transformado pelas cicatrizes, pela dor e pelas escolhas feitas ao longo do caminho.',
+      'As figuras mascaradas representam diferentes aspectos da mente humana — emoções, impulsos e pensamentos que acompanham essa transformação. Elas não estão enterrando um corpo, mas encerrando um ciclo. O caixão guarda tudo aquilo que precisava morrer: a ingenuidade, a dependência emocional, a confiança quebrada, a culpa, a submissão e as ilusões.',
+      'O álbum inteiro conduz o ouvinte por esse funeral simbólico. A morte da antiga personalidade torna-se necessária para que uma nova identidade possa emergir, mais consciente, mais resistente e marcada pelas experiências vividas.',
+      "Heretic's Fork não fala sobre a morte do corpo. Fala sobre aquilo que todos enfrentamos em algum momento da vida: a dolorosa necessidade de deixar morrer quem éramos para sobreviver como alguém novo.",
+    ],
+    trackCount: hereticsForkTracks.length,
+    tracks: hereticsForkTracks,
+    clips: [
+      {
+        id: 'no-hope-left',
+        title: 'No Hope Left',
+        subtitle: "Heretic's Fork · Heretic's Fork",
+        youtubeId: 'tehu7eGR8i8',
+      },
+    ],
+  },
+];
+
 /** All project detail pages keyed by URL slug (`/projects/:slug`). */
 export const projectDetailsBySlug: Record<string, ProjectDetail> = {
   [bunnyLandMusic.slug]: bunnyLandMusic,
@@ -1002,6 +1104,7 @@ export const projectDetailsBySlug: Record<string, ProjectDetail> = {
   [ussShenandoah.slug]: ussShenandoah,
   [lameckSouthernBirdsBand.slug]: lameckSouthernBirdsBand,
   [resonance.slug]: resonance,
+  [hereticsFork.slug]: hereticsFork,
 };
 
 /** Discographies keyed by project slug. */
@@ -1013,6 +1116,7 @@ export const projectAlbumsBySlug: Record<string, ProjectAlbum[]> = {
   [ussShenandoah.slug]: ussShenandoahAlbums,
   [lameckSouthernBirdsBand.slug]: lameckSouthernBirdsBandAlbums,
   [resonance.slug]: resonanceAlbums,
+  [hereticsFork.slug]: hereticsForkAlbums,
 };
 
 export function getProjectDetailBySlug(slug: string): ProjectDetail | undefined {

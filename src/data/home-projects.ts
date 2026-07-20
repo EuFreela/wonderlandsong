@@ -100,4 +100,14 @@ export const projects: Project[] = [
     href: '/projects/resonance',
     buttonLabel: 'Abrir projeto',
   },
+  {
+    id: 'project-9',
+    category: 'Metal Moderno · Nu Metal · Groove',
+    title: "Heretic's Fork",
+    image: '/images/albums/heretics-fork.webp',
+    imagePositionMobile: 'center 28%',
+    headerTone: 'light',
+    href: '/projects/heretics-fork',
+    buttonLabel: 'Abrir projeto',
+  },
 ];

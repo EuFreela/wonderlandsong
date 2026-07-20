@@ -92,6 +92,40 @@ describe('App', () => {
     expect(screen.getByRole('link', { name: /Voltar à home/i })).toHaveAttribute('href', '/');
   });
 
+  it("opens Heretic's Fork project page with shared layout", async () => {
+    renderAt('/projects/heretics-fork');
+
+    expect(await screen.findByRole('heading', { name: /^Heretic's Fork$/i })).toBeInTheDocument();
+    expect(screen.getByText('Metal Moderno · Nu Metal · Groove')).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /Sobre Heretic's Fork/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /^O nome$/i })).toBeInTheDocument();
+    expect(screen.getByText(/nome do projeto faz referência/i)).toBeInTheDocument();
+    expect(screen.getByText(/visual do projeto representam/i)).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /Álbuns lançados/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole('link', { name: /Ver álbum.*Heretic's Fork/i }),
+    ).toHaveAttribute('href', '/projects/heretics-fork/albums/heretics-fork');
+    expect(screen.getByRole('link', { name: /Voltar à home/i })).toHaveAttribute('href', '/');
+  });
+
+  it("opens Heretic's Fork album with EN lyrics and PT translation", async () => {
+    renderAt('/projects/heretics-fork/albums/heretics-fork');
+
+    expect(
+      await screen.findByRole('heading', { name: /^Heretic's Fork$/i }),
+    ).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /← Heretic's Fork/i })).toHaveAttribute(
+      'href',
+      '/projects/heretics-fork',
+    );
+
+    fireEvent.click(screen.getByRole('button', { name: /No Hope Left.*Ver letra/i }));
+    expect(await screen.findByRole('dialog')).toBeInTheDocument();
+    expect(screen.getAllByText(/FALSE FACE/i).length).toBeGreaterThan(0);
+    expect(screen.getByText(/^Tradução \(português\)$/i)).toBeInTheDocument();
+    expect(screen.getAllByText(/FALSA FACE/i).length).toBeGreaterThan(0);
+  });
+
   it('opens Echoes of Redemption album with EN lyrics and PT translation', async () => {
     renderAt('/projects/resonance/albums/echoes-of-redemption');
 
