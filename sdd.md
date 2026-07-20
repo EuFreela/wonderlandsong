@@ -1,7 +1,7 @@
 # SDD — Wonderland Song Parallax Portfolio
 
 **Metodologia:** SDD — **Spec-Driven Development** (desenvolvimento orientado por especificação)  
-**Versão do produto:** `0.8.0` (alinhada a `package.json`)  
+**Versão do produto:** `0.0.2` (alinhada a `package.json` / tag `v0.0.2`)  
 **Status da spec:** viva (atualizado em 2026-07-19)  
 **Repositório:** `wonderlandsong2`  
 **Fase atual:** front-end rico com dados locais tipados (sem backend)  
@@ -13,8 +13,9 @@ Este arquivo é a **especificação viva** do produto no fluxo Spec-Driven Devel
 
 | Versão | Data | Destaque |
 | --- | --- | --- |
-| **0.8.0** | 2026-07-19 | **Resonance** na home + detalhe + álbum *Echoes of Redemption* (14 faixas EN/PT, preview `.webm`, clip YouTube); separação de conteúdo projeto vs. álbum; Lighthouse mobile 98 / desktop 100 (performance) |
-| 0.7.x | ≤2026-07-13 | Home com 7 painéis, discografias BLM/RNH/AGM/HS/USS/LSBB, SEO, parallax, letras em modal |
+| **0.0.2** | 2026-07-19 | **Resonance** na home + detalhe + álbum *Echoes of Redemption* (14 faixas EN/PT, preview `.webm`, clip YouTube); separação de conteúdo projeto vs. álbum; Lighthouse mobile 98 / desktop 100 (performance) |
+| 0.0.1 | — | Tag anterior no repositório |
+| 0.0.0 | — | Scaffold / baseline |
 
 ---
 
@@ -258,7 +259,7 @@ wonderlandsong2/
 ├── lighthouse-mobile.json   # última auditoria mobile
 ├── lighthouse-desktop.json  # última auditoria desktop
 ├── dist/                    # build de produção
-├── package.json             # version 0.8.0
+├── package.json             # version 0.0.2
 ├── vite.config.ts           # manualChunks (react-vendor, content, helmet…)
 ├── vitest.config.ts
 ├── tailwind.config.js
@@ -380,7 +381,7 @@ Classes em `src/styles/index.css`:
 * **Caution! Audio Gateway** deixou de ser painel isolado na home e passou a ser **Chapter 1** de Bunny Land Music.
 * **Wonderland Song TV** não é painel separado; o canal YouTube está ligado ao painel do selo.
 * **Compositores / artistas** não formam painel na home; conteúdo de artistas reais está nas histórias dos projetos (Lameck, Adriano, Rodrigo, etc.).
-* Entraram projetos: **A Grande Multidão**, **Helena Son**, **USS Shenandoah**, **LSBB**, **Resonance** (v0.8.0).
+* Entraram projetos: **A Grande Multidão**, **Helena Son**, **USS Shenandoah**, **LSBB**, **Resonance** (v0.0.2).
 
 ---
 
@@ -435,7 +436,7 @@ Layout compartilhado (`ProjectDetailView`) para todos os projetos com detalhe ca
 | **Projeto** (`/projects/:slug`) | Origem do projeto, integrantes, contexto geral, som do **projeto** (não o detalhe de um disco específico). Discografia como galeria de cards. |
 | **Álbum** (`…/albums/:albumSlug`) | Conceito do disco, temas, símbolos, faixas, letras, clips, preview de vídeo, links de streaming do álbum. |
 
-Exemplo canônico (**Resonance**, v0.8.0):
+Exemplo canônico (**Resonance**, v0.0.2):
 
 * **Sobre Resonance** — amizade dos três integrantes, estudos de teoria, garagem, pausa e nascimento do projeto (WhatsApp + *In The Forest*).
 * **Echoes of Redemption** — identidade post-grunge, referências Creed/Alter Bridge, Drop-D, jornada emocional, 14 faixas, preview `ressonance-preview.webm`.
@@ -766,7 +767,7 @@ Ordem aproximada do histórico + marcos de versão:
 10. **SEO** (Helmet, config de site, sitemap, robots, JSON-LD).
 11. **Performance** (lazy routes, manualChunks, WebP, home-projects separado, limpeza de assets).
 12. **Capas e artes** atualizadas (incl. álbum USS 1937).
-13. **v0.8.0 — Resonance** (2026-07-19):
+13. **v0.0.2 — Resonance** (2026-07-19):
     * painel 8 na home (`home-projects.ts`);
     * `ProjectDetail` com história de origem (três amigos, teoria, garagem, pausa, nascimento);
     * álbum **Echoes of Redemption**: descrição conceitual, 14 faixas, `resonance-lyrics.ts` (EN + PT), Bandcamp, clip Breaking Point;

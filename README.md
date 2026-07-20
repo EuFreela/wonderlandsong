@@ -4,7 +4,7 @@ Site musical, artístico e portfólio narrativo do selo **Wonderland Song**.
 
 A home é uma galeria vertical cinematográfica: cada rolagem revela um projeto em painel de tela cheia, com mídia de fundo, tipografia sobreposta e efeito parallax — **implementação original**.
 
-**Versão:** `0.8.0`  
+**Versão:** `0.0.2`  
 **Idioma:** português (pt-BR)  
 **Fase atual:** front-end com dados locais tipados (sem backend)  
 **Agente de IA:** [Grok](https://x.ai) (xAI), no fluxo **SDD (Spec-Driven Development)**
@@ -86,7 +86,7 @@ src/data/         home-projects, content, lyrics, site-routes
 src/hooks/        parallax, contraste do header, reduced motion
 src/pages/        Home, ProjectDetail, Album, ComingSoon
 public/           images, videos, sitemap.xml, robots.txt
-sdd.md            spec (Spec-Driven Development) · v0.8.0
+sdd.md            spec (Spec-Driven Development) · v0.0.2
 ```
 
 ---
