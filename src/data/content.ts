@@ -59,16 +59,16 @@ export const bunnyLandMusic: ProjectDetail = {
       id: 'origin',
       title: 'Origem',
       paragraphs: [
-        'Conheci no YouTube a Jenn Sakura, na época estudante de música em Berklee (EUA). Ela fazia lives no Twitch com histórias, música e jogos. Com o tempo voltou ao país onde está hoje e parou de transmitir — o canal dela ficou com amigos.',
+        'Conheci no YouTube a [Jenn Sakura](https://www.youtube.com/@sakurajenn), na época estudante de música em Berklee (EUA). Ela fazia lives no Twitch com histórias, música e jogos. Com o tempo voltou ao país onde está hoje e parou de transmitir — o canal dela ficou com amigos.',
         'Ela brincava com o trocadilho “Jenn is a genius”, em referência ao programa “Jenny é um gênio”. Cheguei a fazer uma música de aniversário inspirada no tema de Alita — mas isso fica para outra história.',
-        'Depois que ela sumiu das lives, passei a seguir outros canais. Um deles chamou atenção: Sasha Grey, que conheci jogando Lost Ark. Descobri que ela também é DJ, fui atrás dos mixes e comecei a brincar com a linguagem do som.',
+        'Depois que ela sumiu das lives, passei a seguir outros canais. Um deles chamou atenção: [Sasha Grey](https://www.twitch.tv/sashagrey), que conheci jogando Lost Ark. Descobri que ela também é DJ, fui atrás dos mixes e comecei a brincar com a linguagem do som.',
       ],
     },
     {
       id: 'spark',
       title: 'A faísca',
       paragraphs: [
-        'Sasha me inspirou a começar o projeto depois que descobri que ela também era DJ.',
+        '[Sasha](https://www.twitch.tv/sashagrey) me inspirou a começar o projeto depois que descobri que ela também era DJ.',
         'Até então eu não tinha experiência com EDM, dark wave e outros gêneros eletrônicos. Pesquisei, ouvi e me inspirei em nomes como Deadmau5, The Chemical Brothers e outros do circuito.',
         'Meu pai administrou um grupo de venda de instrumentos na região — e, de surpresa, apareceu um brinquedo que mudou tudo: um controlador MIDI AKAI. Depois de algumas semanas aprendendo a usá-lo, escolhi faixas para remixar. A primeira foi “Month to a Flame”. A partir daí, nasceram outras a cada fim de semana.',
       ],
@@ -81,6 +81,20 @@ export const bunnyLandMusic: ProjectDetail = {
         'Desde então o interesse só cresceu: remixes cada vez mais profissionais, performance com o AKAI e o olhar já em outro brinquedo — um Pioneer. Quero montar um estúdio; as gravações estão em pausa por enquanto. Quando isso se encaixar, a ideia de um canal no Twitch para lives de show fica no radar.',
         'Nas descrições dos vídeos, deixo o material dos remixes (exceto quando a faixa é original).',
       ],
+    },
+    {
+      id: 'remix-path',
+      title: 'Do remix à produção',
+      paragraphs: [
+        'No começo, comecei remixando músicas de outros artistas: ouvir a estrutura original, reimaginar batida, arranjo e clima, e publicar o resultado. Era o caminho prático para entrar na música eletrônica — experimentar, errar, ouvir de novo e melhorar.',
+        'Com o tempo, o ofício foi se aperfeiçoando: remix e remasterização passaram a exigir mais cuidado com mixagem, dinâmica, equilíbrio de frequências e acabamento de produção musical. Cada nova versão era um passo a mais em direção a um som mais limpo, intencional e profissional.',
+        'Alguns desses trabalhos, publicados no YouTube sob o selo Bunny Land / LK7, documentam essa trajetória: [Cathy Burton & Omnia — Hearts Connected (remix LK7)](https://www.youtube.com/watch?v=OHkcJcqW7uo); [BLACKPINK — Kill This Love (High-Energy EDM Version feat. LK7)](https://www.youtube.com/watch?v=0ECow_j4lDA); [Aaliah — Try Again (remix LK7)](https://www.youtube.com/watch?v=ArnSeNVIdGc); [Fergie — Fergalicious (remix LK7)](https://www.youtube.com/watch?v=mewg3GOoxgQ); [Jisoo — Flower](https://www.youtube.com/watch?v=USVmWfw0ll4); [Madonna — Beautiful Stranger (Isabela cover feat. remix LK7)](https://www.youtube.com/watch?v=e-U8iUmyYdI); [Zandros — Obsessed (remix LK7)](https://www.youtube.com/watch?v=tHQw4R0VJao); [Swedish House Mafia & The Weeknd — Moth To a Flame (remix LK7)](https://www.youtube.com/watch?v=rV8TIcchEyA).',
+      ],
+      featuredVideo: {
+        youtubeId: 'ArnSeNVIdGc',
+        title: 'Try Again (remix LK7)',
+        subtitle: 'Aaliah · Bunny Land',
+      },
     },
     {
       id: 'bunny',

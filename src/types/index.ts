@@ -55,11 +55,20 @@ export type Artist = {
   description: string;
 };
 
+/** Optional YouTube highlight under a history chapter (lazy embed). */
+export type ProjectHistoryFeaturedVideo = {
+  youtubeId: string;
+  title: string;
+  subtitle?: string;
+};
+
 /** History chapter on a project detail page. */
 export type ProjectHistorySection = {
   id: string;
   title: string;
   paragraphs: string[];
+  /** Small “quick access” player shown under the chapter text. */
+  featuredVideo?: ProjectHistoryFeaturedVideo;
 };
 
 /**

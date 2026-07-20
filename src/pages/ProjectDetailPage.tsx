@@ -1,5 +1,6 @@
 import type { CSSProperties } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import HistoryFeaturedVideo from '../components/project/HistoryFeaturedVideo';
 import Seo from '../components/seo/Seo';
 import {
   historyLinkClassName,
@@ -250,6 +251,10 @@ export function ProjectDetailView({ project, albums }: ProjectDetailViewProps) {
                         </p>
                       ))}
                     </div>
+
+                    {section.featuredVideo ? (
+                      <HistoryFeaturedVideo video={section.featuredVideo} />
+                    ) : null}
                   </section>
                 ))}
               </div>
