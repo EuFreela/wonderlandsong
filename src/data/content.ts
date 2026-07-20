@@ -897,7 +897,7 @@ export const resonanceAlbums: ProjectAlbum[] = [
     type: 'Demo',
     cover: '/images/albums/Ressonance.webp',
     summary:
-      'Post-grunge e alternative rock de Alpinópolis — uma viagem emocional de queda, memória, enfrentamento e reconstrução.',
+      'Post-grunge e alternative rock de Alpinópolis — uma viagem emocional de queda, memória, desilusão e reconstrução.',
     description: [
       'O trabalho ganhou identidade própria com Echoes of Redemption (Ecos da Redenção).',
       'O projeto é associado a Alpinópolis, Minas Gerais, e sua estética sonora foi construída em torno do post-grunge e alternative rock, tendo como referências bandas como Creed e Alter Bridge.',
