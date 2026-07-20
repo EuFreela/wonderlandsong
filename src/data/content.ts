@@ -840,6 +840,7 @@ export const resonance: ProjectDetail = {
   historyTitle: 'Sobre Resonance',
   historyLead:
     'Resonance é um projeto musical e conceitual que explora a redenção, a superação, a luta interior e a transformação pessoal. Sua sonoridade post-grunge e alternative rock carrega emoção densa, metáforas profundas e instrumentação atmosférica, a fim de narrar a trajetória de quem enfrenta as próprias sombras e busca um novo começo.',
+  historyVideo: '/videos/ressonance-preview.webm',
   pullQuote:
     'Por mais difícil que seja, sempre há um caminho para a redenção.',
   footerNote: 'Resonance · Post-Grunge / Alternative Rock · Alpinópolis-MG',

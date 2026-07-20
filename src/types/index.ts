@@ -80,6 +80,11 @@ export type ProjectDetail = {
   historyTitle: string;
   historyLead: string;
   pullQuote?: string;
+  /**
+   * Optional decorative video for the “Sobre” / history section
+   * (muted loop, e.g. project teaser).
+   */
+  historyVideo?: string;
   historySections: ProjectHistorySection[];
   historyClosing?: string;
   historySourceUrl?: string;
