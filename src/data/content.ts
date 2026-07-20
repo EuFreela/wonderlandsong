@@ -252,7 +252,9 @@ export const aGrandeMultidao: ProjectDetail = {
 
 /**
  * Helena's Son — project-5 detail page (home: project-5).
- * Source: Genesis PDF (Plastic Grace, New Day, Unplugged, The Computer).
+ * História do projeto: post Wix “The Story of Helena's Son”.
+ * Detalhe de cada disco Genesis fica na página do álbum.
+ * https://agencylk7.wixsite.com/wonderlandsong/post/the-story-of-helena-s-son
  */
 export const helenaSon: ProjectDetail = {
   slug: 'helena-son',
@@ -261,31 +263,65 @@ export const helenaSon: ProjectDetail = {
   image: '/images/hs2.webp',
   imagePositionMobile: 'center 22%',
   tagline:
-    'Grunge conceitual dos anos 90 revisitado: fé, desilusão e a falha da conexão humana na era digital.',
+    'Projeto grunge inspirado em Alice in Chains: tristeza, raiva, amor e o cotidiano em sonoridade densa e crua.',
   historyTitle: "Sobre Helena's Son",
   historyLead:
-    "Helena's Son é um projeto grunge que canaliza a introspecção e o peso emocional dos anos 90, reinterpretando-os com a sensibilidade sombria e existencial da era atual. Obra conceitual sobre um ser humano em busca de sentido dentro de uma realidade fragmentada.",
-  pullQuote: 'Cada álbum é uma etapa da jornada — da graça plástica ao vazio da máquina.',
-  footerNote: "Helena's Son · Grunge · Genesis",
+    "Helena's Son é um projeto grunge inspirado em Alice in Chains, cujos temas abordam tristeza, raiva, amor e demais questões do cotidiano. O projeto nasceu em Passos–MG, no contexto de isolamento, do retorno à guitarra e da decisão de voltar a compor.",
+  pullQuote:
+    'Helena representa o simbolismo da injustiça disfarçada de verdade absoluta.',
+  footerNote: "Helena's Son · Grunge · Genesis · Wonderland Song",
   albumsEmptyMessage: 'Os álbuns de Helena’s Son serão adicionados em breve.',
+  historySourceUrl:
+    'https://agencylk7.wixsite.com/wonderlandsong/post/the-story-of-helena-s-son',
+  historySourceLabel: "The Story of Helena's Son",
   historySections: [
     {
-      id: 'genesis',
-      title: 'Genesis',
+      id: 'passos-2018',
+      title: '4 de agosto de 2018 — Passos, Minas Gerais',
       paragraphs: [
-        "Helena's Son é um projeto musical grunge que canaliza a introspecção e o peso emocional dos anos 90, reinterpretando-os com a sensibilidade sombria e existencial da era atual. Cada álbum representa uma etapa dessa jornada existencial — da descoberta da falsidade do mundo até o vazio da própria consciência. É uma narrativa sobre fé, desilusão e a falha da conexão humana na era digital.",
-        'Este projeto nasceu da união de três amigos movidos pela mesma paixão: a música. Juntos, decidiram transformar sentimentos, experiências e emoções em expressão artística — compondo álbuns que traduzem percepções humanas em som, palavra e atmosfera. Cada canção é um canal onde o íntimo se torna arte.',
-        "O conceito dos álbuns segue uma linha contínua: cada obra se conecta à próxima. Genesis é o nome para os quatro álbuns sequenciais — Plastic Grace; New Day; The Computer; e Unplugged. A história do projeto já vive nas redes há muitos anos; neste ciclo, Helena's Son volta com novas vozes, novas canções e o mesmo coração grunge.",
+        'Por volta daquela época, após o retorno de São Paulo, Lameck isolou-se de tudo e de todos. Por motivo particular que prefere não detalhar, necessitava de tempo para se reencontrar. Encontrou na música uma forma de conforto. Havia longo período sem retomar a guitarra — desde os tempos da faculdade, aproximadamente nove ou dez anos.',
+        'Naquele período, um amigo deixara a banda em que tocava baixo, os Madsneaks: Adriano (Catatal). Ele realizava jams com a nova formação na garagem. Conversavam sobre bandas, composições e a trajetória da antiga banda. Lameck dedicava-se ao estudo de músicas do [Hammer of the Gods](https://www.youtube.com/watch?v=lK-c0lyc8-M&list=PLwQ8TCZAotl__JwfRh0FA1HgCsrFZnjWm) — banda de Cláudio Merlin, da época. Após ouvir [“Visions of the Beyond”](https://www.youtube.com/watch?v=MuaHm2Mcy1A), do álbum Hamlet — que reunia grandes bandas nacionais daquele período —, decidiu transcrever todas as faixas do Hammer of the Gods em partitura.',
       ],
     },
     {
-      id: 'journey',
-      title: 'A jornada em quatro atos',
+      id: 'first-songs',
+      title: 'Os primeiros riffs',
       paragraphs: [
-        'Plastic Grace — A revelação da ilusão: clima moderado e introspectivo. O personagem vive saturado de crenças e símbolos e começa a perceber que a “graça” ao redor é plástica — fé vendida e performática. Temas: crítica à fé institucionalizada, vaidade espiritual, busca por pureza num mundo adulterado.',
-        'New Day — O silêncio após a queda: denso, melancólico e confessional. Após a ilusão, o personagem mergulha no vazio e no luto existencial. Não há redenção fácil — só lucidez e a busca por sentido entre ruínas. No Spotify, as faixas oficiais; abaixo, faixas extras do Genesis.',
-        'The Computer — O homem e a máquina: energético, elétrico e claustrofóbico. A tentativa de se reconstruir pela tecnologia revela só uma nova ilusão — conexão que vira isolamento, carne e código, identidade fragmentada.',
-        'Unplugged — fechamento sentimental e nostálgico: setlist no Spotify (An Unforgettable Night) com versões acústicas; ao lado de cada faixa, o álbum de origem. Letras e traduções abrem direto na página do Unplugged.',
+        'Surgiu, então, com Catatal, a ideia de compor riffs em estilo grunge que pudessem integrar um projeto. Foi assim que nasceu “Drowning In Your Worlds”. Lameck aprofundou-se em Alice in Chains; as influências do amigo inclinavam-se mais a Nirvana. Não dispunha de home studio — apenas do Guitar Pro. Nele escreveu a partitura, editou o material e exportou o arquivo MP3 com a mesma ferramenta.',
+        'Quando se ouvem os [singles de Helena’s Son](https://soundcloud.com/wonderland_song/sets/helena-son), costuma-se supor que tenham sido produzidos em home studio. Não o foram: a totalidade foi escrita e editada no Guitar Pro 6. Após apresentar o trabalho a Catatal, que o recebeu com aprovação, entregou-lhe a partitura. Ainda sob o impulso da inspiração, nasceu a segunda faixa: “Ain’t A Rotten Heart”. Acrescentou letra a fim de imaginar a peça com voz. Sem domínio pleno do inglês e sem hábito de cantar, decidiu procurar um vocalista.',
+      ],
+    },
+    {
+      id: 'name',
+      title: 'O nome do projeto',
+      paragraphs: [
+        'Antes de publicar as músicas no [SoundCloud](https://soundcloud.com/wonderland_song/sets/helena-son), o projeto carecia de um nome. Ao ouvir intensamente Alice in Chains — em boa medida por indicação do algoritmo do YouTube —, o filme Alice no País das Maravilhas foi-lhe recomendado. O tema agradou; já havia sido empregado em um projeto anterior (Ken and Klein). Imagens de Alice auxiliaram na inspiração e, em busca de uma capa para o que viria a ser o álbum, encontrou a imagem que se tornaria a capa oficial: a mulher na água evocava o “teste” medieval empregado nas acusações de bruxaria — o que conduziu à figura de Helena Curtens.',
+        'Helena Curtens foi uma mulher alemã acusada de bruxaria e executada em 1738, em Kempten, na Baviera — acusada de provocar mortes por feitiçaria e de celebrar pacto com o diabo. Em contexto de caça às bruxas e de superstição, os processos frequentemente se apoiavam em provas frágeis. Após a prisão, foi torturada e confessou; em seguida, retratou-se. Foi condenada à morte por enforcamento e executada em público. Hoje, sua história é citada como exemplo do medo e da superstição que cercavam tais perseguições na Europa dos séculos XVII e XVIII.',
+        'Como o projeto previa vocal masculino, o nome escolhido foi Helena’s Son — inspirado em Helena Curtens. Antes de qualquer interpretação: não se trata de prática de magia. A intenção é expor a injustiça praticada por quem se apresenta como detentor da verdade absoluta — a ponto de cometer atrocidades e de disfarçar a violência sob o manto da “justiça”, apenas por discordar de ideias ou convicções alheias. Ainda hoje, pessoas podem ser perseguidas pelo que pensam, por quem são ou pelo que possuem. Helena representa o simbolismo desse conceito.',
+      ],
+    },
+    {
+      id: 'drafts',
+      title: 'Rascunhos e a busca por voz',
+      paragraphs: [
+        'Sem grande experiência na busca de vocalistas, tentou parcerias em sítios voltados à formação de grupos e ao encontro de interesses em comum — sem êxito. Em seguida, recorreu a grupos de redes sociais ligados ao grunge (admiradores de Alice in Chains, Nirvana, Pearl Jam e afins). A maioria não respondia. Quase a desistir, a amiga que hoje é sua esposa convidou-o a permanecer na residência que ela alugava em São Paulo. Interrompeu a produção musical por cerca de dois anos e meio.',
+        'Ainda em São Paulo, retomou projetos musicais: remixes (como Samael) e singles por puro prazer. Ao ouvir novamente o material de Helena’s Son, decidiu concluir o álbum. Contatou o [airgigs.com](https://www.airgigs.com/) e abriu um projeto em busca de vocalista para “Ain’t A Rotten Heart”. Após curadoria, conheceu Ser Ouj, da Califórnia — assim se identificava; Lameck acredita que seja de origem indiana.',
+        'Enviou a ideia da letra e solicitou amostras de, no mínimo, vinte segundos. O resultado distou bastante do que imaginava. Explicou novamente; houve chamada de Skype — dificultada pelo sotaque e pelo inglês limitado de ambos — e, por fim, um vídeo detalhando trecho a trecho. Ser Ouj empenhou-se e também reescreveu a letra, aproximando-a do meio em que o inglês é falado. Houve adiantamento, demos e seleção: a introdução agradou; a ponte e o refrão, menos. Parte desse material encontra-se em [arquivos no Drive](https://drive.google.com/drive/folders/1zCp_pyR6EsLDuVLTnT9VPn-0-vQOlxMr) (também mencionados no [SoundCloud](https://soundcloud.com/wonderland_song/sets/helena-son)). A faixa não foi concluída; o trabalho cotidiano consumiu o tempo disponível. A experiência no airgigs permitiu repensar o método de busca de vocalistas — abordagem que, mais tarde, mostrou-se eficaz em outro projeto (Nile Seeds).',
+      ],
+    },
+    {
+      id: 'distribution',
+      title: 'Distribuição',
+      paragraphs: [
+        'A música foi distribuída pela Tratore. Os retornos financeiros ficaram aquém dos obtidos com outras distribuidoras, e o perfil cadastrado não correspondia ao do artista — registrado de forma incorreta sob LK7. Esse foi um dos motivos que levaram à busca de outros meios de distribuição. O contato com a Tratore resultou de um curso de negócios da música oferecido pelo Palco Digital.',
+      ],
+    },
+    {
+      id: 'genesis-2025',
+      title: "Helena's Son Genesis",
+      paragraphs: [
+        'Em 2025, o projeto foi retomado — desta vez com experiência consideravelmente maior em música, produção e composição. O que se iniciara como hobby evoluiu com naturalidade. Em companhia de amigos, reconstruíram o projeto, preservando a essência do grunge e permitindo-lhe amadurecer.',
+        'O método de composição de Lameck assemelha-se ao de redigir um ensaio: planejar antes de executar favorece a compreensão do trabalho como um todo — temas, identidade visual e capa, o assunto de cada canção e a visão clara de como o projeto deve soar. Esse processo confere coerência à música e faz com que cada elemento sirva à mesma narrativa: nada existe por acaso. O detalhe de cada álbum do ciclo Genesis encontra-se na página do disco correspondente.',
       ],
     },
     {
@@ -297,7 +333,7 @@ export const helenaSon: ProjectDetail = {
     },
   ],
   historyClosing:
-    "Genesis reúne os quatro capítulos da jornada. Cada faixa é um pedaço da travessia — e, juntas, formam o coração grunge de Helena's Son.",
+    'Do Guitar Pro em Passos ao Genesis em 2025: Helena’s Son é grunge que carrega memória, a denúncia da injustiça e a perseverança de quem retorna à composição.',
   spotifyUrl: 'https://open.spotify.com/intl-pt/artist/3w2iPAIrdoXXzJ38C59np8',
   spotifyLabel: 'Ouvir no Spotify',
 };
@@ -494,14 +530,18 @@ export const helenaSonAlbums: ProjectAlbum[] = [
     type: 'Album',
     cover: '/images/albums/plastic-grace.webp',
     summary:
-      'A revelação da ilusão: graça plástica, fé performática e o grito de libertação contra o silêncio emocional.',
+      'Conceito e capa: a falsidade da perfeição, a espiritualidade moldada e a falsa luz diante do fim iminente.',
     description: [
-      'Plastic Grace expõe a falsidade da perfeição, a espiritualidade moldada e o preço de parecer bem quando tudo está em ruínas por dentro. É um grito de libertação contra o silêncio emocional — um exorcismo feito de raiva, dor e ironia.',
-      'O álbum desnuda a espiritualidade corrompida, a fé transformada em instrumento de controle e o amor travestido de redenção. É o retrato de uma alma sufocada pela exigência de pureza, aparência e perdão — crítica à forma como o divino foi domesticado para caber no ego humano.',
-      'A luz é plástica: moldada, fria, industrial — brilho artificial do que a sociedade espera ver. Helena rasga esse verniz e expõe o que pulsa por baixo: carne, falha e humanidade. Da culpa à consciência, da fé fingida à raiva lúcida — a “graça” não vem do céu; é sintética. Do plástico queimado nasce a alma crua.',
-      'Clima: moderado, introspectivo, contido, espiritual e desconfiado. Temas: crítica à fé institucionalizada, vaidade espiritual, moralidade de fachada, busca por pureza num mundo adulterado.',
+      'Conceito — O disco Plastic Grace expõe a falsidade da perfeição, a espiritualidade moldada e o preço de parecer bem quando tudo se encontra em ruínas por dentro. Constitui um grito de libertação contra o silêncio emocional: um exorcismo feito de raiva, dor e ironia.',
+      'Plastic Grace desnuda a espiritualidade corrompida, a fé transformada em instrumento de controle e o amor travestido de redenção. É o retrato de uma alma sufocada pela exigência de pureza, aparência e perdão — uma crítica à forma como o divino foi domesticado para caber no ego humano.',
+      'A luz é plástica: moldada, fria, industrial — um brilho artificial que reflete o que a sociedade espera ver: virtude sem verdade, piedade sem empatia. Helena, contudo, rasga esse verniz e expõe o que pulsa por baixo: carne, falha e humanidade.',
+      'O álbum é uma jornada da culpa à consciência, da fé fingida à raiva lúcida, em que a “graça” não provém do céu, mas se apresenta sintética, vendida em vitrines emocionais, reciclada em discursos e consumida como consolo. Plastic Grace não busca a fé: derrete-a. E do plástico queimado nasce algo mais verdadeiro — a alma crua, humana e imperfeita.',
+      'A capa de Plastic Grace — a falsa luz e o fim iminente. Os discos voadores não representam falsidade, mas uma metáfora visual de Cristo e de seus anjos: mensageiros da justiça divina, vindos para pôr fim ao sistema de coisas. A escolha dessa imagem evita a literalidade do apocalipse bíblico e transmite a mensagem de forma simbólica e reflexiva. Mostra o momento em que a verdade espiritual se manifesta sobre o mundo corrompido, revelando o contraste entre aparência e essência, fé e hipocrisia. Não se trata de ficção: é a representação artística do julgamento espiritual, em que a luz desce não para entreter, mas para corrigir e expor o que está oculto.',
+      'A estética retrô e colorida da destruição tem função crítica: mostra como até o apocalipse seria utilizado como publicidade nas mãos erradas. O mundo de Plastic Grace é aquele em que a mentira se vende bem, em que até a ideia do “fim” é distorcida por quem lucra com o medo e com a fé. Por isso, a capa não é literal — é um espelho sarcástico de como o sagrado seria manipulado em tempos modernos.',
+      'Síntese simbólica da capa: os discos voadores simbolizam Cristo e seus anjos, vindos para destruir o sistema de coisas; as explosões e o caos urbano representam a destruição moral e espiritual dos hipócritas.',
       "Projeto: Helena's Son · Álbum: Plastic Grace · Genesis · Lameck S. Fernandes, Adriano Lima e Rodrigo Alves.",
     ],
+    previewVideo: '/videos/hs-preview.webm',
     trackCount: plasticGraceTracks.length,
     tracks: plasticGraceTracks,
     clips: [],
@@ -517,14 +557,19 @@ export const helenaSonAlbums: ProjectAlbum[] = [
     type: 'Album',
     cover: '/images/albums/new-day.webp',
     summary:
-      'O silêncio após a queda: niilismo, luto existencial e a busca por sentido entre as ruínas da fé.',
+      'Conceito e símbolo: o colapso interior, o renascimento em ruína e a Medusa como espelho do eu quebrado.',
     description: [
-      'New Day é o segundo capítulo de Genesis. Após perceber a ilusão de Plastic Grace, o personagem mergulha num estado de vazio e perda de propósito. Tudo o que sustentava fé e identidade se dissolve.',
-      'O silêncio vira a única resposta — e dói. Não há redenção fácil, apenas lucidez. As letras carregam tristeza contida e exaustão espiritual: alguém que ainda tenta encontrar sentido entre as ruínas do que acreditava.',
-      'As faixas principais seguem o lançamento no Spotify. Abaixo da tracklist oficial, o documento Genesis reúne faixas extras que prolongam o clima de luto e desconexão — também listadas no Unplugged.',
-      'Clima: denso, melancólico, frio e confessional. Temas: niilismo e esgotamento emocional; a morte da fé e o luto existencial; o peso da lucidez e a solidão após o despertar; busca por significado em meio à ausência de sentido.',
+      'Conceito — O disco New Day é uma reflexão sobre o colapso interior: uma tentativa de renascer após o fim, entre a dor, o silêncio e o reconhecimento da própria falha. Não se trata de um amanhecer de esperança, mas de consciência. É o som de quem acorda em um mundo queimado e, ainda assim, decide respirar.',
+      'New Day aborda o renascimento em meio à ruína, em que a luz não salva — apenas revela o que restou. As letras exploram o vazio, a culpa, o amor desgastado e a fé perdida, não como lamentos, mas como espelhos. O eu lírico não busca redenção: observa, analisa e sangra em silêncio.',
+      'A luz que, em Plastic Grace, se tornaria fria e moldada, aqui ainda tenta existir — mas se dissolve em cinzas, ferrugem e carne exposta. Cada faixa é um fragmento desse processo: da raiva à lucidez, da dor à aceitação de que viver é continuar quebrado. Após perder as esperanças naquilo em que depositava fé, o eu lírico sente-se perdido, sem razão à qual se apegar ou pela qual viver.',
+      'New Day é o dia depois do fim, o despertar no interior dos escombros da alma. O som é denso, melancólico e visceral — guitarras em drop D, vocais gritados e melódicos, baixo espesso, bateria orgânica e respiração suja. É redenção sem fé, vida sem filtro, esperança com cicatrizes.',
+      'No fim, New Day não promete salvação — apenas o direito de existir em meio à destruição. O novo dia não nasce do sol: nasce da consciência. E essa luz, ainda que fraca, é o que ainda nos mantém humanos.',
+      'Por que Medusa representa New Day — Medusa, na mitologia, não nasceu monstro: foi transformada. Punida injustamente, tornou-se símbolo de beleza amaldiçoada, de quem carrega o peso da culpa e da rejeição social. Isso reflete o tema central do álbum: o personagem não é mau, apenas quebrado pela dor, pela exclusão e pela perda da fé. Assim como Medusa, ele encara o espelho e vê uma versão distorcida de si mesmo — alguém irreconhecível, mas ainda humano.',
+      'O álbum trata de padrões estéticos, de dor disfarçada e do culto à aparência. Medusa encarna essa contradição: uma mulher bela, porém amaldiçoada por sua própria imagem. É o símbolo da beleza que causa medo — assim como o personagem, que vive a angústia de existir em um mundo que transforma pureza em espetáculo e dor em estética.',
+      'O olhar de Medusa transforma em pedra quem a encara. Em New Day, o eu lírico experimenta exatamente isso: vê demais — enxerga o que está por trás das ilusões — e isso o imobiliza (o espanto). A lucidez é a maldição. A petrificação é metáfora do esvaziamento emocional: já não consegue sentir, apenas observar.',
       "Projeto: Helena's Son · Álbum: New Day · Genesis · Lameck S. Fernandes, Adriano Lima e Rodrigo Alves.",
     ],
+    previewVideo: '/videos/hs-preview-nd.webm',
     trackCount: newDayTracks.length,
     tracks: newDayTracks,
     extraTracks: newDayExtraTracks,
@@ -542,11 +587,16 @@ export const helenaSonAlbums: ProjectAlbum[] = [
     type: 'Album',
     cover: '/images/albums/the-computer.webp',
     summary:
-      'O homem e a máquina: conexões falsas, carne e código, e o brilho digital que não salva ninguém.',
+      'Último estágio da trilogia: a busca pela verdade na versão tecnológica e a freira com o computador.',
     description: [
-      'The Computer é o terceiro capítulo de Genesis. O personagem tenta se reconstruir pela tecnologia — e descobre que o mundo digital oferece só uma nova ilusão. A promessa de conexão vira isolamento; o ruído das máquinas espelha o caos interno.',
-      'Há mais energia e tensão, mistura de raiva e desespero pela humanidade que se esvai. Letras com metáforas digitais e emoção crua: a mente como sistema sobrecarregado, prestes a falhar.',
-      'Clima: energético, elétrico e claustrofóbico. Temas: falsas conexões e solidão digital; fusão entre carne e código; identidade fragmentada; a tecnologia como espelho do vazio humano.',
+      'The Computer representa o último estágio da trilogia (Plastic Grace → New Day → The Computer). Se em Plastic Grace o eu lírico questionava a falsidade da fé e, em New Day, buscava sentido em meio à dor humana, agora ele adentra o território da busca pela verdade na versão tecnológica.',
+      'O álbum é uma descida poética ao mundo digital: um lugar em que sentimentos são simulados, a presença é substituída por conexão e o toque se tornou código binário. Diferentemente de uma simples crítica ao avanço tecnológico, o disco trata de algo mais íntimo — a solidão moderna e a necessidade de ser compreendido, ainda que por uma máquina.',
+      'A máquina, aqui, não é o vilão. É o espelho: devolve ao humano o vazio que ele próprio construiu. O narrador tenta encontrar “vida” nos circuitos e descobre que o digital é o novo espelho do espiritual — frio, porém constante; falso, porém atento. Ainda assim, há informações que o levam a pensar.',
+      'Por que uma freira com um computador — A imagem mostra uma freira em estado de espanto, tentando esconder um computador. Ela representa o conflito entre fé e conhecimento, entre o mundo espiritual que teme o questionamento e a era digital que o estimula.',
+      'Com o advento do computador, o conhecimento se globalizou — e verdades antes ocultas, censuradas ou monopolizadas por instituições tornaram-se acessíveis a qualquer um. A máquina tornou-se o novo templo: fria, silenciosa, porém repleta de revelações.',
+      'A freira teme não a tecnologia em si, mas o que ela revela. Seu olhar assustado reflete a culpa de quem acessa um saber proibido — a consciência de que, diante da informação, o dogma permanece intocado.',
+      'O gesto de esconder o computador simboliza a tentativa desesperada de preservar o velho sagrado em um mundo em que o divino foi digitalizado. Ela teme ser descoberta, não por estar cometendo um pecado, mas por estar buscando a verdade fora dos muros da Igreja.',
+      'A arte dialoga com o conceito do álbum: em The Computer, o eu lírico abandona o conforto da crença cega e mergulha na conexão — um lugar em que a verdade se mistura ao código, em que a revelação já não provém de um púlpito, mas de uma tela iluminada.',
       "Projeto: Helena's Son · Álbum: The Computer · Genesis · Lameck S. Fernandes, Adriano Lima e Rodrigo Alves.",
     ],
     trackCount: theComputerTracks.length,

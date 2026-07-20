@@ -1,6 +1,10 @@
 import type { CSSProperties } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import Seo from '../components/seo/Seo';
+import {
+  historyLinkClassName,
+  RichTextWithLinks,
+} from '../components/ui/RichTextWithLinks';
 import SpotifyIcon from '../components/ui/SpotifyIcon';
 import YouTubeIcon from '../components/ui/YouTubeIcon';
 import { absoluteUrl, SITE_LAST_UPDATED_LABEL } from '../config/site';
@@ -210,12 +214,14 @@ export function ProjectDetailView({ project, albums }: ProjectDetailViewProps) {
               <h2 className="m-0 mb-6 text-[clamp(1.5rem,3vw,2rem)] font-medium leading-tight tracking-tight text-white">
                 {historyTitle}
               </h2>
-              <p className="text-lg leading-relaxed text-white/90 sm:text-xl">{historyLead}</p>
+              <p className="text-lg leading-relaxed text-white/90 sm:text-xl">
+                <RichTextWithLinks text={historyLead} />
+              </p>
 
               {pullQuote ? (
                 <blockquote className="mt-10 mb-2 border-l-2 border-white/25 pl-5">
                   <p className="text-[clamp(1.15rem,2.4vw,1.45rem)] font-medium leading-snug tracking-tight text-white/95">
-                    “{pullQuote}”
+                    “<RichTextWithLinks text={pullQuote} />”
                   </p>
                 </blockquote>
               ) : null}
@@ -240,7 +246,7 @@ export function ProjectDetailView({ project, albums }: ProjectDetailViewProps) {
                           key={`${section.id}-${paragraphIndex}`}
                           className="m-0 text-base leading-[1.75] text-white/70 sm:text-[1.05rem]"
                         >
-                          {paragraph}
+                          <RichTextWithLinks text={paragraph} />
                         </p>
                       ))}
                     </div>
@@ -249,7 +255,9 @@ export function ProjectDetailView({ project, albums }: ProjectDetailViewProps) {
               </div>
 
               {historyClosing ? (
-                <p className="mt-12 text-lg font-medium italic text-white/80">{historyClosing}</p>
+                <p className="mt-12 text-lg font-medium italic text-white/80">
+                  <RichTextWithLinks text={historyClosing} />
+                </p>
               ) : null}
 
               {historySourceUrl ? (
@@ -259,7 +267,7 @@ export function ProjectDetailView({ project, albums }: ProjectDetailViewProps) {
                     href={historySourceUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="underline decoration-white/25 underline-offset-4 transition hover:text-white/70 hover:decoration-white/50"
+                    className={historyLinkClassName}
                   >
                     {historySourceLabel || historySourceUrl}
                   </a>
