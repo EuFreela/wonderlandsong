@@ -8,7 +8,6 @@ import {
   getProjectAlbums,
   getProjectDetailBySlug,
 } from '../data/content';
-import { usePrefersReducedMotion } from '../hooks/usePrefersReducedMotion';
 import type { ProjectAlbum, ProjectDetail } from '../types';
 import ComingSoonPage from './ComingSoonPage';
 
@@ -38,7 +37,6 @@ export function ProjectDetailView({ project, albums }: ProjectDetailViewProps) {
     tagline,
     historyTitle,
     historyLead,
-    historyVideo,
     pullQuote,
     historySections,
     historyClosing,
@@ -51,8 +49,6 @@ export function ProjectDetailView({ project, albums }: ProjectDetailViewProps) {
     footerNote,
     albumsEmptyMessage,
   } = project;
-
-  const prefersReducedMotion = usePrefersReducedMotion();
 
   const heroMediaStyle = {
     ...(imagePosition ? { '--media-pos': imagePosition } : {}),
@@ -215,21 +211,6 @@ export function ProjectDetailView({ project, albums }: ProjectDetailViewProps) {
                 {historyTitle}
               </h2>
               <p className="text-lg leading-relaxed text-white/90 sm:text-xl">{historyLead}</p>
-
-              {historyVideo && !prefersReducedMotion ? (
-                <figure className="mt-10 overflow-hidden rounded-2xl border border-white/10 bg-black shadow-[0_24px_60px_-20px_rgba(0,0,0,0.65)]">
-                  <video
-                    className="block h-auto w-full max-h-[min(90vh,1100px)] object-contain"
-                    src={historyVideo}
-                    muted
-                    loop
-                    playsInline
-                    autoPlay
-                    preload="metadata"
-                    aria-label={`Prévia visual de ${title}`}
-                  />
-                </figure>
-              ) : null}
 
               {pullQuote ? (
                 <blockquote className="mt-10 mb-2 border-l-2 border-white/25 pl-5">

@@ -13,6 +13,7 @@ import {
   getProjectAlbums,
   getProjectDetailBySlug,
 } from '../data/content';
+import { usePrefersReducedMotion } from '../hooks/usePrefersReducedMotion';
 import type { BunnyAlbumTrack } from '../types';
 
 /**
@@ -35,6 +36,7 @@ function BunnyAlbumPage() {
     track: BunnyAlbumTrack;
     number: number;
   } | null>(null);
+  const prefersReducedMotion = usePrefersReducedMotion();
 
   if (!project) {
     return <Navigate to="/" replace />;
@@ -237,6 +239,21 @@ function BunnyAlbumPage() {
                   </p>
                 ))}
               </div>
+
+              {album.previewVideo && !prefersReducedMotion ? (
+                <figure className="mt-8 overflow-hidden rounded-2xl border border-white/10 bg-black shadow-[0_24px_60px_-20px_rgba(0,0,0,0.65)]">
+                  <video
+                    className="block h-auto w-full max-h-[min(90vh,1100px)] object-contain"
+                    src={album.previewVideo}
+                    muted
+                    loop
+                    playsInline
+                    autoPlay
+                    preload="metadata"
+                    aria-label={`Prévia visual de ${displayTitle}`}
+                  />
+                </figure>
+              ) : null}
             </div>
 
             <div>

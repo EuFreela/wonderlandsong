@@ -80,11 +80,6 @@ export type ProjectDetail = {
   historyTitle: string;
   historyLead: string;
   pullQuote?: string;
-  /**
-   * Optional decorative video for the “Sobre” / history section
-   * (muted loop, e.g. project teaser).
-   */
-  historyVideo?: string;
   historySections: ProjectHistorySection[];
   historyClosing?: string;
   historySourceUrl?: string;
@@ -158,6 +153,11 @@ export type ProjectAlbum = {
   summary: string;
   /** Full description paragraphs for the album page. */
   description: string[];
+  /**
+   * Optional decorative preview video on the album page
+   * (muted loop, shown under “Sobre o álbum”).
+   */
+  previewVideo?: string;
   /** Optional content warning. */
   warning?: string;
   duration?: string;

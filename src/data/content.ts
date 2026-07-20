@@ -827,7 +827,7 @@ export const bunnyLandAlbums: ProjectAlbum[] = [
 
 /**
  * Resonance — project-8 detail page (home: project-8).
- * Álbum: Echoes of Redemption. Letras sem nomes de faixas na história.
+ * História de origem do projeto. Detalhes de álbuns ficam em cada página de álbum.
  */
 export const resonance: ProjectDetail = {
   slug: 'resonance',
@@ -836,50 +836,56 @@ export const resonance: ProjectDetail = {
   image: '/images/albums/Ressonance.webp',
   imagePositionMobile: 'center 30%',
   tagline:
-    'Post-grunge e alternative rock consagrados à superação, à redenção e ao renascimento — a jornada de quem enfrenta a escuridão interior e encontra força para recomeçar.',
+    'Post-grunge e alternative rock nascidos da amizade de três músicos — ensaios, teoria e a vontade de criar o próprio som.',
   historyTitle: 'Sobre Resonance',
   historyLead:
-    'Resonance é um projeto musical e conceitual que explora a redenção, a superação, a luta interior e a transformação pessoal. Sua sonoridade post-grunge e alternative rock carrega emoção densa, metáforas profundas e instrumentação atmosférica, a fim de narrar a trajetória de quem enfrenta as próprias sombras e busca um novo começo.',
-  historyVideo: '/videos/ressonance-preview.webm',
-  pullQuote:
-    'Por mais difícil que seja, sempre há um caminho para a redenção.',
+    'Resonance nasceu entre amigos, instrumentos e a vontade de criar. Antes de virar o projeto que é hoje, foi encontro, estudo e uma ideia que resistiu à pausa da vida.',
+  pullQuote: 'A ideia não morreu.',
   footerNote: 'Resonance · Post-Grunge / Alternative Rock · Alpinópolis-MG',
   albumsEmptyMessage: 'Os álbuns de Resonance serão adicionados em breve.',
   historySections: [
     {
-      id: 'vision',
-      title: 'Visão do projeto',
+      id: 'beginning',
+      title: 'O começo: três amigos',
       paragraphs: [
-        'Resonance — e o ciclo Echoes of Redemption (Ecos da Redenção) — narra a história de quem carrega o passado como eco e, ainda assim, empenha-se em libertar-se do sofrimento para encontrar um propósito renovado. Cada faixa constitui um fragmento dessa travessia, unida por temas recorrentes: memórias, dor, esperança e renascimento.',
-        'O “eco”, no conceito do projeto, remete a lembranças que não se apagam com facilidade; a “redenção” designa o ato de depor o peso e seguir adiante com renovada força. O projeto nasceu em Alpinópolis-MG, no universo Wonderland Song.',
+        'O projeto é formado por Lameck Silva Fernandes, Adriano Lima e Rodrigo Alves. Os três são amigos de longa data — a história registrada sobre o projeto diz que essa amizade vem desde a quinta série.',
+        'Adriano já tinha experiência musical como ex-integrante do Madsneaks e também é presidente do Motoclub Guardiões Ventania. Rodrigo, por sua vez, havia retornado de Muzambinho, onde tocava bateria em uma igreja protestante.',
       ],
     },
     {
-      id: 'themes',
-      title: 'Temas centrais',
+      id: 'studies',
+      title: 'Tudo começou estudando música',
       paragraphs: [
-        'Superação e resiliência — a luta contra dores antigas e a busca de renovação. Conflito interno e autodescoberta — o enfrentamento de falhas e incertezas. Libertação e crescimento — o rompimento daquilo que ainda prende ao passado. Memórias e reflexões — a presença constante do que já foi, ecoando no presente.',
-        'A narrativa do disco desenha um arco: alguém perdido, um processo de dor e de reflexão, e a força de recomeçar. A mensagem final é clara: por mais difícil que seja, sempre há um caminho para a redenção.',
+        'Em determinado momento, Lameck e Adriano resolveram voltar a estudar teoria musical juntos. Lameck ia à noite para a casa dele levando os instrumentos. Os dois estudavam, tocavam covers e tinham a intenção de trabalhar principalmente com músicas de hard rock para, aos poucos, começar a criar composições próprias.',
+        'Adriano já demonstrava desde o começo a vontade de compor algo original. Uma das primeiras ideias era usar esses estudos para criar um hino para o motoclube. Ou seja, naquele momento ainda não existia propriamente o Resonance como ele viria a ser depois. Era mais um encontro entre amigos, instrumentos, teoria musical e vontade de criar.',
       ],
     },
     {
-      id: 'symbols',
-      title: 'Metáforas e simbolismos',
+      id: 'rodrigo',
+      title: 'A chegada de Rodrigo aos ensaios',
       paragraphs: [
-        'Fogo e cinzas — dor, destruição e renascimento. Luz e sombra — o dualismo entre esperança e desespero. Oceano e abismo — a sensação de extravio e a incerteza do futuro. Tempo e correntes — o peso do que ficou para trás e a dificuldade de seguir em frente.',
-        'Tais imagens atravessam as letras sem constituir um inventário: formam o vocabulário emocional do projeto, o modo de expressar o luto interior sem renunciar à força de quem se ergue.',
+        'Com Rodrigo novamente por perto, surgiu a possibilidade de os três tocarem juntos. Havia, porém, uma questão prática: não seria possível manter uma bateria acústica na casa dele. A solução foi utilizar a garagem do Adriano, onde havia uma bateria acústica disponível. Assim, aquele espaço passou a ser o ponto onde os amigos poderiam ensaiar juntos.',
+      ],
+    },
+    {
+      id: 'pause',
+      title: 'A vida colocou o projeto em pausa',
+      paragraphs: [
+        'Como acontece com muitos projetos que nascem entre amigos, as responsabilidades pessoais começaram a aparecer. O tempo ficou mais curto e outras prioridades da vida de cada integrante fizeram com que os encontros e planos musicais fossem ficando em pausa.',
+        'Mas a ideia não morreu. Lameck continuou compondo e, paralelamente, começou a trabalhar no álbum In The Forest, do projeto Bunny Land Music. Foi nesse período que ele iniciou uma música dentro do grupo de WhatsApp que os três amigos mantinham para assuntos relacionados à música.',
+        'E foi desse processo que nasceu efetivamente o Resonance.',
       ],
     },
     {
       id: 'credits',
       title: 'Créditos',
       paragraphs: [
-        'Projeto: Resonance · Álbum conceitual: Echoes of Redemption · Tema: superação, redenção e renascimento · Envolvidos: Lameck S. Fernandes, Adriano Lima e Rodrigo Alves · Cidade: Alpinópolis-MG · Gênero: Post-grunge / Alternative rock · Universo Wonderland Song.',
+        'Projeto: Resonance · Integrantes: Lameck Silva Fernandes, Adriano Lima e Rodrigo Alves · Cidade: Alpinópolis-MG · Gênero: Post-grunge / Alternative rock · Universo Wonderland Song.',
       ],
     },
   ],
   historyClosing:
-    'Echoes of Redemption é a luta contra o passado e a aceitação do presente — a prova de que recomeçar dói, mas também liberta.',
+    'Do estudo noturno e da garagem aos álbuns: Resonance é o que restou quando a amizade e a música recusaram ficar em silêncio.',
 };
 
 /** Álbuns de Resonance (project-8). */
@@ -891,13 +897,19 @@ export const resonanceAlbums: ProjectAlbum[] = [
     type: 'Demo',
     cover: '/images/albums/Ressonance.webp',
     summary:
-      'Superação, redenção e renascimento — a jornada de quem enfrenta a escuridão interior e encontra força para recomeçar.',
+      'Post-grunge e alternative rock de Alpinópolis — uma viagem emocional de queda, memória, enfrentamento e reconstrução.',
     description: [
-      'Echoes of Redemption (Ecos da Redenção) é o álbum conceitual de Resonance: post-grunge e alternative rock de forte carga emocional, metáforas densas e instrumentação atmosférica. Cada faixa constitui um fragmento da travessia de quem enfrenta as próprias sombras e busca um novo começo.',
-      'O disco articula memórias do passado, dor, esperança e renascimento. O “eco” remete a lembranças que insistem em retornar; a “redenção” é o ato de libertar-se do sofrimento e de encontrar um propósito renovado. Temas de superação, conflito interno, libertação e reflexão percorrem o conjunto.',
-      'Simbolismos recorrentes — fogo e cinzas, luz e sombra, oceano e abismo, tempo e correntes — conferem unidade poética ao arco narrativo: da queda à força de seguir em frente.',
-      'Projeto: Resonance · Álbum: Echoes of Redemption (Demo) · Lameck S. Fernandes, Adriano Lima e Rodrigo Alves · Alpinópolis-MG · Wonderland Song.',
+      'O trabalho ganhou identidade própria com Echoes of Redemption (Ecos da Redenção).',
+      'O projeto é associado a Alpinópolis, Minas Gerais, e sua estética sonora foi construída em torno do post-grunge e alternative rock, tendo como referências bandas como Creed e Alter Bridge.',
+      'Musicalmente, a proposta inclui guitarras pesadas e melódicas e uso de afinação Drop-D. Já as letras seguem um caminho emocional e reflexivo, abordando dor, aprendizado, esperança e a possibilidade de recomeçar.',
+      'E existe algo particularmente pessoal nisso: segundo a história registrada do Resonance, muitas letras refletem partes de experiências realmente vividas por integrantes do projeto. Então não é apenas uma narrativa fictícia construída para um disco — existe uma dimensão autobiográfica por trás das músicas.',
+      'O álbum funciona praticamente como uma viagem emocional. A pessoa representada pelas músicas começa enfrentando suas próprias sombras e carregando os ecos do passado. Aos poucos, passa pela dor, pelo conflito interior e pela reflexão, até encontrar forças para seguir adiante.',
+      'Os grandes temas são: superação e resiliência; conflito interno e autodescoberta; libertação do passado; crescimento pessoal; memórias que continuam ecoando; dor e esperança; renascimento e redenção.',
+      'Até os símbolos utilizados nas composições seguem essa lógica. Fogo e cinzas representam destruição e renascimento; luz e sombra, a tensão entre esperança e desespero; oceano e abismo, a sensação de estar perdido; e tempo e correntes, o peso de um passado do qual é difícil escapar.',
+      'No fundo, Echoes of Redemption fala sobre alguém que precisa encarar aquilo que viveu para finalmente conseguir continuar. A mensagem central é de que, mesmo depois da dor e da queda, ainda existe a possibilidade de encontrar um novo caminho.',
+      'As 14 faixas documentadas formam esse arco de queda, memória, enfrentamento e reconstrução: Rise From The Ashes; Breaking Point; Soul’s Captivity; Worn Away; Scars of Tomorrow; Trapped in the Fall; Echoes That Remain; Silenced Voices; Edge of the Fall; No Way Back; Traces of Us; New Dawn; Echoes of Redemption; Beyond the Flames.',
     ],
+    previewVideo: '/videos/ressonance-preview.webm',
     trackCount: echoesOfRedemptionTracks.length,
     tracks: echoesOfRedemptionTracks,
     bandcampUrl:
