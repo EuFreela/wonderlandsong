@@ -479,7 +479,14 @@ export const ussShenandoahAlbums: ProjectAlbum[] = [
     trackCount: uss1937Tracks.length,
     spotifyUrl: 'https://open.spotify.com/album/0qkcfpR2jWwbN1lExyZAjw',
     tracks: uss1937Tracks,
-    clips: [],
+    clips: [
+      {
+        id: 'when-the-silence-learns-to-scream',
+        title: 'When the Silence Learns to Scream',
+        subtitle: '1937 · USS Shenandoah',
+        youtubeId: 'PoIBsxWP1ho',
+      },
+    ],
   },
 ];
 
