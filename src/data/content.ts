@@ -391,7 +391,7 @@ export const ussShenandoah: ProjectDetail = {
       id: 'tone-and-pedals',
       title: 'Timbre, making-of e pedais analógicos',
       paragraphs: [
-        'O trabalho de produção de som foi deliberado e documentado: para cada música, escreveu-se um making-of baseado no setting que havia sido montado — o caminho do sinal, as decisões de timbre e o que funcionava (ou não) em ensaio.',
+        'O trabalho de produção de som foi deliberado e documentado: para cada música, escreveu-se um making-of baseado no setting que havia sido montado — o caminho do sinal, as decisões de timbre e o que funcionava (ou não) em ensaio. Os making-ofs e estudos de timbragem estão em: [https://agencylk7.wixsite.com/graf-hindenburg/post/estudos-1#viewer-v7ael138465](https://agencylk7.wixsite.com/graf-hindenburg/post/estudos-1#viewer-v7ael138465).',
         'Vários pedais analógicos entraram na cadeia. O sonho era ter aquele setup real: testava-se tudo no home studio com Amplitube 5 e, quando o timbre fechava, compravam-se os pedais referentes — os equivalentes físicos do que soava bem no software. Não se usava pedaleira digital na época: a aposta era analog, com setting stereo e duas caixas amplificadas, cada uma com saída e timbre diferentes, para aproximar o som do original em trechos específicos.',
         'Hoje, no retrospecto, o digital costuma ser o caminho preferido: mais cômodo, rápido e fácil — e a cadeia fica menor. Naquele momento, porém, o rito era outro: provar no Amplitube, comprar o analógico, documentar o making-of e levar o setting para a terça à noite.',
       ],
