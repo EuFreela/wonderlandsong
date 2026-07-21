@@ -372,7 +372,7 @@ Classes em `src/styles/index.css`:
 | 3 | Rosa Negra de Halfeti | MPB · Experimental · Atmosférico | `/projects/rosa-negra-halfeti` | YouTube / Bandcamp |
 | 4 | A Grande Multidão | Gospel + TJ | `/projects/a-grande-multidao` | Spotify |
 | 5 | Helena Son | Grunge | `/projects/helena-son` | Spotify |
-| 6 | USS Shenandoah | Hard Rock 1960 | `/projects/uss-shenandoah` | Spotify |
+| 6 | USS Shenandoah | Hard Rock · 60/70 | `/projects/uss-shenandoah` | Spotify · YouTube covers |
 | 7 | Lameck & Southern Birds Band | Blues | `/projects/lameck-southern-birds-band` | Spotify |
 | 8 | Resonance | Post-Grunge / Alternative Rock | `/projects/resonance` | Bandcamp (no álbum) + YouTube clip |
 

@@ -28,7 +28,7 @@ Páginas internas cobrem história, discografia, letras, clips e easter eggs.
 | 3 | Rosa Negra de Halfeti | MPB · Experimental · Atmosférico |
 | 4 | A Grande Multidão | Gospel + TJ |
 | 5 | Helena Son | Grunge |
-| 6 | USS Shenandoah | Hard Rock 1960 |
+| 6 | USS Shenandoah | Hard Rock · 60/70 |
 | 7 | Lameck & Southern Birds Band | Blues |
 | 8 | Resonance | Post-Grunge / Alternative Rock · *Echoes of Redemption* |
 

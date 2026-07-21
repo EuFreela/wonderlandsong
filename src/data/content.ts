@@ -359,41 +359,103 @@ export const helenaSon: ProjectDetail = {
 /**
  * USS Shenandoah — project-6 detail page (home: project-6).
  * Álbum 1937 e sua explicação ficam na página do álbum.
+ * Antes: Graf Hindenburg / LZ 129 — renomeado por associação histórica indesejada.
+ * Fonte: https://agencylk7.wixsite.com/graf-hindenburg/post/the-graf-hindenburg
  */
 export const ussShenandoah: ProjectDetail = {
   slug: 'uss-shenandoah',
   title: 'USS Shenandoah',
-  category: 'Hard Rock 1960',
+  category: 'Hard Rock · 60/70',
   image: '/images/usss.webp',
   imagePositionMobile: 'center 32%',
   tagline:
-    'Projeto musical de hard rock com a linguagem dos anos 60 — peso, groove e gravação orgânica.',
+    'Hard rock clássico, influência de Led Zeppelin e a jornada de um dirigível: dos covers na garagem ao álbum autoral 1937.',
   historyTitle: 'Sobre USS Shenandoah',
   historyLead:
-    'USS Shenandoah é um projeto musical de Lameck S. Fernandes, Adriano Lima e Rodrigo Alves, dedicado ao hard rock com forte influência do som dos anos 60.',
+    'USS Shenandoah é um projeto musical de Lameck, Adriano (Catatal) e Rodrigo Alves: começa com covers de bandas favoritas, passa por releituras hard rock de clássicos e chega a composições próprias — sempre com o peso e o groove dos anos 60 e 70, e com forte influência de Led Zeppelin.',
   pullQuote:
-    'Rock direto, com personalidade — guitarras, riffs e a atmosfera de uma das eras mais marcantes do gênero.',
-  footerNote: 'USS Shenandoah · Hard Rock · Anos 60',
+    'Música é diversão. Esse é o nosso lazer nos finais de semana — estudar, ensaiar e deixar o som cada vez mais próximo do que a gente imagina.',
+  footerNote: 'USS Shenandoah · Hard Rock · Anos 60/70 · Antes: Graf Hindenburg',
   albumsEmptyMessage: 'Os álbuns de USS Shenandoah serão adicionados em breve.',
   historySections: [
     {
-      id: 'project',
-      title: 'O projeto',
+      id: 'origin',
+      title: 'Como tudo começa',
       paragraphs: [
-        'USS Shenandoah é um projeto musical de Lameck S. Fernandes, Adriano Lima e Rodrigo Alves. A proposta é explorar a sonoridade do hard rock clássico, em especial a do final da década de 1960, com guitarras distorcidas, riffs marcantes, órgão vintage e uma abordagem mais orgânica de gravação.',
-        'O projeto não busca só copiar um estilo antigo: reinterpreta essa estética com a linguagem do hard rock dos anos 60, em busca de uma experiência musical envolvente e atemporal.',
+        'O projeto nasce dos covers das bandas favoritas, enquanto o trio estuda música e experimenta o som — inclusive no Garagem\' Bar do Adriano. A arte do projeto carrega a influência de Led Zeppelin: riffs, peso, groove e uma estética de hard rock clássico.',
+        'Os ensaios acontecem na casa do Adriano, nas noites de terça-feira. A meta é simples e exigente: fechar cada música como ela deve soar — e, na prática, isso costuma significar tocar a mesma faixa trinta vezes ou mais até a energia encaixar.',
+        'O foco não era só “aprender a música”: era produzir aquele som ao vivo. Estudar a faixa, timbrar tudo, e chegar o mais perto possível do original em sala de ensaio — com a mesma intensidade de quem grava e de quem sobe no palco.',
+      ],
+    },
+    {
+      id: 'tone-and-pedals',
+      title: 'Timbre, making-of e pedais analógicos',
+      paragraphs: [
+        'O trabalho de produção de som foi deliberado e documentado: para cada música, escreveu-se um making-of baseado no setting que havia sido montado — o caminho do sinal, as decisões de timbre e o que funcionava (ou não) em ensaio.',
+        'Vários pedais analógicos entraram na cadeia. O sonho era ter aquele setup real: testava-se tudo no home studio com Amplitube 5 e, quando o timbre fechava, compravam-se os pedais referentes — os equivalentes físicos do que soava bem no software. Não se usava pedaleira digital na época: a aposta era analog, com setting stereo e duas caixas amplificadas, cada uma com saída e timbre diferentes, para aproximar o som do original em trechos específicos.',
+        'Hoje, no retrospecto, o digital costuma ser o caminho preferido: mais cômodo, rápido e fácil — e a cadeia fica menor. Naquele momento, porém, o rito era outro: provar no Amplitube, comprar o analógico, documentar o making-of e levar o setting para a terça à noite.',
+      ],
+    },
+    {
+      id: 'phase-1',
+      title: 'Fase 1 — Covers das bandas favoritas',
+      paragraphs: [
+        'A primeira fase é o repertório de covers em constante ajuste: ordem, sequência e a energia que se quer levar ao palco (ou ao próximo ensaio). É o laboratório em que se aprende a música por dentro — arranjo, dinâmica e feeling — e em que se constrói o som ao vivo, música a música.',
+        'O repertório desta fase está reunido nesta playlist no YouTube: [https://www.youtube.com/playlist?list=PLvFwlimtvenMB6M0AzX17T54nCvXuRBKF](https://www.youtube.com/playlist?list=PLvFwlimtvenMB6M0AzX17T54nCvXuRBKF).',
+        'Por um tempo, o trabalho era sobretudo ensaio e produção de timbre: aprender e relembrar músicas, ajustar instrumentos com luthier da cidade vizinha, completar a pedaleira analógica. Uma experiência de lazer e estudo — antes de qualquer apresentação formal.',
+      ],
+    },
+    {
+      id: 'phase-2',
+      title: 'Fase 2 — Clássicos em hard rock',
+      paragraphs: [
+        'A segunda fase já está em andamento: transpor clássicos de artistas e épocas que inspiraram as bandas dos anos 60 e 70 para versões hard rock. A ideia treina composição, regência e harmonia — e estimula a criatividade com releituras rock and roll daquele período.',
+        'Não é um conceito isolado na história do rock: Jimmy Page fez caminhos parecidos com material clássico no universo Zeppelin; e projetos recentes, como o de Slash com releituras de clássicos, seguem a mesma linha de reimaginar o passado com linguagem de rock. A referência ajuda a enquadrar o exercício: [https://www.youtube.com/watch?v=gStYftT3ybM&ab_channel=SeattleStoodios](https://www.youtube.com/watch?v=gStYftT3ybM&ab_channel=SeattleStoodios).',
+        'As músicas candidatas desta fase estão nesta playlist: [https://www.youtube.com/watch?v=mVHyVjUYJ98&list=PLvFwlimtvenNRABWDHCoOAyxxJscEJXvP&ab_channel=CatBurglars](https://www.youtube.com/watch?v=mVHyVjUYJ98&list=PLvFwlimtvenNRABWDHCoOAyxxJscEJXvP&ab_channel=CatBurglars).',
+        'Uma amostra do processo: Howlin\' Wolf — “Smokestack Lightning”. A base já foi escrita no Guitar Pro (sem edição final de áudio); arranjos seguem em aberto para experimentar nos ensaios. O arquivo da base (só escrita, sem mix): [https://drive.google.com/file/d/167YuzrKGkzaweOYVxkCxs3jYAnfPjr8D/view?usp=sharing](https://drive.google.com/file/d/167YuzrKGkzaweOYVxkCxs3jYAnfPjr8D/view?usp=sharing).',
+      ],
+    },
+    {
+      id: 'phase-3',
+      title: 'Fase 3 — Composições próprias e o álbum',
+      paragraphs: [
+        'A terceira fase, no começo, era uma incógnita: experimentar e ver o que nascia. Com o tempo, o grupo deu uma pausa nos covers — estava, por exemplo, tirando material na linha Greta Van Fleet — e passou a compor a partir de rascunhos antigos.',
+        'No fim, as músicas fecharam um álbum. É o capítulo autoral do projeto: a linguagem hard rock dos anos 60/70 aplicada a material próprio, depois de ter passado pelos covers e pelas releituras de clássicos.',
+      ],
+    },
+    {
+      id: 'rename',
+      title: 'De Graf Hindenburg a USS Shenandoah',
+      paragraphs: [
+        'O projeto se chamava Graf Hindenburg (e o primeiro capítulo, LZ 129). “Graf”, em alemão, é o título de conde — o mesmo do famoso dirigível Graf Zeppelin, em homenagem a Ferdinand von Zeppelin. O LZ 129 Hindenburg, por sua vez, é o grande dirigível rígido dos anos 1930, conhecido tanto pelo luxo das travessias transatlânticas quanto pelo desastre de 6 de maio de 1937 em Lakehurst, Nova Jersey — o fim simbólico da era dos grandes dirigíveis de passageiros.',
+        'A escolha do nome sempre foi estético-conceitual: algo ligado a dirigíveis e à aura de inovação, escala e drama aéreo — e fortemente alinhado à imagética e à influência de Led Zeppelin. Não havia intenção política.',
+        'Na hora de publicar o material, notou-se que “Hindenburg” carrega associações com o regime alemão daquela época — uma ligação indesejada para o projeto. Por isso o nome mudou para USS Shenandoah: ainda no universo dos dirigíveis, ainda na metáfora de voo e escala, mas com outra referência histórica e sem o peso da associação anterior.',
+      ],
+    },
+    {
+      id: 'lineup',
+      title: 'Formação',
+      paragraphs: [
+        'Bateria: Rodrigo Alves · Guitarra: Lameck · Baixo: Adriano (Catatal). Vocal fixo ainda em aberto; por enquanto usam-se playbacks na linha de referência (Robert Plant no papel de voz-guia dos covers).',
+        'Para um som mais rico e próximo do original, entram amigos em violões, guitarra base, órgão, sintetizadores e vozes extras — o reforço que o hard rock clássico pede quando se quer textura de banda completa.',
+        'Conforme os estudos avançam, materiais de timbragem e making-ofs (Amplitube 5, Guitar Rig 7 e afins) vão sendo compartilhados. Música é diversão: lazer de fim de semana, ofício em construção e, quando fizer sentido, apresentação.',
       ],
     },
     {
       id: 'credits',
       title: 'Créditos',
       paragraphs: [
-        'Projeto: USS Shenandoah · Compositores: Lameck S. Fernandes, Adriano Lima e Rodrigo Alves · Gênero: Hard rock · Influência: rock dos anos 60 · Universo Wonderland Song.',
+        'Projeto: USS Shenandoah (antes: Graf Hindenburg / LZ 129) · Lameck · Adriano Lima (Catatal) · Rodrigo Alves · Gênero: hard rock clássico · Influências: Led Zeppelin e rock dos anos 60/70 · Universo Wonderland Song.',
       ],
     },
   ],
+  historySourceUrl:
+    'https://agencylk7.wixsite.com/graf-hindenburg/post/the-graf-hindenburg',
+  historySourceLabel: 'The Graf Hindenburg (arquivo)',
   spotifyUrl: 'https://open.spotify.com/intl-pt/artist/008vDYJA7fvRWxchF8QN1F',
   spotifyLabel: 'Ouvir no Spotify',
+  youtubeUrl: 'https://www.youtube.com/playlist?list=PLvFwlimtvenMB6M0AzX17T54nCvXuRBKF',
+  youtubeLabel: 'Playlist · Covers',
 };
 
 /** Álbuns de USS Shenandoah (project-6). */
@@ -405,13 +467,13 @@ export const ussShenandoahAlbums: ProjectAlbum[] = [
     type: 'Album',
     cover: '/images/albums/uss-1937.webp',
     summary:
-      'Álbum conceitual de hard rock com forte influência do som dos anos 60 — guitarras, riffs, órgão vintage e gravação orgânica.',
+      'Primeiro álbum autoral: hard rock dos anos 60/70 nascido depois dos covers e das releituras — peso, groove e gravação orgânica.',
     description: [
-      '1937 é o álbum conceitual de hard rock do projeto USS Shenandoah, com forte influência do som dos anos 60, criado por Lameck S. Fernandes, Rodrigo Alves e Adriano Lima. A proposta é explorar a sonoridade característica daquela época, resgatando elementos clássicos do rock como guitarras distorcidas, riffs marcantes, órgão vintage e uma abordagem mais orgânica de gravação.',
-      'Inspirado na energia e na estética do rock do final da década de 1960, o álbum busca recriar uma atmosfera intensa, envolvente e autêntica, onde os instrumentos têm presença forte e a música se desenvolve de forma natural, valorizando a expressividade e a emoção.',
-      'O resultado é um trabalho que combina peso, groove e sensibilidade musical, trazendo um rock direto, cheio de personalidade e de bom gosto, capaz de transportar o ouvinte para a atmosfera sonora de uma das épocas mais marcantes da história do gênero.',
-      'Mais do que apenas reproduzir um estilo antigo, 1937 procura reinterpretar essa estética clássica, utilizando a linguagem do hard rock dos anos 60 para criar uma experiência musical envolvente e atemporal.',
-      'Projeto: USS Shenandoah · Álbum: 1937 · Lameck S. Fernandes, Adriano Lima e Rodrigo Alves.',
+      '1937 é o álbum conceitual e autoral de hard rock do projeto USS Shenandoah, criado por Lameck, Rodrigo Alves e Adriano Lima. O título ecoa o ano que marcou o fim da era dos grandes dirigíveis — e o imaginário que deu nome ao projeto (primeiro Graf Hindenburg / LZ 129, depois USS Shenandoah).',
+      'O disco fecha a terceira fase da jornada: depois dos covers das bandas favoritas e das releituras hard rock de clássicos, o trio passou a compor a partir de rascunhos do passado. O resultado reúne guitarras distorcidas, riffs marcantes, órgão vintage e uma abordagem mais orgânica de gravação — a linguagem dos anos 60 e 70, com forte influência de Led Zeppelin.',
+      'Inspirado na energia e na estética do rock do final da década de 1960, o álbum busca uma atmosfera intensa e autêntica, em que os instrumentos têm presença forte e a música se desenvolve com expressividade. Combina peso, groove e sensibilidade — rock direto, com personalidade.',
+      'Mais do que copiar um estilo antigo, 1937 reinterpreta essa estética clássica com material próprio: o ponto de chegada de um processo de estudo, ensaio e diversão que começou na garagem e nas terças à noite.',
+      'Projeto: USS Shenandoah · Álbum: 1937 · Lameck · Adriano Lima (Catatal) · Rodrigo Alves.',
     ],
     duration: '58 min',
     trackCount: uss1937Tracks.length,
