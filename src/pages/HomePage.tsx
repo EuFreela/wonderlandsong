@@ -1,5 +1,4 @@
 import Header from '../components/layout/Header';
-import ScrollToTop from '../components/layout/ScrollToTop';
 import ParallaxProjectPanel from '../components/parallax/ParallaxProjectPanel';
 import Seo from '../components/seo/Seo';
 import { absoluteUrl, SITE_DEFAULT_DESCRIPTION, SITE_NAME } from '../config/site';
@@ -58,8 +57,6 @@ function HomePage() {
         <strong className="uppercase tracking-[0.14em]">Wonderland Song</strong>
         <span>Music, stories and imagined worlds.</span>
       </footer>
-
-      <ScrollToTop />
     </div>
   );
 }

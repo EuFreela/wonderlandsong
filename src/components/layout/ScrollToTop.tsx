@@ -61,7 +61,7 @@ function ScrollToTop() {
       type="button"
       onClick={goTop}
       aria-label="Voltar ao topo"
-      className="fixed bottom-6 right-5 z-[150] flex h-12 w-12 animate-menu-fade items-center justify-center rounded-full border border-black/10 bg-[#171717] text-white shadow-[0_12px_30px_rgba(0,0,0,0.28)] transition hover:scale-105 hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#171717] sm:bottom-8 sm:right-8"
+      className="fixed bottom-6 right-5 z-[150] flex h-12 w-12 animate-menu-fade items-center justify-center rounded-full border border-white/20 bg-[#171717] text-white shadow-[0_12px_30px_rgba(0,0,0,0.45)] transition hover:scale-105 hover:border-white/40 hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:bottom-8 sm:right-8"
     >
       <IconArrowUp size={20} />
     </button>

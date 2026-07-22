@@ -2,6 +2,7 @@ import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import NavigationLoading from './components/layout/NavigationLoading';
 import PageLoading from './components/layout/PageLoading';
+import ScrollToTop from './components/layout/ScrollToTop';
 import ScrollToTopOnNavigate from './components/layout/ScrollToTopOnNavigate';
 // Home is the critical path — eager load avoids a dynamic-import waterfall.
 import HomePage from './pages/HomePage';
@@ -27,6 +28,7 @@ function App() {
           <Route path="*" element={<ComingSoonPage />} />
         </Routes>
       </Suspense>
+      <ScrollToTop />
     </>
   );
 }
