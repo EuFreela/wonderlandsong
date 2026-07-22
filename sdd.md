@@ -1,8 +1,8 @@
 # SDD — Wonderland Song Parallax Portfolio
 
 **Metodologia:** SDD — **Spec-Driven Development** (desenvolvimento orientado por especificação)  
-**Versão do produto:** `0.0.2` (alinhada a `package.json` / tag `v0.0.2`)  
-**Status da spec:** viva (atualizado em 2026-07-19)  
+**Versão do produto:** `0.0.3` (alinhada a `package.json` / tag `v0.0.3`)  
+**Status da spec:** viva (atualizado em 2026-07-22)  
 **Repositório:** `wonderlandsong2`  
 **Fase atual:** front-end rico com dados locais tipados (sem backend)  
 **Publicação:** em deploy (sem domínio `.com` próprio; URL pública via hospedagem / `VITE_SITE_URL`)
@@ -13,6 +13,7 @@ Este arquivo é a **especificação viva** do produto no fluxo Spec-Driven Devel
 
 | Versão | Data | Destaque |
 | --- | --- | --- |
+| **0.0.3** | 2026-07-22 | **Heretic's Fork** + **AEVUM** na home; álbum *Levels of Consciousness* (demo, letra, clip YouTube); textos de projeto/álbum mais concretos; justificação tipográfica; scroll-to-top global |
 | **0.0.2** | 2026-07-19 | **Resonance** na home + detalhe + álbum *Echoes of Redemption* (14 faixas EN/PT, preview `.webm`, clip YouTube); separação de conteúdo projeto vs. álbum; Lighthouse mobile 98 / desktop 100 (performance) |
 | 0.0.1 | — | Tag anterior no repositório |
 | 0.0.0 | — | Scaffold / baseline |
@@ -109,7 +110,7 @@ O visitante deve perceber: profundidade, movimento, continuidade, elegância, mi
 | Objetivo | Status |
 | --- | --- |
 | Home parallax em painéis de tela cheia | **Feito** |
-| Exibir projetos / selos artísticos | **Feito** (8 painéis, incl. Resonance) |
+| Exibir projetos / selos artísticos | **Feito** (10 painéis, incl. Heretic's Fork e AEVUM) |
 | Páginas individuais de projeto (história + discografia) | **Feito** |
 | Páginas de álbum (faixas, letras, clips, easter eggs, preview de vídeo) | **Feito** |
 | Integração Spotify e YouTube | **Feito** (links + ícones + galeria de clips) |
@@ -259,7 +260,7 @@ wonderlandsong2/
 ├── lighthouse-mobile.json   # última auditoria mobile
 ├── lighthouse-desktop.json  # última auditoria desktop
 ├── dist/                    # build de produção
-├── package.json             # version 0.0.2
+├── package.json             # version 0.0.3
 ├── vite.config.ts           # manualChunks (react-vendor, content, helmet…)
 ├── vitest.config.ts
 ├── tailwind.config.js
@@ -381,7 +382,7 @@ Classes em `src/styles/index.css`:
 * **Caution! Audio Gateway** deixou de ser painel isolado na home e passou a ser **Chapter 1** de Bunny Land Music.
 * **Wonderland Song TV** não é painel separado; o canal YouTube está ligado ao painel do selo.
 * **Compositores / artistas** não formam painel na home; conteúdo de artistas reais está nas histórias dos projetos (Lameck, Adriano, Rodrigo, etc.).
-* Entraram projetos: **A Grande Multidão**, **Helena Son**, **USS Shenandoah**, **LSBB**, **Resonance** (v0.0.2).
+* Entraram projetos: **A Grande Multidão**, **Helena Son**, **USS Shenandoah**, **LSBB**, **Resonance** (v0.0.2), **Heretic's Fork**, **AEVUM** (v0.0.3).
 
 ---
 
@@ -776,6 +777,13 @@ Ordem aproximada do histórico + marcos de versão:
     * testes de rota projeto/álbum Resonance;
     * Lighthouse re-medido (mobile Perf 98 / desktop 100);
     * regra editorial documentada: projeto geral vs. detalhes no álbum.
+14. **v0.0.3 — Heretic's Fork + AEVUM** (2026-07-22):
+    * painéis 9–10 na home (`heretics-fork`, `aevum`) + nav no Header;
+    * **Heretic's Fork**: projeto + álbum demo, letras EN/PT, clip YouTube;
+    * **AEVUM**: projeto (estilo Tool, conceito filosófico/espiritual) + álbum **Levels of Consciousness** (demo *The Unanswered Geometry*, letra, clip YouTube);
+    * tipografia justificada em “Sobre” e páginas de álbum;
+    * `ScrollToTop` global (seta flutuante à direita após scroll);
+    * sitemap com rotas AEVUM; testes smoke atualizados.
 
 ---
 
@@ -847,7 +855,7 @@ Leia integralmente o arquivo sdd.md (Spec-Driven Development) e use-o como fonte
 Execute a spec fase a fase — uma fase por vez. Não avance sozinho.
 Ao terminar a fase, pare e aguarde o autor revisar e pedir para prosseguir.
 
-O site Wonderland Song já possui home parallax com 8 painéis (incl. Resonance),
+O site Wonderland Song já possui home parallax com 10 painéis (incl. Heretic's Fork e AEVUM),
 páginas de projeto, páginas de álbum (letras, easter eggs, clips, previewVideo),
 SEO, Lighthouse scripts e fallback Coming Soon. Versão de produto em package.json / sdd.md.
 Está em deploy; não há domínio .com próprio — use VITE_SITE_URL / URL do ambiente.

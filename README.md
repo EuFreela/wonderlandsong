@@ -4,7 +4,7 @@ Site musical, artístico e portfólio narrativo do selo **Wonderland Song**.
 
 A home é uma galeria vertical cinematográfica: cada rolagem revela um projeto em painel de tela cheia, com mídia de fundo, tipografia sobreposta e efeito parallax — **implementação original**.
 
-**Versão:** `0.0.2`  
+**Versão:** `0.0.3`  
 **Idioma:** português (pt-BR)  
 **Fase atual:** front-end com dados locais tipados (sem backend)  
 **Agente de IA:** [Grok](https://x.ai) (xAI), no fluxo **SDD (Spec-Driven Development)**
@@ -31,6 +31,8 @@ Páginas internas cobrem história, discografia, letras, clips e easter eggs.
 | 6 | USS Shenandoah | Hard Rock · 60/70 |
 | 7 | Lameck & Southern Birds Band | Blues |
 | 8 | Resonance | Post-Grunge / Alternative Rock · *Echoes of Redemption* |
+| 9 | Heretic's Fork | Progressive Metal · *Heretic's Fork* (demo) |
+| 10 | AEVUM | Progressive Metal / New Prog · *Levels of Consciousness* (demo) |
 
 Rotas: `/projects/:slug` e `/projects/:slug/albums/:albumSlug`. Rotas desconhecidas → **Coming Soon**.
 
@@ -76,7 +78,7 @@ SEO absoluto no build: `VITE_SITE_URL` (URL do deploy).
 ```
 
 - **Parallax:** desktop = CSS `fixed` + `clip`; mobile = `requestAnimationFrame` + `translate3d`; reduced motion desliga vídeo e parallax mobile.
-- **Dados:** `src/data/home-projects.ts`, `content.ts`, `*-lyrics.ts` (incl. Resonance), `src/types/`, `src/config/site.ts`.
+- **Dados:** `src/data/home-projects.ts`, `content.ts`, `*-lyrics.ts` (incl. Resonance, Heretic's Fork, AEVUM), `src/types/`, `src/config/site.ts`.
 - **Code split:** `React.lazy` + chunks no `vite.config.ts`.
 - **Preview de álbum:** `ProjectAlbum.previewVideo` (ex. Resonance / Echoes).
 
@@ -86,16 +88,17 @@ src/data/         home-projects, content, lyrics, site-routes
 src/hooks/        parallax, contraste do header, reduced motion
 src/pages/        Home, ProjectDetail, Album, ComingSoon
 public/           images, videos, sitemap.xml, robots.txt
-sdd.md            spec (Spec-Driven Development) · v0.0.2
+sdd.md            spec (Spec-Driven Development) · v0.0.3
 ```
 
 ---
 
 ## Já implementado
 
-- Home com 8 painéis e menu responsivo (incl. Resonance)
+- Home com 10 painéis e menu responsivo (incl. Heretic's Fork e AEVUM)
 - Páginas de projeto e álbum (letras, Easter Eggs, clips, preview de vídeo)
-- SEO, lazy routes, WebP, scroll-to-top, reduced motion
+- Texto justificado em “Sobre” (projeto) e páginas de álbum
+- SEO, lazy routes, WebP, scroll-to-top global, reduced motion
 - Lighthouse scripts e scores recentes no SDD
 - Testes smoke em `src/App.test.tsx`
 
