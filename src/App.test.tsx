@@ -135,12 +135,12 @@ describe('App', () => {
     fireEvent.click(screen.getByRole('button', { name: /The Unanswered Geometry.*Ver letra/i }));
     expect(await screen.findByRole('dialog')).toBeInTheDocument();
     expect(screen.getByText(/frightened architecture of belief/i)).toBeInTheDocument();
-    expect(screen.getByText(/where it begins/i)).toBeInTheDocument();
+    expect(screen.getByText(/without mistaking/i)).toBeInTheDocument();
     expect(screen.queryByText(/^Lord/i)).not.toBeInTheDocument();
     expect(screen.getByText(/^Tradução \(português\)$/i)).toBeInTheDocument();
     expect(screen.getByText(/A Geometria Sem Resposta/i)).toBeInTheDocument();
     expect(screen.getByText(/temerosa arquitetura da crença/i)).toBeInTheDocument();
-    expect(screen.getByText(/onde ela começa/i)).toBeInTheDocument();
+    expect(screen.getByText(/sem confundir/i)).toBeInTheDocument();
   });
 
   it("opens Heretic's Fork album with EN lyrics and PT translation", async () => {

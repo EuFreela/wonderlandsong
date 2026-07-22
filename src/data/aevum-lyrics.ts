@@ -145,66 +145,7 @@ to recognize the hand
 
 without mistaking
 the hand
-for the cage
-
-IF YOU EXIST BEYOND OUR LANGUAGE
-
-BEYOND THE ALTARS
-BEYOND THE LAWS
-BEYOND THE ENIGMAS
-WE MISTOOK FOR YOU
-
-THEN FIND ME HERE
-
-BETWEEN KNOWING
-AND NOTHING
-
-BETWEEN THE FRACTION
-AND THE WHOLE
-
-I DO NOT ASK
-TO SEE YOUR FACE
-
-ONLY GIVE ME EYES
-
-THAT KNOW
-WHEN THEY ARE OPEN
-
-There may be no road
-
-perhaps that is the answer
-
-There may be no arrow
-because consciousness
-was never meant
-to follow
-
-And if I remain lost
-
-let me be lost
-with open eyes
-
-If I remain unanswered
-
-let the question
-make me wise
-
-I have searched for You
-in every answer
-
-Tonight
-
-I will wait for You
-
-inside
-
-the question
-
-If You made the spiral...
-
-teach me
-
-where it begins`,
+for the cage`,
       `A Geometria Sem Resposta
 
 Se estás ouvindo
@@ -326,70 +267,7 @@ para reconhecer a mão
 
 sem confundir
 a mão
-com a prisão
-
-SENHOR
-
-SE TU EXISTES ALÉM DA NOSSA LINGUAGEM
-
-ALÉM DOS ALTARES
-ALÉM DAS LEIS
-ALÉM DOS ENIGMAS
-QUE CONFUNDIMOS CONTIGO
-
-ENTÃO ENCONTRA-ME AQUI
-
-ENTRE O SABER
-E O NADA
-
-ENTRE A FRAÇÃO
-E O TODO
-
-EU NÃO PEÇO
-PARA VER O TEU ROSTO
-
-APENAS DÁ-ME OLHOS
-
-QUE SAIBAM
-QUANDO ESTÃO ABERTOS
-
-Talvez não exista estrada
-
-talvez essa seja a resposta
-
-Talvez não exista seta
-porque a consciência
-nunca foi feita
-para seguir
-
-E se eu continuar perdido
-
-deixa-me estar perdido
-com os olhos abertos
-
-Se eu continuar sem respostas
-
-deixa que a pergunta
-me torne sábio
-
-Senhor...
-
-Eu Te procurei
-em todas as respostas
-
-Esta noite
-
-esperarei por Ti
-
-dentro
-
-da pergunta
-
-Se Tu fizeste a espiral...
-
-ensina-me
-
-onde ela começa`,
+com a prisão`,
     ),
   },
 ];
