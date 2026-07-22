@@ -87,7 +87,9 @@ function EasterEggsModal({ open, onClose, content, tracks }: Props) {
         </div>
 
         <div className="overflow-y-auto px-5 py-5 sm:px-6 sm:py-6">
-          <p className="m-0 text-base leading-relaxed text-white/80">{content.intro}</p>
+          <p className="m-0 text-justify text-base leading-relaxed text-white/80 hyphens-auto">
+            {content.intro}
+          </p>
 
           {revelations.length > 0 ? (
             <ol className="mt-6 list-none divide-y divide-white/10 border-y border-white/10 p-0">
@@ -105,7 +107,9 @@ function EasterEggsModal({ open, onClose, content, tracks }: Props) {
           ) : null}
 
           {content.note ? (
-            <p className="mt-6 text-sm leading-relaxed text-white/40">{content.note}</p>
+            <p className="mt-6 text-justify text-sm leading-relaxed text-white/40 hyphens-auto">
+              {content.note}
+            </p>
           ) : null}
         </div>
       </div>

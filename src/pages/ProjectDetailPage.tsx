@@ -123,7 +123,7 @@ export function ProjectDetailView({ project, albums }: ProjectDetailViewProps) {
             <h1 className="m-0 max-w-3xl text-[clamp(2rem,5vw,3.6rem)] font-medium leading-[1.05] tracking-tight text-white">
               {title}
             </h1>
-            <p className="mt-4 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
+            <p className="mt-4 max-w-xl text-justify text-base leading-relaxed text-white/80 hyphens-auto sm:text-lg">
               {tagline}
             </p>
           </div>
@@ -144,7 +144,7 @@ export function ProjectDetailView({ project, albums }: ProjectDetailViewProps) {
             >
               Álbuns lançados
             </h2>
-            <p className="mb-10 max-w-2xl text-base leading-relaxed text-white/60">
+            <p className="mb-10 max-w-2xl text-justify text-base leading-relaxed text-white/60 hyphens-auto">
               {albums.length > 0
                 ? 'Clique em um álbum para abrir a página dedicada — capa, história e lista de faixas.'
                 : albumsEmptyMessage ||
@@ -189,7 +189,7 @@ export function ProjectDetailView({ project, albums }: ProjectDetailViewProps) {
                           <span className="text-base font-medium leading-snug text-white group-hover:underline">
                             {album.title}
                           </span>
-                          <span className="mt-2 line-clamp-2 text-sm leading-relaxed text-white/50">
+                          <span className="mt-2 line-clamp-2 text-justify text-sm leading-relaxed text-white/50 hyphens-auto">
                             {album.summary}
                           </span>
                           <span className="mt-4 text-[0.65rem] font-bold uppercase tracking-[0.14em] text-white/45 transition group-hover:text-white/80">
@@ -215,13 +215,13 @@ export function ProjectDetailView({ project, albums }: ProjectDetailViewProps) {
               <h2 className="m-0 mb-6 text-[clamp(1.5rem,3vw,2rem)] font-medium leading-tight tracking-tight text-white">
                 {historyTitle}
               </h2>
-              <p className="text-lg leading-relaxed text-white/90 sm:text-xl">
+              <p className="text-justify text-lg leading-relaxed text-white/90 hyphens-auto sm:text-xl">
                 <RichTextWithLinks text={historyLead} />
               </p>
 
               {pullQuote ? (
                 <blockquote className="mt-10 mb-2 border-l-2 border-white/25 pl-5">
-                  <p className="text-[clamp(1.15rem,2.4vw,1.45rem)] font-medium leading-snug tracking-tight text-white/95">
+                  <p className="text-justify text-[clamp(1.15rem,2.4vw,1.45rem)] font-medium leading-snug tracking-tight text-white/95 hyphens-auto">
                     “<RichTextWithLinks text={pullQuote} />”
                   </p>
                 </blockquote>
@@ -245,7 +245,7 @@ export function ProjectDetailView({ project, albums }: ProjectDetailViewProps) {
                       {section.paragraphs.map((paragraph, paragraphIndex) => (
                         <p
                           key={`${section.id}-${paragraphIndex}`}
-                          className="m-0 text-base leading-[1.75] text-white/70 sm:text-[1.05rem]"
+                          className="m-0 text-justify text-base leading-[1.75] text-white/70 hyphens-auto sm:text-[1.05rem]"
                         >
                           <RichTextWithLinks text={paragraph} />
                         </p>
@@ -260,7 +260,7 @@ export function ProjectDetailView({ project, albums }: ProjectDetailViewProps) {
               </div>
 
               {historyClosing ? (
-                <p className="mt-12 text-lg font-medium italic text-white/80">
+                <p className="mt-12 text-justify text-lg font-medium italic text-white/80 hyphens-auto">
                   <RichTextWithLinks text={historyClosing} />
                 </p>
               ) : null}

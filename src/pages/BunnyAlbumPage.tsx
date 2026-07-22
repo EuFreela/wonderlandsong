@@ -153,14 +153,14 @@ function BunnyAlbumPage() {
               <h1 className="m-0 text-[clamp(1.85rem,4vw,3rem)] font-medium leading-[1.08] tracking-tight text-white">
                 {album.title}
               </h1>
-              <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/75 sm:text-lg">
+              <p className="mt-4 max-w-2xl text-justify text-base leading-relaxed text-white/75 hyphens-auto sm:text-lg">
                 {album.summary}
               </p>
 
               {album.warning ? (
                 <p
                   role="note"
-                  className="mt-5 rounded-lg border border-amber-400/30 bg-amber-400/10 px-4 py-3 text-sm leading-relaxed text-amber-100/90"
+                  className="mt-5 rounded-lg border border-amber-400/30 bg-amber-400/10 px-4 py-3 text-justify text-sm leading-relaxed text-amber-100/90 hyphens-auto"
                 >
                   {album.warning}
                 </p>
@@ -235,7 +235,7 @@ function BunnyAlbumPage() {
                     {album.demoInfo.map((paragraph, index) => (
                       <p
                         key={`${album.slug}-demo-${index}`}
-                        className="m-0 text-base leading-[1.75] text-white/70 sm:text-[1.05rem]"
+                        className="m-0 text-justify text-base leading-[1.75] text-white/70 hyphens-auto sm:text-[1.05rem]"
                       >
                         {paragraph}
                       </p>
@@ -251,7 +251,7 @@ function BunnyAlbumPage() {
                 {album.description.map((paragraph, index) => (
                   <p
                     key={`${album.slug}-d-${index}`}
-                    className="m-0 text-base leading-[1.75] text-white/70 sm:text-[1.05rem]"
+                    className="m-0 text-justify text-base leading-[1.75] text-white/70 hyphens-auto sm:text-[1.05rem]"
                   >
                     {paragraph}
                   </p>
@@ -327,7 +327,7 @@ function BunnyAlbumPage() {
                   })}
                 </ol>
               ) : (
-                <p className="text-base leading-relaxed text-white/50">
+                <p className="text-justify text-base leading-relaxed text-white/50 hyphens-auto">
                   Tracklist em breve — este álbum é apresentado aqui pela narrativa e pelo conceito.
                 </p>
               )}

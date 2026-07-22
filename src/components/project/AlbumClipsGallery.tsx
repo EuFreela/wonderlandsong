@@ -71,7 +71,7 @@ function AlbumClipsGallery({ clips, albumTitle }: Props) {
           >
             Clips musicais
           </h2>
-          <p className="max-w-2xl text-base leading-relaxed text-white/50">
+          <p className="max-w-2xl text-justify text-base leading-relaxed text-white/50 hyphens-auto">
             Os clips deste capítulo serão adicionados em breve.
           </p>
         </div>
@@ -95,7 +95,7 @@ function AlbumClipsGallery({ clips, albumTitle }: Props) {
         >
           Clips musicais
         </h2>
-        <p className="mb-10 max-w-2xl text-base leading-relaxed text-white/60">
+        <p className="mb-10 max-w-2xl text-justify text-base leading-relaxed text-white/60 hyphens-auto">
           Série visual de {albumTitle}. Clique em um clip para assistir.
         </p>
 

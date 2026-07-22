@@ -1256,14 +1256,14 @@ export const aevum: ProjectDetail = {
 export const aevumAlbums: ProjectAlbum[] = [
   {
     slug: 'aevum',
-    title: 'AEVUM',
+    title: 'Levels of Consciousness',
     year: '2026',
     type: 'Demo',
     cover: '/images/albums/AEVUM.webp',
     summary:
       'A consciência humana diante da existência e sua busca pelo Criador — Progressive Metal como investigação filosófica, existencial e espiritual.',
     demoInfo: [
-      'O álbum AEVUM ainda está em composição. Por enquanto existe uma música demo: The Unanswered Geometry — o primeiro registro dessa jornada entre a pergunta e o silêncio.',
+      'O álbum Levels of Consciousness ainda está em composição. Por enquanto existe uma música demo: The Unanswered Geometry — o primeiro registro dessa jornada entre a pergunta e o silêncio.',
     ],
     description: [
       'AEVUM é um projeto musical e conceitual de Progressive Metal / New Prog voltado à exploração de questões filosóficas, existenciais, metafísicas e espirituais. Sua proposta parte da necessidade humana de compreender não apenas o mundo que pode ser observado, mas também aquilo que permanece além dos limites imediatos da percepção, da experiência e do conhecimento.',

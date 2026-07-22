@@ -142,7 +142,9 @@ function TrackLyricsModal({ open, onClose, track, trackNumber }: Props) {
                 ) : null}
 
                 {expl?.message ? (
-                  <p className="m-0 text-base leading-relaxed text-white/80">{expl.message}</p>
+                  <p className="m-0 text-justify text-base leading-relaxed text-white/80 hyphens-auto">
+                    {expl.message}
+                  </p>
                 ) : null}
 
                 {expl?.sections?.map((section) => {
