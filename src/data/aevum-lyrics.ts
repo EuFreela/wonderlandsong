@@ -1,4 +1,4 @@
-/** AEVUM — album lyrics (EN + PT-BR translation). */
+/** AEVUM — Levels of Consciousness album lyrics (EN + PT-BR translation). */
 import type { BunnyAlbumTrack } from '../types';
 
 function withPtTranslation(en: string, pt: string): {
