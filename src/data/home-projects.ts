@@ -122,6 +122,6 @@ export const projects: Project[] = [
     headerTone: 'light',
     href: '/projects/aevum',
     buttonLabel: 'Abrir projeto',
-    message: 'Peso e atmosfera · complexidade e emoção · tempo e transcendência',
+    message: 'Progressive Metal inspirado em Tool · vida, consciência e o espiritual',
   },
 ];

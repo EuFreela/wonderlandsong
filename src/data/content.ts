@@ -1167,7 +1167,7 @@ export const hereticsForkAlbums: ProjectAlbum[] = [
 
 /**
  * AEVUM — project-10 detail page (home: project-10).
- * Progressive Metal / New Prog — experimentação, atmosfera e profundidade conceitual.
+ * Progressive Metal / New Prog — estilo concreto, influência Tool, perguntas da vida.
  */
 export const aevum: ProjectDetail = {
   slug: 'aevum',
@@ -1176,80 +1176,47 @@ export const aevum: ProjectDetail = {
   image: '/images/albums/AEVUM.webp',
   imagePositionMobile: 'center 30%',
   tagline:
-    'Progressive Metal / New Prog que une experimentação sonora, atmosfera e profundidade conceitual — peso e silêncio como partes da mesma jornada.',
+    'Progressive Metal inspirado em Tool — peso, atmosfera e perguntas profundas sobre a vida e o espiritual.',
   historyTitle: 'Sobre o Projeto AEVUM',
   historyLead:
-    'AEVUM é um projeto musical de Progressive Metal / New Prog criado com a proposta de unir música progressiva, experimentação sonora, atmosfera e profundidade conceitual. Nasce da intenção de produzir obras que ultrapassem a estrutura convencional de uma música e utilizem composição, ritmo, dinâmica, silêncio, ambientação e narrativa como partes de uma mesma experiência artística.',
-  pullQuote:
-    'AEVUM não representa apenas uma sonoridade específica. Representa um espaço artístico onde música, conceito e experimentação podem evoluir juntos ao longo do tempo.',
+    'AEVUM é um projeto de Progressive Metal / New Prog. Musicalmente, busca a linguagem densa e progressiva associada a Tool: riffs marcantes, baixo em evidência, compassos irregulares, dinâmica entre peso e silêncio, e músicas que crescem como jornadas — não como fórmulas de verso e refrão. Conceitualmente, nasce de perguntas profundas sobre a vida, a consciência e o espiritual.',
   footerNote: 'AEVUM · Progressive Metal · New Prog · Universo Wonderland Song',
   historySections: [
     {
       id: 'sound',
-      title: 'Linguagem musical',
+      title: 'Estilo musical',
       paragraphs: [
-        'Sua identidade está fundamentada no Progressive Metal contemporâneo, incorporando elementos de New Prog, Alternative Progressive Metal, Atmospheric Rock e Post-Rock, além de abordagens experimentais que permitem que cada composição desenvolva sua própria linguagem.',
-        'Musicalmente, AEVUM trabalha com estruturas não convencionais, compassos assimétricos, polirritmias, mudanças de dinâmica, baixo fortemente presente, guitarras pesadas contrastando com passagens cristalinas e atmosféricas, texturas ambientais e vocais predominantemente limpos e expressivos.',
-        'Em vez de utilizar complexidade técnica apenas como demonstração de virtuosismo, o projeto procura fazer com que cada elemento musical tenha uma função dentro da composição. O ritmo pode representar tensão. O silêncio pode representar expectativa. Uma mudança de compasso pode alterar completamente a percepção de uma passagem. Uma linha de baixo pode assumir o papel normalmente reservado à guitarra. E uma composição pode crescer lentamente durante vários minutos antes de alcançar seu ponto de maior intensidade.',
-        'Essa liberdade estrutural constitui uma das características fundamentais do AEVUM.',
+        'O básico do som AEVUM é Progressive Metal com traços de New Prog e rock atmosférico. As composições priorizam estrutura progressiva: seções que se transformam, mudanças de intensidade e espaço para o instrumental desenvolver tensão e alívio.',
+        'Na prática, isso soa como guitarras pesadas ao lado de passagens mais abertas e limpas, baixo com papel central, ritmo irregular ou polirrítmico quando a música pede, e vocais limpos e expressivos. O silêncio e a ambientação também fazem parte do arranjo — não são “vazio”, são parte da composição.',
+        'A referência principal é Tool: não como cópia, mas como ponto de partida para peso, hipnose rítmica, atmosfera e músicas longas que carregam ideia, não só riff.',
       ],
     },
     {
-      id: 'identity',
-      title: 'Identidade musical',
+      id: 'concept',
+      title: 'Conceito',
       paragraphs: [
-        'AEVUM procura equilibrar dois elementos aparentemente opostos: complexidade e emoção. As músicas podem apresentar estruturas rítmicas elaboradas e, simultaneamente, preservar melodias capazes de criar conexão emocional.',
-        'Passagens pesadas convivem com momentos contemplativos. Riffs densos podem desaparecer repentinamente e dar lugar a guitarras ambientes, reverberações, delays, baixo isolado ou silêncio. Da mesma maneira, uma passagem inicialmente minimalista pode evoluir gradualmente até atingir uma construção sonora ampla e intensa.',
-        'O objetivo é fazer com que a música tenha movimento, profundidade e espaço. Por isso, as composições não precisam necessariamente obedecer à estrutura tradicional de verso → refrão → verso → refrão. Quando necessário, AEVUM utiliza estruturas progressivas nas quais uma seção existe apenas uma vez e conduz naturalmente à próxima. A música passa a funcionar como uma jornada sonora.',
-      ],
-    },
-    {
-      id: 'influences',
-      title: 'Influências e linguagem artística',
-      paragraphs: [
-        'Entre suas principais referências está o caráter experimental e progressivo encontrado em bandas como Tool, além de elementos do progressive rock e metal contemporâneo. Entretanto, AEVUM não é concebido como uma reprodução direta dessas referências. As influências funcionam como ponto de partida para o desenvolvimento de uma identidade própria.',
-        'O projeto absorve principalmente princípios como: liberdade estrutural; experimentação rítmica; construção gradual de tensão; contraste entre peso e atmosfera; utilização expressiva do baixo; exploração de diferentes assinaturas de tempo; desenvolvimento instrumental prolongado; integração entre música e conceito; utilização do silêncio como elemento composicional; produção ampla e atmosférica.',
-        'A partir dessas características, AEVUM procura construir uma linguagem que possa evoluir continuamente entre diferentes trabalhos.',
+        'O AEVUM nasce das perguntas e dos dilemas da vida — existência, consciência, propósito, morte, felicidade, identidade e o sentido do todo. Essas questões não permanecem no plano abstrato: atravessam a forma de viver e exigem introspecção. E a introspecção, no AEVUM, não serve para confirmar o que já se acredita — serve para questionar.',
+        'Filosofia e espiritualidade aparecem no projeto como campos de explicação: tentativas humanas de nomear o real, o sagrado, o bem, o fim da vida e o lugar do indivíduo no todo. São conceitos poderosos, mas também dúbios. Cada sistema — filosófico ou espiritual — oferece uma narrativa que parece completa; sob exame, revela premissas, limites, heranças culturais e zonas de sombra. O AEVUM trata essas explicações como material de investigação, não como dogma a ser aceito.',
+        'Por isso a dúvida não é um desvio do caminho espiritual: é o método. Questionar uma filosofia não é negar a busca de sentido; é recusar a passividade diante de certezas prontas. Questionar uma linguagem espiritual não é abandonar Deus; é recusar confundir o Criador com as fórmulas humanas que tentam explicá-Lo. A introspecção coloca sob prova o que se herdou, o que se repete e o que se chama de verdade sem ter sido realmente visto.',
+        'O horizonte dessa inquietação é o conhecimento de Deus — não como resposta memorizável, nem como conclusão automática de um sistema, mas como fome de compreender a realidade a partir Dele. A música do AEVUM move esse conflito: entre o que o pensamento e a espiritualidade propõem como explicação e o que a consciência, ao se interrogar, ainda não alcançou. Dilemas vivos, em trânsito, a caminho de um conhecimento que ultrapassa a mera opinião e aponta para Deus.',
       ],
     },
     {
       id: 'name',
       title: 'O significado de AEVUM',
       paragraphs: [
-        'O próprio nome AEVUM representa adequadamente essa proposta. Derivado do latim, aevum está relacionado às ideias de era, idade, duração e continuidade temporal. Em determinados contextos filosóficos medievais, o termo também foi utilizado para representar uma forma de duração situada conceitualmente entre o tempo comum e a eternidade.',
-        'Essa relação com tempo, permanência e transcendência tornou o nome especialmente adequado à identidade do projeto.',
-        'AEVUM não está preso a um único personagem, narrativa ou temática. O nome funciona como um universo artístico maior, dentro do qual diferentes obras podem investigar diferentes ideias. Assim, um trabalho pode abordar consciência. Outro pode explorar tempo. Outro, identidade. Outro, existência, percepção, memória, transcendência ou qualquer outra questão compatível com a identidade conceitual do projeto.',
-        'Isso permite que AEVUM permaneça reconhecível sem precisar repetir permanentemente o mesmo conceito.',
-      ],
-    },
-    {
-      id: 'visual',
-      title: 'Identidade visual',
-      paragraphs: [
-        'A estética visual do AEVUM acompanha sua linguagem musical. O projeto trabalha com uma abordagem abstrata, simbólica, minimalista e enigmática, utilizando elementos que podem sugerir geometria, anatomia, transformação, espaço, estruturas orgânicas, formas impossíveis e representações abstratas da percepção.',
-        'A intenção não é necessariamente explicar visualmente aquilo que a música significa. Ao contrário: a imagem deve funcionar como a música — provocar interpretação. Símbolos podem possuir múltiplos significados. Formas aparentemente humanas podem se misturar a estruturas abstratas. Geometria pode coexistir com elementos orgânicos. O familiar pode apresentar alguma pequena distorção capaz de torná-lo estranho.',
-        'Essa ambiguidade faz parte da identidade do projeto.',
-      ],
-    },
-    {
-      id: 'conceptual',
-      title: 'AEVUM como projeto conceitual',
-      paragraphs: [
-        'Embora seja fundamentalmente um projeto musical, AEVUM foi pensado para possuir uma dimensão conceitual maior. Cada lançamento pode desenvolver sua própria identidade narrativa, filosófica e visual, enquanto permanece conectado à linguagem geral do projeto.',
-        'Isso significa que AEVUM não precisa contar permanentemente uma única história. Ele funciona como uma plataforma artística para diferentes investigações. Álbuns podem possuir conceitos independentes. Músicas podem apresentar narrativas próprias. Capas podem estabelecer diferentes universos visuais.',
-        'Entretanto, todos permanecem conectados pela mesma essência: música progressiva, experimentação, atmosfera, simbolismo e profundidade conceitual.',
+        'O nome vem do latim aevum: era, duração, continuidade no tempo. Em alguns contextos filosóficos, aponta para uma duração entre o tempo comum e a eternidade.',
+        'Por isso o nome serve ao projeto: música e conceito ligados a tempo, permanência e transcendência — sem prender o AEVUM a uma única história ou personagem.',
       ],
     },
     {
       id: 'credits',
       title: 'Créditos',
       paragraphs: [
-        'Projeto: AEVUM · Integrantes: Lameck S. Fernandes, Rodrigo Alves e Adriano Lima · Gênero: Progressive Metal · New Prog · Alternative Progressive Metal · Atmospheric Rock · Post-Rock · Universo Wonderland Song.',
+        'Projeto: AEVUM · Integrantes: Lameck S. Fernandes, Rodrigo Alves e Adriano Lima · Gênero: Progressive Metal · New Prog · Universo Wonderland Song.',
       ],
     },
   ],
-  historyClosing:
-    'AEVUM é um projeto de Progressive Metal / New Prog que transforma experimentação musical e profundidade conceitual em uma única linguagem artística. Sua identidade nasce do encontro entre peso e atmosfera, complexidade e emoção, estrutura e liberdade, som e silêncio. Mais do que seguir uma fórmula específica, AEVUM foi concebido como um projeto em constante transformação, capaz de desenvolver diferentes conceitos e explorar novas possibilidades musicais sem abandonar sua identidade.',
 };
 
 /** Álbuns de AEVUM (project-10). */
@@ -1261,32 +1228,26 @@ export const aevumAlbums: ProjectAlbum[] = [
     type: 'Demo',
     cover: '/images/albums/AEVUM.webp',
     summary:
-      'A consciência humana diante da existência e sua busca pelo Criador — Progressive Metal como investigação filosófica, existencial e espiritual.',
+      'Temas filosóficos e espirituais sobre a vida: a busca da consciência de Deus sobre o todo e o conhecimento como fome espiritual — Progressive Metal inspirado em Tool.',
     demoInfo: [
-      'O álbum Levels of Consciousness ainda está em composição. Por enquanto existe uma música demo: The Unanswered Geometry — o primeiro registro dessa jornada entre a pergunta e o silêncio.',
+      'Levels of Consciousness ainda está em composição. A primeira demo é The Unanswered Geometry — o ponto de partida sonoro e conceitual do álbum.',
     ],
     description: [
-      'AEVUM é um projeto musical e conceitual de Progressive Metal / New Prog voltado à exploração de questões filosóficas, existenciais, metafísicas e espirituais. Sua proposta parte da necessidade humana de compreender não apenas o mundo que pode ser observado, mas também aquilo que permanece além dos limites imediatos da percepção, da experiência e do conhecimento.',
-      'O projeto tem como eixo central a consciência humana diante da existência e sua busca pelo Criador.',
-      'AEVUM nasce da inquietação provocada pelas grandes perguntas que acompanham a humanidade desde suas primeiras reflexões sobre si mesma: por que existimos, o que significa estar consciente, qual é o propósito da vida, onde se encontra a verdadeira felicidade, o que representa a morte e se existe uma inteligência ou propósito por trás da realidade que observamos.',
-      'Essas questões não são tratadas como problemas que necessariamente possuem respostas simples ou imediatas. Pelo contrário, AEVUM parte do princípio artístico de que algumas perguntas precisam ser examinadas profundamente antes que qualquer resposta possa ser considerada satisfatória. Nesse sentido, o projeto transforma a dúvida em investigação, a introspecção em instrumento e o conhecimento em uma forma de fome espiritual.',
-      'Para AEVUM, consciência significa mais do que simplesmente estar desperto ou perceber aquilo que acontece ao redor. Ela representa a capacidade de observar, interpretar, questionar, compreender e também examinar a própria maneira pela qual compreendemos. O ser humano não apenas observa o mundo: ele sabe que está observando. Pode questionar aquilo que percebe, suas próprias conclusões e até mesmo aquele que está fazendo as perguntas.',
-      'É justamente nesse movimento de retorno da consciência sobre si mesma que AEVUM encontra uma de suas principais bases conceituais. A investigação deixa de acontecer apenas no universo exterior e começa a acontecer também dentro daquele que o observa. Conhecer a realidade também exige conhecer a consciência que tenta interpretá-la. Por isso, introspecção e filosofia estão profundamente conectadas dentro da identidade do projeto.',
-      'Um dos princípios fundamentais de AEVUM é tratar a busca pelo conhecimento não simplesmente como curiosidade intelectual, mas como uma necessidade interior. Existe diferença entre acumular informações e realmente compreender — e entre conhecimento, entendimento e sabedoria. Conhecimento permite identificar fatos e conceitos. Entendimento permite perceber relações entre eles. Sabedoria exige algo ainda mais profundo: reconhecer o significado daquilo que sabemos e, igualmente importante, reconhecer os limites daquilo que pensamos saber.',
-      'Em AEVUM, essa necessidade de compreender assume características de uma verdadeira fome espiritual. O indivíduo não procura respostas simplesmente para satisfazer curiosidade. Ele procura porque existe dentro dele uma sensação de incompletude diante das questões fundamentais da existência. Quanto mais aprende, entretanto, mais percebe a dimensão daquilo que permanece desconhecido. Assim, surge um paradoxo recorrente dentro do projeto: o conhecimento não diminui necessariamente o mistério. Em determinados momentos, ele apenas nos torna conscientes de quão profundo o mistério realmente é.',
-      'AEVUM também investiga criticamente as diferentes formas pelas quais o pensamento humano tentou compreender a realidade. Ao longo da história, diferentes sistemas filosóficos procuraram responder perguntas relacionadas à existência, à identidade, à consciência, à felicidade, à moralidade, à realidade e ao propósito. O projeto não pretende simplesmente apresentar essas filosofias como verdadeiras ou falsas — sua abordagem é investigativa. Procura questionar os próprios alicerces sobre os quais determinadas certezas foram construídas.',
-      'Se uma filosofia afirma explicar o todo, quais são suas premissas? Essas premissas também podem ser questionadas? Até onde uma conclusão permanece válida quando seus fundamentos são colocados sob investigação? E existe uma questão ainda mais profunda: pode uma parte compreender completamente o todo do qual ela própria faz parte? O ser humano tenta compreender o universo estando dentro dele. Tenta compreender a consciência utilizando a própria consciência. Tenta compreender a existência enquanto inevitavelmente existe. Essa condição cria uma limitação filosófica fascinante e constitui um dos territórios explorados pelo AEVUM.',
-      'A investigação do universo inevitavelmente conduz AEVUM para dentro do próprio indivíduo. Se queremos compreender aquilo que observamos, precisamos também compreender quem está observando. A identidade humana passa então a ser questionada: quem somos quando retiramos nossos títulos, sem aquilo que possuímos, sem posições sociais, sem expectativas alheias, sem determinadas crenças, sem memórias, sem aquilo que aprendemos a chamar de personalidade?',
-      'Quanto daquilo que consideramos nossa identidade realmente nasceu de escolhas conscientes e quanto foi moldado silenciosamente pela família, sociedade, cultura, experiências, desejos, traumas, recompensas, medos e expectativas? AEVUM utiliza essas perguntas para explorar a diferença entre ser e tornar-se aquilo que esperavam que fôssemos. A introspecção, portanto, não é apresentada apenas como contemplação — ela pode ser desconfortável. Quanto mais profundamente o indivíduo observa a própria consciência, maior é a possibilidade de encontrar estruturas internas que anteriormente permaneciam invisíveis. E perceber algo significa perder a possibilidade de simplesmente fingir que aquilo não existe.',
-      'A busca humana pela felicidade constitui outra dimensão importante do projeto. AEVUM observa criticamente a ideia de que satisfação pode ser alcançada exclusivamente através da aquisição — dinheiro, prosperidade, status, reconhecimento, poder, prazer, relacionamentos, desejo. Esses elementos podem possuir valor real dentro da experiência humana, mas tornam-se filosoficamente problemáticos quando transformados em respostas absolutas para o significado da existência.',
-      'O projeto questiona o ciclo no qual a satisfação parece estar permanentemente localizada no próximo objetivo: quando eu possuir mais, estarei satisfeito; quando eu for reconhecido, estarei completo; quando encontrar determinada pessoa, serei feliz; quando alcançar determinado objetivo, finalmente terei paz. Mas quando aquilo que era desejado finalmente é alcançado, frequentemente surge um novo desejo. A linha de chegada simplesmente muda de lugar.',
-      'AEVUM não propõe necessariamente que possuir seja errado ou que desejar seja uma falha. A questão é outra: por que esperamos que coisas temporárias sejam capazes de responder perguntas permanentes?',
-      'O projeto também explora uma contradição importante da experiência humana: quando o excesso não produz satisfação, o indivíduo frequentemente procura novos extremos — ou tenta reinventar o caminho da plenitude. Essa tensão entre desejo, saturação e busca de sentido permanece aberta como território artístico a ser aprofundado nas faixas do álbum.',
-      'The Unanswered Geometry inaugura esse arco: uma oração que não pede respostas memorizáveis, mas consciência — olhos que saibam quando estão abertos, e a disposição de esperar pelo sagrado dentro da própria pergunta.',
+      'Levels of Consciousness é o primeiro álbum do AEVUM. O trabalho trata de temas profundos e filosóficos sobre a vida e o espiritual: o que significa existir, o que é consciência e como o ser humano busca Deus e o sentido do todo.',
+      'O eixo central é a busca da consciência de Deus sobre o todo — não como dogma fechado, mas como jornada interior. A pergunta não é só “existe um Criador?”, e sim o que muda em nós quando tentamos perceber a realidade a partir dessa consciência maior.',
+      'Outro pilar do álbum é o conhecimento como fome espiritual. Saber não é só acumular informação: é uma necessidade interior. Quanto mais se aprende, mais se enxerga o que ainda não se compreende. Essa fome — e o mistério que ela revela — atravessa as faixas como tensão, silêncio e urgência.',
+      'Musicalmente, o álbum se inspira no estilo de Tool: Progressive Metal denso, rítmico e atmosférico, com construção gradual, baixo em destaque e contraste entre peso e contemplação.',
     ],
     trackCount: aevumTracks.length,
     tracks: aevumTracks,
-    clips: [],
+    clips: [
+      {
+        id: 'the-unanswered-geometry',
+        title: 'The Unanswered Geometry',
+        subtitle: 'Levels of Consciousness · AEVUM',
+        youtubeId: 'LXzNMdJeFC8',
+      },
+    ],
   },
 ];
 

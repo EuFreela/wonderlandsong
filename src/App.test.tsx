@@ -114,8 +114,9 @@ describe('App', () => {
     expect(await screen.findByRole('heading', { name: /^AEVUM$/i })).toBeInTheDocument();
     expect(screen.getByText('Progressive Metal · New Prog')).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /Sobre o Projeto AEVUM/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /Estilo musical/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /Conceito/i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /O significado de AEVUM/i })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: /Identidade visual/i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /Álbuns lançados/i })).toBeInTheDocument();
     expect(
       screen.getByRole('link', { name: /Ver álbum.*Levels of Consciousness/i }),
@@ -129,7 +130,7 @@ describe('App', () => {
     expect(
       await screen.findByRole('heading', { name: /^Levels of Consciousness$/i }),
     ).toBeInTheDocument();
-    expect(screen.getByText(/música demo: The Unanswered Geometry/i)).toBeInTheDocument();
+    expect(screen.getByText(/demo é The Unanswered Geometry/i)).toBeInTheDocument();
 
     fireEvent.click(screen.getByRole('button', { name: /The Unanswered Geometry.*Ver letra/i }));
     expect(await screen.findByRole('dialog')).toBeInTheDocument();
