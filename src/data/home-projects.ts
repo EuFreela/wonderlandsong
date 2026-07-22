@@ -113,4 +113,15 @@ export const projects: Project[] = [
     href: '/projects/heretics-fork',
     buttonLabel: 'Abrir projeto',
   },
+  {
+    id: 'project-10',
+    category: 'Progressive Metal · New Prog',
+    title: 'AEVUM',
+    image: '/images/albums/AEVUM.webp',
+    imagePositionMobile: 'center 30%',
+    headerTone: 'light',
+    href: '/projects/aevum',
+    buttonLabel: 'Abrir projeto',
+    message: 'Peso e atmosfera · complexidade e emoção · tempo e transcendência',
+  },
 ];

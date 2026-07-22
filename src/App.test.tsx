@@ -108,6 +108,39 @@ describe('App', () => {
     expect(screen.getByRole('link', { name: /Voltar à home/i })).toHaveAttribute('href', '/');
   });
 
+  it('opens AEVUM project page with shared layout', async () => {
+    renderAt('/projects/aevum');
+
+    expect(await screen.findByRole('heading', { name: /^AEVUM$/i })).toBeInTheDocument();
+    expect(screen.getByText('Progressive Metal · New Prog')).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /Sobre o Projeto AEVUM/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /O significado de AEVUM/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /Identidade visual/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /Álbuns lançados/i })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /Ver álbum.*AEVUM/i })).toHaveAttribute(
+      'href',
+      '/projects/aevum/albums/aevum',
+    );
+    expect(screen.getByRole('link', { name: /Voltar à home/i })).toHaveAttribute('href', '/');
+  });
+
+  it('opens AEVUM album with demo track The Unanswered Geometry', async () => {
+    renderAt('/projects/aevum/albums/aevum');
+
+    expect(await screen.findByRole('heading', { name: /^AEVUM$/i })).toBeInTheDocument();
+    expect(screen.getByText(/música demo: The Unanswered Geometry/i)).toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole('button', { name: /The Unanswered Geometry.*Ver letra/i }));
+    expect(await screen.findByRole('dialog')).toBeInTheDocument();
+    expect(screen.getByText(/frightened architecture of belief/i)).toBeInTheDocument();
+    expect(screen.getByText(/where it begins/i)).toBeInTheDocument();
+    expect(screen.queryByText(/^Lord/i)).not.toBeInTheDocument();
+    expect(screen.getByText(/^Tradução \(português\)$/i)).toBeInTheDocument();
+    expect(screen.getByText(/A Geometria Sem Resposta/i)).toBeInTheDocument();
+    expect(screen.getByText(/temerosa arquitetura da crença/i)).toBeInTheDocument();
+    expect(screen.getByText(/onde ela começa/i)).toBeInTheDocument();
+  });
+
   it("opens Heretic's Fork album with EN lyrics and PT translation", async () => {
     renderAt('/projects/heretics-fork/albums/heretics-fork');
 
