@@ -131,6 +131,7 @@ describe('App', () => {
       await screen.findByRole('heading', { name: /^Levels of Consciousness$/i }),
     ).toBeInTheDocument();
     expect(screen.getByText(/demo é The Unanswered Geometry/i)).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /^Easter Eggs$/i })).toBeInTheDocument();
 
     fireEvent.click(screen.getByRole('button', { name: /The Unanswered Geometry.*Ver letra/i }));
     expect(await screen.findByRole('dialog')).toBeInTheDocument();
@@ -141,6 +142,17 @@ describe('App', () => {
     expect(screen.getByText(/A Geometria Sem Resposta/i)).toBeInTheDocument();
     expect(screen.getByText(/temerosa arquitetura da crença/i)).toBeInTheDocument();
     expect(screen.getByText(/sem confundir/i)).toBeInTheDocument();
+  });
+
+  it('opens AEVUM Easter Eggs with freemasonry revelation map', async () => {
+    renderAt('/projects/aevum/albums/aevum');
+
+    fireEvent.click(await screen.findByRole('button', { name: /^Easter Eggs$/i }));
+
+    expect(screen.getByRole('dialog', { name: /Revelations/i })).toBeInTheDocument();
+    expect(screen.getByText(/experiência do autor com a maçonaria/i)).toBeInTheDocument();
+    expect(screen.getByText(/não foi o suficiente para libertá-lo da fome espiritual/i)).toBeInTheDocument();
+    expect(screen.getByText(/→ O Grande Arquiteto do Universo/i)).toBeInTheDocument();
   });
 
   it("opens Heretic's Fork album with EN lyrics and PT translation", async () => {

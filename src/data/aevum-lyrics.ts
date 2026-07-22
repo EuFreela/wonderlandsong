@@ -25,6 +25,7 @@ function withPtTranslation(en: string, pt: string): {
 export const aevumTracks: BunnyAlbumTrack[] = [
   {
     title: 'The Unanswered Geometry',
+    dedication: 'O Grande Arquiteto do Universo',
     ...withPtTranslation(
       `If You are listening
 beneath the names we carved for You
