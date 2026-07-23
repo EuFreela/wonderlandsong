@@ -1,4 +1,4 @@
-import type { Artist, ProjectAlbum, ProjectDetail, Release } from '../types';
+import type { ProjectAlbum, ProjectDetail } from '../types';
 import { aVerdadeAindaChamaTracks } from './agm-lyrics';
 import { cautionAudioGatewayTracks } from './blm-chapter1-lyrics';
 import { inTheForestTracks } from './blm-chapter2-lyrics';
@@ -1299,55 +1299,3 @@ export function getProjectAlbum(
   return getProjectAlbums(projectSlug).find((album) => album.slug === albumSlug);
 }
 
-/** @deprecated Prefer getProjectAlbum('bunny-land-music', slug). */
-export function getBunnyAlbumBySlug(slug: string): ProjectAlbum | undefined {
-  return getProjectAlbum(bunnyLandMusic.slug, slug);
-}
-
-export const artists: Artist[] = [
-  {
-    id: 'maya',
-    name: 'Maya Vale',
-    role: 'Composer & Voice',
-    image: '/images/artists/maya.svg',
-    description: 'Shapes narrative songs with intimate textures and cinematic pacing.',
-  },
-  {
-    id: 'joao',
-    name: 'João Lumen',
-    role: 'Producer & Sound Design',
-    image: '/images/artists/joao.svg',
-    description: 'Builds modular sound worlds that move between analogue and digital.',
-  },
-  {
-    id: 'nora',
-    name: 'Nora Sol',
-    role: 'Visual Direction',
-    image: '/images/artists/nora.svg',
-    description: 'Creates dreamlike visual systems that echo the music’s emotional range.',
-  },
-];
-
-export const releases: Release[] = [
-  {
-    id: 'silver-echo',
-    title: 'Silver Echo',
-    type: 'Single',
-    year: '2026',
-    image: '/images/releases/silver-echo.svg',
-  },
-  {
-    id: 'night-archive',
-    title: 'Night Archive',
-    type: 'EP',
-    year: '2025',
-    image: '/images/releases/night-archive.svg',
-  },
-  {
-    id: 'circuit-garden',
-    title: 'Circuit Garden',
-    type: 'Album',
-    year: '2024',
-    image: '/images/releases/circuit-garden.svg',
-  },
-];

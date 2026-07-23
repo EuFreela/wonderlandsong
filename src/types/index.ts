@@ -47,14 +47,6 @@ export type Project = {
   youtubeLabel?: string;
 };
 
-export type Artist = {
-  id: string;
-  name: string;
-  role: string;
-  image: string;
-  description: string;
-};
-
 /** Optional YouTube highlight under a history chapter (lazy embed). */
 export type ProjectHistoryFeaturedVideo = {
   youtubeId: string;
@@ -101,14 +93,6 @@ export type ProjectDetail = {
   footerNote?: string;
   /** Shown when the albums gallery is empty. */
   albumsEmptyMessage?: string;
-};
-
-export type Release = {
-  id: string;
-  title: string;
-  type: string;
-  year: string;
-  image: string;
 };
 
 export type TrackLyricSection = {

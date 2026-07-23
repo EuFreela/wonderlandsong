@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import type { Project } from '../types';
-import type { HeaderTone } from '../utils/luminance';
+
+/** light text on dark panels; dark text on light panels */
+export type HeaderTone = 'light' | 'dark';
 
 const HEADER_HEIGHT = 72;
 
