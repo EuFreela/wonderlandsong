@@ -76,6 +76,15 @@ a {
   -webkit-backface-visibility: hidden;
 }
 
+/* <picture> wrapper must fill the layer so nested img object-fit works. */
+.parallax-media__layer > picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  pointer-events: none;
+}
+
 .parallax-media__asset {
   display: block;
   width: 100%;

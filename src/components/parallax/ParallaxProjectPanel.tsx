@@ -12,17 +12,15 @@ type Props = {
   priority?: boolean;
 };
 
-/** Matches CSS mobile parallax breakpoint — no heavy background video on phones. */
-const DESKTOP_MEDIA = '(min-width: 901px)';
-
 /**
  * Fixed-background parallax panel.
  * Desktop: CSS position:fixed + clip (no JS).
  * Mobile: shared rAF loop with integer translate3d (same window effect, less jitter).
  *
  * Performance:
- * - Poster/image paints first (LCP-friendly).
- * - Background video only on desktop, after idle (skips ~2MB webm on mobile).
+ * - Poster/image paints first (LCP-friendly) on every viewport.
+ * - Background video (e.g. wonderland2.webm) loads on mobile, tablet and desktop
+ *   after idle so the poster stays the LCP candidate. Skipped only for reduced-motion.
  * - Non-priority panels use loading="lazy".
  */
 function ParallaxProjectPanel({ project, priority = false }: Props) {
@@ -30,7 +28,6 @@ function ParallaxProjectPanel({ project, priority = false }: Props) {
   const panelRef = useRef<HTMLElement>(null);
   const mediaRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [isDesktop, setIsDesktop] = useState(false);
   const [loadVideo, setLoadVideo] = useState(false);
 
   const isHashLink = project.href.startsWith('#');
@@ -42,8 +39,8 @@ function ParallaxProjectPanel({ project, priority = false }: Props) {
   const youtubeUrl = project.youtubeUrl?.trim();
   const showYouTube = Boolean(youtubeUrl);
   const youtubeLabel = project.youtubeLabel?.trim() || 'YouTube';
-  const wantsVideo =
-    Boolean(project.video) && !prefersReducedMotion && isDesktop;
+  /** Video on all viewports (mobile / tablet / desktop); image stays as poster/fallback. */
+  const wantsVideo = Boolean(project.video) && !prefersReducedMotion;
   const filterOpacity = Math.min(1, Math.max(0, project.filterOpacity ?? 0));
   const hasColorFilter = Boolean(project.filterColor) && filterOpacity > 0;
   const showActions = showButton || showSpotify || showYouTube;
@@ -58,15 +55,7 @@ function ParallaxProjectPanel({ project, priority = false }: Props) {
 
   useMobileParallax(panelRef, mediaRef);
 
-  useEffect(() => {
-    const mq = window.matchMedia(DESKTOP_MEDIA);
-    const update = () => setIsDesktop(mq.matches);
-    update();
-    mq.addEventListener('change', update);
-    return () => mq.removeEventListener('change', update);
-  }, []);
-
-  // Defer video so poster/image can become LCP without competing with ~2MB webm.
+  // Defer video so poster/image can become LCP without competing with the webm.
   useEffect(() => {
     if (!wantsVideo) {
       setLoadVideo(false);
@@ -120,24 +109,47 @@ function ParallaxProjectPanel({ project, priority = false }: Props) {
         <div className="parallax-media__clip">
           <div ref={mediaRef} className="parallax-media__layer">
             {/* Poster always present — LCP candidate; video layers on top when ready. */}
-            <img
-              className="parallax-media__asset"
-              style={mediaStyle}
-              src={project.image}
-              srcSet={
-                project.image.includes('wonderland2')
-                  ? '/images/wonderland2-sm.webp 800w, /images/wonderland2.webp 1600w'
-                  : undefined
-              }
-              sizes={project.image.includes('wonderland2') ? '100vw' : undefined}
-              alt=""
-              width={priority ? 1600 : undefined}
-              height={priority ? 900 : undefined}
-              decoding="async"
-              loading={priority ? 'eager' : 'lazy'}
-              fetchPriority={priority ? 'high' : 'auto'}
-              draggable={false}
-            />
+            {project.image.includes('wonderland2') ? (
+              /*
+                Poster for all viewports: sm on mobile/tablet, full on large screens.
+                Video (wonderland2.webm) layers on top when ready; poster stays if
+                autoplay fails or while the webm buffers.
+              */
+              <picture>
+                <source
+                  media="(max-width: 900px)"
+                  srcSet="/images/wonderland2-sm.webp"
+                  type="image/webp"
+                />
+                <img
+                  className="parallax-media__asset"
+                  style={mediaStyle}
+                  src="/images/wonderland2.webp"
+                  srcSet="/images/wonderland2-sm.webp 1200w, /images/wonderland2.webp 1600w"
+                  sizes="100vw"
+                  alt=""
+                  width={priority ? 1600 : undefined}
+                  height={priority ? 820 : undefined}
+                  decoding="async"
+                  loading={priority ? 'eager' : 'lazy'}
+                  fetchPriority={priority ? 'high' : 'auto'}
+                  draggable={false}
+                />
+              </picture>
+            ) : (
+              <img
+                className="parallax-media__asset"
+                style={mediaStyle}
+                src={project.image}
+                alt=""
+                width={priority ? 1600 : undefined}
+                height={priority ? 900 : undefined}
+                decoding="async"
+                loading={priority ? 'eager' : 'lazy'}
+                fetchPriority={priority ? 'high' : 'auto'}
+                draggable={false}
+              />
+            )}
             {wantsVideo && loadVideo ? (
               <video
                 ref={videoRef}
@@ -147,7 +159,7 @@ function ParallaxProjectPanel({ project, priority = false }: Props) {
                 muted
                 loop
                 playsInline
-                preload="none"
+                preload="auto"
                 autoPlay
               />
             ) : null}
