@@ -131,6 +131,8 @@ describe('App', () => {
       await screen.findByRole('heading', { name: /^Levels of Consciousness$/i }),
     ).toBeInTheDocument();
     expect(screen.getByText(/demo é The Unanswered Geometry/i)).toBeInTheDocument();
+    expect(screen.getByText('Inquirer')).toBeInTheDocument();
+    expect(screen.getByText('Seats Where Silence Stood')).toBeInTheDocument();
     expect(screen.getByText(/autorreflexão do compositor/i)).toBeInTheDocument();
     expect(
       screen.getByText(/Se soubesse antes qual era a fonte, jamais essas experiências teriam sido vividas/i),
@@ -148,15 +150,22 @@ describe('App', () => {
     expect(screen.getByText(/sem confundir/i)).toBeInTheDocument();
   });
 
-  it('opens AEVUM Easter Eggs with freemasonry revelation map', async () => {
+  it('opens AEVUM Easter Eggs with revelations for each track', async () => {
     renderAt('/projects/aevum/albums/aevum');
 
     fireEvent.click(await screen.findByRole('button', { name: /^Easter Eggs$/i }));
 
     expect(screen.getByRole('dialog', { name: /Revelations/i })).toBeInTheDocument();
+    expect(
+      screen.getByText(/Cada faixa revela um sistema de conhecimento/i),
+    ).toBeInTheDocument();
+    expect(screen.getByText(/→ \.:\./i)).toBeInTheDocument();
     expect(screen.getByText(/experiência do autor com a maçonaria/i)).toBeInTheDocument();
-    expect(screen.getByText(/não foi o suficiente para libertá-lo da fome espiritual/i)).toBeInTheDocument();
-    expect(screen.getByText(/→ O Grande Arquiteto do Universo/i)).toBeInTheDocument();
+    expect(screen.getByText(/→ A Goetia/i)).toBeInTheDocument();
+    expect(screen.getByText(/experiência do compositor com o ocultismo/i)).toBeInTheDocument();
+    expect(screen.getByText(/→ A Igreja Católica/i)).toBeInTheDocument();
+    expect(screen.getByText(/viveu na Igreja Católica/i)).toBeInTheDocument();
+    expect(screen.getByText(/fio simbólico por trás das faixas/i)).toBeInTheDocument();
   });
 
   it("opens Heretic's Fork album with EN lyrics and PT translation", async () => {

@@ -247,3 +247,28 @@ a {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Dark-panel scrollbars (modals sit on a light color-scheme page). */
+.scrollbar-dark {
+  color-scheme: dark;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.28) #1a1520;
+}
+
+.scrollbar-dark::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scrollbar-dark::-webkit-scrollbar-track {
+  background: #1a1520;
+}
+
+.scrollbar-dark::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+}
+
+.scrollbar-dark::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.42);
+}

@@ -25,7 +25,9 @@ function withPtTranslation(en: string, pt: string): {
 export const aevumTracks: BunnyAlbumTrack[] = [
   {
     title: 'The Unanswered Geometry',
-    dedication: 'O Grande Arquiteto do Universo',
+    dedication: '.:.',
+    dedicationNote:
+      'Parte de uma breve experiência do autor com a maçonaria, anos atrás, e com a ideia do Grande Arquiteto do Universo. O conhecimento adquirido não foi o suficiente para libertá-lo da fome espiritual — nem da busca por conhecer o Criador.',
     ...withPtTranslation(
       `If You are listening
 beneath the names we carved for You
@@ -270,5 +272,17 @@ sem confundir
 a mão
 com a prisão`,
     ),
+  },
+  {
+    title: 'Inquirer',
+    dedication: 'A Goetia',
+    dedicationNote:
+      'Inquirer parte de uma experiência do compositor com o ocultismo e, em especial, com a Goetia, em uma parte de sua vida há anos atrás. Naquele momento, havia a esperança de que o conhecimento oculto pudesse revelar as respostas que tanto ansiava sobre o Criador — respostas que os caminhos anteriores não haviam conseguido entregar. A experiência, porém, não trouxe a revelação esperada; encontrou novamente respostas semelhantes às que já havia buscado em outras fontes, deixando para trás não a certeza, mas ainda mais perguntas e uma fome espiritual que permanecia sem resposta.',
+  },
+  {
+    title: 'Seats Where Silence Stood',
+    dedication: 'A Igreja Católica',
+    dedicationNote:
+      'Seats Where Silence Stood parte da experiência do compositor durante o período em que viveu na Igreja Católica — entre músicos, missas, cultos e eventos que, naquela época, pareciam ocupar o centro de sua experiência com o sagrado. A música traz a conclusão de uma experiência que acabou por decepcioná-lo. Entre tradições misturadas à adoração que deveria ser pura, filosofia humana ocupando o lugar do pensamento de Deus, outras divindades recebendo aquilo que deveria pertencer ao Criador e perguntas que permaneciam sem resposta, o compositor percebe que aquilo que parecia ser o centro do sagrado não era capaz de saciar sua busca por conhecer verdadeiramente o Criador.',
   },
 ];

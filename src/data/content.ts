@@ -1245,8 +1245,8 @@ export const aevumAlbums: ProjectAlbum[] = [
       title: 'Revelations',
       subtitle: 'Levels of Consciousness · AEVUM',
       intro:
-        'The Unanswered Geometry parte de uma breve experiência do autor com a maçonaria, anos atrás, e com a ideia do Grande Arquiteto do Universo. O conhecimento adquirido não foi o suficiente para libertá-lo da fome espiritual — nem da busca por conhecer o Criador.',
-      note: 'Easter egg do álbum — o fio simbólico por trás da demo.',
+        'Cada faixa revela um sistema de conhecimento que o autor atravessou em busca do Criador — e o que essa travessia não conseguiu fechar.',
+      note: 'Easter egg do álbum — o fio simbólico por trás das faixas.',
     },
     clips: [
       {

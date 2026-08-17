@@ -86,7 +86,7 @@ function EasterEggsModal({ open, onClose, content, tracks }: Props) {
           </button>
         </div>
 
-        <div className="overflow-y-auto px-5 py-5 sm:px-6 sm:py-6">
+        <div className="scrollbar-dark min-h-0 overflow-y-auto px-5 py-5 sm:px-6 sm:py-6">
           <p className="m-0 text-justify text-base leading-relaxed text-white/80 hyphens-auto">
             {content.intro}
           </p>
@@ -94,13 +94,20 @@ function EasterEggsModal({ open, onClose, content, tracks }: Props) {
           {revelations.length > 0 ? (
             <ol className="mt-6 list-none divide-y divide-white/10 border-y border-white/10 p-0">
               {revelations.map((track, index) => (
-                <li key={`${track.title}-${index}`} className="flex flex-col gap-0.5 py-3.5 sm:flex-row sm:items-baseline sm:gap-3">
-                  <span className="min-w-0 flex-1 text-[0.95rem] font-medium text-white/90">
-                    {track.title}
-                  </span>
-                  <span className="shrink-0 text-sm text-amber-100/75">
-                    → {track.dedication}
-                  </span>
+                <li key={`${track.title}-${index}`} className="py-3.5">
+                  <div className="flex items-baseline gap-3">
+                    <span className="min-w-0 flex-1 text-[0.95rem] font-medium text-white/90">
+                      {track.title}
+                    </span>
+                    <span className="shrink-0 text-sm text-amber-100/75">
+                      → {track.dedication}
+                    </span>
+                  </div>
+                  {track.dedicationNote ? (
+                    <p className="m-0 mt-2 text-justify text-sm leading-relaxed text-white/65 hyphens-auto">
+                      {track.dedicationNote}
+                    </p>
+                  ) : null}
                 </li>
               ))}
             </ol>

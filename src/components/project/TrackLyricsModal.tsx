@@ -80,7 +80,7 @@ function TrackLyricsModal({ open, onClose, track, trackNumber }: Props) {
           </button>
         </div>
 
-        <div className="grid min-h-0 flex-1 gap-0 overflow-y-auto lg:grid-cols-2">
+        <div className="scrollbar-dark grid min-h-0 flex-1 gap-0 overflow-y-auto lg:grid-cols-2">
           <section className="border-b border-white/10 px-5 py-5 sm:px-6 lg:border-b-0 lg:border-r">
             <p className="mb-4 text-[0.67rem] font-bold uppercase tracking-[0.16em] text-white/45">
               Letra

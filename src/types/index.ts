@@ -115,6 +115,8 @@ export type BunnyAlbumTrack = {
   title: string;
   /** Optional dedication / character linked to the track (Chapter 3). */
   dedication?: string;
+  /** Longer Easter Eggs text under the dedication (AEVUM revelations). */
+  dedicationNote?: string;
   /** Full lyrics text (shown in track modal). */
   lyrics?: string;
   /** Explanation / study notes shown with the lyrics. */
