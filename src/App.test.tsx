@@ -131,6 +131,10 @@ describe('App', () => {
       await screen.findByRole('heading', { name: /^Levels of Consciousness$/i }),
     ).toBeInTheDocument();
     expect(screen.getByText(/demo é The Unanswered Geometry/i)).toBeInTheDocument();
+    expect(screen.getByText(/autorreflexão do compositor/i)).toBeInTheDocument();
+    expect(
+      screen.getByText(/Se soubesse antes qual era a fonte, jamais essas experiências teriam sido vividas/i),
+    ).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /^Easter Eggs$/i })).toBeInTheDocument();
 
     fireEvent.click(screen.getByRole('button', { name: /The Unanswered Geometry.*Ver letra/i }));

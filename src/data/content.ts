@@ -1167,7 +1167,7 @@ export const hereticsForkAlbums: ProjectAlbum[] = [
 
 /**
  * AEVUM — project-10 detail page (home: project-10).
- * Progressive Metal / New Prog — estilo concreto, influência Tool, perguntas da vida.
+ * Progressive Metal / New Prog — estilo concreto, perguntas da vida.
  */
 export const aevum: ProjectDetail = {
   slug: 'aevum',
@@ -1176,10 +1176,10 @@ export const aevum: ProjectDetail = {
   image: '/images/albums/AEVUM.webp',
   imagePositionMobile: 'center 30%',
   tagline:
-    'Progressive Metal inspirado em Tool — peso, atmosfera e perguntas profundas sobre a vida e o espiritual.',
+    'Progressive Metal — peso, atmosfera e perguntas profundas sobre a vida e o espiritual.',
   historyTitle: 'Sobre o Projeto AEVUM',
   historyLead:
-    'AEVUM é um projeto de Progressive Metal / New Prog. Musicalmente, busca a linguagem densa e progressiva associada a Tool: riffs marcantes, baixo em evidência, compassos irregulares, dinâmica entre peso e silêncio, e músicas que crescem como jornadas — não como fórmulas de verso e refrão. Conceitualmente, nasce de perguntas profundas sobre a vida, a consciência e o espiritual.',
+    'AEVUM é um projeto de Progressive Metal / New Prog. Musicalmente, busca uma linguagem densa e progressiva: riffs marcantes, baixo em evidência, compassos irregulares, dinâmica entre peso e silêncio, e músicas que crescem como jornadas — não como fórmulas de verso e refrão. Conceitualmente, nasce de perguntas profundas sobre a vida, a consciência e o espiritual.',
   footerNote: 'AEVUM · Progressive Metal · New Prog · Universo Wonderland Song',
   historySections: [
     {
@@ -1188,7 +1188,7 @@ export const aevum: ProjectDetail = {
       paragraphs: [
         'O básico do som AEVUM é Progressive Metal com traços de New Prog e rock atmosférico. As composições priorizam estrutura progressiva: seções que se transformam, mudanças de intensidade e espaço para o instrumental desenvolver tensão e alívio.',
         'Na prática, isso soa como guitarras pesadas ao lado de passagens mais abertas e limpas, baixo com papel central, ritmo irregular ou polirrítmico quando a música pede, e vocais limpos e expressivos. O silêncio e a ambientação também fazem parte do arranjo — não são “vazio”, são parte da composição.',
-        'A referência principal é Tool: não como cópia, mas como ponto de partida para peso, hipnose rítmica, atmosfera e músicas longas que carregam ideia, não só riff.',
+        'O ponto de partida é o peso, a hipnose rítmica, a atmosfera e as músicas longas que carregam ideia, não só riff.',
       ],
     },
     {
@@ -1227,7 +1227,7 @@ export const aevumAlbums: ProjectAlbum[] = [
     type: 'Demo',
     cover: '/images/albums/AEVUM.webp',
     summary:
-      'Temas filosóficos e espirituais sobre a vida: a busca da consciência de Deus sobre o todo e o conhecimento como fome espiritual — Progressive Metal inspirado em Tool.',
+      'Temas filosóficos e espirituais sobre a vida: a busca da consciência de Deus sobre o todo e o conhecimento como fome espiritual — Progressive Metal denso e atmosférico.',
     demoInfo: [
       'Levels of Consciousness ainda está em composição. A primeira demo é The Unanswered Geometry — o ponto de partida sonoro e conceitual do álbum.',
     ],
@@ -1236,7 +1236,8 @@ export const aevumAlbums: ProjectAlbum[] = [
       'A inspiração para essas faixas vem de leitura e introspecção: estudar diferentes filosofias, confrontá-las entre si e compará-las com a Bíblia Sagrada — e de conversas com pessoas reais. Mesmo quem tem religião se depara com as mesmas perguntas e se questiona. Essas questões nascem nas músicas como perguntas espirituais, reflexo desse contexto compartilhado pela maioria.',
       'Nas faixas, o eu lírico busca respostas. Ao longo da música, ele atravessa diferentes reflexões — dúvida, confronto, silêncio, clareza parcial, nova pergunta — em trânsito, em busca dessas respostas. Cada seção pode ser um nível de consciência: não um discurso fechado, mas o percurso de quem interroga a própria mente e o próprio espírito até enxergar com mais nitidez.',
       'O eixo central é a busca da consciência de Deus sobre o todo — não como dogma fechado, mas como jornada interior. Outro pilar é o conhecimento como fome espiritual: saber não é só acumular informação, é uma necessidade interior. A ideia do álbum, com suas reflexões complexas, é ajudar o ouvinte a pensar e a encontrar essas respostas — respostas que os autores já possuem, e que a música coloca em movimento para quem ainda está no meio da pergunta.',
-      'Musicalmente, o álbum se inspira no estilo de Tool: Progressive Metal denso, rítmico e atmosférico, com construção gradual, baixo em destaque e contraste entre peso e contemplação.',
+      'Este álbum é uma autorreflexão do compositor sobre as experiências vividas em busca do Criador. Hoje, ele já o encontrou. As músicas são lembranças desse caminho — buscas feitas em fontes que, na época, estavam próximas da sua realidade e da sua influência. De forma alguma se afirma que, para chegar a essas respostas, seja preciso percorrer o mesmo trajeto. Se soubesse antes qual era a fonte, jamais essas experiências teriam sido vividas.',
+      'Musicalmente, o álbum é Progressive Metal denso, rítmico e atmosférico, com construção gradual, baixo em destaque e contraste entre peso e contemplação.',
     ],
     trackCount: aevumTracks.length,
     tracks: aevumTracks,
