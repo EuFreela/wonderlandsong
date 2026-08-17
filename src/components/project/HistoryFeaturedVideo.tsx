@@ -55,7 +55,7 @@ function HistoryFeaturedVideo({ video }: Props) {
       <figcaption className="flex flex-col gap-1 border-t border-white/10 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
         <div className="min-w-0">
           <p className="m-0 text-[0.62rem] font-bold uppercase tracking-[0.14em] text-white/40">
-            Acesso rápido
+            {video.label?.trim() || 'Acesso rápido'}
           </p>
           <p className="m-0 mt-0.5 truncate text-sm font-medium text-white/90">
             {video.title}

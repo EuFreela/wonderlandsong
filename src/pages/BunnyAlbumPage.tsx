@@ -3,6 +3,7 @@ import { Link, Navigate, useParams } from 'react-router-dom';
 import AlbumClipsGallery from '../components/project/AlbumClipsGallery';
 import AlbumCoverModal from '../components/project/AlbumCoverModal';
 import EasterEggsModal from '../components/project/EasterEggsModal';
+import HistoryFeaturedVideo from '../components/project/HistoryFeaturedVideo';
 import TrackLyricsModal from '../components/project/TrackLyricsModal';
 import Seo from '../components/seo/Seo';
 import SpotifyIcon from '../components/ui/SpotifyIcon';
@@ -257,6 +258,10 @@ function BunnyAlbumPage() {
                   </p>
                 ))}
               </div>
+
+              {album.featuredVideo ? (
+                <HistoryFeaturedVideo video={album.featuredVideo} />
+              ) : null}
 
               {album.previewVideo && !prefersReducedMotion ? (
                 <figure className="mt-8 overflow-hidden rounded-2xl border border-white/10 bg-black shadow-[0_24px_60px_-20px_rgba(0,0,0,0.65)]">

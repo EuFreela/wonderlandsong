@@ -137,6 +137,12 @@ describe('App', () => {
     expect(
       screen.getByText(/Se soubesse antes qual era a fonte, jamais essas experiências teriam sido vividas/i),
     ).toBeInTheDocument();
+    expect(screen.getByText(/Musicalmente, o álbum é Progressive Metal/i)).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Assistir: Trailer/i })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /YouTube/i })).toHaveAttribute(
+      'href',
+      'https://www.youtube.com/watch?v=3bORq7E6Rew',
+    );
     expect(screen.getByRole('button', { name: /^Easter Eggs$/i })).toBeInTheDocument();
 
     fireEvent.click(screen.getByRole('button', { name: /The Unanswered Geometry.*Ver letra/i }));

@@ -52,6 +52,8 @@ export type ProjectHistoryFeaturedVideo = {
   youtubeId: string;
   title: string;
   subtitle?: string;
+  /** Small caption label (default: "Acesso rápido"). */
+  label?: string;
 };
 
 /** History chapter on a project detail page. */
@@ -158,6 +160,8 @@ export type ProjectAlbum = {
    * (muted loop, shown under “Sobre o álbum”).
    */
   previewVideo?: string;
+  /** Optional YouTube highlight under the album description. */
+  featuredVideo?: ProjectHistoryFeaturedVideo;
   /** Optional content warning. */
   warning?: string;
   duration?: string;

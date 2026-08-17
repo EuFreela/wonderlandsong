@@ -1239,6 +1239,12 @@ export const aevumAlbums: ProjectAlbum[] = [
       'Este álbum é uma autorreflexão do compositor sobre as experiências vividas em busca do Criador. Hoje, ele já o encontrou. As músicas são lembranças desse caminho — buscas feitas em fontes que, na época, estavam próximas da sua realidade e da sua influência. De forma alguma se afirma que, para chegar a essas respostas, seja preciso percorrer o mesmo trajeto. Se soubesse antes qual era a fonte, jamais essas experiências teriam sido vividas.',
       'Musicalmente, o álbum é Progressive Metal denso, rítmico e atmosférico, com construção gradual, baixo em destaque e contraste entre peso e contemplação.',
     ],
+    featuredVideo: {
+      youtubeId: '3bORq7E6Rew',
+      title: 'Trailer',
+      subtitle: 'Levels of Consciousness · AEVUM',
+      label: 'Trailer',
+    },
     trackCount: aevumTracks.length,
     tracks: aevumTracks,
     easterEgg: {
