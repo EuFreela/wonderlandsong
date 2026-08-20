@@ -133,11 +133,19 @@ describe('App', () => {
     expect(screen.getByText(/demo é The Unanswered Geometry/i)).toBeInTheDocument();
     expect(screen.getByText('Inquirer')).toBeInTheDocument();
     expect(screen.getByText('Seats Where Silence Stood')).toBeInTheDocument();
+    expect(screen.getByText('The Arithmetic of Grace')).toBeInTheDocument();
+    expect(
+      screen.queryByRole('button', { name: /The Arithmetic of Grace.*Ver letra/i }),
+    ).not.toBeInTheDocument();
     expect(screen.getByText(/autorreflexão do compositor/i)).toBeInTheDocument();
     expect(
-      screen.getByText(/Se soubesse antes qual era a fonte, jamais essas experiências teriam sido vividas/i),
+      screen.getByText(
+        /Se a resposta já fosse conhecida naquele momento, esses caminhos provavelmente nunca teriam sido percorridos/i,
+      ),
     ).toBeInTheDocument();
-    expect(screen.getByText(/Musicalmente, o álbum é Progressive Metal/i)).toBeInTheDocument();
+    expect(
+      screen.getByText(/Musicalmente, o álbum se desenvolve dentro do Progressive Metal/i),
+    ).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /Assistir: Trailer/i })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /YouTube/i })).toHaveAttribute(
       'href',
@@ -171,6 +179,9 @@ describe('App', () => {
     expect(screen.getByText(/experiência do compositor com o ocultismo/i)).toBeInTheDocument();
     expect(screen.getByText(/→ A Igreja Católica/i)).toBeInTheDocument();
     expect(screen.getByText(/viveu na Igreja Católica/i)).toBeInTheDocument();
+    expect(screen.getByText(/→ Igrejas Protestantes/i)).toBeInTheDocument();
+    expect(screen.getByText(/experiência do compositor em igrejas protestantes/i)).toBeInTheDocument();
+    expect(screen.getByText(/onde está o Criador/i)).toBeInTheDocument();
     expect(screen.getByText(/fio simbólico por trás das faixas/i)).toBeInTheDocument();
   });
 

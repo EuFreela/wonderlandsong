@@ -283,6 +283,12 @@ com a prisão`,
     title: 'Seats Where Silence Stood',
     dedication: 'A Igreja Católica',
     dedicationNote:
-      'Seats Where Silence Stood parte da experiência do compositor durante o período em que viveu na Igreja Católica — entre músicos, missas, cultos e eventos que, naquela época, pareciam ocupar o centro de sua experiência com o sagrado. A música traz a conclusão de uma experiência que acabou por decepcioná-lo. Entre tradições misturadas à adoração que deveria ser pura, filosofia humana ocupando o lugar do pensamento de Deus, outras divindades recebendo aquilo que deveria pertencer ao Criador e perguntas que permaneciam sem resposta, o compositor percebe que aquilo que parecia ser o centro do sagrado não era capaz de saciar sua busca por conhecer verdadeiramente o Criador.',
+      'Seats Where Silence Stood parte da experiência do compositor durante o período em que viveu na Igreja Católica — entre músicos, missas, cultos e eventos que, naquela época, pareciam ocupar o centro de sua experiência com o sagrado. A música traz a conclusão de uma experiência que acabou por decepcioná-lo. Entre tradições misturadas à adoração que deveria ser pura, filosofia humana ocupando o lugar do pensamento de Deus, outras divindades recebendo aquilo que deveria pertencer ao Criador e perguntas que permaneciam sem resposta, o compositor percece que aquilo que parecia ser o centro do sagrado não era capaz de saciar sua busca por conhecer verdadeiramente o Criador.',
+  },
+  {
+    title: 'The Arithmetic of Grace',
+    dedication: 'Igrejas Protestantes',
+    dedicationNote:
+      'The Arithmetic of Grace parte da experiência do compositor em igrejas protestantes, onde sua busca pelo Criador encontrou uma realidade em que o dinheiro, a oferta e o consumo pareciam ocupar um espaço maior do que a própria busca por Deus. A música traz a conclusão de uma experiência que acabou por decepcioná-lo: entre cálculos, ofertas, venda de acessórios religiosos e uma espécie de teatro espiritual apresentado como caminho para alcançar o sagrado, o compositor percebe uma estrutura que, apesar de assumir uma nova aparência, continuava reproduzindo os mesmos dogmas e limitações que já havia encontrado na religião tradicional. A graça passa a adquirir preço, medida e forma, enquanto a fé se transforma em algo administrado por homens — uma extensão daquilo que ele já havia experimentado, apenas sob outra perspectiva. E, novamente, por trás de todo o ritual, das promessas e das respostas prontas, permanecia a mesma pergunta sem resposta: onde está o Criador?',
   },
 ];
