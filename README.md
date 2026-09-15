@@ -88,14 +88,14 @@ src/data/         home-projects, content, lyrics, site-routes
 src/hooks/        parallax, contraste do header, reduced motion
 src/pages/        Home, ProjectDetail, Album, ComingSoon
 public/           images, videos, sitemap.xml, robots.txt
-sdd.md            spec (Spec-Driven Development) · v0.0.3
+sdd.md            spec (Spec-Driven Development) · v0.0.4
 ```
 
 ---
 
 ## Já implementado
 
-- Home com 10 painéis e menu responsivo (incl. Heretic's Fork e AEVUM)
+- Home com 9 painéis e menu responsivo (RNH e Heretic's Fork ocultos da home/nav; AEVUM e The Captive Magpie visíveis)
 - Páginas de projeto e álbum (letras, Easter Eggs, clips, preview de vídeo)
 - Texto justificado em “Sobre” (projeto) e páginas de álbum
 - SEO, lazy routes, WebP, scroll-to-top global, reduced motion

@@ -106,6 +106,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://YOUR-DEPLOY-HOST/projects/the-captive-magpie</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://YOUR-DEPLOY-HOST/projects/the-captive-magpie/albums/sunday-afternoon</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://YOUR-DEPLOY-HOST/projects/uss-shenandoah</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

@@ -9,14 +9,13 @@ import { IconClose, IconMenu } from '../ui/Icons';
 const navItems = [
   { label: 'Selo', href: '#project-1' },
   { label: 'BLM', href: '#project-2' },
-  { label: 'RNH', href: '#project-3' },
   { label: 'AGM', href: '#project-4' },
   { label: 'HS', href: '#project-5' },
   { label: 'USSS', href: '#project-6' },
   { label: 'LSBB', href: '#project-7' },
   { label: 'RES', href: '#project-8' },
-  { label: 'HF', href: '#project-9' },
   { label: 'AEVUM', href: '#project-10' },
+  { label: 'TCM', href: '#project-11' },
 ];
 
 /**

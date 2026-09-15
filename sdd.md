@@ -13,6 +13,7 @@ Este arquivo é a **especificação viva** do produto no fluxo Spec-Driven Devel
 
 | Versão | Data | Destaque |
 | --- | --- | --- |
+| **0.0.4** | 2026-09-14 | **The Captive Magpie** na home (painel 11); projeto + álbum *SUNDAY AFTERNOON* (psychedelic rock / dream pop, letra EN/PT da faixa-título); nav TCM; sitemap e testes atualizados |
 | **0.0.3** | 2026-07-22 | **Heretic's Fork** + **AEVUM** na home; álbum *Levels of Consciousness* (demo, letra, clip YouTube); textos de projeto/álbum mais concretos; justificação tipográfica; scroll-to-top global |
 | **0.0.2** | 2026-07-19 | **Resonance** na home + detalhe + álbum *Echoes of Redemption* (14 faixas EN/PT, preview `.webm`, clip YouTube); separação de conteúdo projeto vs. álbum; Lighthouse mobile 98 / desktop 100 (performance) |
 | 0.0.1 | — | Tag anterior no repositório |
@@ -110,7 +111,7 @@ O visitante deve perceber: profundidade, movimento, continuidade, elegância, mi
 | Objetivo | Status |
 | --- | --- |
 | Home parallax em painéis de tela cheia | **Feito** |
-| Exibir projetos / selos artísticos | **Feito** (10 painéis, incl. Heretic's Fork e AEVUM) |
+| Exibir projetos / selos artísticos | **Feito** (9 painéis; RNH e Heretic's Fork ocultos da home/nav — páginas continuam nas rotas) |
 | Páginas individuais de projeto (história + discografia) | **Feito** |
 | Páginas de álbum (faixas, letras, clips, easter eggs, preview de vídeo) | **Feito** |
 | Integração Spotify e YouTube | **Feito** (links + ícones + galeria de clips) |
@@ -283,6 +284,7 @@ Painel 5 — Helena Son
 Painel 6 — USS Shenandoah
 Painel 7 — Lameck & Southern Birds Band
 Painel 8 — Resonance
+Painel 11 — The Captive Magpie
 Footer minimalista (“Wonderland Song” + tagline)
 ScrollToTop
 ```
@@ -297,7 +299,7 @@ ScrollToTop
 
 * fixo e transparente sobre os painéis;
 * contraste dinâmico (`light` / `dark`) via `useActivePanelTone` + `headerTone` opcional no projeto;
-* navegação desktop por âncoras dos painéis: Selo, BLM, RNH, AGM, HS, USSS, LSBB, Resonance;
+* navegação desktop por âncoras dos painéis: Selo, BLM, AGM, HS, USSS, LSBB, Resonance, AEVUM, TCM;
 * menu mobile em tela cheia (portal + fundo sólido legível);
 * fechamento com `Escape`, clique no backdrop e botão fechar;
 * `body` scroll lock com menu aberto.
@@ -376,13 +378,18 @@ Classes em `src/styles/index.css`:
 | 6 | USS Shenandoah | Hard Rock · 60/70 | `/projects/uss-shenandoah` | Spotify · YouTube covers |
 | 7 | Lameck & Southern Birds Band | Blues | `/projects/lameck-southern-birds-band` | Spotify |
 | 8 | Resonance | Post-Grunge / Alternative Rock | `/projects/resonance` | Bandcamp (no álbum) + YouTube clip |
+| 9 | Heretic's Fork | Metal Moderno · Nu Metal · Groove | `/projects/heretics-fork` | YouTube clip |
+| 10 | AEVUM | Progressive Metal · New Prog | `/projects/aevum` | YouTube (trailer/clip) |
+| 11 | The Captive Magpie | Psychedelic Rock · Dream Pop | `/projects/the-captive-magpie` | — |
+
+> **Ocultos da home/nav:** Rosa Negra de Halfeti e Heretic's Fork mantêm suas páginas nas rotas, mas deixaram de aparecer nos painéis da home e no menu do header.
 
 ### 11.1 Evolução em relação ao SDD original
 
 * **Caution! Audio Gateway** deixou de ser painel isolado na home e passou a ser **Chapter 1** de Bunny Land Music.
 * **Wonderland Song TV** não é painel separado; o canal YouTube está ligado ao painel do selo.
 * **Compositores / artistas** não formam painel na home; conteúdo de artistas reais está nas histórias dos projetos (Lameck, Adriano, Rodrigo, etc.).
-* Entraram projetos: **A Grande Multidão**, **Helena Son**, **USS Shenandoah**, **LSBB**, **Resonance** (v0.0.2), **Heretic's Fork**, **AEVUM** (v0.0.3).
+* Entraram projetos: **A Grande Multidão**, **Helena Son**, **USS Shenandoah**, **LSBB**, **Resonance** (v0.0.2), **Heretic's Fork**, **AEVUM** (v0.0.3), **The Captive Magpie** (v0.0.4).
 
 ---
 
@@ -480,6 +487,7 @@ export type ProjectDetail = {
 | `uss-shenandoah` | 1 álbum: 1937 |
 | `lameck-southern-birds-band` | 2 álbuns: Passalacqua, Instinct in Minor Key |
 | `resonance` | 1 demo: Echoes of Redemption (14 faixas + preview + clip Breaking Point) |
+| `the-captive-magpie` | 1 álbum: SUNDAY AFTERNOON (6 faixas, letra EN/PT da faixa-título) |
 
 Registro: `projectDetailsBySlug` e `projectAlbumsBySlug` em `content.ts`.
 
@@ -784,6 +792,11 @@ Ordem aproximada do histórico + marcos de versão:
     * tipografia justificada em “Sobre” e páginas de álbum;
     * `ScrollToTop` global (seta flutuante à direita após scroll);
     * sitemap com rotas AEVUM; testes smoke atualizados.
+15. **v0.0.4 — The Captive Magpie** (2026-09-14):
+    * painel 11 na home (`the-captive-magpie`) + nav TCM no Header;
+    * projeto **The Captive Magpie**: psychedelic rock / dream pop, conceito da pega cativa da memória, textos de projeto e álbum;
+    * álbum **SUNDAY AFTERNOON**: 6 faixas, letra EN + tradução PT-BR da faixa-título em `captive-magpie-lyrics.ts`, mesma capa do painel (`/images/albums/the_captive_magpie.webp`);
+    * sitemap com rotas do projeto; testes smoke de projeto e álbum; versão 0.0.4.
 
 ---
 
@@ -855,7 +868,7 @@ Leia integralmente o arquivo sdd.md (Spec-Driven Development) e use-o como fonte
 Execute a spec fase a fase — uma fase por vez. Não avance sozinho.
 Ao terminar a fase, pare e aguarde o autor revisar e pedir para prosseguir.
 
-O site Wonderland Song já possui home parallax com 10 painéis (incl. Heretic's Fork e AEVUM),
+O site Wonderland Song já possui home parallax com 9 painéis (RNH e Heretic's Fork ocultos da home/nav; AEVUM, The Captive Magpie etc. visíveis),
 páginas de projeto, páginas de álbum (letras, easter eggs, clips, previewVideo),
 SEO, Lighthouse scripts e fallback Coming Soon. Versão de produto em package.json / sdd.md.
 Está em deploy; não há domínio .com próprio — use VITE_SITE_URL / URL do ambiente.

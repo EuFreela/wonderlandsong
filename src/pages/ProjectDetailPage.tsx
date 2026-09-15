@@ -44,6 +44,8 @@ export function ProjectDetailView({ project, albums }: ProjectDetailViewProps) {
     historyLead,
     pullQuote,
     historySections,
+    portraitImage,
+    portraitImageCaption,
     historyClosing,
     historySourceUrl,
     historySourceLabel,
@@ -258,6 +260,23 @@ export function ProjectDetailView({ project, albums }: ProjectDetailViewProps) {
                   </section>
                 ))}
               </div>
+
+              {portraitImage ? (
+                <figure className="mt-12">
+                  <img
+                    src={portraitImage}
+                    alt={portraitImageCaption || 'Foto do projeto'}
+                    className="h-auto w-full rounded-2xl border border-white/10 object-cover"
+                    decoding="async"
+                    loading="lazy"
+                  />
+                  {portraitImageCaption ? (
+                    <figcaption className="mt-3 text-sm text-white/45">
+                      {portraitImageCaption}
+                    </figcaption>
+                  ) : null}
+                </figure>
+              ) : null}
 
               {historyClosing ? (
                 <p className="mt-12 text-justify text-lg font-medium italic text-white/80 hyphens-auto">

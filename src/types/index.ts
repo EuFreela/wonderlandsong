@@ -84,6 +84,10 @@ export type ProjectDetail = {
   historyLead: string;
   pullQuote?: string;
   historySections: ProjectHistorySection[];
+  /** Optional photo rendered right after the history sections. */
+  portraitImage?: string;
+  /** Accessible caption for `portraitImage`. */
+  portraitImageCaption?: string;
   historyClosing?: string;
   historySourceUrl?: string;
   historySourceLabel?: string;

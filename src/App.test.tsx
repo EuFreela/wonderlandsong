@@ -24,7 +24,7 @@ describe('App', () => {
     ).toBeInTheDocument();
     expect(screen.getAllByRole('link', { name: /Wonderland Song/i }).length).toBeGreaterThan(0);
     expect(screen.getByRole('heading', { name: /Wonderland Song/i })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: /Rosa Negra de Halfeti/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /AEVUM/i })).toBeInTheDocument();
   });
 
   it('shows bunny-at-work page for unknown routes', async () => {
@@ -122,6 +122,45 @@ describe('App', () => {
       screen.getByRole('link', { name: /Ver álbum.*Levels of Consciousness/i }),
     ).toHaveAttribute('href', '/projects/aevum/albums/aevum');
     expect(screen.getByRole('link', { name: /Voltar à home/i })).toHaveAttribute('href', '/');
+  });
+
+  it('opens The Captive Magpie project page with shared layout', async () => {
+    renderAt('/projects/the-captive-magpie');
+
+    expect(await screen.findByRole('heading', { name: /^The Captive Magpie$/i })).toBeInTheDocument();
+    expect(screen.getByText('Psychedelic Rock · Dream Pop')).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /Sobre The Captive Magpie/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /A ideia por trás do nome/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /Lameck, Adriano e Rodrigo/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /A estética sonora/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /Álbuns lançados/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole('link', { name: /Ver álbum.*SUNDAY AFTERNOON/i }),
+    ).toHaveAttribute(
+      'href',
+      '/projects/the-captive-magpie/albums/sunday-afternoon',
+    );
+    expect(screen.getByRole('link', { name: /Voltar à home/i })).toHaveAttribute('href', '/');
+  });
+
+  it('opens SUNDAY AFTERNOON album with title-track lyrics and PT translation', async () => {
+    renderAt('/projects/the-captive-magpie/albums/sunday-afternoon');
+
+    expect(await screen.findByRole('heading', { name: /^SUNDAY AFTERNOON$/i })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /← The Captive Magpie/i })).toHaveAttribute(
+      'href',
+      '/projects/the-captive-magpie',
+    );
+    expect(screen.getByText('The Magpie and the Window')).toBeInTheDocument();
+    expect(screen.getByText('Soft Collapse of Hours')).toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole('button', { name: /Sunday Afternoon.*Ver letra/i }));
+    expect(await screen.findByRole('dialog')).toBeInTheDocument();
+    expect(screen.getByText(/The radio is talking/i)).toBeInTheDocument();
+    expect(screen.getByText(/today was almost ours/i)).toBeInTheDocument();
+    expect(screen.getByText(/^Tradução \(português\)$/i)).toBeInTheDocument();
+    expect(screen.getByText(/O rádio está falando/i)).toBeInTheDocument();
+    expect(screen.getByText(/Mas hoje quase foi nosso/i)).toBeInTheDocument();
   });
 
   it('opens AEVUM album with demo track The Unanswered Geometry', async () => {

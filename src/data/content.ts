@@ -16,6 +16,7 @@ import { hereticsForkTracks } from './heretics-fork-lyrics';
 import { echoesOfRedemptionTracks } from './resonance-lyrics';
 import { simplesmenteEuTracks } from './rnh-lyrics';
 import { uss1937Tracks } from './uss-1937-lyrics';
+import { sundayAfternoonTracks } from './captive-magpie-lyrics';
 
 /** Re-export home panels for any legacy import of content.ts */
 export { projects } from './home-projects';
@@ -1265,6 +1266,114 @@ export const aevumAlbums: ProjectAlbum[] = [
   },
 ];
 
+/**
+ * The Captive Magpie — project-11 detail page (home: project-11).
+ * Psychedelic Rock · Dream Pop — a pega cativa da memória.
+ */
+export const theCaptiveMagpie: ProjectDetail = {
+  slug: 'the-captive-magpie',
+  title: 'The Captive Magpie',
+  category: 'Psychedelic Rock · Dream Pop',
+  image: '/images/albums/oficialart-magpie.webp',
+  imagePositionMobile: 'center 44%',
+  tagline:
+    'Psychedelic rock e dream pop sobre memória, nostalgia e a beleza de pequenas coisas brilhantes guardadas.',
+  historyTitle: 'Sobre The Captive Magpie',
+  historyLead:
+    'The Captive Magpie é um projeto de psychedelic rock com elementos de dream pop, Britpop e rock alternativo, criado por Lameck S. Fernandes, Adriano Lima e Rodrigo Alves. O projeto nasceu de um período de intensa descoberta musical, em que novas referências, principalmente da música britânica e europeia, começaram a despertar ideias para melodias, letras e atmosferas.',
+  pullQuote:
+    'Algumas músicas não são feitas para contar uma história. São feitas para fazer você lembrar de uma.',
+  footerNote:
+    'The Captive Magpie · Psychedelic Rock · Dream Pop · Universo Wonderland Song',
+  historySections: [
+    {
+      id: 'project',
+      title: 'O projeto',
+      paragraphs: [
+        'The Captive Magpie é um projeto musical autoral de Lameck S. Fernandes, Adriano Lima e Rodrigo Alves, construído a partir da mistura entre psychedelic rock, dream pop, Britpop e rock alternativo.',
+        'A ideia surgiu de forma espontânea. Durante um período de intensa escuta musical, Lameck passou a ouvir com frequência artistas como Tame Impala, Oasis, The Beatles, The Verve e Liverpool Express, e essas referências começaram a provocar novas ideias de composição. Não se trata de reproduzir o som dessas bandas, mas de absorver determinadas características: a força das melodias, a simplicidade aparente dos acordes, as harmonias marcantes, a psicodelia, a nostalgia e a capacidade de transformar situações cotidianas em música.',
+        'O projeto nasce justamente desse processo: ouvir, sentir, experimentar e transformar.',
+      ],
+    },
+    {
+      id: 'name',
+      title: 'A ideia por trás do nome',
+      paragraphs: [
+        'The Captive Magpie nasceu da imagem de uma pega — uma ave associada à curiosidade e ao hábito de recolher pequenos objetos brilhantes.',
+        'A ideia de uma "pega cativa" funciona como uma metáfora para aquilo que fazemos com nossas próprias lembranças. Guardamos fotografias, lugares, pessoas, frases, músicas e pequenos acontecimentos porque algum dia eles brilharam para nós.',
+        'Mas existe uma contradição: aquilo que guardamos também pode nos prender. A pega não está necessariamente presa em uma gaiola. Ela pode estar presa ao próprio desejo de continuar colecionando aquilo que já passou.',
+        'Por isso, o nome representa uma das ideias centrais do projeto: memória, nostalgia e a dificuldade — ou simplesmente a falta de vontade — de deixar algumas coisas para trás.',
+      ],
+    },
+    {
+      id: 'trio',
+      title: 'Lameck, Adriano e Rodrigo',
+      paragraphs: [
+        'The Captive Magpie reúne novamente Lameck S. Fernandes, Adriano Lima e Rodrigo Alves, músicos que já compartilham uma longa trajetória de criação musical.',
+        'A parceria entre os três também está presente em outros projetos, incluindo Helena’s Son, uma obra conceitual construída a partir de uma narrativa existencial, e outros trabalhos que exploram diferentes linguagens musicais.',
+        'Aqui, entretanto, a proposta é diferente. Em vez de construir uma narrativa conceitual rígida, The Captive Magpie permite que cada música exista como um momento independente. Uma canção pode falar sobre uma tarde de domingo; outra, sobre uma pessoa; outra, sobre uma cidade; outra pode simplesmente capturar uma sensação.',
+        'O elo entre elas não precisa estar na história. Está na atmosfera.',
+      ],
+    },
+    {
+      id: 'sound',
+      title: 'Som e atmosfera',
+      paragraphs: [
+        'A base sonora combina psychedelic rock, dream pop, Britpop e rock alternativo, buscando um equilíbrio entre o orgânico e o etéreo.',
+        'As guitarras são fundamentais para essa identidade. Em vez de depender exclusivamente de riffs agressivos, os arranjos exploram acordes abertos, arpejos, drones, guitarras limpas, camadas melódicas, delays e reverbs longos.',
+        'A psicodelia aparece principalmente na sensação de repetição e movimento: pequenas frases de guitarra que retornam, instrumentos que entram e desaparecem lentamente, mudanças sutis de textura e arranjos que parecem crescer naturalmente.',
+        'O dream pop acrescenta a parte mais aérea do projeto: vocais suaves, harmonias sobrepostas, sintetizadores atmosféricos, pads, ambiências profundas e uma produção espacial.',
+        'Já a influência do Britpop aparece principalmente na composição das músicas — melodias fáceis de lembrar, estruturas acessíveis, acordes emocionalmente fortes e uma certa melancolia escondida dentro de canções aparentemente simples.',
+      ],
+    },
+    {
+      id: 'aesthetic',
+      title: 'A estética sonora',
+      paragraphs: [
+        'The Captive Magpie não busca uma produção perfeitamente limpa.',
+        'Existe espaço para textura de fita, pequenas imperfeições, ruídos ambientes, saturação analógica, instrumentos com aparência orgânica e timbres quentes. Ao mesmo tempo, a produção pode utilizar elementos contemporâneos: graves profundos, estéreo amplo, camadas de sintetizadores e efeitos modernos.',
+        'A intenção é criar a sensação de uma música que poderia ter sido encontrada em uma velha fita ou em um vinil esquecido, mas que foi produzida com a sensibilidade sonora de hoje. É uma espécie de passado imaginado através do presente.',
+      ],
+    },
+  ],
+  portraitImage: '/images/albums/lameck.webp',
+  portraitImageCaption: 'Lameck S. Fernandes — compositor e idealizador do projeto.',
+  historyClosing:
+    'A identidade do projeto está menos na velocidade ou na complexidade e mais na sensação: acordes que permanecem no ar, melodias nostálgicas, vocais suaves e uma atmosfera entre a tarde ensolarada e o começo da noite.',
+};
+
+/** Álbuns de The Captive Magpie (project-11). */
+export const theCaptiveMagpieAlbums: ProjectAlbum[] = [
+  {
+    slug: 'sunday-afternoon',
+    title: 'SUNDAY AFTERNOON',
+    year: '2026',
+    type: 'Album',
+    cover: '/images/albums/the_captive_magpie.webp',
+    summary:
+      'Psychedelic rock e dream pop sobre o intervalo afetivo do domingo: memória, luz inclinada e as pequenas coisas brilhantes que guardamos.',
+    description: [
+      'SUNDAY AFTERNOON é o primeiro álbum de The Captive Magpie, projeto de psychedelic rock com camadas de dream pop criado por Lameck S. Fernandes no universo Wonderland Song.',
+      'O disco não é um inventário de histórias, e sim um mapa de atmosferas: cortinas ao vento, a rua em silêncio, a chaleira esfriando, a pega no parapeito girando um caco de vidro no bico. São quadros de uma tarde em que o tempo se move como um rio — sem pressa, sem relógio, sem recados.',
+      'A pega cativa é a metáfora central: um eu lírico que coleciona brilhos — memórias, afetos, retalhos de dias felizes — e percebe que o peso do que guarda é também o teto do lugar onde escolheu ficar. A luz suave da tarde funciona como consolo e como jaula: a beleza que nos segura.',
+      'Musicalmente, o álbum flutua entre riffs psicodélicos dos anos 60/70 — órgão vintage, delay, texturas de guitarra — e a névoa melódica do dream pop: vozes com muito espaço, sintetizadores atmosféricos e dinâmicas que crescem lentas, como quem estende a tarde o máximo possível.',
+      'A faixa-título, que abre o disco, apresenta o convite central: permanecer junto até que as sombras se inclinem. A partir dela, cada canção aprofunda uma textura desse mesmo estado — até o encerramento, Soft Collapse of Hours, em que a tarde finalmente se desfaz.',
+      'Projeto: The Captive Magpie · Álbum: SUNDAY AFTERNOON · Compositor: Lameck S. Fernandes · Gênero: Psychedelic Rock · Dream Pop.',
+    ],
+    duration: '48 min',
+    trackCount: sundayAfternoonTracks.length,
+    tracks: sundayAfternoonTracks,
+    clips: [
+      {
+        id: 'sunday-afternoon',
+        title: 'Sunday Afternoon',
+        subtitle: 'SUNDAY AFTERNOON · The Captive Magpie',
+        youtubeId: 'XxexQAG1V_Q',
+      },
+    ],
+  },
+];
+
 /** All project detail pages keyed by URL slug (`/projects/:slug`). */
 export const projectDetailsBySlug: Record<string, ProjectDetail> = {
   [bunnyLandMusic.slug]: bunnyLandMusic,
@@ -1276,6 +1385,7 @@ export const projectDetailsBySlug: Record<string, ProjectDetail> = {
   [resonance.slug]: resonance,
   [hereticsFork.slug]: hereticsFork,
   [aevum.slug]: aevum,
+  [theCaptiveMagpie.slug]: theCaptiveMagpie,
 };
 
 /** Discographies keyed by project slug. */
@@ -1289,6 +1399,7 @@ export const projectAlbumsBySlug: Record<string, ProjectAlbum[]> = {
   [resonance.slug]: resonanceAlbums,
   [hereticsFork.slug]: hereticsForkAlbums,
   [aevum.slug]: aevumAlbums,
+  [theCaptiveMagpie.slug]: theCaptiveMagpieAlbums,
 };
 
 export function getProjectDetailBySlug(slug: string): ProjectDetail | undefined {
