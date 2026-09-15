@@ -46,6 +46,8 @@ export function ProjectDetailView({ project, albums }: ProjectDetailViewProps) {
     historySections,
     portraitImage,
     portraitImageCaption,
+    portraitVideo,
+    portraitVideoLabel,
     historyClosing,
     historySourceUrl,
     historySourceLabel,
@@ -261,7 +263,25 @@ export function ProjectDetailView({ project, albums }: ProjectDetailViewProps) {
                 ))}
               </div>
 
-              {portraitImage ? (
+              {portraitVideo ? (
+                <figure className="mt-12 overflow-hidden rounded-2xl border border-white/10 bg-black shadow-[0_24px_60px_-20px_rgba(0,0,0,0.65)]">
+                  <video
+                    className="block h-auto w-full object-contain"
+                    src={portraitVideo}
+                    muted
+                    loop
+                    playsInline
+                    autoPlay
+                    preload="metadata"
+                    aria-label={portraitVideoLabel || 'Vídeo do projeto'}
+                  />
+                  {portraitVideoLabel ? (
+                    <figcaption className="px-4 py-3 text-sm text-white/45">
+                      {portraitVideoLabel}
+                    </figcaption>
+                  ) : null}
+                </figure>
+              ) : portraitImage ? (
                 <figure className="mt-12">
                   <img
                     src={portraitImage}

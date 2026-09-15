@@ -1336,8 +1336,8 @@ export const theCaptiveMagpie: ProjectDetail = {
       ],
     },
   ],
-  portraitImage: '/images/albums/lameck.webp',
-  portraitImageCaption: 'Lameck S. Fernandes — compositor e idealizador do projeto.',
+  portraitVideo: '/videos/magpie-video.mp4',
+  portraitVideoLabel: 'The Captive Magpie · clipe',
   historyClosing:
     'A identidade do projeto está menos na velocidade ou na complexidade e mais na sensação: acordes que permanecem no ar, melodias nostálgicas, vocais suaves e uma atmosfera entre a tarde ensolarada e o começo da noite.',
 };

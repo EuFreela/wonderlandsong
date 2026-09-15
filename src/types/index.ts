@@ -88,6 +88,10 @@ export type ProjectDetail = {
   portraitImage?: string;
   /** Accessible caption for `portraitImage`. */
   portraitImageCaption?: string;
+  /** Optional preview video rendered right after the history sections (replaces the photo when set). */
+  portraitVideo?: string;
+  /** Accessible label for `portraitVideo`. */
+  portraitVideoLabel?: string;
   historyClosing?: string;
   historySourceUrl?: string;
   historySourceLabel?: string;
