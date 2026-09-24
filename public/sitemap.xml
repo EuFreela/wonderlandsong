@@ -51,6 +51,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://YOUR-DEPLOY-HOST/projects/bunny-land-music/albums/chapter-5-artificial-heritage</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://YOUR-DEPLOY-HOST/projects/helena-son</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

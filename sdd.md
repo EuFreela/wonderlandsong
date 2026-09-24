@@ -1,8 +1,8 @@
 # SDD — Wonderland Song Parallax Portfolio
 
 **Metodologia:** SDD — **Spec-Driven Development** (desenvolvimento orientado por especificação)  
-**Versão do produto:** `0.0.3` (alinhada a `package.json` / tag `v0.0.3`)  
-**Status da spec:** viva (atualizado em 2026-07-22)  
+**Versão do produto:** `0.0.5` (alinhada a `package.json` / tag `v0.0.5`)  
+**Status da spec:** viva (atualizado em 2026-09-24)  
 **Repositório:** `wonderlandsong2`  
 **Fase atual:** front-end rico com dados locais tipados (sem backend)  
 **Publicação:** em deploy (sem domínio `.com` próprio; URL pública via hospedagem / `VITE_SITE_URL`)
@@ -13,6 +13,7 @@ Este arquivo é a **especificação viva** do produto no fluxo Spec-Driven Devel
 
 | Versão | Data | Destaque |
 | --- | --- | --- |
+| **0.0.5** | 2026-09-24 | **Chapter 5 · Artificial Heritage** (Bunny Land Music): trilha sonora de *Herança Artificial: O Limiar da Esperança* (Leon, Elena, Liat, Dama Mascarada, Exoneuros, Projeto Novo Éden) — album em composição com 10 faixas (só nomes), link para o livro, capa `artificial_heritage.webp`; sitemap e testes atualizados |
 | **0.0.4** | 2026-09-14 | **The Captive Magpie** na home (painel 11); projeto + álbum *SUNDAY AFTERNOON* (psychedelic rock / dream pop, letra EN/PT da faixa-título); nav TCM; sitemap e testes atualizados |
 | **0.0.3** | 2026-07-22 | **Heretic's Fork** + **AEVUM** na home; álbum *Levels of Consciousness* (demo, letra, clip YouTube); textos de projeto/álbum mais concretos; justificação tipográfica; scroll-to-top global |
 | **0.0.2** | 2026-07-19 | **Resonance** na home + detalhe + álbum *Echoes of Redemption* (14 faixas EN/PT, preview `.webm`, clip YouTube); separação de conteúdo projeto vs. álbum; Lighthouse mobile 98 / desktop 100 (performance) |
@@ -231,7 +232,7 @@ wonderlandsong2/
 │   │   ├── content.ts         # ProjectDetail, álbuns, registries, helpers
 │   │   ├── site-routes.ts     # paths públicos (sitemap/SEO)
 │   │   ├── agm-lyrics.ts
-│   │   ├── blm-chapter1-lyrics.ts … blm-chapter4-lyrics.ts
+│   │   ├── blm-chapter1-lyrics.ts … blm-chapter5-lyrics.ts
 │   │   ├── helena-son-lyrics.ts
 │   │   ├── resonance-lyrics.ts
 │   │   └── uss-1937-lyrics.ts
@@ -261,7 +262,7 @@ wonderlandsong2/
 ├── lighthouse-mobile.json   # última auditoria mobile
 ├── lighthouse-desktop.json  # última auditoria desktop
 ├── dist/                    # build de produção
-├── package.json             # version 0.0.3
+├── package.json             # version 0.0.5
 ├── vite.config.ts           # manualChunks (react-vendor, content, helmet…)
 ├── vitest.config.ts
 ├── tailwind.config.js
@@ -480,7 +481,7 @@ export type ProjectDetail = {
 
 | Slug | Discografia |
 | --- | --- |
-| `bunny-land-music` | 4 chapters (Caution, In The Forest, In Time With Your Heart, Listen To Daddy) |
+| `bunny-land-music` | 5 chapters (Caution, In The Forest, In Time With Your Heart, Listen To Daddy, Artificial Heritage) |
 | `rosa-negra-halfeti` | 1 demo: Simplesmente eu… |
 | `a-grande-multidao` | 1 álbum: A Verdade Ainda Chama |
 | `helena-son` | 4 álbuns Genesis: Plastic Grace, New Day, The Computer, Unplugged |
@@ -770,7 +771,7 @@ Ordem aproximada do histórico + marcos de versão:
 4. **Página de manutenção / Coming Soon** (bunny at work).
 5. **Novos projetos** na home e páginas de detalhe (AGM, HS, USSS, LSBB, etc.).
 6. **Parallax mobile** e correções desktop/mobile.
-7. **Conteúdo rico de Bunny Land Music** (história, 4 chapters, clips, easter eggs).
+7. **Conteúdo rico de Bunny Land Music** (história, 5 chapters, clips, easter eggs).
 8. **Letras em modal** + arquivos de lyrics (BLM chapters, AGM, Helena Son, USS 1937).
 9. **Discografias** de Helena Son, USS Shenandoah, LSBB, AGM, RNH.
 10. **SEO** (Helmet, config de site, sitemap, robots, JSON-LD).
@@ -797,6 +798,11 @@ Ordem aproximada do histórico + marcos de versão:
     * projeto **The Captive Magpie**: psychedelic rock / dream pop, conceito da pega cativa da memória, textos de projeto e álbum;
     * álbum **SUNDAY AFTERNOON**: 6 faixas, letra EN + tradução PT-BR da faixa-título em `captive-magpie-lyrics.ts`, mesma capa do painel (`/images/albums/the_captive_magpie.webp`);
     * sitemap com rotas do projeto; testes smoke de projeto e álbum; versão 0.0.4.
+16. **v0.0.5 — Chapter 5·Artificial Heritage** (2026-09-24):
+    * album **Artificial Heritage** (Chapter 5) em Bunny Land Music: trilha sonora de *Herança Artificial: O Limiar da Esperança* de Lameck Silva Fernandes, em composição;
+    * 10 faixas em `blm-chapter5-lyrics.ts` (apenas os nomes);
+* capa `/images/artificial_heritage.webp`; link do livro como secondary link; duração 58 min; tracklist em composição (só nomes das faixas, sem letras);
+* sitemap e testes (página, nomes das faixas, ausência de modais de letras); versão 0.0.5.
 
 ---
 

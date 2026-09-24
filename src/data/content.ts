@@ -1,6 +1,7 @@
 import type { ProjectAlbum, ProjectDetail } from '../types';
 import { aVerdadeAindaChamaTracks } from './agm-lyrics';
 import { cautionAudioGatewayTracks } from './blm-chapter1-lyrics';
+import { artificialHeritageTracks } from './blm-chapter5-lyrics';
 import { inTheForestTracks } from './blm-chapter2-lyrics';
 import { inTimeWithYourHeartTracks } from './blm-chapter3-lyrics';
 import { listenToDaddyTracks } from './blm-chapter4-lyrics';
@@ -961,6 +962,32 @@ export const bunnyLandAlbums: ProjectAlbum[] = [
         isShort: true,
       },
     ],
+  },
+  {
+    slug: 'chapter-5-artificial-heritage',
+    title: 'Artificial Heritage',
+    chapter: 'Chapter 5',
+    year: '2026',
+    type: 'Album',
+    cover: '/images/artificial_heritage.webp',
+    summary:
+      'Trilha sonora de Herança Artificial: O Limiar da Esperança — em composição: a jornada de Leon, Elena e Liat em Kepler-452b em dez faixas cinematográficas de dark EDM, synthwave e dark pop.',
+    description: [
+      'Artificial Heritage é o quinto capítulo de Bunny Land Music e a trilha sonora de Herança Artificial: O Limiar da Esperança, o suspense de ficção científica de Lameck Silva Fernandes (474 páginas, 2024). A trilha está sendo composta para um suposto filme do livro: o álbum traduz o universo da história para o som — inclusive o lema de Kepler: nada é o que parece, e tudo é possível — a primeira forma cinematográfica da história, um mapa emocional em dez faixas.',
+      'A jornada acompanha Leon e Elena, recém-casados que partem para uma lua de mel em Kepler-452b, um planeta distante e promissor, semelhante à Terra. O que deveria ser um recomeço perfeito vira um pesadelo intrigante, repleto de segredos sombrios e dilemas morais. Assombrada pela perda devastadora da filha, Elena é consumida por um abismo de dor; determinado a devolver-lhe a esperança, Leon desafia os limites da ciência e da ética em uma sociedade surpreendente, onde humanoides avançados — os Exoneuros — coexistem com os humanos, quase indistinguíveis deles.',
+      'No centro está Liat, a Exoneuro criada por Leon: uma existência que carrega memórias e emoções que nem sempre parecem suas, em conflito constante entre o que é e o que foi programada para ser. Ao seu lado, a enigmática Dama Mascarada guia Leon por um labirinto tecnológico onde a promessa de um futuro perfeito esconde um preço impensável — até que a revelação do Projeto Novo Éden muda, para sempre, o que se entendia por "evolução".',
+      'Musicalmente, o capítulo expande o Bunny Land Music para as sombras do cinema: dark EDM, synthwave, ambient e dark pop em arranjos amplos e cinematográficos, com tensões que crescem, silêncios que pesam e melodias que ecoam a perda. Da abertura homônima "Artificial Heritage" ao synth sombrio de "Elena" e à potência quase auroral de "The Threshold of Hope", cada faixa é uma cena do livro transformada em som.',
+      'Como no jogo Cards of Destine (COD-X) — "uma carta poderá mudar todo o destino" — cada música é uma carta do destino do universo Herança Artificial: personagens, lugares e conceitos podem mudar toda a história.',
+      'Projeto: Artificial Heritage · Trilha sonora do livro Herança Artificial: O Limiar da Esperança · Autor: Lameck Silva Fernandes · Compositor/DJ: Lameck S. Fernandes · Vulgo: Bunny Land Music · Imaginário: Wonderland Song.',
+    ],
+    warning:
+      'Este capítulo ecoa a dor da perda e os dilemas éticos intensos do livro. Ouça com moderação.',
+    duration: '58 min',
+    trackCount: artificialHeritageTracks.length,
+    lyricsUrl: 'https://agencylk7.wixsite.com/heranca-artificial',
+    lyricsLabel: 'Herança Artificial (livro)',
+    tracks: artificialHeritageTracks,
+    clips: [],
   },
 ];
 

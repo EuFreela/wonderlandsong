@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from '@testing-library/react';
+import { fireEvent, render, screen, within } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 import { MemoryRouter } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
@@ -361,6 +361,12 @@ describe('App', () => {
       'href',
       '/projects/bunny-land-music/albums/chapter-3-in-time-with-your-heart',
     );
+    expect(
+      screen.getByRole('link', { name: /Ver álbum.*Artificial Heritage/i }),
+    ).toHaveAttribute(
+      'href',
+      '/projects/bunny-land-music/albums/chapter-5-artificial-heritage',
+    );
   });
 
   it('opens a dedicated album page for Chapter 3', async () => {
@@ -394,6 +400,43 @@ describe('App', () => {
     ).toBeInTheDocument();
     expect(screen.getByText(/→ Scabbia/i)).toBeInTheDocument();
     expect(screen.getByText(/→ Josi/i)).toBeInTheDocument();
+  });
+
+  it('shows Artificial Heritage album (Chapter 5) with the tracklist names only', async () => {
+    renderAt('/projects/bunny-land-music/albums/chapter-5-artificial-heritage');
+
+    expect(
+      await screen.findByRole('heading', { name: /^Artificial Heritage$/i }),
+    ).toBeInTheDocument();
+    expect(screen.getByText('Chapter 5')).toBeInTheDocument();
+    expect(
+      screen.getAllByText(/Trilha sonora de Herança Artificial: O Limiar da Esperança/i).length,
+    ).toBeGreaterThan(0);
+    expect(screen.getByRole('link', { name: /← Bunny Land Music/i })).toHaveAttribute(
+      'href',
+      '/projects/bunny-land-music',
+    );
+    expect(screen.getByRole('link', { name: /Herança Artificial \(livro\)/i })).toHaveAttribute(
+      'href',
+      'https://agencylk7.wixsite.com/heranca-artificial',
+    );
+
+    const tracklist = screen.getByRole('list');
+    expect(within(tracklist).getByText('Artificial Heritage')).toBeInTheDocument();
+    expect(within(tracklist).getByText('Honeymoon on Kepler')).toBeInTheDocument();
+    expect(within(tracklist).getByText('Elena')).toBeInTheDocument();
+    expect(within(tracklist).getByText('Exoneuro')).toBeInTheDocument();
+    expect(within(tracklist).getByText('The Masked Lady')).toBeInTheDocument();
+    expect(within(tracklist).getByText('New Eden')).toBeInTheDocument();
+    expect(within(tracklist).getByText('The Threshold of Hope')).toBeInTheDocument();
+    expect(within(tracklist).getByText('Nothing Is What It Seems (Outro)')).toBeInTheDocument();
+
+    expect(
+      screen.queryByRole('button', { name: /Ver letra e explicação/i }),
+    ).not.toBeInTheDocument();
+    expect(
+      screen.queryByRole('button', { name: /^Easter Eggs$/i }),
+    ).not.toBeInTheDocument();
   });
 
   it('shows music clip gallery on Chapter 1 album page', async () => {
