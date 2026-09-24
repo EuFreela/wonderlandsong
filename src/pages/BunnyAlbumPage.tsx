@@ -284,7 +284,10 @@ function BunnyAlbumPage() {
                 Faixas
               </p>
               {album.tracks.length > 0 ? (
-                <ol className="m-0 list-none divide-y divide-white/10 border-y border-white/10 p-0">
+                <ol
+                  aria-label="Faixas"
+                  className="m-0 list-none divide-y divide-white/10 border-y border-white/10 p-0"
+                >
                   {album.tracks.map((track, index) => {
                     const hasLyricsContent = Boolean(
                       track.lyrics?.trim() || track.lyricsExplanation,

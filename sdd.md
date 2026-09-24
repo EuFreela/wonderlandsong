@@ -13,7 +13,7 @@ Este arquivo é a **especificação viva** do produto no fluxo Spec-Driven Devel
 
 | Versão | Data | Destaque |
 | --- | --- | --- |
-| **0.0.5** | 2026-09-24 | **Chapter 5 · Artificial Heritage** (Bunny Land Music): trilha sonora de *Herança Artificial: O Limiar da Esperança* (Leon, Elena, Liat, Dama Mascarada, Exoneuros, Projeto Novo Éden) — album em composição com 10 faixas (só nomes), link para o livro, capa `artificial_heritage.webp`; sitemap e testes atualizados |
+| **0.0.5** | 2026-09-24 | **Chapter 5 · Artificial Heritage** (Bunny Land Music): trilha sonora de *Herança Artificial: O Limiar da Esperança* (Leon, Elena, Liat, Dama Mascarada, Exoneuros, Projeto Novo Éden) — album em composição com 10 faixas (só nomes) em trip-hop / dark electronic / dream pop / cinematic, clip YouTube, link para o livro, capa `artificial_heritage.webp`; sitemap e testes atualizados |
 | **0.0.4** | 2026-09-14 | **The Captive Magpie** na home (painel 11); projeto + álbum *SUNDAY AFTERNOON* (psychedelic rock / dream pop, letra EN/PT da faixa-título); nav TCM; sitemap e testes atualizados |
 | **0.0.3** | 2026-07-22 | **Heretic's Fork** + **AEVUM** na home; álbum *Levels of Consciousness* (demo, letra, clip YouTube); textos de projeto/álbum mais concretos; justificação tipográfica; scroll-to-top global |
 | **0.0.2** | 2026-07-19 | **Resonance** na home + detalhe + álbum *Echoes of Redemption* (14 faixas EN/PT, preview `.webm`, clip YouTube); separação de conteúdo projeto vs. álbum; Lighthouse mobile 98 / desktop 100 (performance) |
@@ -801,7 +801,7 @@ Ordem aproximada do histórico + marcos de versão:
 16. **v0.0.5 — Chapter 5·Artificial Heritage** (2026-09-24):
     * album **Artificial Heritage** (Chapter 5) em Bunny Land Music: trilha sonora de *Herança Artificial: O Limiar da Esperança* de Lameck Silva Fernandes, em composição;
     * 10 faixas em `blm-chapter5-lyrics.ts` (apenas os nomes);
-* capa `/images/artificial_heritage.webp`; link do livro como secondary link; duração 58 min; tracklist em composição (só nomes das faixas, sem letras);
+* capa `/images/artificial_heritage.webp`; estilo trip-hop / dark electronic / dream pop / cinematic; clip YouTube (`MRR30gtsl1E`); link do livro como secondary link; duração 58 min; tracklist em composição (só nomes das faixas, sem letras);
 * sitemap e testes (página, nomes das faixas, ausência de modais de letras); versão 0.0.5.
 
 ---

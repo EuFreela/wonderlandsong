@@ -421,7 +421,7 @@ describe('App', () => {
       'https://agencylk7.wixsite.com/heranca-artificial',
     );
 
-    const tracklist = screen.getByRole('list');
+    const tracklist = screen.getByRole('list', { name: /Faixas/i });
     expect(within(tracklist).getByText('Artificial Heritage')).toBeInTheDocument();
     expect(within(tracklist).getByText('Honeymoon on Kepler')).toBeInTheDocument();
     expect(within(tracklist).getByText('Elena')).toBeInTheDocument();
