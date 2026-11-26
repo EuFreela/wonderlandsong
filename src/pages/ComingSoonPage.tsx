@@ -9,7 +9,7 @@ function ComingSoonPage() {
     <div className="flex min-h-screen flex-col items-center justify-center bg-[#000000] px-6 py-16 text-center text-[#ffffff]">
       <Seo
         title="Em construção"
-        description="Esta página ainda está em construção no Wonderland Song."
+        description="Esta página ainda está em construção no Wonderland Music."
         path="/"
         image="/images/bunnyatwork.webp"
         noIndex

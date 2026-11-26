@@ -104,7 +104,7 @@ function BunnyAlbumPage() {
           className="flex flex-col gap-0.5 text-white transition hover:text-white/70"
         >
           <span className="text-base font-extrabold uppercase tracking-[0.16em]">
-            Wonderland Song
+            Wonderland Music
           </span>
           <span className="text-[0.58rem] font-medium normal-case tracking-[0.04em] text-white/50">
             {SITE_LAST_UPDATED_LABEL}
@@ -431,7 +431,7 @@ function BunnyAlbumPage() {
 
       <footer className="border-t border-white/10 px-[5vw] py-10">
         <div className="mx-auto flex max-w-5xl flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
-          <strong className="uppercase tracking-[0.14em] text-white/80">Wonderland Song</strong>
+          <strong className="uppercase tracking-[0.14em] text-white/80">Wonderland Music</strong>
           <Link
             to={`${projectBase}#albums`}
             className="text-sm text-white/45 transition hover:text-white/80"

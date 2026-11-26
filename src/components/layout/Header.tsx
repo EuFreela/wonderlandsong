@@ -106,7 +106,7 @@ function Header() {
             </nav>
 
             <div className="border-t border-black/10 px-[4.5vw] py-6 text-sm uppercase tracking-[0.14em] text-black/50">
-              Wonderland Song
+              Wonderland Music
             </div>
           </div>
         </div>
@@ -136,7 +136,7 @@ function Header() {
           }`}
         >
           <span className="text-base font-extrabold uppercase tracking-[0.16em]">
-            Wonderland Song
+            Wonderland Music
           </span>
           <span
             className={`text-[0.58rem] font-medium normal-case tracking-[0.04em] ${
