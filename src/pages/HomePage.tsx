@@ -23,7 +23,7 @@ function HomePage() {
       name: SITE_NAME,
       url: absoluteUrl('/'),
       description: SITE_DEFAULT_DESCRIPTION,
-      logo: absoluteUrl('/images/wonderland2.webp'),
+      logo: absoluteUrl('/images/wonderland-x.webp'),
     },
     {
       '@context': 'https://schema.org',
@@ -41,14 +41,14 @@ function HomePage() {
         title={SITE_NAME}
         description={SITE_DEFAULT_DESCRIPTION}
         path="/"
-        image="/images/wonderland2.webp"
+        image="/images/wonderland-x.webp"
         jsonLd={jsonLd}
       />
 
       <header className="ws-header">
         <Link to="/" className="ws-brand" aria-label="Wonderland Song — início">
           <span className="ws-brand-mark">W.</span>
-          <span className="ws-brand-name">Wonderland <i>Music</i></span>
+          <span className="ws-brand-name">Wonderland <i>Song</i></span>
         </Link>
 
         <button
@@ -72,7 +72,7 @@ function HomePage() {
 
       <main id="home">
         <section className="ws-hero" aria-labelledby="ws-hero-title">
-          <img className="ws-hero-image" src="/images/wonderland2.webp" alt="" fetchPriority="high" />
+          <img className="ws-hero-image" src="/images/wonderland-x.webp" alt="" fetchPriority="high" />
           <div className="ws-hero-shade" />
           <div className="ws-hero-content">
             <p className="ws-eyebrow"><span /> Um universo. Muitas formas de sentir.</p>
@@ -163,7 +163,7 @@ function HomePage() {
           </a>
         </div>
         <div className="ws-footer-bottom">
-          <Link to="/" className="ws-footer-brand">Wonderland <i>Music</i></Link>
+          <Link to="/" className="ws-footer-brand">Wonderland <i>Song</i></Link>
           <span>Independent music universe · Brasil</span>
           <a href="#home" onClick={(event) => { event.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Voltar ao topo ↑</a>
         </div>

@@ -12,7 +12,7 @@ export const projects: Project[] = [
     id: 'project-1',
     category: 'Record Label',
     title: 'Wonderland Song',
-    image: '/images/wonderland2.webp',
+    image: '/images/wonderland-x.webp',
     video: '/videos/wonderland2.webm',
     headerTone: 'light',
     href: '/projects/wonderland-song',
