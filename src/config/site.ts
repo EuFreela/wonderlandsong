@@ -7,12 +7,12 @@ export const SITE_URL = (
   import.meta.env.VITE_SITE_URL?.trim() || 'https://localhost'
 ).replace(/\/$/, '');
 
-export const SITE_NAME = 'Wonderland Music';
+export const SITE_NAME = 'Wonderland Song';
 
 export const SITE_DEFAULT_DESCRIPTION =
-  'Wonderland Music — selo e universo musical independente: projetos, álbuns e histórias. Ajudando a construir música boa no Brasil e no mundo.';
+  'Wonderland Song — selo e universo musical independente: projetos, álbuns e histórias. Ajudando a construir música boa no Brasil e no mundo.';
 
-export const SITE_DEFAULT_IMAGE = '/images/wonderland2.webp';
+export const SITE_DEFAULT_IMAGE = '/images/wonderland-x.webp';
 
 /**
  * Manual “last updated” stamp shown in site footers.

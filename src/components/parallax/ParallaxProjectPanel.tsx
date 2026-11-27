@@ -109,7 +109,7 @@ function ParallaxProjectPanel({ project, priority = false }: Props) {
         <div className="parallax-media__clip">
           <div ref={mediaRef} className="parallax-media__layer">
             {/* Poster always present — LCP candidate; video layers on top when ready. */}
-            {project.image.includes('wonderland2') ? (
+            {project.image.includes('wonderland-x') ? (
               /*
                 Poster for all viewports: sm on mobile/tablet, full on large screens.
                 Video (wonderland2.webm) layers on top when ready; poster stays if
@@ -118,14 +118,14 @@ function ParallaxProjectPanel({ project, priority = false }: Props) {
               <picture>
                 <source
                   media="(max-width: 900px)"
-                  srcSet="/images/wonderland2-sm.webp"
+                  srcSet="/images/wonderland-x-sm.webp"
                   type="image/webp"
                 />
                 <img
                   className="parallax-media__asset"
                   style={mediaStyle}
-                  src="/images/wonderland2.webp"
-                  srcSet="/images/wonderland2-sm.webp 1200w, /images/wonderland2.webp 1600w"
+                  src="/images/wonderland-x.webp"
+                  srcSet="/images/wonderland-x-sm.webp 1200w, /images/wonderland-x.webp 1600w"
                   sizes="100vw"
                   alt=""
                   width={priority ? 1600 : undefined}
